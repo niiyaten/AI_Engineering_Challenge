@@ -1,0 +1,39 @@
+# RAG向け文書メタデータの例
+identity:
+  document_id: TEST-REPORT-0041
+  title: 攪拌条件変更時の可視化試験報告
+  document_type: test_report
+
+organization:
+  project_id: PRJ-2026-012
+  department: measurement
+  owner: team-a
+
+lifecycle:
+  version: 3
+  status: approved       # draft / approved / obsolete
+  issued_at: 2026-07-31
+  updated_at: 2026-08-02
+  latest: true
+  supersedes: TEST-REPORT-0041:v2
+
+retrieval:
+  language: ja
+  tags:
+    - imaging
+    - bubble
+    - agitation
+  entities:
+    - 装置A
+    - 材料B
+  aliases:
+    - 可視化試験41
+
+permission:
+  confidentiality: internal
+  access_groups:
+    - measurement_team
+
+traceability:
+  source_path: /projects/PRJ-2026-012/50_report/report_v3.pptx
+  content_hash: REPLACE_WITH_HASH
