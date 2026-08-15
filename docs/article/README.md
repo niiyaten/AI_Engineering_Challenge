@@ -1,68 +1,27 @@
-# Qiita記事プロジェクト：Document QA / RAG構築記 v2
+# Qiita公開用：業務RAG安全版記事プロジェクト
 
-コンペで構築した `Retrieval + Executor + Evidence Gate` 型Document QAを紹介し、さらに**実務へ持ち込む場合のVector / Hybrid RAG構成と、RAGが扱いやすい資料管理**までまとめた公開用プロジェクトです。
+このプロジェクトは、非公開情報や契約上の制限がある情報を使わず、公開情報と一般的なRAG設計原則だけで構成したQiita記事です。
 
-## ファイル構成
+## 内容
 
-```text
-qiita_rag_article_project_v2/
-├── article.md
-├── README.md
-├── figures/                    # Qiita貼付用 PNG / SVG
-│   ├── 01_architecture.*
-│   ├── 02_document_pipeline.*
-│   ├── 03_executor_router.*
-│   ├── 04_evidence_gate.*
-│   ├── 05_audit_cycle.*
-│   ├── 06_route_breakdown.*
-│   ├── 07_practical_rag_architecture.*
-│   ├── 08_rag_friendly_document_management.*
-│   └── 09_document_lifecycle.*
-├── diagrams/                   # Graphviz DOT編集元
-├── templates/
-│   ├── document_metadata.yaml
-│   └── chunk_metadata.yaml
-├── examples/
-│   ├── recommended_folder_structure.md
-│   └── index_record.json
-├── docs/
-│   └── practical_rag_blueprint.md
-└── appendix/
-    ├── implementation_map.md
-    ├── publication_checklist.md
-    └── rag_readiness_checklist.md
-```
+- `article.md` : Qiita本文
+- `figures/` : 記事用PNG/SVG図版
+- `templates/document_metadata.yaml` : 文書Metadata例
+- `templates/chunk_record.json` : Chunkレコード例
+- `appendix/PUBLICATION_SAFETY_CHECKLIST.md` : 公開前確認用
+- `appendix/SOURCES.md` : 公開情報の参照元
 
-## v2で追加した内容
+## 公開方針
 
-- コンペ型Executor RAGを実務へどう転用するか
-- Vector searchを主軸に戻す理由
-- BM25 + Vector + Metadata Filter + RerankerのHybrid Retrieval
-- Section-aware chunking / Parent-Child chunk
-- RAG向けの文書作成ルール
-- Draft / Approved / Obsoleteを含む版管理
-- ACL / 権限metadataとsecurity filtering
-- 更新差分だけを再embeddingする文書ライフサイクル
-- 文書・chunk metadataのサンプル
-- RAG Readiness Checklist
+この安全版では、以下を掲載しません。
 
-## Qiitaへ投稿するとき
+- 非公開案件・イベント・顧客等を特定できる名称や課題内容
+- 実問題文・実データ・内部ファイル名
+- 非公開環境でのみ得られる評価値・順位・運用情報
+- 非公開環境で得た具体的な回答・検証結果
+- 非公開成果物のコード・固有構成・固有ルール
+- 実在組織名や案件名
 
-`article.md`の画像は相対パスです。
+記事内の例はすべて一般化または架空例です。
 
-```markdown
-![実務向けRAGアーキテクチャ](./figures/07_practical_rag_architecture.png)
-```
-
-QiitaへPNGをアップロードし、発行された画像URLに差し替えてください。
-
-## 図の再生成
-
-Graphvizを使用しています。
-
-```bash
-dot -Tpng -Gdpi=180 diagrams/07_practical_rag_architecture.dot -o figures/07_practical_rag_architecture.png
-dot -Tsvg diagrams/07_practical_rag_architecture.dot -o figures/07_practical_rag_architecture.svg
-```
-
-日本語フォントは `Noto Sans CJK JP` を指定しています。
+公開可否を法的に保証するものではありません。所属組織やサービス提供者の規約がある場合は、公開前に担当者へ確認してください。
