@@ -1,0 +1,14 @@
+{
+  "eda": "EDA052",
+  "no_text_pdf_count": 14,
+  "target_pdf_count": 7,
+  "rendered_page_count": 10,
+  "vision_success_count": 4,
+  "outputs": [
+    "EDA/EDA052/tables/rendered_no_text_pdf_pages.csv",
+    "EDA/EDA052/tables/pdf_page_vision_ocr_results.csv",
+    "EDA/EDA052/pdf_page_vision_ocr_records.jsonl",
+    "EDA/EDA052/tables/no_text_pdf_question_probe.csv",
+    "EDA/EDA052/eda052_report.md"
+  ]
+}

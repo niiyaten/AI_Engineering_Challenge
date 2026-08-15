@@ -1,0 +1,170 @@
+2026-07-06 02:09:55,134 [ERROR] LLM call failed for valid_002
+Traceback (most recent call last):
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1323, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1369, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1318, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1078, in _send_output
+    self.send(msg)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1016, in send
+    self.connect()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1488, in connect
+    super().connect()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 982, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 848, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] アクセス許可で禁じられた方法でソケットにアクセスしようとしました。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 228, in run_generation
+    predicted, meta = call_openrouter(
+                      ^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 161, in call_openrouter
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] アクセス許可で禁じられた方法でソケットにアクセスしようとしました。>
+2026-07-06 02:30:43,523 [ERROR] LLM call failed for valid_002
+Traceback (most recent call last):
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1323, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1369, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1318, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1078, in _send_output
+    self.send(msg)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1016, in send
+    self.connect()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 1488, in connect
+    super().connect()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\client.py", line 982, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 848, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] アクセス許可で禁じられた方法でソケットにアクセスしようとしました。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 235, in run_generation
+    predicted, meta = call_openrouter(
+                      ^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 165, in call_openrouter
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] アクセス許可で禁じられた方法でソケットにアクセスしようとしました。>
+2026-07-06 02:31:09,618 [ERROR] LLM call failed for valid_002
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 165, in call_openrouter
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 235, in run_generation
+    predicted, meta = call_openrouter(
+                      ^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 170, in call_openrouter
+    raise RuntimeError(f"OpenRouter HTTPError {exc.code}: {detail[:1000]}") from exc
+RuntimeError: OpenRouter HTTPError 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false,"retry_after_seconds":23,"retry_after_seconds_raw":22.135,"headers":{"Retry-After":"23"}}},"user_id":"user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K"}
+2026-07-06 02:32:00,808 [ERROR] LLM call failed for valid_002
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 165, in call_openrouter
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 235, in run_generation
+    predicted, meta = call_openrouter(
+                      ^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA008\eda008.py", line 170, in call_openrouter
+    raise RuntimeError(f"OpenRouter HTTPError {exc.code}: {detail[:1000]}") from exc
+RuntimeError: OpenRouter HTTPError 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false,"retry_after_seconds":2,"retry_after_seconds_raw":1.018,"headers":{"Retry-After":"2"}}},"user_id":"user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K"}

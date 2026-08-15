@@ -1,0 +1,18 @@
+# Local Python and uv state
+.venv/
+.uv-cache/
+.uv-cache-run/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Re-creatable cold-start workspaces and local secrets
+work/
+.apikey
+.env
+
+# Operating-system and Office temporary files
+.DS_Store
+Thumbs.db
+~$*
+.~lock.*

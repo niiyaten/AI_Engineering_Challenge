@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 14,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783593027-xuHvQL51TbKIW0I6Oxrv",
+    "object": "chat.completion",
+    "created": 1783593027,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"0\"}",
+          "refusal": null,
+          "reasoning": "We need answer: \"KSSにおいて、データエンジニアが担当するタスクIDはいくつありますか。\"\n\nWe have data: schedule.xlsx.md shows WBS tasks list. But we need tasks that data engineer (担当者?) is responsible for. In the table, tasks have \"担当者\" column. We need count of tasks where担当者 includes \"データエンジニア\" or maybe \"斎藤 悠斗\" (data engineer). But question: \"データエンジニアが担当するタスクID\" likely refers to tasks where the owner is the data engineer. In the schedule table, only one sample row T01 with担当者 佐藤 健一. But that's not data engineer. But maybe there are more tasks not shown. We need to search for \"データエンジニア\" in the provided data. In meeting minutes, attendees include 斎藤 悠斗 (データエンジニア). But tasks? In action items, A04 EDA 実行完了 etc. Owner M01? Not clear.\n\nMaybe the answer is 0? But we must not say \"わかりません\". We need to use evidence. We have no explicit task list for data engineer. The schedule table only shows T01 with owner 佐藤 健一. No other tasks. So count is 0. But we must provide answer JSON.\n\nThus answer: 0.\n\nLet's produce JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer: \"KSSにおいて、データエンジニアが担当するタスクIDはいくつありますか。\"\n\nWe have data: schedule.xlsx.md shows WBS tasks list. But we need tasks that data engineer (担当者?) is responsible for. In the table, tasks have \"担当者\" column. We need count of tasks where担当者 includes \"データエンジニア\" or maybe \"斎藤 悠斗\" (data engineer). But question: \"データエンジニアが担当するタスクID\" likely refers to tasks where the owner is the data engineer. In the schedule table, only one sample row T01 with担当者 佐藤 健一. But that's not data engineer. But maybe there are more tasks not shown. We need to search for \"データエンジニア\" in the provided data. In meeting minutes, attendees include 斎藤 悠斗 (データエンジニア). But tasks? In action items, A04 EDA 実行完了 etc. Owner M01? Not clear.\n\nMaybe the answer is 0? But we must not say \"わかりません\". We need to use evidence. We have no explicit task list for data engineer. The schedule table only shows T01 with owner 佐藤 健一. No other tasks. So count is 0. But we must provide answer JSON.\n\nThus answer: 0.\n\nLet's produce JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6589,
+      "completion_tokens": 325,
+      "total_tokens": 6914,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001182905,
+        "upstream_inference_prompt_cost": 9.55405e-05,
+        "upstream_inference_completions_cost": 2.275e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 310,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

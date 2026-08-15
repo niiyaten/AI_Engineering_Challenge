@@ -1,0 +1,55 @@
+{
+  "id": "gen-1783650892-YAD8fMEowjvYC4JiDy3R",
+  "object": "chat.completion",
+  "created": 1783650892,
+  "model": "openai/gpt-oss-20b:free",
+  "provider": "Darkbloom",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "length",
+      "native_finish_reason": "length",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": "We need to answer: \"蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。\"\n\nWe need to provide the extracted items. We must use only the provided evidence. The evidence includes many lines. We need to find where \"別契約\" appears. Let's search the evidence lines for \"別契約\". The evidence lines: I see at line 215: \"対象外(Out-of-Scope) 本番システム実装、API化、運用監視設計 電子カルテ等の他システムとの接続開発 新規データ取得、追加調査の大幅拡張\". No \"別契約\". At line 292: \"ベンダー体制 株式会社データアステル データサイエンス部\". No. At line 29: \"受託者(以下「乙」という。) 株式会社データアステル 部署:データサイエンス部\". No. At line 53: \"今後の業務活用可否を判断できる水準で、分析精度、解釈性および運用上の留意点を整理すること\". No. At line 117: \"本番システム実装、API化、運用監視設計\". No. At line 414: \"株式会社データアステル データサイエンス部\". No.\n\nMaybe \"別契約\" appears elsewhere not in the provided lines? The evidence list might not include the line with \"別契約\". The question: \"蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。\"\n\nWe need to find the items where \"別契約\" is explicitly mentioned as the role of Data Astel. The evidence might not contain that phrase. Let's search again: The evidence lines show \"別契約\" maybe not present. The only mention of \"別契約\" might be in the contract document. But the provided evidence lines don't show it. The question might expect that we find the phrase \"別契約\" in the contract. But we don't have that line. The evidence list includes many lines but not the phrase. So we cannot answer. We must respond \"わかりません\".\n\nBut we need to check if any line contains \"別契約\". Let's scan: 25: \"提出元 株式会社データアステル データサイエンス部\". 150: \"4 運用と再現性の両立\". 151: same. 177: \"活用可否の判断基盤\". 194: \"陽性率は約23.9%\". 215: \"対象外(Out-of-Scope) 本番システム実装、API化、運用監視設計\". 272: \"業務活用の可否判断材料\". 292: \"ベンダー体",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "We need to answer: \"蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。\"\n\nWe need to provide the extracted items. We must use only the provided evidence. The evidence includes many lines. We need to find where \"別契約\" appears. Let's search the evidence lines for \"別契約\". The evidence lines: I see at line 215: \"対象外(Out-of-Scope) 本番システム実装、API化、運用監視設計 電子カルテ等の他システムとの接続開発 新規データ取得、追加調査の大幅拡張\". No \"別契約\". At line 292: \"ベンダー体制 株式会社データアステル データサイエンス部\". No. At line 29: \"受託者(以下「乙」という。) 株式会社データアステル 部署:データサイエンス部\". No. At line 53: \"今後の業務活用可否を判断できる水準で、分析精度、解釈性および運用上の留意点を整理すること\". No. At line 117: \"本番システム実装、API化、運用監視設計\". No. At line 414: \"株式会社データアステル データサイエンス部\". No.\n\nMaybe \"別契約\" appears elsewhere not in the provided lines? The evidence list might not include the line with \"別契約\". The question: \"蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。\"\n\nWe need to find the items where \"別契約\" is explicitly mentioned as the role of Data Astel. The evidence might not contain that phrase. Let's search again: The evidence lines show \"別契約\" maybe not present. The only mention of \"別契約\" might be in the contract document. But the provided evidence lines don't show it. The question might expect that we find the phrase \"別契約\" in the contract. But we don't have that line. The evidence list includes many lines but not the phrase. So we cannot answer. We must respond \"わかりません\".\n\nBut we need to check if any line contains \"別契約\". Let's scan: 25: \"提出元 株式会社データアステル データサイエンス部\". 150: \"4 運用と再現性の両立\". 151: same. 177: \"活用可否の判断基盤\". 194: \"陽性率は約23.9%\". 215: \"対象外(Out-of-Scope) 本番システム実装、API化、運用監視設計\". 272: \"業務活用の可否判断材料\". 292: \"ベンダー体",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2491,
+    "completion_tokens": 700,
+    "total_tokens": 3191,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.51195e-05,
+      "upstream_inference_prompt_cost": 3.61195e-05,
+      "upstream_inference_completions_cost": 4.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 697,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "_http_status": 200
+}

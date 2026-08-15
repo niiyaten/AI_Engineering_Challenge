@@ -1,0 +1,17 @@
+{
+  "eda": "EDA042",
+  "input_result": "EDA/EDA041/tables/test_document_search_route_result.csv",
+  "input_attempt": "EDA/EDA041/tables/test_document_search_route_attempt_log.csv",
+  "target_count": 33,
+  "before_non_unknown_count": 49,
+  "added_non_unknown_count": 10,
+  "after_non_unknown_count": 59,
+  "outputs": [
+    "EDA/EDA042/tables/test_document_retry_result.csv",
+    "EDA/EDA042/tables/test_document_retry_attempt_log.csv",
+    "EDA/EDA042/predictions/predictions.csv",
+    "EDA/EDA042/predictions/eda042_document_retry_submission.zip",
+    "EDA/EDA042/eda042_report.md",
+    "EDA/EDA042/raw_responses"
+  ]
+}

@@ -1,0 +1,5 @@
+﻿extension,extraction_method,extracted_files,total_text_length,mean_text_length,total_line_count,total_formula_count,total_styled_count
+.docx,docx_paragraphs_tables_basic_styles,45,445228,9894.0,21659,0,1200
+.pdf,pdf_page_text_pypdf,28,59798,2135.6,3195,0,0
+.pptx,pptx_slide_text_tables,25,142755,5710.2,8486,0,0
+.xlsx,xlsx_sheet_values_formulas_basic_styles,19,625073,32898.6,3463,998,3802

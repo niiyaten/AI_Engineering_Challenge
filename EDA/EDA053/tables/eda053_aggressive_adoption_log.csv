@@ -1,0 +1,5 @@
+﻿index,question,answer_before,candidate_answer,source,safe_to_use,aggressive_mode,adopted,evidence
+18,白峰信用リスク評価の会議ID:M04の会議録にて、進捗サマリが記載されているページ番号を答えてください。,わかりません,2,EDA052_pdf_vision_ocr,True,True,True,EDA/EDA052/rendered_pages/白峰信用リスク評価株式会社_会議録_2025_07_15_pdf_page002.png
+93,蒼樹会 みなみ野女性医療センターのアクションIDA10の内容をそのまま抜き出してください。,わかりません,index再実験の結果反映,EDA052_pdf_vision_ocr,True,True,True,EDA/EDA052/rendered_pages/医療法人社団_蒼樹会_みなみ野女性医療センター_会議録_2025_05_15_pdf_page002.png
+44,IMにあるFMにおいて、佐藤さんから見て右側に座っている人の名前をすべて挙げてください。,わかりません,高橋、池田,EDA049_seat_coordinate_seed,False,True,True,EDA/EDA049/tables/seat_coordinate_table.csv
+58,社内管理フォルダにあるFMにおいて、井上さんの向かいに座っている方のEXTを教えてください。,わかりません,7103,EDA049_seat_coordinate_seed,False,True,True,EDA/EDA049/tables/seat_coordinate_table.csv

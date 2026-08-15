@@ -1,0 +1,5 @@
+﻿index,expected_answer,expected_route,expected_method,note
+6,実績工数の最終確定値および確定した最終請求金額が資料に含まれていないため、差額は算出できません。,tm_invoice_difference,tm_final_invoice_not_determinable,確定実績工数・確定請求額が資料にない
+35,0.90527,scoring_precision,pptx_displayed_ranked_metric,指定PPTX表示値を保持
+36,0.09619113,remaining50_generalization,interim_report_vs_metrics_f1_difference,8桁通常丸めを維持
+40,"1位：2025年10月 11,412,500円、2位：2025年9月 9,858,750円、3位：2025年8月 8,118,000円",remaining50_generalization,cross_project_monthly_settlement_ranking,固定金額案件Evidenceを追加

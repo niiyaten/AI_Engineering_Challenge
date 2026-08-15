@@ -1,0 +1,11 @@
+{
+  "eda": "EDA048",
+  "remaining_unknown_count": 16,
+  "image047_processed_count": 8,
+  "image047_success_count": 5,
+  "outputs": [
+    "EDA/EDA048/tables/remaining_unknown_diagnosis.csv",
+    "EDA/EDA048/tables/remaining_unknown_family_summary.csv",
+    "EDA/EDA048/eda048_report.md"
+  ]
+}

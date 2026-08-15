@@ -1,0 +1,23 @@
+{
+  "eda": "EDA036",
+  "input": "EDA/EDA035/tables/test_unknown_reduction_log.csv",
+  "test_count": 100,
+  "openrouter_target_count": 38,
+  "openrouter_called_count": 38,
+  "llm_answer_count": 32,
+  "llm_adopted_count": 2,
+  "before_non_unknown_count": 31,
+  "after_non_unknown_count": 33,
+  "models": [
+    "openai/gpt-oss-20b:free",
+    "openai/gpt-oss-120b:free"
+  ],
+  "outputs": [
+    "EDA/EDA036/tables/test_openrouter_structured_answer_log.csv",
+    "EDA/EDA036/tables/test_openrouter_structured_attempt_log.csv",
+    "EDA/EDA036/predictions/predictions.csv",
+    "EDA/EDA036/predictions/eda036_openrouter_structured_test_submission.zip",
+    "EDA/EDA036/eda036_report.md"
+  ],
+  "secret_handling": "API key is read from .apikey or environment variable and is not stored."
+}

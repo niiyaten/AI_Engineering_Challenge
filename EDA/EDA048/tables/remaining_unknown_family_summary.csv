@@ -1,0 +1,9 @@
+﻿failure_family,eda048_priority,size
+meeting_action_structure,high,4
+cross_project_structured_aggregation,high,3
+spatial_image,high,2
+chart_value,high,1
+model_formula_recompute,high,1
+pptx_table_or_clause_lookup,medium,2
+semantic_diff,medium,2
+spreadsheet_format_semantics,medium,1

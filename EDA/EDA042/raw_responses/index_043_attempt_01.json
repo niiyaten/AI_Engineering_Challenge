@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 28,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783592808-mCcqKrMHdaAzPb5Bse7A",
+    "object": "chat.completion",
+    "created": 1783592808,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"該当情報が見つかりませんでした\"}",
+          "refusal": null,
+          "reasoning": "We need to answer: \"東都のCTにおいて、甲側の主担当者をフルネームで教えてください。\"\n\nWe have only the provided references. The references show a contract document. The blocks show company name, department name. But no mention of \"甲側の主担当者\" or a name. The contract text snippet: \"甲は、本業務の成果物を自己の責任において利用するものとし、差別的判断や不利益取扱いへの直接利用を行わないものとする。\" That is a clause but no name.\n\nThus we cannot find the name. The instruction says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must provide an answer based on the evidence. But we have no evidence of the name. We must still produce an answer. The instruction says: \"必ず次のJSONだけを返してください。説明文やMarkdownは不要です。 {\"answer\":\"ここに短い回答\"}\"\n\nWe need to produce an answer. But we have no evidence. The instruction says not to use \"わかりません\" even if evidence is thin. So we must produce something else. But we cannot fabricate. We must use the evidence. The evidence does not contain the name. So maybe we can answer \"不明\" or \"情報不足\" but that might be considered \"わかりません\"? The instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot use \"わかりません\". But we can use \"不明\" maybe? But that might be considered similar. But we can maybe answer \"情報が不足しています\" but that might be considered \"わかりません\". The instruction says we cannot use \"わかりません\". But we can use other phrasing. But we must answer with a short answer. The answer must be within 320 characters.\n\nWe need to produce a JSON with answer. The answer could be \"情報が不足しています\" or \"該当情報が見つかりませんでした\". That is not \"わかりません\". That might satisfy. But we need to ensure we don't violate the instruction. The instruction: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we can use other phrase. So we can say \"該当情報が見つかりませんでした\". That is a short answer. That is not \"わかりません\". So we can produce that.\n\nThus answer: \"該当情報が見つかりませんでした\". That is short. That is within 320 characters. So produce JSON.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"東都のCTにおいて、甲側の主担当者をフルネームで教えてください。\"\n\nWe have only the provided references. The references show a contract document. The blocks show company name, department name. But no mention of \"甲側の主担当者\" or a name. The contract text snippet: \"甲は、本業務の成果物を自己の責任において利用するものとし、差別的判断や不利益取扱いへの直接利用を行わないものとする。\" That is a clause but no name.\n\nThus we cannot find the name. The instruction says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must provide an answer based on the evidence. But we have no evidence of the name. We must still produce an answer. The instruction says: \"必ず次のJSONだけを返してください。説明文やMarkdownは不要です。 {\"answer\":\"ここに短い回答\"}\"\n\nWe need to produce an answer. But we have no evidence. The instruction says not to use \"わかりません\" even if evidence is thin. So we must produce something else. But we cannot fabricate. We must use the evidence. The evidence does not contain the name. So maybe we can answer \"不明\" or \"情報不足\" but that might be considered \"わかりません\"? The instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot use \"わかりません\". But we can use \"不明\" maybe? But that might be considered similar. But we can maybe answer \"情報が不足しています\" but that might be considered \"わかりません\". The instruction says we cannot use \"わかりません\". But we can use other phrasing. But we must answer with a short answer. The answer must be within 320 characters.\n\nWe need to produce a JSON with answer. The answer could be \"情報が不足しています\" or \"該当情報が見つかりませんでした\". That is not \"わかりません\". That might satisfy. But we need to ensure we don't violate the instruction. The instruction: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we can use other phrase. So we can say \"該当情報が見つかりませんでした\". That is a short answer. That is not \"わかりません\". So we can produce that.\n\nThus answer: \"該当情報が見つかりませんでした\". That is short. That is within 320 characters. So produce JSON.\n\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 678,
+      "completion_tokens": 600,
+      "total_tokens": 1278,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.1831e-05,
+        "upstream_inference_prompt_cost": 9.831e-06,
+        "upstream_inference_completions_cost": 4.2e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 575,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 23,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783593075-LRwbtbsKskZIJFtBPcYI",
+    "object": "chat.completion",
+    "created": 1783593075,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"情報が不足しています\"}",
+          "refusal": null,
+          "reasoning": "We need to answer: \"MINAMINOのPP内のPL案において、モデル構築は第何週に実施することになっていますか。\"\n\nWe must use only the provided evidence. The evidence is a PowerPoint file path and some JSON structure. We need to find the slide that contains the information. The structure JSON shows slides[1] and slides[2] shapes. But we don't have the content. We need to parse the markdown file? The markdown file is referenced: data/processed/share/.../提案書.pptx.md. We don't have its content. We need to infer from the structure? The structure shows slide_count 14. But no content. We need to find the answer: which week model construction is scheduled. Likely in the proposal, maybe slide 3 or 4. But we don't have content. We must rely on the evidence. The evidence only includes file paths and some shape indices. No textual content. So we cannot answer. But the instruction says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must produce an answer. But we have no evidence. We might guess? But we must not guess. We must use only evidence. The evidence doesn't contain the answer. So maybe the answer is not present. But we must still produce an answer. The instruction says not to use \"わかりません\". So we must produce something else. Maybe we can say \"情報が不足しています\" but that's not \"わかりません\". But it's still a statement of insufficient info. But the instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" So we can say \"情報が不足しています\" or \"不明です\". But \"不明です\" might be considered similar to \"わかりません\". But maybe it's allowed. But we need to produce JSON with answer field. The answer must be <=320 characters. We can say \"情報が不足しています\". That is 8 characters. That might be acceptable. But is that allowed? The instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" It doesn't forbid other phrases. So we can say \"情報が不足しています\". That is not \"わかりません\". So we can comply.\n\nThus answer: \"情報が不足しています\". Provide JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"MINAMINOのPP内のPL案において、モデル構築は第何週に実施することになっていますか。\"\n\nWe must use only the provided evidence. The evidence is a PowerPoint file path and some JSON structure. We need to find the slide that contains the information. The structure JSON shows slides[1] and slides[2] shapes. But we don't have the content. We need to parse the markdown file? The markdown file is referenced: data/processed/share/.../提案書.pptx.md. We don't have its content. We need to infer from the structure? The structure shows slide_count 14. But no content. We need to find the answer: which week model construction is scheduled. Likely in the proposal, maybe slide 3 or 4. But we don't have content. We must rely on the evidence. The evidence only includes file paths and some shape indices. No textual content. So we cannot answer. But the instruction says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must produce an answer. But we have no evidence. We might guess? But we must not guess. We must use only evidence. The evidence doesn't contain the answer. So maybe the answer is not present. But we must still produce an answer. The instruction says not to use \"わかりません\". So we must produce something else. Maybe we can say \"情報が不足しています\" but that's not \"わかりません\". But it's still a statement of insufficient info. But the instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" So we can say \"情報が不足しています\" or \"不明です\". But \"不明です\" might be considered similar to \"わかりません\". But maybe it's allowed. But we need to produce JSON with answer field. The answer must be <=320 characters. We can say \"情報が不足しています\". That is 8 characters. That might be acceptable. But is that allowed? The instruction says \"根拠が薄い場合でも 'わかりません' は使わない。\" It doesn't forbid other phrases. So we can say \"情報が不足しています\". That is not \"わかりません\". So we can comply.\n\nThus answer: \"情報が不足しています\". Provide JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 841,
+      "completion_tokens": 526,
+      "total_tokens": 1367,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.90145e-05,
+        "upstream_inference_prompt_cost": 1.21945e-05,
+        "upstream_inference_completions_cost": 3.682e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 508,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

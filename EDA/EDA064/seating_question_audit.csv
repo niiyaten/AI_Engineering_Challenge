@@ -1,0 +1,3 @@
+﻿question_id,dataset,question,company_present,person_present,department_present,correct_document,file_format,text_only_selection,probe_selection,vision_needed,likely_executor,self_scope_effective,generated_by,source,confidence,requires_manual_review
+44,test,IMにあるFMにおいて、佐藤さんから見て右側に座っている人の名前をすべて挙げてください。,False,False,False,share/共有ドライブ/社内管理/座席表.pptx | share/共有ドライブ/社内管理/社内用語集.pptx,unknown,False,True,True,layout_coordinate_executor,False,offline_rule,question signals,medium,True
+58,test,社内管理フォルダにあるFMにおいて、井上さんの向かいに座っている方のEXTを教えてください。,True,False,False,share/共有ドライブ/社内管理/座席表.pptx | share/共有ドライブ/社内管理/社内用語集.pptx,unknown,False,True,True,layout_coordinate_executor,True,offline_rule,question signals,medium,True

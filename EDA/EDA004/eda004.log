@@ -1,0 +1,251 @@
+2026-07-05 23:59:48,952 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-05 23:59:49,959 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 654, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 585, in extract_file
+    text, metadata = extract_docx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 313, in extract_docx
+    doc = Document(path)
+          ^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\pkgreader.py", line 22, in from_file
+    phys_reader = PhysPkgReader(pkg_file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\phys_pkg.py", line 76, in __init__
+    self._zipf = ZipFile(pkg_file, "r")
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-05 23:59:59,351 [ERROR] Failed to extract: プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/~$提案書.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 654, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 587, in extract_file
+    text, metadata = extract_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 399, in extract_pptx
+    prs = Presentation(path)
+          ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\api.py", line 31, in Presentation
+    presentation_part = Package.open(pptx).main_document_part
+                        ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 82, in open
+    return cls(pkg_file)._load()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 160, in _load
+    pkg_xml_rels, parts = _PackageLoader.load(self._pkg_file, cast("Package", self))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 190, in load
+    return cls(pkg_file, package)._load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 194, in _load
+    parts, xml_rels = self._parts, self._xml_rels
+                      ^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\util.py", line 191, in __get__
+    value = self._fget(obj)
+            ^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 222, in _parts
+    content_types = self._content_types
+                    ^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\util.py", line 191, in __get__
+    value = self._fget(obj)
+            ^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\package.py", line 207, in _content_types
+    return _ContentTypeMap.from_xml(self._package_reader[CONTENT_TYPES_URI])
+                                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\serialized.py", line 38, in __getitem__
+    return self._blob_reader[pack_uri]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\serialized.py", line 187, in __getitem__
+    if pack_uri not in self._blobs:
+                       ^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\util.py", line 191, in __get__
+    value = self._fget(obj)
+            ^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\pptx\opc\serialized.py", line 194, in _blobs
+    with zipfile.ZipFile(self._pkg_file, "r") as z:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:00:00,718 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/~$スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 654, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 589, in extract_file
+    text, metadata, sheet_rows = extract_xlsx(path, max_rows_per_sheet, max_cols_per_sheet)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 452, in extract_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:00:00,919 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 654, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 589, in extract_file
+    text, metadata, sheet_rows = extract_xlsx(path, max_rows_per_sheet, max_cols_per_sheet)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 452, in extract_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:00:07,393 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\drawings.py:67: UserWarning: wmf image format is not supported so the image is being dropped
+  warn(msg)
+
+2026-07-06 00:01:54,207 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-06 00:01:54,477 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 657, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 588, in extract_file
+    text, metadata = extract_docx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 316, in extract_docx
+    doc = Document(path)
+          ^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\pkgreader.py", line 22, in from_file
+    phys_reader = PhysPkgReader(pkg_file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\phys_pkg.py", line 76, in __init__
+    self._zipf = ZipFile(pkg_file, "r")
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:02:01,068 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 657, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 592, in extract_file
+    text, metadata, sheet_rows = extract_xlsx(path, max_rows_per_sheet, max_cols_per_sheet)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 455, in extract_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:02:05,238 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\drawings.py:67: UserWarning: wmf image format is not supported so the image is being dropped
+  warn(msg)
+
+2026-07-06 00:03:57,262 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-06 00:03:57,514 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 673, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 604, in extract_file
+    text, metadata = extract_docx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 332, in extract_docx
+    doc = Document(path)
+          ^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\pkgreader.py", line 22, in from_file
+    phys_reader = PhysPkgReader(pkg_file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\docx\opc\phys_pkg.py", line 76, in __init__
+    self._zipf = ZipFile(pkg_file, "r")
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:04:04,018 [ERROR] Failed to extract: プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 673, in run_extraction
+    doc, sheets, _ = extract_file(row, max_rows_per_sheet, max_cols_per_sheet)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 608, in extract_file
+    text, metadata, sheet_rows = extract_xlsx(path, max_rows_per_sheet, max_cols_per_sheet)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\eda004.py", line 471, in extract_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-06 00:04:08,248 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\drawings.py:67: UserWarning: wmf image format is not supported so the image is being dropped
+  warn(msg)
+

@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 0,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783593238-ronoqO5HVP3UTx40Gzrk",
+    "object": "chat.completion",
+    "created": 1783593238,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need to answer: \"青葉与信マネジメントのチェックポイント2として設定されている内容に関連するタスクIDを教えてください。\"\n\nWe need to find \"チェックポイント2\" content. Likely from meeting minutes or schedule. Search for \"チェックポイント2\" in provided data. Let's scan.\n\nIn the meeting minutes, there is \"チェックポイント2\" maybe in the meeting minutes? Let's search manually.\n\nIn the first meeting record (M02) there is \"6. アクションアイテム\" but no checkpoint. In M01, no. In M03, no. The schedule file maybe has \"チェックポイント\" but not visible.\n\nMaybe \"チェックポイント2\" refers to a specific checkpoint defined in the project plan. Could be in the schedule or in the meeting minutes. Let's search for \"チェックポイント\" in the text.\n\nI see no explicit \"チェックポイント\" string. But maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan. Let's search for \"チェックポイント2\" in the data. Not present.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project, maybe defined in the meeting minutes. Let's search for \"チェックポイント\" again. I don't see.\n\nAlternatively, maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan, which might be a milestone. But we don't have that.\n\nMaybe the question is ambiguous. But we need to answer with a task ID that is related to the content of checkpoint 2. We need to find the content of checkpoint 2. Let's search for \"2.\" in the meeting minutes. In M02, there is \"2. 採用する評価指標の決定(業務指標含む)\". That could be checkpoint 2? But not sure.\n\nAlternatively, maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan, which might be \"loan_status業務定義確定\" or \"interest_rate/gradeの利用可否確認\". But we need to find the task ID that is related.\n\nLet's examine the schedule file: T01, T02. T02 is \"loan_status業務定義確定\". That might be checkpoint 2? But not sure.\n\nAlso, there are tasks A01, A02, etc. A02 is \"interest_rate/grade の審査時点での利用可否確認\". That seems related to the content of checkpoint 2 maybe.\n\nBut we need to find the content of checkpoint 2. Let's search for \"チェックポイント2\" again. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project, maybe defined in the meeting minutes. Let's search for \"チェックポイント\" again. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a part of the project plan that is not included in the provided data. But we need to answer with a task ID that is related to that content. We need to use the provided evidence.\n\nLet's examine the meeting minutes for M02: It lists \"6. アクションアイテム\" with IDs A01, A02, etc. The content of A02 might be \"interest_rate/grade の審査時点での利用可否確認\". That is a task ID.\n\nAlso, the schedule file has T02: \"loan_status業務定義確定\". That is a task ID.\n\nWhich one is related to \"チェックポイント2\"? We need to identify the content of checkpoint 2. Let's search for \"チェックポイント2\" in the meeting minutes. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project plan that is not explicitly named but maybe the second checkpoint in the project. The first checkpoint might be \"キックオフ・前提確認会\" (M01). The second checkpoint might be \"中間レビュー会\" (M02). So checkpoint 2 might be the content of M02. The content of M02 includes \"2. 採用する評価指標の決定(業務指標含む)\". So the task ID related to that content might be A02? But A02 is about interest_rate/grade. Wait, A02 is \"interest_rate/grade の審査",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"青葉与信マネジメントのチェックポイント2として設定されている内容に関連するタスクIDを教えてください。\"\n\nWe need to find \"チェックポイント2\" content. Likely from meeting minutes or schedule. Search for \"チェックポイント2\" in provided data. Let's scan.\n\nIn the meeting minutes, there is \"チェックポイント2\" maybe in the meeting minutes? Let's search manually.\n\nIn the first meeting record (M02) there is \"6. アクションアイテム\" but no checkpoint. In M01, no. In M03, no. The schedule file maybe has \"チェックポイント\" but not visible.\n\nMaybe \"チェックポイント2\" refers to a specific checkpoint defined in the project plan. Could be in the schedule or in the meeting minutes. Let's search for \"チェックポイント\" in the text.\n\nI see no explicit \"チェックポイント\" string. But maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan. Let's search for \"チェックポイント2\" in the data. Not present.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project, maybe defined in the meeting minutes. Let's search for \"チェックポイント\" again. I don't see.\n\nAlternatively, maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan, which might be a milestone. But we don't have that.\n\nMaybe the question is ambiguous. But we need to answer with a task ID that is related to the content of checkpoint 2. We need to find the content of checkpoint 2. Let's search for \"2.\" in the meeting minutes. In M02, there is \"2. 採用する評価指標の決定(業務指標含む)\". That could be checkpoint 2? But not sure.\n\nAlternatively, maybe \"チェックポイント2\" refers to \"チェックポイント2\" in the project plan, which might be \"loan_status業務定義確定\" or \"interest_rate/gradeの利用可否確認\". But we need to find the task ID that is related.\n\nLet's examine the schedule file: T01, T02. T02 is \"loan_status業務定義確定\". That might be checkpoint 2? But not sure.\n\nAlso, there are tasks A01, A02, etc. A02 is \"interest_rate/grade の審査時点での利用可否確認\". That seems related to the content of checkpoint 2 maybe.\n\nBut we need to find the content of checkpoint 2. Let's search for \"チェックポイント2\" again. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project, maybe defined in the meeting minutes. Let's search for \"チェックポイント\" again. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a part of the project plan that is not included in the provided data. But we need to answer with a task ID that is related to that content. We need to use the provided evidence.\n\nLet's examine the meeting minutes for M02: It lists \"6. アクションアイテム\" with IDs A01, A02, etc. The content of A02 might be \"interest_rate/grade の審査時点での利用可否確認\". That is a task ID.\n\nAlso, the schedule file has T02: \"loan_status業務定義確定\". That is a task ID.\n\nWhich one is related to \"チェックポイント2\"? We need to identify the content of checkpoint 2. Let's search for \"チェックポイント2\" in the meeting minutes. Not found.\n\nMaybe the question refers to \"チェックポイント2\" as a concept in the project plan that is not explicitly named but maybe the second checkpoint in the project. The first checkpoint might be \"キックオフ・前提確認会\" (M01). The second checkpoint might be \"中間レビュー会\" (M02). So checkpoint 2 might be the content of M02. The content of M02 includes \"2. 採用する評価指標の決定(業務指標含む)\". So the task ID related to that content might be A02? But A02 is about interest_rate/grade. Wait, A02 is \"interest_rate/grade の審査",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6813,
+      "completion_tokens": 900,
+      "total_tokens": 7713,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001617885,
+        "upstream_inference_prompt_cost": 9.87885e-05,
+        "upstream_inference_completions_cost": 6.3e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 897,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

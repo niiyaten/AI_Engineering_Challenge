@@ -1,0 +1,17 @@
+{
+  "answer_diffs": [
+    {
+      "index": 24,
+      "old": "AOMINE、13,556行",
+      "new": "AOMINE"
+    },
+    {
+      "index": 55,
+      "old": "AOMINE、14.5時間",
+      "new": "AOMINE"
+    }
+  ],
+  "route_diffs": [],
+  "method_diffs": [],
+  "evidence_count_diffs": []
+}

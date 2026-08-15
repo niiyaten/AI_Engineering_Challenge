@@ -1,0 +1,14 @@
+{
+  "eda": "EDA015",
+  "created_at": "2026-07-08T00:16:56",
+  "purpose": "Convert PowerPoint files into slide-level Markdown and structure JSON.",
+  "target_count": 26,
+  "outputs": {
+    "report": "EDA/EDA015/eda015_report.md",
+    "conversion_log": "EDA/EDA015/tables/pptx_conversion_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA015/eda015.py"
+  ]
+}

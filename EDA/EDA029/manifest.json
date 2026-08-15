@@ -1,0 +1,16 @@
+{
+  "eda": "EDA029",
+  "created_at": "2026-07-09T01:33:38",
+  "purpose": "Diagnose source type and failure area for non-correct EDA024 valid answers.",
+  "inputs": {
+    "eda028_classified": "EDA/EDA028/tables/eda024_valid_answer_classification.csv"
+  },
+  "outputs": {
+    "source_diagnosis": "EDA/EDA029/tables/eda024_failure_source_diagnosis.csv",
+    "source_type_summary": "EDA/EDA029/tables/source_type_summary.csv",
+    "failure_area_summary": "EDA/EDA029/tables/failure_area_summary.csv",
+    "next_fix_summary": "EDA/EDA029/tables/next_fix_summary.csv",
+    "report": "EDA/EDA029/eda029_report.md"
+  },
+  "diagnosis_target_count": 25
+}

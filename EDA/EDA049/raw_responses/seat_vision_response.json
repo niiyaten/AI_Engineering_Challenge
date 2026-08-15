@@ -1,0 +1,52 @@
+{
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "raw": {
+    "id": "gen-1783640159-tuNvmdL3a0ZIigFrGyxw",
+    "object": "chat.completion",
+    "created": 1783640159,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"seats\": [\n    {\n      \"pod\": \"POD 1\",\n      \"ext\": \"7002\",\n      \"name\": \"佐藤\",\n      \"role\": \"PM\",\n      \"x_order\": 1,\n      \"y_order\": 1,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"高橋(Exec)\"]\n    },\n    {\n      \"pod\": \"POD 1\",\n      \"ext\": \"7003\",\n      \"name\": \"鈴木\",\n      \"role\": \"DS\",\n      \"x_order\": 1,\n      \"y_order\": 2,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"佐藤(PM)\", \"山田(BA)\"]\n    },\n    {\n      \"pod\": \"POD 1\",\n      \"ext\": \"7005\",\n      \"name\": \"藤田\",\n      \"role\": \"BA\",\n      \"x_order\": 2,\n      \"y_order\": 2,\n      \"image_position\": \"右\",\n      \"nearby\": [\"鈴木(DS)\", \"池田(QA)\"]\n    },\n    {\n      \"pod\": \"POD 1\",\n      \"ext\": \"7006\",\n      \"name\": \"池田\",\n      \"role\": \"QA\",\n      \"x_order\": 2,\n      \"y_order\": 1,\n      \"image_position\": \"右\",\n      \"nearby\": [\"藤田(BA)\"]\n    },\n    {\n      \"pod\": \"POD 2\",\n      \"ext\": \"7101\",\n      \"name\": \"山田\",\n      \"role\": \"Exec\",\n      \"x_order\": 1,\n      \"y_order\": 1,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"伊藤(PM)\"]\n    },\n    {\n      \"pod\": \"POD 2\",\n      \"ext\": \"7102\",\n      \"name\": \"伊藤\",\n      \"role\": \"PM\",\n      \"x_order\": 1,\n      \"y_order\": 2,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"山田(Exec)\", \"渡辺(DS)\"]\n    },\n    {\n      \"pod\": \"POD 2\",\n      \"ext\": \"7103\",\n      \"name\": \"渡辺\",\n      \"role\": \"DS\",\n      \"x_order\": 2,\n      \"y_order\": 2,\n      \"image_position\": \"右\",\n      \"nearby\": [\"伊藤(PM)\"]\n    },\n    {\n      \"pod\": \"POD 2\",\n      \"ext\": \"7104\",\n      \"name\": \"斎藤\",\n      \"role\": \"DE\",\n      \"x_order\": 2,\n      \"y_order\": 1,\n      \"image_position\": \"右\",\n      \"nearby\": [\"井上(BA)\"]\n    },\n    {\n      \"pod\": \"POD 2\",\n      \"ext\": \"7105\",\n      \"name\": \"井上\",\n      \"role\": \"BA\",\n      \"x_order\": 2,\n      \"y_order\": 2,\n      \"image_position\": \"右\",\n      \"nearby\": [\"斎藤(DE)\"]\n    },\n    {\n      \"pod\": \"POD 3\",\n      \"ext\": \"7201\",\n      \"name\": \"中村\",\n      \"role\": \"Exec\",\n      \"x_order\": 1,\n      \"y_order\": 1,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"加藤(PM)\"]\n    },\n    {\n      \"pod\": \"POD 3\",\n      \"ext\": \"7202\",\n      \"name\": \"加藤\",\n      \"role\": \"PM\",\n      \"x_order\": 1,\n      \"y_order\": 2,\n      \"image_position\": \"中央\",\n      \"nearby\": [\"中村(Exec)\", \"山本(DS)\"]\n    },\n    {\n      \"pod\": \"POD 3\",\n      \"ext\": \"7203\",\n      \"name\": \"山本\",\n      \"role\": \"DS\",\n      \"x_order\": 2,\n      \"y_order\": 2,\n      \"image_position\": \"右\",\n      \"nearby\": [\"加藤(PM)\"]\n    },\n    {\n      \"pod\": \"POD 3\",\n      \"ext\": \"7204\",\n      \"name\": \"岡田\",\n      \"role\": \"DE\",\n      \"x_order\": 2,\n      \"y_order\": 1,\n      \"image_position\": \"右\",\n      \"nearby\": [\"清水(QA)\"]\n    },\n    {\n      \"pod\": \"POD 3\",\n      \"ext\": \"7206\",\n      \"name\": \"清水\",\n      \"role\": \"QA\",\n      \"x_order\": 2,\n      \"y_order\": 2,\n      \"image_position\": \"右\",\n      \"nearby\": [\"岡田(DE)\"]\n    }\n  ],\n  \"spatial_rules\": [\n    \"x_orderが大きいほど画像右側、y_orderが大きいほど画像下側\"\n  ],\n  \"qa_candidates\": {\n    \"佐藤の右側\": [\"鈴木(DS)\"],\n    \"井上の向かいEXT\": [\"斎藤(DE)\"]\n  }\n}\n```\n",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2583,
+      "completion_tokens": 1175,
+      "total_tokens": 3758,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "content_length": 2922
+}

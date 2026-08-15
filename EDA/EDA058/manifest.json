@@ -1,0 +1,13 @@
+{
+  "eda": "EDA058",
+  "purpose": "座席表以外の残件index 62を処理し、最終回答100件のソース元を精査",
+  "base_predictions": "EDA\\EDA057\\predictions\\eda057_cross_project_predictions.csv",
+  "output_csv": "EDA\\EDA058\\predictions\\eda058_model_diff_predictions.csv",
+  "output_zip": "EDA\\EDA058\\predictions\\eda058_model_diff_submission.zip",
+  "source_audit": "EDA\\EDA058\\tables\\answer_source_audit.csv",
+  "unknown_count": 2,
+  "unknown_indices": [
+    44,
+    58
+  ]
+}

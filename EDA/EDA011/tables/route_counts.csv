@@ -1,0 +1,15 @@
+﻿split,route,question_count
+test,code_reading,3
+test,diff_check,9
+test,document_whole_context,14
+test,fallback_bm25_llm,37
+test,format_extraction,17
+test,image_ocr,3
+test,table_calculation,17
+valid,code_reading,4
+valid,diff_check,1
+valid,document_whole_context,7
+valid,fallback_bm25_llm,8
+valid,format_extraction,2
+valid,image_ocr,1
+valid,table_calculation,7

@@ -1,0 +1,52 @@
+{
+  "model": "google/gemma-4-31b-it:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 1545,
+  "raw": {
+    "id": "gen-1783601760-LMi9KevOT3Ly6ItceNwd",
+    "object": "chat.completion",
+    "created": 1783601760,
+    "model": "google/gemma-4-31b-it-20260402:free",
+    "provider": "Google AI Studio",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"image_summary\": \"数値特徴量（Attr50, Attr13, Attr46, Attr4, Attr58, Attr41）の分布を示す6つのヒストグラムのまとめ画像。\",\n  \"visible_text\": [\n    \"数値特徴量の分布（上位6列）\",\n    \"Attr50 の分布\",\n    \"Attr13 の分布\",\n    \"Attr46 の分布\",\n    \"Attr4 の分布\",\n    \"Attr58 の分布\",\n    \"Attr41 の分布\",\n    \"件数\"\n  ],\n  \"tables\": [],\n  \"charts\": [\n    {\n      \"chart_name\": \"Attr50 の分布\",\n      \"x_axis\": \"Attr50 (0 to 35)\",\n      \"y_axis\": \"件数 (0 to 3500)\",\n      \"description\": \"0から5の間に鋭いピークを持つ右に裾を引いた分布。\"\n    },\n    {\n      \"chart_name\": \"Attr13 の分布\",\n      \"x_axis\": \"Attr13 (-0.6 to 0.8)\",\n      \"y_axis\": \"件数 (0 to 1750)\",\n      \"description\": \"0付近を中心とした山型の分布。\"\n    },\n    {\n      \"chart_name\": \"Attr46 の分布\",\n      \"x_axis\": \"Attr46 (0 to 30)\",\n      \"y_axis\": \"件数 (0 to 4000)\",\n      \"description\": \"0から5の間に非常に高いピークを持つ右に裾を引いた分布。\"\n    },\n    {\n      \"chart_name\": \"Attr4 の分布\",\n      \"x_axis\": \"Attr4 (0 to 40)\",\n      \"y_axis\": \"件数 (0 to 3500)\",\n      \"description\": \"0から5の間に鋭いピークを持つ右に裾を引いた分布。\"\n    },\n    {\n      \"chart_name\": \"Attr58 の分布\",\n      \"x_axis\": \"Attr58 (0.0 to 1.6)\",\n      \"y_axis\": \"件数 (0 to 2000)\",\n      \"description\": \"1.0付近にピークを持つ山型の分布。\"\n    },\n    {\n      \"chart_name\": \"Attr41 の分布\",\n      \"x_axis\": \"Attr41 (-2 to 6)\",\n      \"y_axis\": \"件数 (0 to 5000)\",\n      \"description\": \"0付近に非常に鋭いピークを持つ分布。\"\n    }\n  ],\n  \"seating_or_spatial_relations\": [],\n  \"answer_relevant_notes\": [\n    \"Attr50, Attr46, Attr4 は正の値に偏っており、右に長い裾を持つ分布特性がある。\",\n    \"Attr13, Attr58, Attr41 は特定の中心値（Attr13は0付近、Attr58は1.0付近、Attr41は0付近）にデータが集中している。\",\n    \"最も件数のピークが高いのはAttr41で、5000件近くに達している。\"\n  ]\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 556,
+      "completion_tokens": 750,
+      "total_tokens": 1306,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

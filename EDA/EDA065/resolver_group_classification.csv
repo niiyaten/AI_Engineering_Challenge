@@ -1,0 +1,36 @@
+﻿dataset,question_id,group,group_reason,strict_applicable,strict_correct,generic_top5_contains_label,generic_top10_contains_label,planner_candidate,recommended_next_action,confidence,requires_manual_review
+test,0,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,22,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,25,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,44,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,51,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,58,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,60,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,69,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,70,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,9,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,14,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,16,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,30,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,40,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,57,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,62,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,63,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,74,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,96,U,label incomplete or Strict output not observable,True,False,False,False,False,improve_label_or_observability,low,True
+test,2,A,Strict Resolver selected all labeled required documents,True,True,False,False,False,keep_strict_resolver,high,False
+test,3,A,Strict Resolver selected all labeled required documents,True,True,False,True,False,keep_strict_resolver,high,False
+test,4,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,19,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,39,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,41,A,Strict Resolver selected all labeled required documents,True,True,False,True,False,keep_strict_resolver,high,False
+test,43,A,Strict Resolver selected all labeled required documents,True,True,False,False,False,keep_strict_resolver,high,False
+test,49,A,Strict Resolver selected all labeled required documents,True,True,False,False,False,keep_strict_resolver,high,False
+test,56,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,72,C,Strict executed but did not select the labeled set and generic Top-10 also missed it,True,False,False,False,False,inspect_candidate_retrieval_or_strict_rule,high,False
+test,81,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,82,A,Strict Resolver selected all labeled required documents,True,True,False,False,False,keep_strict_resolver,high,False
+test,83,A,Strict Resolver selected all labeled required documents,True,True,False,False,False,keep_strict_resolver,high,False
+test,88,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,89,A,Strict Resolver selected all labeled required documents,True,True,True,True,False,keep_strict_resolver,high,False
+test,92,B,Strict did not select the labeled set; generic retrieval still exposes a candidate,True,False,True,True,True,planner_poc_with_document_probe,high,False

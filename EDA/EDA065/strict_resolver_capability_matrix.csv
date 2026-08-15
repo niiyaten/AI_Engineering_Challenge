@@ -1,0 +1,4 @@
+﻿capability_family,source_input,final_selection,evidence_relation,gate_relation,observability
+source selection planning,requirements + profiles + content verification,final_selected_file_ids,selected files become executor/evidence inputs,unresolved or unsupported source set can suppress execution,planning jsonl
+route registry,selected FileRecord list,none,route determines executor evidence schema,unsupported route can suppress,tool execution output
+executor,selected files plus extracted records,"may narrow relevant structures, not source plan",emits locations and used files,verification/evidence determines allowed,answer_results/execution outputs

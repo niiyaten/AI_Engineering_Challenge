@@ -1,0 +1,15 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "",
+  "content_length": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "reasoning_tokens": 0,
+  "raw": {
+    "error": {
+      "message": "Internal Server Error",
+      "code": 500
+    }
+  }
+}

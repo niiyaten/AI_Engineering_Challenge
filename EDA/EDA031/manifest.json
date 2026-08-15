@@ -1,0 +1,29 @@
+{
+  "eda": "EDA031",
+  "purpose": "Send EDA030 table calculation results to OpenRouter LLMs and compare answers to valid gold.",
+  "inputs": [
+    "EDA\\EDA030\\tables\\table_valid_calculation_results.csv"
+  ],
+  "outputs": [
+    "EDA/EDA031/tables/llm_table_answer_log.csv",
+    "EDA/EDA031/tables/llm_table_attempt_log.csv",
+    "EDA/EDA031/prompts/valid_XXX_prompt.json",
+    "EDA/EDA031/eda031_report.md"
+  ],
+  "models": [
+    "openai/gpt-oss-120b:free",
+    "openai/gpt-oss-20b:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "deepseek/deepseek-chat-v3-0324:free",
+    "tencent/hy3:free",
+    "poolside/laguna-xs-2.1:free",
+    "cohere/north-mini-code:free",
+    "nvidia/nemotron-3.5-content-safety:free"
+  ],
+  "free_model_fetch_status": "ok",
+  "question_count": 7,
+  "llm_answer_count": 7,
+  "similar_to_gold_count": 6,
+  "similar_to_computed_count": 7,
+  "secret_handling": "API key is read from .apikey or environment variable and is not stored."
+}

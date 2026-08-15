@@ -1,0 +1,101 @@
+# test_090 prompt
+
+## system
+
+あなたは社内共有ドライブの資料だけを根拠に回答するRAG回答器です。提示された根拠以外の知識を使わないでください。「わかりません」と答えることは禁止です。根拠が弱い場合でも、提示根拠から最も妥当な短い回答を作ってください。回答は提出用の最終回答だけにしてください。説明、根拠番号、ファイルパス、前置きは不要です。HTMLタグ、Markdown記法、引用符の装飾は回答に含めないでください。計算が必要な場合は、根拠にある数値だけを使って計算し、単位を付けて短く答えてください。
+
+## user
+
+以下の質問に答えてください。
+
+質問: 青潮モビリティサービスのスケジュール.xlsxにおいて、バッファとして使用した工数の合計は何時間ですか。
+
+推定route: table_calculation
+
+route別の注意: 表・CSV・Excelの値を読み取り、必要なら計算して短く答える。
+
+根拠:
+
+[根拠 1]
+score: 133.077463
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx
+record_type: metadata
+text:
+ファイル名: スケジュール.xlsx 元パス: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx ファイル種別: xlsx
+
+[根拠 2]
+score: 101.896111
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx
+record_type: xlsx_sheet
+text:
+Excelファイル: スケジュール.xlsx シート: WBSスケジュール 使用範囲: A1:M33 列: No, タスクID, 種別, フェーズ, タスク名, 詳細・成果物, 担当者, 開始日, 終了日, 工数(h), 依存タスク, ステータス, 備考 グラフ数: 0 サンプル: | No | タスクID | 種別 | フェーズ | タスク名 | 詳細・成果物 | 担当者 | 開始日 | 終了日 | 工数(h) | 依存タスク | ステータス | 備考 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 1 | T01 | タスク | 1. 立上げ・定義確認 | キックオフ会議実施 | キックオフ議事録、進行計画合意 | 伊藤 翔太 | 2025-07-23T00:00:00 | 2025-07-23T00:00:00 | nan | なし | 完了 | MS1: キックオフ完了 / CP1 | | 2 | T02 | タスク | 1. 立上げ・定義確認 | データ受領・読込確認 | 読込確認メモ | 木村 拓海 | 2025-07-23T00:00:00 | 2025-07-24T00:00:00 | nan | T01 | 完了 | nan | | 3 | T03 | タスク | 1. 立上げ・定義確認 | データ定義差異確認（yr・workingday含む） | 定義差異確認メモ | 鈴木 美咲 | 2025-07-24T00:00:00 | 2025-07-28T00:00:00 | nan | T02 | 完了 | クリティカルパス上 | | 4 | T04 | タスク | 1. 立上げ・定義確認 | データ品質確認（欠損・型・値域・分布） | 品質確認結果 | 木村 拓海 | 2025-07-24T00:00:00 | 2025-07-28T00:00:00 | nan | T02 | 完了 | nan | | 5 | T05 | タスク | 1. 立上げ・定義確認 | 初期EDA・需要構造把握 | 初期EDA図表 | 鈴木 美咲 | 2025-07-25T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04 | 完了 | クリティカルパス上 | | 6 | T06 | タスク | 1. 立上げ・定義確認 | 課題管理表・分析前提整理 | 課題管理表、分析前提一覧 | 伊藤 翔太 | 2025-07-25T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04 | 完了 | 非クリティカル（重要支援タスク） | | 7 | MS2 | マイルストーン | 1. 立上げ・定義確認 | データ定義・品質確認完了 | 定義差異確認結果整理済、前処理方針反映可能 | 鈴木 美咲 | 2025-07-29T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04, T05, T06 | 完了 | CP2 / 到達条件: yr・workingday定義差異確認完了 | | 8 | B01 | バッファ | 1. 立上げ・定義確認 | リスクバッファ① | 定義差異確認の追加深掘り対応 | ― | 2025-07-28T00:00:00 | 2025-07-29T00:00:00 | 2.0 | nan | 完了 | nan |
+
+[根拠 3]
+score: 101.840303
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx
+record_type: xlsx_sheet
+text:
+Excelファイル: スケジュール.xlsx シート: WBSスケジュール_rev 使用範囲: A1:M33 列: No, タスクID, 種別, フェーズ, タスク名, 詳細・成果物, 担当者, 開始日, 終了日, 工数(h), 依存タスク, ステータス, 備考 グラフ数: 0 サンプル: | No | タスクID | 種別 | フェーズ | タスク名 | 詳細・成果物 | 担当者 | 開始日 | 終了日 | 工数(h) | 依存タスク | ステータス | 備考 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 1 | T01 | タスク | 1. 立上げ・定義確認 | キックオフ会議実施 | キックオフ議事録、進行計画合意 | 伊藤 翔太 | 2025-07-23T00:00:00 | 2025-07-23T00:00:00 | nan | なし | 完了 | MS1: キックオフ完了 / CP1 | | 2 | T02 | タスク | 1. 立上げ・定義確認 | データ受領・読込確認 | 読込確認メモ | 木村 拓海 | 2025-07-23T00:00:00 | 2025-07-24T00:00:00 | nan | T01 | 完了 | nan | | 3 | T03 | タスク | 1. 立上げ・定義確認 | データ定義差異確認（yr・workingday含む） | 定義差異確認メモ | 鈴木 美咲 | 2025-07-24T00:00:00 | 2025-07-28T00:00:00 | nan | T02 | 完了 | クリティカルパス上 | | 4 | T04 | タスク | 1. 立上げ・定義確認 | データ品質確認（欠損・型・値域・分布） | 品質確認結果 | 木村 拓海 | 2025-07-24T00:00:00 | 2025-07-28T00:00:00 | nan | T02 | 完了 | nan | | 5 | T05 | タスク | 1. 立上げ・定義確認 | 初期EDA・需要構造把握 | 初期EDA図表 | 鈴木 美咲 | 2025-07-25T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04 | 完了 | クリティカルパス上 | | 6 | T06 | タスク | 1. 立上げ・定義確認 | 課題管理表・分析前提整理 | 課題管理表、分析前提一覧 | 伊藤 翔太 | 2025-07-25T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04 | 完了 | 非クリティカル（重要支援タスク） | | 7 | MS2 | マイルストーン | 1. 立上げ・定義確認 | データ定義・品質確認完了 | 定義差異確認結果整理済、前処理方針反映可能 | 鈴木 美咲 | 2025-07-29T00:00:00 | 2025-07-29T00:00:00 | nan | T03, T04, T05, T06 | 完了 | CP2 / 到達条件: yr・workingday定義差異確認完了 | | 8 | B01 | バッファ | 1. 立上げ・定義確認 | リスクバッファ① | 定義差異確認の追加深掘り対応 | ― | 2025-07-28T00:00:00 | 2025-07-29T00:00:00 | 2.0 | nan | 完了 | nan |
+
+[根拠 4]
+score: 94.936446
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/06.報告書/株式会社青潮モビリティサービス_最終報告.pdf
+record_type: metadata
+text:
+ファイル名: 株式会社青潮モビリティサービス_最終報告.pdf 元パス: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/06.報告書/株式会社青潮モビリティサービス_最終報告.pdf ファイル種別: pdf
+
+[根拠 5]
+score: 94.51809
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-07-23.docx
+record_type: generic_chunk
+text:
+# Word Markdown: 会議録_2025-07-23.docx ## Source - raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-07-23.docx - source_sha1: 3c3572d24cdefdb7e21629593a7a252bfa6067bf - paragraph_count: 83 - table_count: 1 - image_count: 0 ## Body ## 会議録 ## 1. 会議情報 会議ID: M01 会議種別: キックオフ 日時: 2025-07-23 目的: プロジェクト開始合意、目的変数 cnt と 1時間粒度の確認、data\train.tsv の受領確認、yr および workingday の定義不整合確認方針を整理する 参加者: 発注者（株式会社青潮モビリティサービス）: 高山 拓海 受託者（株式会社データアステル）: 伊藤 翔太、鈴木 美咲、木村 拓海 ## 2. 議題 プロジェクト進行計画（スケジュール／マイルストーン）の承認 目的変数および解析粒度の確定（cnt, 1時間） データ受領状況（data\train.tsv）の確認 yr / workingday 等の定義不整合検討方針 課題管理・確認方法の決定（課題管理表、週次定例） 次回会議予定と当面のアクション確認 ## 3. 主要議論 <!-- block_index=18 type=paragraph style=Com
+
+[根拠 6]
+score: 92.971167
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/報告資料_2025-07-23.docx
+record_type: generic_chunk
+text:
+# Word Markdown: 報告資料_2025-07-23.docx ## Source - raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/報告資料_2025-07-23.docx - source_sha1: 0b67512ffbe259c75b47b5cb63c082d1dc4ee608 - paragraph_count: 86 - table_count: 0 - image_count: 0 ## Body ## 分析進捗報告書 ## 1. 報告サマリー チェックポイント: M01（キックオフ） 日付: 2025-07-23（報告対象期間: 2025-07-23 to 2025-07-23） — analysis.checkpoint_stage は “kickoff”（プレ実装フェーズ）に従います。 現フェーズのステータス: 立上げ / 計画合意フェーズ（実装・学習は未着手） analysis.results_visibility: “no_model_results”（現時点でモデル学習・評価結果は報告対象外） analysis.implementation_status: “planning_only” 会議・決定予定（meeting_plan に基づく想定）: 進行計画承認、初期分析前提合意、確認事項と課題管理方法の決定 開いているアクション: 0件（Report facts JSON.prior_state.open_action_count = 0） ※議事録が未登録のため、実会議で発生した宿題の有無は議事録登録後に正式に反映します。 ## 2. 進捗状況 キックオフ（M01、2025-07-23）をチェックポイントとして位置付け、立上げ・定義確認フェーズに着手しています（stage: kickoff）。 スケジュール上の主要マイルストーン（抜粋）と現状トレース（参照: スケジュール / WBS） MS1: キックオフ完了（2025-07-23） — チェックポイント
+
+[根拠 7]
+score: 84.801922
+source_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/報告資料_2025-08-06.docx
+record_type: generic_chunk
+text:
+lock_index=83 type=paragraph style=Compact --> MS8（最終報告・検収会 / M03）: 2025-08-26 ## 7. 経営/PM向け補足 商務（Report facts JSON.commercial / Project facts）の要点 契約形態: time_and_materials 想定総工数: 170 時間（project_facts） 時間単価: 25,000 JPY / 時間（project_facts） 見込金額（税抜） : 4,250,000 JPY 消費税額: 425,000 JPY 見込金額（税込） : 4,675,000 JPY 支払スケジュール: 最終一括精算（検収完了後5営業日以内） — 金額は上記（Report facts JSON に合致） 要決裁/承認依頼（現時点での経営/PM判断を要する事項） クライアント側での workingday / holiday の公式定義の承認（A06） — 早期確認要請。 中間で提示した改善方針（T04 を踏まえた追加実験）についての継続実施の承認（追加データ取得やスコープ変更が発生する場合は別途見積）。 次フェーズ（最終報告まで）の品質ゲートとして、A02/A03/A04 の完了を MS5 進行条件とする提案（推奨）。 現時
+
+[根拠 8]
+score: 84.59499
+source_path: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/target_distribution.png
+record_type: image
+text:
+画像ファイル: target_distribution.png パス: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/target_distribution.png
+
+[根拠 9]
+score: 84.59499
+source_path: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/numeric_distribution_top6.png
+record_type: image
+text:
+画像ファイル: numeric_distribution_top6.png パス: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/numeric_distribution_top6.png
+
+[根拠 10]
+score: 84.59499
+source_path: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/missing_rate_top20.png
+record_type: image
+text:
+画像ファイル: missing_rate_top20.png パス: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/missing_rate_top20.png
+
+[根拠 11]
+score: 84.59499
+source_path: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/feature_correlation_heatmap.png
+record_type: image
+text:
+画像ファイル: feature_correlation_heatmap.png パス: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/feature_correlation_heatmap.png
+
+[根拠 12]
+score: 84.59499
+source_path: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/date_feature_trend.png
+record_type: image
+text:
+画像ファイル: date_feature_trend.png パス: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/reports/figures/date_feature_trend.png

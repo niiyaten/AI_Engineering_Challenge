@@ -1,0 +1,7 @@
+﻿recommended_next_step,context_quality_for_llm,question_count,answer_hit_top5_rate,mean_top1_score
+LLM向けMarkdownコンテキストを作る,ready_for_llm,10,1.0,222.3693
+CSV/XLSXをpandas/openpyxlで直接処理する,needs_table_tool,8,0.0,286.8441
+抽出対象と検索重みを見直す,needs_better_retrieval,8,0.0,229.5783
+Word/PPTの書式メタ情報をRAG向けに正規化する,needs_format_extraction,2,0.0,142.4655
+OCRまたは画像理解の抽出器を追加する,needs_image_ocr,1,0.0,139.5378
+ファイル差分をスライド・段落単位で比較する,needs_diff_tool,1,0.0,155.5413

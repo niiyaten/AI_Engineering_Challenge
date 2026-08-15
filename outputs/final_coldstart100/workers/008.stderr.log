@@ -1,0 +1,2 @@
+/home/niiya/rag-test/ai_engineering_challenge_20260813/.venv/lib/python3.12/site-packages/openpyxl/reader/drawings.py:67: UserWarning: wmf image format is not supported so the image is being dropped
+  warn(msg)

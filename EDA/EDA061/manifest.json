@@ -1,0 +1,10 @@
+{
+  "eda": "EDA061",
+  "input_csv": "data\\raw\\share\\share\\質問回答\\questions_test.csv",
+  "output_csv": "data\\processed\\share\\share\\質問回答\\questions_test_expanded.csv",
+  "replacement_log": "EDA\\EDA061\\abbreviation_replacement_log.csv",
+  "report": "EDA\\EDA061\\eda061_report.md",
+  "question_count": 100,
+  "expanded_question_count": 93,
+  "replacement_count": 127
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-coldstart-audit50-checkpoint"
+version = "2.3.0"
+description = "Cold-start source-only solver for both audited 50-question batches"
+requires-python = ">=3.11"
+dependencies = [
+  "lxml>=5.0",
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "Pillow>=10.0",
+  "PyMuPDF>=1.24",
+  "python-docx>=1.1",
+  "python-pptx>=1.0",
+  "pypdf>=5.0",
+  "scikit-learn>=1.5",
+  "opencv-python-headless>=4.10",
+  "pytesseract>=0.3.13",
+  "msoffcrypto-tool>=5.4",
+  "easyocr>=1.7.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+rag-audit50 = "rag_recovery.audit50_cli:main"
+rag-verify-audit50 = "rag_recovery.audit50_verify:main"
+rag-recovery = "rag_recovery.cli:main"
+rag-build-catalog = "rag_recovery.catalog_builder:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag_recovery"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

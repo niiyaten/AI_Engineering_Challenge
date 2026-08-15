@@ -1,0 +1,2120 @@
+﻿index,old_route,old_subtype,new_route_candidate,question,llm_answer,answer_after_eda046,adopted_by_eda046,status,finish_reason,used_paths,context_chars,context_preview,raw_response_path
+18,document_whole_context,document_whole_context,meeting_action_status_lookup,白峰信用リスク評価の会議ID:M04の会議録にて、進捗サマリが記載されているページ番号を答えてください。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-07-15.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-13.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-27.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-06-17.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.structure.json,7405,"## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.md
+L1: # PDF Markdown: 会議録_2025-05-13.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf`
+L5: - source_sha1: `a728472df6885d22a74def872e2eb20788498eba`
+L6: - page_count: 4
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.md
+L1: # PDF Markdown: 会議録_2025-05-27.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf`
+L5: - source_sha1: `0383b90f578d2558d83ed7a672095c9baa7f694b`
+L6: - page_count: 5
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.md
+L1: # PDF Markdown: 会議録_2025-06-17.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf`
+L5: - source_sha1: `72412caa8c9a00a209103058fc912fdc70ed3fb6`
+L6: - page_count: 4
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-07-15.pdf.md
+L1: # PDF Markdown: 会議録_2025-07-15.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-07-15.pdf`
+L5: - source_sha1: `ccbb6c01c5b906428da748de8fa5f7c1d1af4ebb`
+L6: - page_count: 4
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-13.pdf.md
+L1: # PDF Markdown: 報告資料_2025-05-13.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-13.pdf`
+L5: - source_sha1: `fadab09a564de05ff108c4ca7f5f711d098b141c`
+L6: - page_count: 3
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-27.pdf.md
+L1: # PDF Markdown: 報告資料_2025-05-27.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-05-27.pdf`
+L5: - source_sha1: `d99423ef1a8906e726bd4d96a70a9b2cbbc76112`
+L6: - page_count: 4
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-06-17.pdf.md
+L1: # PDF Markdown: 報告資料_2025-06-17.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/報告資料/報告資料_2025-06-17.pdf`
+L5: - source_sha1: `2f892b88b3f5b70a09be293932e9a76d102226e7`
+L6: - page_count: 4
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-13.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-05-13.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""a728472df6885d22a74def872e2eb20788498eba"",
+L13: ""text"": """",
+L14: ""char_count"": 0,
+L15: ""width"": 793.92,
+L16: ""height"": 1122.72,
+L17: ""rotation"": 0
+L21: ""text"": """",
+L22: ""char_count"": 0,
+L23: ""width"": 793.92,
+L24: ""height"": 1122.72,
+L25: ""rotation"": 0
+L29: ""text"": """",
+L30: ""char_count"": 0,
+L31: ""width"": 793.92,
+L32: ""height"": 1122.72,
+L33: ""rotation"": 0
+L37: ""text"": """",
+L38: ""char_count"": 0,
+L39: ""width"": 793.92,
+L40: ""height"": 1122.72,
+L41: ""rotation"": 0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-05-27.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-05-27.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""0383b90f578d2558d83ed7a672095c9baa7f694b"",
+L13: ""text"": """",
+L14: ""char_count"": 0,
+L15: ""width"": 793.92,
+L16: ""height"": 1122.72,
+L17: ""rotation"": 0
+L21: ""text"": """",
+L22: ""char_count"": 0,
+L23: ""width"": 793.92,
+L24: ""height"": 1122.72,
+L25: ""rotation"": 0
+L29: ""text"": """",
+L30: ""char_count"": 0,
+L31: ""width"": 793.92,
+L32: ""height"": 1122.72,
+L33: ""rotation"": 0
+L37: ""text"": """",
+L38: ""char_count"": 0,
+L39: ""width"": 793.92,
+L40: ""height"": 1122.72,
+L41: ""rotation"": 0
+L45: ""text"": """",
+L46: ""char_count"": 0,
+L47: ""width"": 793.92,
+L48: ""height"": 1122.72,
+L49: ""rotation"": 0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/05.会議/会議録/会議録_2025-06-17.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-06-17.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""72412caa8c9a00a209103058fc912fdc70ed3fb6"",
+L13: ""text"": """",
+L14: ""char_count"": 0,
+L15: ""width"": 793.92,
+L16: ""height"": 11",EDA/EDA046/raw_responses/index_018.json
+33,image_ocr,line_search,chart_value_extraction,青潮モビリティサービスの基礎分析.docxのグラフ2で、x=3のときの青色の折れ線のyの値を小数第5位で答えてください。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-07-23.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-08-06.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-08-26.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/報告資料_2025-07-23.docx.md,9729,"## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md
+L1: # Word Markdown: 基礎分析.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx`
+L5: - source_sha1: `7f61e786679cec659601f5547c20da7a980adad0`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json"",
+L5: ""file_name"": ""基礎分析.docx"",
+L6: ""source_sha1"": ""7f61e786679cec659601f5547c20da7a980adad0"",
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.md
+L1: # Word Markdown: 契約書.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx`
+L5: - source_sha1: `a8c11a4d30270108a751915d9d9a4482ef798666`
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L16: 株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。
+L18: <!-- block_index=3 type=paragraph style=Body Text -->
+L19: 本契約の締結日兼効力発生日は、2025-07-23とする。
+L27: <!-- block_index=6 type=paragraph style=Compact -->
+L28: 会社名：株式会社青潮モビリティサービス
+L114: <!-- block_index=30 type=paragraph style=Compact -->
+L115: 中間報告書、最終報告書等の成果物作成
+L118: <!-- block_index=31 type=paragraph style=Compact -->
+L119: 次フェーズに向けた追加データ要件・実装論点の整理
+L121: <!-- block_index=32 type=paragraph style=Heading 3 -->
+L122: ### 3.2 前提条件
+L124: <!-- block_index=33 type=paragraph style=First Paragraph -->
+L125: 本業務の前提条件は、以下のとおりとする。
+L127: <!-- block_index=34 type=paragraph style=Compact -->
+L128: 学習データの正本は data\train.tsv とする。
+L131: <!-- block_index=35
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md
+L1: # PowerPoint Markdown: 基礎分析.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx`
+L5: - source_sha1: `33e6925b80862a150f26bceb5f816ed93306f4a3`
+L8: - image_count: 1
+L9: - chart_count: 0
+L17: #### Image
+L18: - image_path: `data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf`
+L19: - content_type: `image/x-wmf`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""a8c11a4d30270108a751915d9d9a4482ef798666"",
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L36: ""runs"": [
+L37: {
+L38: ""text"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L39: ""bold"": false,
+L129: ""style"": ""Compact"",
+L130: ""text"": ""会社名：株式会社青潮モビリティサービス"",
+L131: ""markdown"": ""会社名：株式会社青潮モビリティサービス"",
+L132: ""runs"": [
+L133: {
+L134: ""t
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-07-23.docx.md
+L1: # Word Markdown: 会議録_2025-07-23.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-07-23.docx`
+L5: - source_sha1: `3c3572d24cdefdb7e21629593a7a252bfa6067bf`
+L18: <!-- block_index=3 type=paragraph style=Compact -->
+L19: 会議ID: M01
+L37: <!-- block_index=8 type=paragraph style=Compact -->
+L38: 発注者（株式会社青潮モビリティサービス）: 高山 拓海
+L115: <!-- block_index=30 type=paragraph style=Compact -->
+L116: 契約は time_and_materials、見込金額・支払条件の理解を確認（請求は最終一括精算、検収後5営業日以内）。
+L118: <!-- block_index=31 type=paragraph style=Heading 2 -->
+L119: ## 4. 進捗サマリ
+L121: <!-- block_index=32 type=paragraph style=Compact -->
+L122: 現フェーズ: 立上げ / 計画合意（実装・学習は未着手）
+L125: <!-- block_index=33 type=paragraph style=Compact -->
+L126: 本キックオフ（MS1）を完了。進行計画、当面のタスク（T02〜T05相当）および課題管理方式を合意。
+L129: <!-- block_index=34 type=paragraph style=Compact -->
+L130: 優先対応事項（Week1）: データ受領・読込確認、yr/workingday の定義差異確認、データ品質確認、初期EDA。MS2（2025-07-29）を該当フェーズの完了ゲートとする。
+L132: <!-- block_index=35 type=paragraph style=Heading 2 -->
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-08-06.docx.md
+L1: # Word Markdown: 会議録_2025-08-06.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/会議録/会議録_2025-08-06.docx`
+L5: - source_sha1: `186aa9f2d366963322e10f6c508a4c8bb89755a6`
+L18: <!-- block_index=3 type=paragraph style=Compact -->
+L19: 会議ID: M02
+L37: <!-- block_inde",EDA/EDA046/raw_responses/index_033.json
+38,table_calculation,line_search,cross_project_contract_aggregation,社内管理のAPRに照らして、APR-M3が必要な案件を主略称ですべて挙げ、それらの契約金額(税込)の合計を答えてください。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json | data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md | data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.md,8437,"## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md
+L1: # データアステル社内管理_決裁基準
+L5: 本規程は、案件の契約金額および契約条件に応じた社内決裁レベルを定め、提案・契約・請求に関する承認プロセスを統一することを目的とする。
+L7: ## 2. 通常の決裁基準
+L9: 契約金額（税込）に応じた基本の決裁レベルは次の通りとする。
+L11: | 契約金額（税込） | 必要な承認 |
+L12: |---|---|
+L22: 医療機関、医療法人、病院、診療所その他これに準ずる案件は、個人情報・機微情報の取扱いおよび説明責任を踏まえ、通常の決裁基準より **1段階上** の承認を必要とする。
+L33: この基準は通常の決裁基準および医療案件ルールより優先して適用する。ただし、医療案件かつ `time_and_materials` 契約であり、通常基準から1段階上げた結果が本部長承認に達する場合は、本部長承認を要する。
+L39: 1. 通常の決裁基準を契約金額（税込）から判定する
+L40: 2. 医療案件である場合は 1段階引き上げる
+L45: - 本規程における「契約金額」は、提案時の見込金額ではなく、契約締結時点で社内決裁に付された税込金額を原則とする。
+L46: - 契約変更により税込金額または契約形態が変わる場合は、必要に応じて再決裁を行う。
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json"",
+L5: ""file_name"": ""データアステル社内管理_決裁基準.md"",
+L6: ""file_type"": ""md"",
+L16: ""level"": 1,
+L17: ""text"": ""データアステル社内管理_決裁基準""
+L18: },
+L24: ""level"": 2,
+L25: ""text"": ""2. 通常の決裁基準""
+L26: },
+
+## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/座席表.pptx`
+L5: - source_sha1: `66c04aff85add37f7ee682c58033be604d0f8f71`
+L15: #### Image
+L16: - image_path: `data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png`
+L17: - content_type: `image/png`
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/社内用語集.docx`
+L5: - source_sha1: `f36ea5cc08caab893e5c457a167079c8008b0169`
+L36: | 座席表 | FM | Floor Map |
+L37: | 社内管理資料 | IM | Internal Management |
+L38: | 配布版 | DIST | 配布用に整えた版 |
+L116: | 実績工数 | ACTH | Actual Hours |
+L117: | 税込金額 | GROSS | Tax Included |
+L118: | 税抜金額 | NET | Tax Excluded |
+L119: | 決裁基準 | APR | Approval Rule |
+L120: | 課長承認 | APR-M1 | Manager Lv1 |
+L121: | 部長承認 | APR-M2 | Manager Lv2 |
+L122: | 本部長承認 | APR-M3 | Manager Lv3 |
+L123: | 支払条件 | PAYTERM | Payment Term |
+L134: | 契約差分 | CT-DELTA | 契約変更点 |
+L135: | 一次稟議 | APR-1 | 基本承認 |
+L136: | 二次稟議 | APR-2 | 追加承認 |
+L137: | 特例承認 | EX-APR | 例外案件向け |
+L138: | 差戻し | REMAND | 修正差戻し |
+L139: | 条件付き承認 | COND-APR | 条件付きで通す場合 |
+L140: | 監査確認 | AUD-CHK | 監査室経由確認 |
+L254: <!-- block_index=15 type=paragraph style=Normal -->
+L255: **7. 社内管理・運用**
+L259: | --- | --- | --- |
+L260: | 社内管理フォルダ | IM | Internal Management |
+L261: | パスワード導出規則 | PW-RULE | Password Rule |
+L262: | 決裁基準 | APR-RULE | Approval Rule 
+
+## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/座席表.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets"",
+L6: ""file_name"": ""座席表.pptx"",
+L32: ""image"": {
+L33: ""image_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png"",
+L34: ""image_ext"": ""png"",
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/社内用語集.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json"",
+L5: ""file_name"": ""社内用語集.docx"",
+L149: [
+L150: ""社内管理資料"",
+L151: ""IM"",
+L289: ],
+L290: ""markdown"": ""| 正式名称 | 社内用語 | 補足 |\n| --- | --- | --- |\n| 提案書 | PP | Proposal Pack / Proposal Presentation |\n| 提案補足資料 | PP-ADD | 提案書の補足・別冊 |\n| 契約書 | CT | Contract |\n| 契約別紙 | CT-APP | 契約付属文書 |\n| スケジュール | PL | Plan |\n| 計画資料 | PLAN | スケジュール以外の計画資料も含めるとき |\n| 会議録 | MM | Meeting Minutes |\n| 報告資料 | RP | Report Pack |\n| 会議投影版 | RP-DECK | 会議で投影する版 |\n| 最終報告書 | FR | Final Report |\n| 調査資料 | RS | Research Sheet |\n| 座席表 | FM | Floor Map |\n| 社内管理資料 | IM | Internal Management |\n| 配布版 | DIST | 配布用に整えた版 |\n| 説明台本 | SCRIPT | 発表・説明用メモ |\n| レビュー記録 | RVLOG | レビューコメント記録 |\n| 参考別冊 | ANNEX | 参考資料束 |\n| 社内
+L291: },
+L545: [
+L546: ""税込金額"",
+L547: ""GROSS"",
+L555: [
+L556: ""決裁基準"",
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx`
+L5: - source_sha1: `3c398b562eabcd2eadbf6482c616b72a814cf92d`
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json"",
+L5: ""file_name"": ""データアステル社内規定_パスワード導出規則.docx"",
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジ",EDA/EDA046/raw_responses/index_038.json
+43,fallback_bm25_llm,line_search,contract_alias_contact_lookup,東都のCTにおいて、甲側の主担当者をフルネームで教えてください。,石川 直樹,石川 直樹,True,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/README.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/eda.py.md,10682,"## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""f13fe2b719851b2b5605d6258b2ffc4f73efb0d2"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""株式会社東都人材プラットフォーム（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、甲が乙に委託するデータ分析業務に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""株式会社東都人材プラットフォーム（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、甲が乙に委託するデータ分析業務に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L36: ""runs"": [
+L37: {
+L38: ""text"": ""株式会社東都人材プラットフォーム（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、甲が乙に委託するデータ分析業務に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.md
+L1: # Word Markdown: 契約書.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx`
+L5: - source_sha1: `f13fe2b719851b2b5605d6258b2ffc4f73efb0d2`
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## データ分析業務委託契約書
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L16: 株式会社東都人材プラットフォーム（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、甲が乙に委託するデータ分析業務に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。
+L24: <!-- block_index=5 type=paragraph style=Compact -->
+L25: 会社名：株式会社東都人材プラットフォーム
+L27: <!-- block_index=6 type=paragraph style=Compact -->
+L28: 部署名：人事戦略部 人材データ活用室
+L30: <!-- block_index=7 type=paragraph style=Compact -->
+L31: 主担当者：石川 直樹
+L33: <!-- block_index=8 type=paragraph style=Compact -->
+L34: 役職：人事戦略部長
+L39: <!-- block_index=10 type=paragraph style=Compact -->
+L40: 会社名：株式会社データアステル
+L42: <!-- block_index=11 type=paragraph style=Compact -->
+L43: 部署名：データサイエンス部
+L54: <!-- block_index=15 type=paragraph style=Compact -->
+L55: 乙が本契約に基づき実施する業務（以下「本業務」という。）は、以下のとおりと
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/提案書.pptx.assets"",
+L6: ""file_name"": ""提案書.pptx"",
+L9: ""slide_count"": 16,
+L10: ""text_shape_count"": 121,
+L11: ""table_count"": 2,
+L13: ""chart_count"": 0,
+L14: ""slides"": [
+L15: {
+L16: ""slide_number"": 1,
+L17: ""notes"": """",
+L18: ""shape_count"": 3,
+L19: ""shapes"": [
+L20: {
+L28: ""height_pt"": 188.0,
+L29: ""text"": ""データ分析プロジェクト提案書"",
+L30: ""text_frame"": {
+L31: ""text"": ""データ分析プロジェクト提案書"",
+L32: ""paragraphs"": [
+L33: {
+L34: ""text"": ""データ分析プロジェクト提案書"",
+L35: ""level"": 0,
+L37: {
+L38: ""text"": ""データ分析プロジェクト提案書"",
+L39: ""bold"": true,
+L62: ""height_pt"": 130.37,
+L63: ""text"": ""収入クラス予測の初期分析と業務示唆の提示\n\n株式会社データアステル データサイエンス部\n→ 株式会社東都人材プ
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md.structure.json"",
+L5: ""file_name"": ""カラム説明.md"",
+L16: ""level"": 3,
+L17: ""text"": ""train.csv""
+L18: }
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.structure.json"",
+L5: ""normalized_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.data.csv"",
+L6: ""file_name"": ""train.csv"",
+L18: ""Major"",
+L19: ""Profession"",
+L20: ""Industry"",
+L23: ],
+L24: ""dtypes"": {
+L25: ""id"": ""str"",
+L30: ""Major"": ""str"",
+L31: ""Profession"": ""str"",
+L32: ""Industry"": ""str"",
+L42: ""Major"": 112,
+L43: ""Profession"": 0,
+L44: ""Industry"": 0,
+L52: ""Age"": ""25-29"",
+L53: ""Country"": ""United States of America"",
+L54: ""Education"": ""Master’s degree"",
+L55: ""Major"": ""Engineering (non-computer focused)"",
+L56: ""Profession"": ""Data Analyst"",
+L57: ""Industry"": ""Medical/Pharmaceutical"",
+L67: ""Major"": ""Other"",
+L68: ""Profession"": ""Data Scientist"",
+L69: ""Industry
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx.structure.json
+L1: {
+",EDA/EDA046/raw_responses/index_043.json
+44,fallback_bm25_llm,line_search,seating_chart_spatial_ocr,IMにあるFMにおいて、佐藤さんから見て右側に座っている人の名前をすべて挙げてください。,情報が不足しています,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md | data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_outputs/experiments/leaderboard.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_outputs/experiments/leaderboard.csv.md,10832,"## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md
+L1: # PowerPoint Markdown: 座席表.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/座席表.pptx`
+L5: - source_sha1: `66c04aff85add37f7ee682c58033be604d0f8f71`
+L7: - table_count: 0
+L8: - image_count: 1
+L9: - chart_count: 0
+L15: #### Image
+L16: - image_path: `data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png`
+L17: - content_type: `image/png`
+
+## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/座席表.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets"",
+L6: ""file_name"": ""座席表.pptx"",
+L7: ""file_type"": ""pptx"",
+L9: ""slide_count"": 1,
+L10: ""text_shape_count"": 0,
+L11: ""table_count"": 0,
+L12: ""image_count"": 1,
+L13: ""chart_count"": 0,
+L28: ""height_pt"": 714.0,
+L29: ""text"": """",
+L30: ""text_frame"": null,
+L31: ""table"": null,
+L32: ""image"": {
+L33: ""image_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png"",
+L34: ""image_ext"": ""png"",
+L35: ""content_type"": ""image/png"",
+L36: ""bytes"": 1688123,
+L49: ""height_pt"": 66.0,
+L50: ""text"": """",
+L51: ""text_frame"": {
+L52: ""text"": """",
+L53: ""paragraphs"": [
+L54: {
+L55: ""text"": """",
+L56: ""level"": 0,
+L61: ""table"": null,
+L62: ""image"": null,
+L63: ""chart"": null
+L73: ""height_pt"": 66.0,
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/社内用語集.docx`
+L5: - source_sha1: `f36ea5cc08caab893e5c457a167079c8008b0169`
+L7: - table_count: 9
+L8: - image_count: 0
+L35: | 調査資料 | RS | Research Sheet |
+L36: | 座席表 | FM | Floor Map |
+L37: | 社内管理資料 | IM | Internal Management |
+L38: | 配布版 | DIST | 配布用に整えた版 |
+L59: | チューニング結果 | TUNING | パラメータ探索結果 |
+L60: | 重要特徴量レポート | IMP-REP | feature importance系 |
+L61: | 予測結果 | PRED | prediction output |
+L79: | WBS観点の進捗状況 | WBS-STAT | WBSステータスの短縮 |
+L80: | 次回までの実施事項 | NEXT | 次アクション一覧 |
+L81: | 要アクション（未完事項） | OPEN-AI | 未完了アクション一覧 |
+L98: | 議事反映済 | MIN-DONE | 会議録更新済み |
+L99: | 次回持越し | NEXT-HOLD | 継続事項 |
+L100: | 定例A枠 | REG-A | 社内便宜上の会議枠 |
+L109: | 固定価格契約 | FP | Fixed Price |
+L110: | 実費精算契約 | TM | Time and Materials |
+L111: | time_and_materials | TM | 実費精算と同義で扱う |
+L112: | 見込金額 | EST | Estimate |
+L113: | 最終請求金額 | FIN | Final Billing |
+L114: | 時間単価 | RATE | Hourly Rate |
+L115: | 見込工数 | ESTH | Estimated Hours |
+L116: | 実績工数 | ACTH | Actual Hours |
+L149: | 入金消込済み | PAY-C
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/社内用語集.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json"",
+L5: ""file_name"": ""社内用語集.docx"",
+L8: ""table_count"": 9,
+L9: ""image_count"": 0,
+L10: ""blocks"": [
+L14: ""style"": ""Normal"",
+L15: ""text"": ""データアステル社内用語集"",
+L16: ""markdown"": ""**データアステル社内用語集**"",
+L18: {
+L19: ""text"": ""データアステル社内用語集"",
+L20: ""bold"": true,
+L33: ""style"": ""Normal"",
+L34: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L35: ""markdown"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L37: {
+L38: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。"",
+L39: ""bold"": false,
+L47: {
+L48: ""text"": ""\n"",
+L49: ""bold"": false,
+L62: ""style"": ""Normal"",
+L63: ""text"": ""1. 文書・成果物"",
+L64: ""markdown"": ""**1. 文書・成果物**"",
+L66: {
+L67: ""text"": ""1. 文書・成果物"",
+L68: ""bold"": true,
+L144: [
+L145: ""座席表"",
+L146: ""FM"",
+L147: ""Floor Map""
+L149: [
+L150: ""社内管理資料"",
+L151: ""IM"",
+L152: ""Internal Managem
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md
+L1: # データアステル社内管理_決裁基準
+L29: ## 3.2 time_and_materials 契約
+L31: `time_and_materials` 契約は、金額に関わらず **部長承認以上** を必要とする。
+L33: この基準は通常の決裁基準および医療案件ルールより優先して適用する。ただし、医療案件かつ `time_and_materials` 契約であり、通常基準から1段階上げた結果が本部長承認に達する場合は、本部長承認を要する。
+L40: 2. 医療案件である場合は 1段階引き上げる
+L41: 3. `time_and_materials` 契約である場合は、少なくとも部長承認以上とする
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx`
+L5: - source_sha1: `3c398b562eabcd2eadbf6482c616b72a814cf92d`
+L7: - table_count: 0
+L8: - image_count: 0
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json"",
+L5: ""file_name"": ""データアステル社内管理_決裁基準.md"",
+L6: ""file_type"": ""md"",
+L16: ""level"": 1,
+L17: ""text"": ""データアステル社内管理_決裁基準""
+L18: },
+L20: ""level"": 2,
+L21: ""text"": ""1. 目的""
+L22: },
+L24: ""level"": 2,
+L25: ""text"": ""2. 通常の決裁基準""
+L26: },
+L28: ""level"": 2,
+L29: ""text"": ""3. 追加基準""
+L30: },
+L32: ""level"": 3,
+L33: ""text"": ""3.1 医療案件""
+L34: },
+L36: ""level"": 2,
+L37: ""text"": ",EDA/EDA046/raw_responses/index_044.json
+46,fallback_bm25_llm,line_search,contract_alias_contact_lookup,着手金が最も高い案件について、その案件のESの内線番号を教えてください。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/01.契約/契約書_draft.docx.structure.json,12000,"## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/社内用語集.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json"",
+L5: ""file_name"": ""社内用語集.docx"",
+L6: ""source_sha1"": ""f36ea5cc08caab893e5c457a167079c8008b0169"",
+L14: ""style"": ""Normal"",
+L15: ""text"": ""データアステル社内用語集"",
+L16: ""markdown"": ""**データアステル社内用語集**"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データアステル社内用語集"",
+L20: ""bold"": true,
+L33: ""style"": ""Normal"",
+L34: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L35: ""markdown"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L37: {
+L38: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。"",
+L39: ""bold"": false,
+L47: {
+L48: ""text"": ""\n"",
+L49: ""bold"": false,
+L62: ""style"": ""Normal"",
+L63: ""text"": ""1. 文書・成果物"",
+L64: ""markdown"": ""**1. 文書・成果物**"",
+L66: {
+L67: ""text"": ""1. 文書・成果物"",
+L68: ""bold"": true,
+L91: ""PP"",
+L92: ""Proposal Pack / Proposal Presentation""
+L93: ],
+L99: [
+L100: ""契約書"",
+L101: ""CT
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""511ae4443d8875c08a99d597baeecceb8eb0584d"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""白峰信用リスク評価株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、企業財務指標に基づく3年後倒産予測モデルの企画・分析・初期実装方針策定に関する業務委託について、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""白峰信用リスク評価株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、企業財務指標に基づく3年後倒産予測モデルの企画・分析・初期実装方針策定に関する業務委託について、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L37: {
+L38: ""text"": ""白峰信用リスク評価株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、企業財務指標に基づく3年後倒産予測モデルの企画・分析・初期実装
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""c05b6e5681d70b9a2261fcc17ee50d8ce1f2b60a"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""青葉与信マネジメント株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、返済状況予測に基づく与信リスク分析支援に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""青葉与信マネジメント株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、返済状況予測に基づく与信リスク分析支援に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L37: {
+L38: ""text"": ""青葉与信マネジメント株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、返済状況予測に基づく与信リスク分析支援に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L39: ""bold"":
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""a8c11a4d30270108a751915d9d9a4482ef798666"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L37: {
+L38: ""text"": ""株式会社青潮モビリティサービス（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、モビリティ需要予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L39: ""bold""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""a27873ce4bb2d95acdee47c34ea50328e1541c5a"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19",EDA/EDA046/raw_responses/index_046.json
+49,document_whole_context,line_search,meeting_action_status_lookup,東都人材プラットフォームの会議録において、コメントがついている部分をそのまま抽出してください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-08.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-26.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-08-18.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-09-08.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-08.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-26.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-08-18.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-09-08.pdf.structure.json,9545,"## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.md
+L1: # Word Markdown: 会議録_2025-08-18.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx`
+L5: - source_sha1: `32fd3cce4047db9a2100a2ea76bff6e352d310fe`
+L6: - paragraph_count: 71
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## 会議録
+L15: <!-- block_index=2 type=paragraph style=Heading 2 -->
+L45: <!-- block_index=10 type=paragraph style=Compact -->
+L46: 発注者：石川 直樹（株式会社東都人材プラットフォーム／人事戦略部長）
+L48: <!-- block_index=11 type=paragraph style=Compact -->
+L118: <!-- block_index=31 type=paragraph style=Heading 2 -->
+L119: ## 4. 進捗サマリ
+L121: <!-- block_index=32 type=paragraph style=Compact -->
+L172: <!-- block_index=46 type=table rows=11 cols=5 -->
+L173: | ID | Action | Owner | Due Date | Status |
+L174: | --- | --- | --- | --- | --- |
+L175: | T02 | キックオフ議事録配布 | 藤田 彩 | 2025-08-19 | Open |
+L182: | T10 | ベースラインモデル構築・初期評価（主指標候補：Macro F1 を含む） | 渡辺 遥 | 2025-09-04 | 未着手 |
+L183: | T11 | 公平性観点の初期確認（属性別分布・初期性能差の算出） | 渡辺 遥 / 藤田 彩 | 2025-09-05 | 
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-08.docx.md
+L1: # Word Markdown: 会議録_2025-09-08.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-08.docx`
+L5: - source_sha1: `c1984434c03f57abe983ec6dfbcc5801129b625e`
+L6: - paragraph_count: 104
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## 会議録
+L15: <!-- block_index=2 type=paragraph style=Heading 2 -->
+L45: <!-- block_index=10 type=paragraph style=Compact -->
+L46: 発注者側：石川 直樹（人事戦略部長、株式会社東都人材プラットフォーム）
+L133: <!-- block_index=35 type=paragraph style=Heading 2 -->
+L134: ## 4. 進捗サマリ
+L136: <!-- block_index=36 type=paragraph style=Compact -->
+L151: <!-- block_index=40 type=paragraph style=Compact -->
+L152: 中間報告資料（T12）作成・本会議で提示（T12 完了）。
+L154: <!-- block_index=41 type=paragraph style=Compact -->
+L168: <!-- block_index=45 type=paragraph style=Compact -->
+L169: prior open actions 処理（本会議での更新）
+L171: <!-- block_index=46 type=paragraph style=Compact -->
+L253: <!-- block_index=70 type=table rows=16 cols=5 -->
+L254: | ID | Action | Owner | Due Date
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-26.docx.md
+L1: # Word Markdown: 会議録_2025-09-26.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-09-26.docx`
+L5: - source_sha1: `bb246a18a553e53a13ebecfce43651cb98a3c783`
+L6: - paragraph_count: 103
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## 会議録
+L15: <!-- block_index=2 type=paragraph style=Heading 2 -->
+L49: <!-- block_index=11 type=paragraph style=Compact -->
+L50: 発注者側：石川 直樹（人事戦略部長、株式会社東都人材プラットフォーム）
+L178: <!-- block_index=47 type=paragraph style=Heading 2 -->
+L179: ## 4. 進捗サマリ
+L181: <!-- block_index=48 type=paragraph style=Compact -->
+L195: <!-- block_index=52 type=paragraph style=Compact -->
+L196: prior open actions の取り扱い（明示）
+L198: <!-- block_index=53 type=paragraph style=Compact -->
+L199: 以下の prior open actions は本会議で完了（Closed）とする（理由付きで明記）：T02, T04, T09, T24, T25, T26, T27, T28（詳細は「アクションアイテム」参照）。
+L249: <!-- block_index=68 type=table rows=14 cols=5 -->
+L250: | ID | Action | Owner | Due Date | Status |
+L251: | --- | --- | --- | ---
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-08-18.pdf.md
+L1: # PDF Markdown: 報告資料_2025-08-18.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-08-18.pdf`
+L5: - source_sha1: `4511eee114268606976fd8f5e13432ed82f55b57`
+L6: - page_count: 7
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-09-08.pdf.md
+L1: # PDF Markdown: 報告資料_2025-09-08.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/報告資料/報告資料_2025-09-08.pdf`
+L5: - source_sha1: `cb9ffaec27507bbdbecdfea8e9f078704b46bd5d`
+L6: - page_count: 9
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/05.会議/会議録/会議録_2025-08-18.docx.structure.json"",
+L5: ""file_name"": ""会議録_2025-08-18.docx"",
+L6: ""source_sha1"": ""32fd3cce4047db9a2100a2ea76bff6e352d310fe"",
+L7: ""paragraph_count"": 71,
+L13: ""block_type"": ""paragraph"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""会議録"",
+L16: ""markdown"": ""会議録"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""会議録"",
+L20: ""bold"": false,
+L21: ""italic"": false,
+L314: ""block_type"": ""paragraph"",
+L315: ""style"": ""Compact"",
+L316: ""text"": ""発注者：石川 直樹（株式会社東都人材プラットフォーム／人事戦略部長）"",
+L317: ""markdown"": ""発注者：石川 直樹（株式会社東都人材プラットフォーム／人事戦略部長）"",
+L318: ""runs"": [
+L319: {
+L338: },
+L339: {
+L340: ""text"": ""直樹（株式会社東都人材プラットフォ",EDA/EDA046/raw_responses/index_049.json
+52,fallback_bm25_llm,line_search,proposal_operation_clause_lookup,蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/糖尿病統計情報.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv,10009,"## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md
+L1: # PowerPoint Markdown: 提案書.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx`
+L5: - source_sha1: `b1760421ebb98dae22ad8943e299012c41384ef0`
+L6: - slide_count: 14
+L13: ### Slide 1
+L15: データ分析プロジェクト提案書
+L17: 糖尿病リスク早期把握に向けた分析基盤整備
+L19: 提出先
+L20: 医療法人社団 蒼樹会
+L21: みなみ野女性医療センター
+L22: 医療情報・品質改善推進室 林 さくら 室長
+L35: プロジェクト概要
+L37: 医療法人社団 蒼樹会 みなみ野女性医療センターにおける糖尿病リスク早期把握のためのデータ分析基盤整備プロジェクト。train.csv（3,000行×10カラム）を対象に、Outcome（糖尿病有無）の予測可能性を検証し、業務活用可否を判断できる分析基盤を整備する。
+L39: 契約期間
+L40: 6週間
+L41: 2025-04-03 起点
+L75: 方針策定
+L77: モデル構築
+L78: 性能比較
+L90: 1. 背景
+L92: 医療法人社団 蒼樹会 みなみ野女性医療センターでは、医療品質向上・業務効率化・患者安全性の観点から、データを活用した意思決定高度化が求められている。特に、糖尿病リスクの早期把握は、診療優先順位付け、保健指導対象の抽出、フォローアップ設計の標準化に直結する重要テーマである。
+L94: 対象データ概要
+L256: STEP 3
+L258: モデル構築・評価
+L260: ベースラインモデル作成
+L285: クライアント体制
+L287: 医療法人社団 蒼樹会 みなみ野女性医療センター
+L288: 医療情報・品質改善推進室　林 さくら 室長
+L319: 推進運営
+L321: 週次進捗確認
+L322: 週1回
+L324: 中間レビュー
+L336: ### Slide 9
+L338: 6. スケジュール案（6週間）
+L340: 契約開始: 2025-04-03　契約期間: 6週間
+L342: 1週目
+L344: 2週目
+L346: 3週目
+
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md
+L1: # Word Markdown: 契約書.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx`
+L5: - source_sha1: `52667867bdad9334e58a2aae451bede10b0e7311`
+L6: - paragraph_count: 118
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## データ分析業務委託契約書
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L21: <!-- block_index=4 type=paragraph style=First Paragraph -->
+L22: **委託者（以下「甲」という。）**
+L23: 医療法人社団 蒼樹会 みなみ野女性医療センター
+L24: 部署：医療情報・品質改善推進室
+L25: 主担当者：林 さくら 室長
+L217: <!-- block_index=58 type=paragraph style=Compact -->
+L218: 前項の期間満了後であっても、第6条、第7条、第8条、第10条、第11条および第12条の規定は、性質上存続すべき範囲で引き続き有効に存続する。
+L220: <!-- block_index=59 type=paragraph style=Heading 2 -->
+L257: <!-- block_index=69 type=paragraph style=Compact -->
+L258: 本業務の成果物のうち、甲の提供データに基づき本契約のために新たに作成された報告書、分析結果資料および業務活用示唆一覧に関する著作権その他の知的財産権は、甲が第6条に定める報酬の全額を支払った時点で、甲に移転するものとする。
+L265: <!-- block_index=71 type=paragraph style=Compact -->
+L266: 乙は、甲の事前の書面承諾なく、甲の機密情報または個人を識別し得る情報を第三者へ開示してはならない
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.assets"",
+L6: ""file_name"": ""提案書.pptx"",
+L7: ""file_type"": ""pptx"",
+L8: ""source_sha1"": ""b1760421ebb98dae22ad8943e299012c41384ef0"",
+L51: ""width_pt"": 840.0,
+L52: ""height_pt"": 80.0,
+L53: ""text"": ""データ分析プロジェクト提案書"",
+L54: ""text_frame"": {
+L55: ""text"": ""データ分析プロジェクト提案書"",
+L56: ""paragraphs"": [
+L57: {
+L58: ""text"": ""データ分析プロジェクト提案書"",
+L59: ""level"": 0,
+L60: ""runs"": [
+L61: {
+L62: ""text"": ""データ分析プロジェクト提案書"",
+L63: ""bold"": true,
+L64: ""italic"": false,
+L143: ""width_pt"": 400.0,
+L144: ""height_pt"": 90.0,
+L145: ""text"": ""提出先\n医療法人社団 蒼樹会\nみなみ野女性医療センター\n医療情報・品質改善推進室 林 さくら 室長"",
+L146: ""text_fr
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""52667867bdad9334e58a2aae451bede10b0e7311"",
+L7: ""paragraph_count"": 118,
+L13: ""block_type"": ""paragraph"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L21: ""italic"": false,
+L80: ""block_type"": ""paragraph"",
+L81: ""style"": ""First Paragraph"",
+L82: ""text"": ""委託者（以下「甲」という。）\n医療法人社団 蒼樹会 みなみ野女性医療センター\n部署：医療情報・品質改善推進室\n主担当者：林 さくら 室長"",
+L83: ""markdown"": ""**委託者（以下「甲」という。）**\n医療法人社団 蒼樹会 みなみ野女性医療センター\n部署：医療情報・品質改善推進室\n主担当者：林 さくら 室長"",
+L84: ""runs"": [
+L85: {
+L124: },
+L125: {
+L126: ""text"": ""蒼樹会"",
+L127: ""bold"": fal
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/カラム説明.md
+L1: ### train.csv
+L3: | カラム | ヘッダ名称 | データ型 | 説明 |
+L4: | --- | --- | --- | --- |
+L5: | 0 | index | int | インデックスとして使用 |
+L6: | 1 | Pregnancies | int | 妊娠した回数 |
+L7: | 2 | Glucose | int | 経口ブドウ糖負荷試験における2時間の血漿ブドウ糖濃度 |
+L8: | 3 | BloodPressure | int | 拡張期血圧 |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv`
+L5: - source_sha1: `2349c7b9a1d1fd10d829ce1d768dd7b04083a3",EDA/EDA046/raw_responses/index_052.json
+57,table_calculation,line_search,model_formula_recompute,青葉のTXにて算出された回帰係数を用いて全データの予測値を計算し、正解データに対する F1 スコアが最大となるように閾値を設定したときの F1 スコアを答えてください。小数第5位まで求めてください。,0.00000,0.00000,True,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.md | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv.data.csv,9881,"## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `5e0f4a914df62cb1c702316247143fe3376bff48`
+L9: - column_count: 66
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv.data.csv`
+L88: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+L89: | train_00000 | 0.12022 | 0.21236 | 0.40822 | 3.0325 | -14.018 | 0.52463 | 0.15052 | 3.7089 | 1.8566 | 0.78764 | 0.16251 | 0.74941 | 0.099273 | 0.15052 | 420.56 | 0.86789 | 4.7089 | 0.15052 | 0.081071 | 92.715 | 1.1195 | 0.16148 | 0.064756 | 0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `b13d3125f387a54575a89ee4e94beeb73b6280c2`
+L9: - column_count: 10
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.data.csv`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.md
+L1: # Table Data: train.tsv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv`
+L5: - source_sha1: `baf3994d92d408ba21836d25a352315f4a889f65`
+L9: - column_count: 15
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.data.csv`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `82b7760c780515e9f06a809c5e783d43f612b025`
+L9: - column_count: 18
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.data.csv`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `81029055794a9204381a9f44db4cd8793360cdf0`
+L9: - column_count: 10
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv.data.csv`
+L32: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+L33: | train_00000 | Female | 25-29 | United States of America | Master’s degree | Engineering (non-computer focused) | Data Analyst | Medical/Pharmaceutical | 1-2 | 4 |
+L34: | train_00001 | Male | 22-24 | India | Bachelor’s degree | Other | Data Scientist | Accounting/Finance | 1-2 | 0 |
+L35: | train_00002 | Male | 30-34 | United States of America | Doctoral degree | Computer science (software engineering, etc.) | Research Assistant | I am a student | 4-5 | 1 |
+L36: | train_00003 | Male | 30-34 | India | Some college/university study without earning a bachelor’s degree |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `5102684404dd4f08ad859f90ffbae275eb993441`
+L9: - column_count: 33
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv.data.csv`
+L42: | TotalWorkingYears | int64 | 0 |
+L43: | TrainingTimesLastYear | int64 | 0 |
+L44: | WorkLifeBalance | int64 | 0 |
+L54: | id | Age | Attrition | BusinessTravel | DailyRate | Department | DistanceFromHome | Education | EducationField | EnvironmentSatisfaction | Gender | HourlyRate | JobInvolvement | JobLevel | JobRole | JobSatisfaction | MaritalStatus | MonthlyIncome | NumCompaniesWorked | Over18 | OverTime | PercentSalaryHike | PerformanceRating | RelationshipSatisfaction | StandardHours | StockOptionLevel | TotalWorkingYears | TrainingTimesLastYear | WorkLifeBalance | YearsAtCompany | YearsInCurrentRole | YearsSinceLastPromotion | Y
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `eb73c0896",EDA/EDA046/raw_responses/index_057.json
+58,fallback_bm25_llm,line_search,seating_chart_spatial_ocr,社内管理フォルダにあるFMにおいて、井上さんの向かいに座っている方のEXTを教えてください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md | data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md | data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/カラム説明.md,7470,"## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md
+L1: # PowerPoint Markdown: 座席表.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/座席表.pptx`
+L5: - source_sha1: `66c04aff85add37f7ee682c58033be604d0f8f71`
+L15: #### Image
+L16: - image_path: `data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png`
+L17: - content_type: `image/png`
+
+## source: data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/座席表.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets"",
+L6: ""file_name"": ""座席表.pptx"",
+L7: ""file_type"": ""pptx"",
+L9: ""slide_count"": 1,
+L10: ""text_shape_count"": 0,
+L11: ""table_count"": 0,
+L28: ""height_pt"": 714.0,
+L29: ""text"": """",
+L30: ""text_frame"": null,
+L31: ""table"": null,
+L32: ""image"": {
+L33: ""image_path"": ""data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png"",
+L34: ""image_ext"": ""png"",
+L35: ""content_type"": ""image/png"",
+L49: ""height_pt"": 66.0,
+L50: ""text"": """",
+L51: ""text_frame"": {
+L52: ""text"": """",
+L53: ""paragraphs"": [
+L54: {
+L55: ""text"": """",
+L56: ""level"": 0,
+L73: ""height_pt"": 66.0,
+L74: ""text"": """",
+L75: ""text_frame"": {
+L76: ""text"": """",
+L77: ""paragraphs"": [
+L78: {
+L79: ""text"": """",
+L80: ""level"": 0,
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/社内用語集.docx`
+L5: - source_sha1: `f36ea5cc08caab893e5c457a167079c8008b0169`
+L35: | 調査資料 | RS | Research Sheet |
+L36: | 座席表 | FM | Floor Map |
+L37: | 社内管理資料 | IM | Internal Management |
+L38: | 配布版 | DIST | 配布用に整えた版 |
+L79: | WBS観点の進捗状況 | WBS-STAT | WBSステータスの短縮 |
+L80: | 次回までの実施事項 | NEXT | 次アクション一覧 |
+L81: | 要アクション（未完事項） | OPEN-AI | 未完了アクション一覧 |
+L98: | 議事反映済 | MIN-DONE | 会議録更新済み |
+L99: | 次回持越し | NEXT-HOLD | 継続事項 |
+L100: | 定例A枠 | REG-A | 社内便宜上の会議枠 |
+L149: | 入金消込済み | PAY-CLEAR | 消込完了 |
+L150: | 次月精算 | NEXT-SETTLE | 翌月持越し精算 |
+L151: | 単価据置 | RATE-HOLD | 単価変更なし |
+L177: | 周期特徴量 | CYCLE-FT | sin/cosなど |
+L178: | 文字列特徴量 | TEXT-FT | 文字列由来 |
+L179: | 識別子列 | ID-FT | id, code系 |
+L254: <!-- block_index=15 type=paragraph style=Normal -->
+L255: **7. 社内管理・運用**
+L259: | --- | --- | --- |
+L260: | 社内管理フォルダ | IM | Internal Management |
+L261: | パスワード導出規則 | PW-RULE | Password Rule |
+L262: | 決裁基準 | APR-RULE | Approval Rule |
+L263: | 座席表 | FM | Floor Map |
+L264: | 内線番号 | 
+
+## source: data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/社内用語集.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.structure.json"",
+L5: ""file_name"": ""社内用語集.docx"",
+L14: ""style"": ""Normal"",
+L15: ""text"": ""データアステル社内用語集"",
+L16: ""markdown"": ""**データアステル社内用語集**"",
+L18: {
+L19: ""text"": ""データアステル社内用語集"",
+L20: ""bold"": true,
+L33: ""style"": ""Normal"",
+L34: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L35: ""markdown"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。\n"",
+L37: {
+L38: ""text"": ""本資料は、社内共有フォルダ上で利用する略語・社内用語を整理したものである。"",
+L39: ""bold"": false,
+L47: {
+L48: ""text"": ""\n"",
+L49: ""bold"": false,
+L62: ""style"": ""Normal"",
+L63: ""text"": ""1. 文書・成果物"",
+L64: ""markdown"": ""**1. 文書・成果物**"",
+L66: {
+L67: ""text"": ""1. 文書・成果物"",
+L68: ""bold"": true,
+L144: [
+L145: ""座席表"",
+L146: ""FM"",
+L147: ""Floor Map""
+L149: [
+L150: ""社内管理資料"",
+L151: ""IM"",
+L289: ],
+L290: ""markdown"": ""| 正式名称 | 社内用語 | 補足 |\n| --- | --- | --- |\n| 提案書 | PP | 
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md
+L1: # データアステル社内管理_決裁基準
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx`
+L5: - source_sha1: `3c398b562eabcd2eadbf6482c616b72a814cf92d`
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json"",
+L5: ""file_name"": ""データアステル社内管理_決裁基準.md"",
+L6: ""file_type"": ""md"",
+L16: ""level"": 1,
+L17: ""text"": ""データアステル社内管理_決裁基準""
+L18: },
+L20: ""level"": 2,
+L21: ""text"": ""1. 目的""
+L22: },
+L24: ""level"": 2,
+L25: ""text"": ""2. 通常の決裁基準""
+L26: },
+L28: ""level"": 2,
+L29: ""text"": ""3. 追加基準""
+L30: },
+L32: ""level"": 3,
+L33: ""text"": ""3.1 医療案件""
+L34: },
+L36: ""level"": 2,
+L37: ""text"": ""3.2 time_and_materials 契約""
+L38: },
+L40: ""level"": 2,
+L41: ""text"": ""4. 適用順序""
+L42: },
+L44: ""level"": 2,
+L45: ""text"": ""5. 補足""
+L46: }
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内規定_パスワード導出規則.docx.m",EDA/EDA046/raw_responses/index_058.json
+62,diff_check,version_diff,structured_diff_semantic_filter,青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v2.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v3.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.md,11737,"## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md
+L1: # PowerPoint Markdown: 青葉与信マネジメント株式会社_最終報告.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx`
+L5: - source_sha1: `eb4b0cabb4eab8d90ad5e897f3142264766d96bc`
+L19: 発注者：青葉与信マネジメント株式会社（審査企画部）
+L20: 実施者：株式会社データアステル（データサイエンス部）
+L57: 金額: ¥4,200,000（税抜）
+L58: 発注: 青葉与信マネジメント
+L115: 【発注者】
+L116: 責任者: 中村 浩一（青葉与信マネジメント）
+L151: データ品質
+L152: 確認完了
+L185: 再現性・監査証跡: 実行設定（run_summary.json）と出力（metrics.json）を保存。前処理・モデルパラメータ・評価条件を文書化。版管理・議事録で意思決定をトレース。
+L203: 上位10%スコア群における不良含有率が高く、スコアに基づくバケット化でリスク区分の初期運用設計（重点審査・与信条件変更の検討等）が可能である。
+L227: 4. 分析結果 ― モデル比較
+L229: モデル比較証跡― 主要モデルの性能ランキング
+L255: - chart_type: `COLUMN_CLUSTERED (51)`
+L256: - title: F1 (macro) vs Accuracy ― モデル比較
+L257: - series_count: 2
+L283: 上位スコア群の運用パイロット
+L295: スコアリングパイプライン
+L331: 1. 運用責任者（モデルオーナー）の設定
+L332: レビュー委員会（年次レビュー＋異常発生時の臨時会）を設定する
+L333: 2. 人材・運用コスト
+L346: 支払計画: 着手金50%（期日: 2025-04-16）＋ 検収金50%（期日: 2025-06-03）
+L347: 契約形態: 固定価格（変更なし）｜検収期間内に不合格通知なき場合は検収完了（第4.3条）
+L353: | 最終成果物納品日 | 2025-05-28（契約書 第3
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.assets"",
+L6: ""file_name"": ""青葉与信マネジメント株式会社_最終報告.pptx"",
+L7: ""file_type"": ""pptx"",
+L86: ""text"": ""最終分析報告書"",
+L87: ""bold"": true,
+L88: ""italic"": false,
+L120: ""text"": ""貸付審査・ポートフォリオ管理高度化のための与信分析基盤（初期分析）"",
+L121: ""bold"": false,
+L122: ""italic"": false,
+L144: ""height_pt"": 60.0,
+L145: ""text"": ""発注者：青葉与信マネジメント株式会社（審査企画部）\n実施者：株式会社データアステル（データサイエンス部）"",
+L146: ""text_frame"": {
+L147: ""text"": ""発注者：青葉与信マネジメント株式会社（審査企画部）\n実施者：株式会社データアステル（データサイエンス部）"",
+L148: ""paragraphs"": [
+L149: {
+L150: ""text"": ""発注者：青葉与信マネジメント株式会社（審査企画部）\n実施者：株式会社データア
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/カラム説明.md
+L1: <h3 style=""font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);"">学習用データ（train.csv)</h3><table class=""table table-responsive"" style=""background-color: rgb(255, 255, 255); width: 1580px;""><thead><tr><th width=""15%"" nowrap="""" style=""line-height: 1.42857;"">カラム</th><th width=""15%"" nowrap="""" style=""line-height: 1.42857;"">ヘッダ名称</th><th width=""45%"" nowrap="""" style=""line-height: 1.42857;"">説明</th></tr></thead><tbody><tr><td class=""alignC"" style=""line-height: 1.42857;"">0</td><td style=""line-height: 1.42857;"">id</td><td style=""line-height: 1.42857;"">顧客ID（インデックスとして使用）</td></tr
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx`
+L5: - source_sha1: `c05b6e5681d70b9a2261fcc17ee50d8ce1f2b60a`
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L16: 青葉与信マネジメント株式会社（以下「甲」という。）と株式会社データアステル（以下「乙」という。）は、返済状況予測に基づく与信リスク分析支援に関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。
+L27: <!-- block_index=6 type=paragraph style=Compact -->
+L28: 会社名：青葉与信マネジメント株式会社
+L138: <!-- block_index=43 type=paragraph style=Compact -->
+L139: 進捗、課題、変更管理に関する報告
+L219: <!-- block_index=70 type=paragraph style=Compact -->
+L220: 甲が第1項の期間内に合否の通知を行わない場合、当該成果物は当該期間満了日をもって検収完了したものとみなす。
+L246: | 1 | 着手金 | 50% | 契約締結後5営業日以内 | 2,100,000円 | 210,000円 | 2,310,000円 | 2025-04-16 |
+L247: | 2 | 検収金 | 50% | 最終成果物の検収完了後5営業日以内 | 2,100,000円 | 210,000円 | 2,310,000円 | 2025-06-04 |
+L252: <!-- block_index=80 type=paragraph style=Compact -->
+L253: 第2回目の支払期日は、最終成果物の検収完了日を2025-05-28として算定した明示日付であり、甲は当該日付までに支払うものとする。
+L348: <!-- block_index=112 type=paragraph style=Compact -->
+L349: 乙は、善良な管理者の注意を
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv`
+L5: - source_sha1: `b13d3125f387a54575a89ee4e94beeb73b6280c2`
+L9: - column_count: 10
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx`
+L5: - source_sha1: `f6cf1e5b95e4b14169fba1ab979ed9144b69fbb4`
+L19: 提出先：青葉与信マネジメント株式会社  審査企画部
+L41: 青葉与信マネジメント株式会社 審査企画部における与信分析基盤整備に向けた、データ分析プロジェクトの提案概要である。
+L284: 変更管理方針
+L290: 追加要件・追加分析・成果物追加・スコープ変更が発生する場合は、影響範囲を確認のうえ、正式な変更手続を経て対応する。
+L382: 青葉与信マネジメント株式会社
+L383: 審査企画部
+L395: 伊藤 翔太
+L396: 進捗・課題・変更管理、対外窓口
+L441: レビューは週次会議に加え、中間レビューおよび最終報告会を設定し、意思決定の停滞を防止する。
+L446: | --- | --- | --- | --- |
+L447: | 第1週 | 2025-04-09開始 | キックオフ、目的変数定義確認、データ受領確認、前提整理 | キックオフ完了 |
+L",EDA/EDA046/raw_responses/index_062.json
+63,table_calculation,line_search,model_formula_recompute,青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。,0.21480,0.21480,True,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.structure.json,11777,"## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.md
+L1: # Excel Workbook: train.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx`
+L5: - source_sha1: `c2778c9c3fd51ea3de5bb33e4b4a023fa147f814`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | 回帰分析 | 20 | 9 | A1:I20 | 0 | 32 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv |
+L14: | 標準化 | 17500 | 4 | A1:D17501 | 300 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv |
+L15: | 抽出 | 17500 | 4 | A1:D17501 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv |
+L16: | train | 17500 | 10 | A1:J17501 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv |
+L71: ## Sample: train
+L73: | id | loan_amnt | term | interest_rate | grade | employment_length | purpose | credit_score | application_type | loan_status |
+L74: | --- | --- | --- | --- | --- | --- | --- |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv
+L1: ﻿loan_amnt,interest_rate,credit_score,loan_status
+L2: 1256.7108,10.60377869,680.4317659,0
+L3: 569.5596067,17.30556544,713.0631282,0
+L4: 1118.83805,14.04134157,696.137378,1
+L5: 610.7217277,13.04834802,656.3730904,0
+L6: 1180.02684,11.38486247,657.211233,0
+L7: 1172.219819,11.39718304,712.157342,0
+L8: 2433.646304,10.10181044,713.2019707,0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json"",
+L5: ""file_name"": ""train.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""c2778c9c3fd51ea3de5bb33e4b4a023fa147f814"",
+L17: ""dimension"": ""A1:I20"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv"",
+L19: ""merged_ranges"": [],
+L20: ""auto_filter_ref"": """",
+L21: ""hidden_rows"": [],
+L22: ""hidden_columns"": [],
+L23: ""formulas"": [],
+L62: {
+L63: ""coordinate"": ""F17"",
+L64: ""bold"": false,
+L134: {
+L135: ""coordinate"": ""F18"",
+L136: ""bold"": false,
+L206: {
+L207: ""coordinate"": ""F19"",
+L208: ""bold"": false,
+L473: ""dimension"": ""A1:D17501"",
+L474: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.デー
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv
+L1: ﻿loan_amnt,interest_rate,credit_score,loan_status
+L2: ""=STANDARDIZE(抽出!A2, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B2, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C2, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+L3: ""=STANDARDIZE(抽出!A3, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B3, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C3, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+L4: ""=STANDARDIZE(抽出!A4, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B4, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C4, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",1
+L5: ""=STANDARDIZE(抽出!A5, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B5, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C5, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv
+L16: ,,,,,,,,
+L17: ,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%
+L18: 切片,0.21480000000000193,0.0029852424031758095,71.95395582331602,0,0.20894862761005936,0.2206513723899445,0.20894862761005936,0.2206513723899445
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv
+L1: ﻿id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+L2: 0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+L3: 1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+L4: 2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+L5: 3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+L6: 4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+L7: 5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+L8: 6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+L9: 7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+L10: 8,1200.74142,5 yea",EDA/EDA046/raw_responses/index_063.json
+65,format_extraction,xlsx_yellow_cell_context,spreadsheet_format_semantic_context,白峰信用リスク評価のtrain.xlsxにおいて、表示されている相関係数シートで、黄色ハイライトになっているセルの条件を答えてください。,相関係数シートで、相関係数の絶対値が0.5を超えるセル(例:Attr2 と Attr3 の相関係数 -0.9960099740512748)が黄色ハイライトされます。,相関係数シートで、相関係数の絶対値が0.5を超えるセル(例:Attr2 と Attr3 の相関係数 -0.9960099740512748)が黄色ハイライトされます。,True,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet5.csv | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.csv.data.csv,12000,"## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet2.csv
+L1: ﻿相関,Attr1,Attr2,Attr3,Attr4,Attr5,Attr6,Attr7,Attr8,Attr9,Attr10,Attr11,Attr12,Attr13,Attr14,Attr15,Attr16,Attr17,Attr18,Attr19,Attr20,Attr21,Attr22,Attr23,Attr24,Attr25,Attr26,Attr27,Attr28,Attr29,Attr30,Attr31,Attr32,Attr33,Attr34,Attr35,Attr36,Attr37,Attr38,Attr39,Attr40,Attr41,Attr42,Attr43,Attr44,Attr45,Attr46,Attr47,Attr48,Attr49,Attr50,Attr51,Attr52,Attr53,Attr54,Attr55,Attr56,Attr57,Attr58,Attr59,Attr60,Attr61,Attr62,Attr63,Attr64
+L2: Attr1,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L3: Attr2,0.29829823017606977,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L4: Attr3,-0.3018809463274977,-0.9960099740512748,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L5: Attr4,0.001140721865656338,-0.0017923298493273607,0.002668639315510877,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+L6: Attr5,0.0006290986125077292,-0.0007010990008816569,0.00037056873569506454,0.0012086688952860575,1.0,,,,,,,,,,,,,,,,,,,,,,,
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.md
+L1: # Excel Workbook: train.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx`
+L5: - source_sha1: `39b79ca079ae37bf3ea11ed179c6904702c23f14`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | Sheet5 | 13 | 5 | A1:E13 | 0 | 20 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet5.csv |
+L14: | Sheet3 | 64 | 65 | A1:BM65 | 0 | 500 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet3.csv |
+L15: | Sheet2 | 64 | 65 | A1:BM65 | 0 | 500 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet2.csv |
+L16: | Sheet1 | 64 | 65 | A1:BM65 | 64 | 500 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet1.csv |
+L17: | train | 7352 | 66 | A1:BN7353 | 0 | 384 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/train.csv |
+L55: ## Sample: Sheet2
+L75: | --- | --- | --- | ---
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json"",
+L5: ""file_name"": ""train.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""39b79ca079ae37bf3ea11ed179c6904702c23f14"",
+L17: ""dimension"": ""A1:E13"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet5.csv"",
+L19: ""merged_ranges"": [],
+L31: ""font_color"": """",
+L32: ""fill_color"": ""00000000"",
+L33: ""number_format"": ""#,##0.0;[Red]\\-#,##0.0""
+L40: ""font_color"": """",
+L41: ""fill_color"": ""00000000"",
+L42: ""number_format"": ""#,##0.0;[Red]\\-#,##0.0""
+L49: ""font_color"": """",
+L50: ""fill_color"": ""00000000"",
+L51: ""number_format"": ""#,##0.0;[Red]\\-#,##0.0""
+L58: ""font_color"": """",
+L59: ""fill_color"": ""00000000"",
+L60: ""number_format"": ""#,##0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/train.csv
+L1: ﻿id,Attr1,Attr2,Attr3,Attr4,Attr5,Attr6,Attr7,Attr8,Attr9,Attr10,Attr11,Attr12,Attr13,Attr14,Attr15,Attr16,Attr17,Attr18,Attr19,Attr20,Attr21,Attr22,Attr23,Attr24,Attr25,Attr26,Attr27,Attr28,Attr29,Attr30,Attr31,Attr32,Attr33,Attr34,Attr35,Attr36,Attr37,Attr38,Attr39,Attr40,Attr41,Attr42,Attr43,Attr44,Attr45,Attr46,Attr47,Attr48,Attr49,Attr50,Attr51,Attr52,Attr53,Attr54,Attr55,Attr56,Attr57,Attr58,Attr59,Attr60,Attr61,Attr62,Attr63,Attr64,class
+L2: train_00000,0.12022,0.21236,0.40822,3.0325,-14.018,0.52463,0.15052,3.7089,1.8566,0.78764,0.16251,0.74941,0.099273,0.15052,420.56,0.86789,4.7089,0.15052,0.081071,92.715,1.1195,0.16148,0.064756,0.37913,0.67208,0.72525,13.462,1.0442,3.8874,0.09336,0.081984,42.312,8.6263,8.1585,0.12403,1.8566,30.099,0.7922,0.066806,0.20814,0.03625,0.086979,111.52,18.807,0.25493,0.68444,99.352,0.12769,0.068778,2.868,0.20085,0.11592,2.0148,2.0264,3149.7,0.066806,0.15264,0.92113,0.0057985,3.9368,19.408,39.486,9.2439,4.7491,0
+L3: train_00001,0.00068182,0.29306,0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.sheets/Sheet1.csv
+L1: ﻿共分散,Attr1,Attr2,Attr3,Attr4,Attr5,Attr6,Attr7,Attr8,Attr9,Attr10,Attr11,Attr12,Attr13,Attr14,Attr15,Attr16,Attr17,Attr18,Attr19,Attr20,Attr21,Attr22,Attr23,Attr24,Attr25,Attr26,Attr27,Attr28,Attr29,Attr30,Attr31,Attr32,Attr33,Attr34,Attr35,Attr36,Attr37,Attr38,Attr39,Attr40,Attr41,Attr42,Attr43,Attr44,Attr45,Attr46,Attr47,Attr48,Attr49,Attr50,Attr51,Attr52,Attr53,Attr54,Attr55,Attr56,Attr57,Attr58,Attr59,Attr60,Attr61,Attr62,Attr63,Attr64
+L2: Attr1,=VARP(train!$B$2:$B$7353),,,,,,,,,,,,,,,,,,",EDA/EDA046/raw_responses/index_065.json
+75,fallback_bm25_llm,line_search,proposal_operation_clause_lookup,MINAMINOのPP内のPL案において、モデル構築は第何週に実施することになっていますか。,,わかりません,False,http_200,,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/糖尿病統計情報.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv,10476,"## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md
+L1: # PowerPoint Markdown: 提案書.pptx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx`
+L5: - source_sha1: `b1760421ebb98dae22ad8943e299012c41384ef0`
+L6: - slide_count: 14
+L13: ### Slide 1
+L15: データ分析プロジェクト提案書
+L17: 糖尿病リスク早期把握に向けた分析基盤整備
+L19: 提出先
+L20: 医療法人社団 蒼樹会
+L21: みなみ野女性医療センター
+L22: 医療情報・品質改善推進室 林 さくら 室長
+L35: プロジェクト概要
+L37: 医療法人社団 蒼樹会 みなみ野女性医療センターにおける糖尿病リスク早期把握のためのデータ分析基盤整備プロジェクト。train.csv（3,000行×10カラム）を対象に、Outcome（糖尿病有無）の予測可能性を検証し、業務活用可否を判断できる分析基盤を整備する。
+L39: 契約期間
+L40: 6週間
+L41: 2025-04-03 起点
+L75: 方針策定
+L77: モデル構築
+L78: 性能比較
+L90: 1. 背景
+L92: 医療法人社団 蒼樹会 みなみ野女性医療センターでは、医療品質向上・業務効率化・患者安全性の観点から、データを活用した意思決定高度化が求められている。特に、糖尿病リスクの早期把握は、診療優先順位付け、保健指導対象の抽出、フォローアップ設計の標準化に直結する重要テーマである。
+L94: 対象データ概要
+L256: STEP 3
+L258: モデル構築・評価
+L260: ベースラインモデル作成
+L285: クライアント体制
+L287: 医療法人社団 蒼樹会 みなみ野女性医療センター
+L288: 医療情報・品質改善推進室　林 さくら 室長
+L319: 推進運営
+L321: 週次進捗確認
+L322: 週1回
+L324: 中間レビュー
+L336: ### Slide 9
+L338: 6. スケジュール案（6週間）
+L340: 契約開始: 2025-04-03　契約期間: 6週間
+L342: 1週目
+L344: 2週目
+L346: 3週目
+
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.structure.json"",
+L5: ""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/提案書.pptx.assets"",
+L6: ""file_name"": ""提案書.pptx"",
+L7: ""file_type"": ""pptx"",
+L8: ""source_sha1"": ""b1760421ebb98dae22ad8943e299012c41384ef0"",
+L9: ""slide_count"": 14,
+L51: ""width_pt"": 840.0,
+L52: ""height_pt"": 80.0,
+L53: ""text"": ""データ分析プロジェクト提案書"",
+L54: ""text_frame"": {
+L55: ""text"": ""データ分析プロジェクト提案書"",
+L56: ""paragraphs"": [
+L57: {
+L58: ""text"": ""データ分析プロジェクト提案書"",
+L59: ""level"": 0,
+L60: ""runs"": [
+L61: {
+L62: ""text"": ""データ分析プロジェクト提案書"",
+L63: ""bold"": true,
+L64: ""italic"": false,
+L143: ""width_pt"": 400.0,
+L144: ""height_pt"": 90.0,
+L145: ""text"": ""提出先\n医療法人社団 蒼樹会\nみなみ野女性医療センター\n医療情報・品質改善推進室 林 
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md
+L1: # Word Markdown: 契約書.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx`
+L5: - source_sha1: `52667867bdad9334e58a2aae451bede10b0e7311`
+L6: - paragraph_count: 118
+L12: <!-- block_index=1 type=paragraph style=Heading 1 -->
+L13: ## データ分析業務委託契約書
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L21: <!-- block_index=4 type=paragraph style=First Paragraph -->
+L22: **委託者（以下「甲」という。）**
+L23: 医療法人社団 蒼樹会 みなみ野女性医療センター
+L24: 部署：医療情報・品質改善推進室
+L25: 主担当者：林 さくら 室長
+L217: <!-- block_index=58 type=paragraph style=Compact -->
+L218: 前項の期間満了後であっても、第6条、第7条、第8条、第10条、第11条および第12条の規定は、性質上存続すべき範囲で引き続き有効に存続する。
+L220: <!-- block_index=59 type=paragraph style=Heading 2 -->
+L257: <!-- block_index=69 type=paragraph style=Compact -->
+L258: 本業務の成果物のうち、甲の提供データに基づき本契約のために新たに作成された報告書、分析結果資料および業務活用示唆一覧に関する著作権その他の知的財産権は、甲が第6条に定める報酬の全額を支払った時点で、甲に移転するものとする。
+L265: <!-- block_index=71 type=paragraph style=Compact -->
+L266: 乙は、甲の事前の書面承諾なく、甲の機密情報または個人を識別し得る情報を第三者へ開示してはならない
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.structure.json"",
+L5: ""file_name"": ""契約書.docx"",
+L6: ""source_sha1"": ""52667867bdad9334e58a2aae451bede10b0e7311"",
+L7: ""paragraph_count"": 118,
+L13: ""block_type"": ""paragraph"",
+L14: ""style"": ""Heading 1"",
+L15: ""text"": ""データ分析業務委託契約書"",
+L16: ""markdown"": ""データ分析業務委託契約書"",
+L17: ""runs"": [
+L18: {
+L19: ""text"": ""データ分析業務委託契約書"",
+L20: ""bold"": false,
+L21: ""italic"": false,
+L80: ""block_type"": ""paragraph"",
+L81: ""style"": ""First Paragraph"",
+L82: ""text"": ""委託者（以下「甲」という。）\n医療法人社団 蒼樹会 みなみ野女性医療センター\n部署：医療情報・品質改善推進室\n主担当者：林 さくら 室長"",
+L83: ""markdown"": ""**委託者（以下「甲」という。）**\n医療法人社団 蒼樹会 みなみ野女性医療センター\n部署：医療情報・品質改善推進室\n主担当者：林 さくら 室長"",
+L84: ""runs"": [
+L85: {
+L124: },
+L125: {
+L126: ""text"": ""蒼樹会"",
+L127: ""bold"": fal
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/カラム説明.md
+L1: ### train.csv
+L3: | カラム | ヘッダ名称 | データ型 | 説明 |
+L4: | --- | --- | --- | --- |
+L5: | 0 | index | int | インデックスとして使用 |
+L6: | 1 | Pregnancies | int | 妊娠した回数 |
+L7: | 2 | Glucose | int | 経口ブドウ糖負荷試験における2時間の血漿ブドウ糖濃度 |
+L8: | 3 | BloodPressure | int | 拡張期血圧 |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv`
+L5: - source_sha1: `2349c7b9a1d1fd10d829ce1d768dd7b04083a3",EDA/EDA046/raw_responses/index_075.json
+79,fallback_bm25_llm,line_search,cross_project_contract_aggregation,恒一会 かえで総合病院の計画フォルダ内において、データアステル側の担当者のうち、1タスク当たりの想定工数(想定工数 ÷ 担当タスク数)が最も大きい人のフルネームと、その1タスク当たりの想定工数を小数第2位で答えてください。ファイルに鍵がかかっている場合は社内管理を確認してください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md | data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/カラム説明.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/00.提案/提案書.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/00.提案/提案書.pptx.structure.json,8374,"## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx`
+L5: - source_sha1: `b4024787710f3f25a2d1ac7a5396d6437aeefed2`
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L16: 医療法人社団 恒一会 かえで総合病院（以下「甲」という。）と、株式会社データアステル（以下「乙」という。）は、肝疾患有無予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。
+L27: <!-- block_index=6 type=paragraph style=Compact -->
+L28: 法人名：医療法人社団 恒一会 かえで総合病院
+L150: <!-- block_index=47 type=paragraph style=First Paragraph -->
+L151: 本契約の料金体系は、**time_and_materials**とし、以下の条件を適用する。 - 通貨：JPY - 請求単位：hour - 時間単価：25,000円 - 想定総工数：140時間 - 税抜見込金額：3,500,000円 - 消費税率：10% - 消費税額：350,000円 - 税込見込金額：3,850,000円
+L183: <!-- block_index=58 type=table rows=2 cols=8 -->
+L184: | 支払回 | マイルストーン | 比率 | 金額（税抜） | 消費税額 | 金額（税込） | 支払条件 | 支払期日 |
+L185: | --- | --- | --- | --- | --- | --- | --- | --- |
+L197: <!-- block_index=62 type=paragraph style=Compact -->
+L198: 甲が本業務の実施にあたり乙に提供したデータ、資料、情報その他甲に帰属する既存の知的財産権は、甲に留保される。
+L200: <!-- block_index=63 type=paragraph st
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json"",
+L5: ""file_name"": ""契約書_pw解除版.docx"",
+L33: ""style"": ""First Paragraph"",
+L34: ""text"": ""医療法人社団 恒一会 かえで総合病院（以下「甲」という。）と、株式会社データアステル（以下「乙」という。）は、肝疾患有無予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L35: ""markdown"": ""医療法人社団 恒一会 かえで総合病院（以下「甲」という。）と、株式会社データアステル（以下「乙」という。）は、肝疾患有無予測分析プロジェクトに関し、以下のとおりデータ分析業務委託契約（以下「本契約」という。）を締結する。"",
+L36: ""runs"": [
+L37: {
+L38: ""text"": ""医療法人社団 恒一会 かえで総合病院（以下「甲」という。）と、株式会社データ"",
+L39: ""bold"": false,
+L169: ""style"": ""Compact"",
+L170: ""text"": ""法人名：医療法人社団 恒一会 かえで総合病院"",
+L171: ""markdown"": ""法人名：医療法人社団 恒一会 かえで総合病院"",
+L172: ""runs"": [
+L173: {
+L174: ""text"": ""法人名：医療法人社団 恒一会 かえで総合病院"",
+L175: ""bold"": false,
+L2588: ""style"": ""First Paragraph"",
+L25
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md
+L1: # データアステル社内管理_決裁基準
+L5: 本規程は、案件の契約金額および契約条件に応じた社内決裁レベルを定め、提案・契約・請求に関する承認プロセスを統一することを目的とする。
+L7: ## 2. 通常の決裁基準
+L9: 契約金額（税込）に応じた基本の決裁レベルは次の通りとする。
+L11: | 契約金額（税込） | 必要な承認 |
+L12: |---|---|
+L22: 医療機関、医療法人、病院、診療所その他これに準ずる案件は、個人情報・機微情報の取扱いおよび説明責任を踏まえ、通常の決裁基準より **1段階上** の承認を必要とする。
+L33: この基準は通常の決裁基準および医療案件ルールより優先して適用する。ただし、医療案件かつ `time_and_materials` 契約であり、通常基準から1段階上げた結果が本部長承認に達する場合は、本部長承認を要する。
+L39: 1. 通常の決裁基準を契約金額（税込）から判定する
+L40: 2. 医療案件である場合は 1段階引き上げる
+L45: - 本規程における「契約金額」は、提案時の見込金額ではなく、契約締結時点で社内決裁に付された税込金額を原則とする。
+L46: - 契約変更により税込金額または契約形態が変わる場合は、必要に応じて再決裁を行う。
+
+## source: data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/社内管理/データアステル社内管理_決裁基準.md.structure.json"",
+L5: ""file_name"": ""データアステル社内管理_決裁基準.md"",
+L6: ""file_type"": ""md"",
+L16: ""level"": 1,
+L17: ""text"": ""データアステル社内管理_決裁基準""
+L18: },
+L24: ""level"": 2,
+L25: ""text"": ""2. 通常の決裁基準""
+L26: },
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/カラム説明.md
+L1: ### train.csv
+L3: | カラム | ヘッダ名称 | データ型 | 説明 |
+L4: | --- | --- | --- | --- |
+L5: | 0 | id | int | インデックスとして使用 |
+L6: | 1 | Age | int | 年齢 |
+L7: | 2 | Gender | char | 性別 |
+L8: | 3 | T_Bil | float | 検査項目1： 総ビリルビン (Total Bilirubin) |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/00.提案/提案書.pptx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/00.提案/提案書.pptx`
+L5: - source_sha1: `693cae41a989e355caa235842cb8a4a4628dc3c6`
+L18: 提出先：医療法人社団 恒一会 かえで総合病院様
+L19: 提出元：株式会社データアステル データサイエンス部
+L81: かえで総合病院では、医療の質向上、業務効率化、患者安全性の確保を目的として、診療・検査データの活用高度化が求められている。
+L414: 会社名　医療法人社団 恒一会 かえで総合病院
+L580: 見込金額（税込）
+L581: ¥3,850,000
+L598: 一括払い（100%）  │  最終成果物の検収完了後5営業日以内  │  ¥3,850,000（税込）
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv`
+L5: - source_sha1: `eb73c0896c4874f8ad5892690082f52aa4862155`
+L9: - column_count: 12
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv`
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.md
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx`
+L5: - source_sha1: `ed0d004256278dfd8615639c1582850b7966a50f`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | グラフ | 0 | 0 | A1:A1 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.sheets/グラフ.csv |
+L14: | Pivo",EDA/EDA046/raw_responses/index_079.json
+80,format_extraction,xlsx_yellow_cell_context,spreadsheet_format_semantic_context,東都人材プラットフォームのtrain.xlsxにおいて、Sheet2の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。,,わかりません,False,http_200,,data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx.structure.json,10738,"## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet2.csv
+L1: ﻿
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.md
+L1: # Excel Workbook: train.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx`
+L5: - source_sha1: `1b0412a623c02877da9e2d7d96988152774c6b02`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | Sheet1 | 2250 | 5 | A1:E2251 | 0 | 1 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet1.csv |
+L14: | Sheet2 | 0 | 0 | A1:A1 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet2.csv |
+L15: | train | 11529 | 10 | A1:J11530 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/train.csv |
+L36: ## Sample: Sheet2
+L42: ## Sample: train
+L45: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+L46: | train_00000 | Female | 25-29 | United States of America | Master窶冱 degree | Engineering (non-computer focused) | Data Analyst | Medical/Pharmaceutical | 46024 | 4 |
+L47: | train_00001 | Male | 22-24 | India | Ba
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json"",
+L5: ""file_name"": ""train.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""1b0412a623c02877da9e2d7d96988152774c6b02"",
+L17: ""dimension"": ""A1:E2251"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet1.csv"",
+L19: ""merged_ranges"": [
+L60: ""font_color"": """",
+L61: ""fill_color"": ""FFFFFF00"",
+L62: ""number_format"": ""General""
+L178: {
+L179: ""sheet_name"": ""Sheet2"",
+L180: ""sheet_state"": ""visible"",
+L183: ""dimension"": ""A1:A1"",
+L184: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet2.csv"",
+L185: ""merged_ranges"": [],
+L204: {
+L205: ""sheet_name"": ""train"",
+L206
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/train.csv
+L1: ﻿id,Gender,Age,Country,Education,Major,Profession,Industry,Experience,target
+L2: train_00000,Female,25-29,United States of America,Master窶冱 degree,Engineering (non-computer focused),Data Analyst,Medical/Pharmaceutical,46024,4
+L3: train_00001,Male,22-24,India,Bachelor窶冱 degree,Other,Data Scientist,Accounting/Finance,46024,0
+L4: train_00002,Male,30-34,United States of America,Doctoral degree,""Computer science (software engineering, etc.)"",Research Assistant,I am a student,46117,1
+L5: train_00003,Male,30-34,India,Some college/university study without earning a bachelor窶冱 degree,""Social sciences (anthropology, psychology, sociology, etc.)"",Data Analyst,Government/Public Service,46024,1
+L6: train_00004,Male,25-29,Japan,Some college/university study without earning a bachelor窶冱 degree,""A business discipline (accounting, economics, finance, etc.)"",Software Engineer,Online Service/Internet-based Services,46085,3
+L7: train_00005,Male,35-39,Italy,Master窶冱 degree,Mathematics or statistics,Oth
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.sheets/Sheet1.csv
+L1: ﻿Gender,target,Age,Country,個数
+L2: Female,0,18-21,Australia,3.0
+L3: ,,,Belarus,1.0
+L4: ,,,Brazil,5.0
+L5: ,,,Canada,1.0
+L6: ,,,China,8.0
+L7: ,,,Colombia,1.0
+L8: ,,,Egypt,1.0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv`
+L5: - source_sha1: `81029055794a9204381a9f44db4cd8793360cdf0`
+L9: - column_count: 10
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv.data.csv`
+L32: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+L33: | train_00000 | Female | 25-29 | United States of America | Master’s degree | Engineering (non-computer focused) | Data Analyst | Medical/Pharmaceutical | 1-2 | 4 |
+L34: | train_00001 | Male | 22-24 | India | Bachelor’s degree | Other | Data Scientist | Accounting/Finance | 1-2 | 0 |
+L35: | train_00002 | Male | 30-34 | United States of America | Doctoral degree | Computer science (software engineering, etc.) | Research Assistant | I am a student | 4-5 | 1 |
+L36: | train_00003 | Male | 30-34 | India | Some college/university study without earning a bachelor’s degree | Social sciences (anthropology, psychology
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx.md
+L1: # Excel Workbook: スケジュール.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/02.計画/スケジュール.xlsx`
+L",EDA/EDA046/raw_responses/index_080.json
+83,table_calculation,line_search,model_formula_recompute,蒼樹会 みなみ野女性医療センターのtrain.xlsxにおいて、回帰分析の結果として記載されている係数をindex=1770のデータに当てはめたときの予測値はいくつですか。小数第5位まで答えてください。,,わかりません,False,http_200,,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md,10693,"## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md
+L1: # Excel Workbook: train.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx`
+L5: - source_sha1: `538cf89688868c01f9a1ff3b71cf33f5edcf2f41`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | Sheet1 | 33 | 10 | A1:J33 | 0 | 83 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv |
+L14: | train | 3000 | 10 | A1:J3001 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv |
+L35: ## Sample: train
+L37: | index | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age | Outcome |
+L38: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.structure.json"",
+L5: ""file_name"": ""train.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""538cf89688868c01f9a1ff3b71cf33f5edcf2f41"",
+L17: ""dimension"": ""A1:J33"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv"",
+L19: ""merged_ranges"": [],
+L62: {
+L63: ""coordinate"": ""F17"",
+L64: ""bold"": false,
+L134: {
+L135: ""coordinate"": ""F18"",
+L136: ""bold"": false,
+L206: {
+L207: ""coordinate"": ""F19"",
+L208: ""bold"": false,
+L940: {
+L941: ""sheet_name"": ""train"",
+L942: ""sheet_state"": ""visible"",
+L945: ""dimension"": ""A1:J3001"",
+L946: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv
+L1: ﻿index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+L2: 0,8,110,76,0,0,39.54714069,0.288327632,26,0
+L894: 1467,2,129,72,0,0,33.23262708,0.756043209,22,0
+L895: 1468,0,129,66,22,0,28.17700885,0.497453615,21,0
+L896: 1469,0,100,88,0,0,40.52808862,0.219517128999999,23,1
+L1073: 1769,9,125,74,0,0,39.48516566,0.202240583,28,0
+L1074: 1770,1,123,78,0,0,39.90017493,0.257582861,42,0
+L1075: 1773,0,129,60,0,130,39.67506993,0.434817576,22,0
+L1142: 1884,2,131,70,0,0,24.76330232,0.218543681,28,0
+L1143: 1885,1,162,66,30,0,34.22370562,0.210177064,22,0
+L1144: 1886,7,122,74,0,0,33.36029023,0.209160876,35,0
+L1340: 2206,2,154,74,30,0,32.69925172,0.234241628,25,0
+L1341: 2207,1,99,62,30,180,27.17707454,0.684525266,23,0
+L1342: 2208,1,95,68,0,0,33.11200608,0.229341753,22,0
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv
+L12: ,自由度,変動,分散,観測された分散比,有意 F,,,,
+L13: 回帰,8,76.40521605291087,9.55065200661386,60.87822932941777,1.6300547177079886e-92,,,,
+L14: 残差,2991,469.2317839470784,0.1568812383641185,,,,,,
+L16: ,,,,,,,,,
+L17: ,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%,
+L18: DiabetesPedigreeFunction,0.11143479393830226,0.027377997323329344,4.070231749323257,4.818242576977036e-05,0.057753182086742245,0.16511640578986228,0.057753182086742245,0.16511640578986228,
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md
+L1: # Table Data: train.csv
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv`
+L5: - source_sha1: `2349c7b9a1d1fd10d829ce1d768dd7b04083a3a8`
+L9: - column_count: 10
+L10: - normalized_csv_path: `data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv`
+L15: | --- | --- | --- |
+L16: | index | int64 | 0 |
+L17: | Pregnancies | int64 | 0 |
+L31: | index | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age | Outcome |
+L32: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+L1: ﻿index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+L2: 0,8,110,76,0,0,39.54714069,0.288327632,26,0
+L894: 1467,2,129,72,0,0,33.23262708,0.7560432090000001,22,0
+L895: 1468,0,129,66,22,0,28.17700885,0.497453615,21,0
+L896: 1469,0,100,88,0,0,40.52808862,0.2195171289999999,23,1
+L1073: 1769,9,125,74,0,0,39.48516566,0.202240583,28,0
+L1074: 1770,1,123,78,0,0,39.90017493,0.257582861,42,0
+L1075: 1773,0,129,60,0,130,39.67506993,0.434817576,22,0
+L1142: 1884,2,131,70,0,0,24.76330232,0.218543681,28,0
+L1143: 1885,1,162,66,30,0,34.22370562,0.210177064,22,0
+L1144: 1886,7,122,74,0,0,33.36029023,0.209160876,",EDA/EDA046/raw_responses/index_083.json
+93,fallback_bm25_llm,line_search,meeting_action_status_lookup,蒼樹会 みなみ野女性医療センターのアクションIDA10の内容をそのまま抜き出してください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-24.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-24.pdf.structure.json,6609,"## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.md
+L1: # PDF Markdown: 会議録_2025-04-03.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf`
+L5: - source_sha1: `72619c889001a4b4c08e8df7e2b9fab8cd43f5b1`
+L6: - page_count: 6
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.md
+L1: # PDF Markdown: 会議録_2025-04-24.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf`
+L5: - source_sha1: `a989307ae5bf4b292a0f38aa216da455259fbed0`
+L6: - page_count: 6
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.md
+L1: # PDF Markdown: 会議録_2025-05-15.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf`
+L5: - source_sha1: `146524d136e6469c3d1b60fc5793443864022e02`
+L6: - page_count: 6
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.md
+L1: # PDF Markdown: 報告資料_2025-04-03.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf`
+L5: - source_sha1: `de47fa81e882b71aa9f68cb60e88ec6f8915116d`
+L6: - page_count: 5
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-24.pdf.md
+L1: # PDF Markdown: 報告資料_2025-04-24.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-24.pdf`
+L5: - source_sha1: `01f7316de555d8bcb07837d696d778bf9dff96a1`
+L6: - page_count: 6
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-03.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-04-03.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""72619c889001a4b4c08e8df7e2b9fab8cd43f5b1"",
+L8: ""page_count"": 6,
+L9: ""metadata"": {
+L10: ""/Title"": ""会議録_2025-04-03"",
+L11: ""/CreationDate"": ""D:20260407111627Z"",
+L12: ""/ModDate"": ""D:20260407111627Z""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-04-24.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-04-24.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""a989307ae5bf4b292a0f38aa216da455259fbed0"",
+L8: ""page_count"": 6,
+L9: ""metadata"": {
+L10: ""/Title"": ""会議録_2025-04-24"",
+L11: ""/CreationDate"": ""D:20260407111628Z"",
+L12: ""/ModDate"": ""D:20260407111628Z""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/会議録/会議録_2025-05-15.pdf.structure.json"",
+L5: ""file_name"": ""会議録_2025-05-15.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""146524d136e6469c3d1b60fc5793443864022e02"",
+L8: ""page_count"": 6,
+L9: ""metadata"": {
+L10: ""/Title"": ""会議録_2025-05-15"",
+L11: ""/CreationDate"": ""D:20260407111628Z"",
+L12: ""/ModDate"": ""D:20260407111628Z""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-03.pdf.structure.json"",
+L5: ""file_name"": ""報告資料_2025-04-03.pdf"",
+L6: ""file_type"": ""pdf"",
+L7: ""source_sha1"": ""de47fa81e882b71aa9f68cb60e88ec6f8915116d"",
+L8: ""page_count"": 5,
+L9: ""metadata"": {
+L10: ""/Title"": ""報告資料_2025-04-03"",
+L11: ""/CreationDate"": ""D:20260407105602Z"",
+L12: ""/ModDate"": ""D:20260407105602Z""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/05.会議/報告資料/報告資料_2025-04-24.pdf.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/医療法人社団 ",EDA/EDA046/raw_responses/index_093.json
+95,diff_check,version_diff,structured_diff_semantic_filter,青嶺不動産アセットマネジメントのスケジュール_r1.xlsxとスケジュール_r2.xlsxを比較したとき、未着手から完了への変更を除いて、案件遂行に関連する変更点を挙げてください。,,わかりません,False,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.sheets/スケジュール.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.sheets/スケジュール.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/00.提案/old/提案書.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/00.提案/old/提案書.pptx.structure.json,12000,"## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.md
+L1: # Excel Workbook: スケジュール_r1.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx`
+L5: - source_sha1: `c1dd0c2d2a6e5eb5a1b46a66f2be264176a2e76c`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | スケジュール | 28 | 15 | A1:O28 | 0 | 45 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.sheets/スケジュール.csv |
+L23: | No. | タスクID | 依存タスク | ステータス | フェーズ | タスク名 | 詳細・内容 | クリティカルパス | マイルストーン | チェックポイント | 成果物 | 開始日 | 終了日 | 担当者 | 備考 |
+L24: | 1 | T01 | - | 未着手 | P1 立上げ・前提固定 | プロジェクトキックオフ実施 | スコープ、対象データ(data\\train.csv)、目的変数(SALE PRICE)、役割分担、会議運営を確認。議事メモ即日配布 | ○ | MS1: キックオフ完了・前提固定 | CP1: キックオフ完了確認 | キックオフ議事メモ | 2025-08-06 00:00:00 | 2025-08-06 00:00:00 | 佐藤 健一 | M01 キックオフ会議（クライアント窓口: 前田 美咲 部長） |
+L25: | 2 | T02 | T01 | 未着手 | P1 立上げ・前提固定 | 正本前提・スコープ・役割分担確定 | 正本前提整理、スコープ確定、役割分担の文書化 | nan | nan | nan | 前提確定メモ | 2025-08-06 00:00:00 | 2025-08-07 00:00:00 | 佐藤 健一 / 藤田 彩 | nan |
+L26: | 3 | T03 | T01 | 未着手 | P1 立上げ・前提
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.md
+L1: # Excel Workbook: スケジュール_r2.xlsx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx`
+L5: - source_sha1: `a21f0d9eddac0778568eca834134a6c80d2c41f2`
+L12: | --- | --- | --- | --- | --- | --- | --- | --- |
+L13: | スケジュール | 25 | 15 | A1:O26 | 0 | 229 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.sheets/スケジュール.csv |
+L20: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+L21: | 1.0 | P1 立上げ・前提固定 | T01 | プロジェクトキックオフ実施 | スコープ、対象データ(data\\train.csv)、目的変数(SALE PRICE)、役割分担、会議運営を確認。議事メモ即日配布 | 佐藤 健一 | 2025-08-06 00:00:00 | 2025-08-06 00:00:00 | - | キックオフ議事メモ | 完了 | ○ | MS1: キックオフ完了・前提固定 | CP1: キックオフ完了確認 | M01 キックオフ会議（クライアント窓口: 前田 美咲 部長） |
+L22: | 2.0 | P1 立上げ・前提固定 | T02 | 正本前提・スコープ・役割分担確定 | 正本前提整理、スコープ確定、役割分担の文書化 | 佐藤 健一 / 藤田 彩 | 2025-08-06 00:00:00 | 2025-08-07 00:00:00 | T01 | 前提確定メモ | 完了 | nan | nan | nan | nan |
+L23: | 3.0 | P1 立上げ・前提固定 | T03 | データ受領確認・読込検証 | data\\trai
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.structure.json"",
+L5: ""file_name"": ""スケジュール_r1.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""c1dd0c2d2a6e5eb5a1b46a66f2be264176a2e76c"",
+L17: ""dimension"": ""A1:O28"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.sheets/スケジュール.csv"",
+L19: ""merged_ranges"": [],
+L27: ""coordinate"": ""L4"",
+L28: ""bold"": false,
+L29: ""italic"": false,
+L36: ""coordinate"": ""M4"",
+L37: ""bold"": false,
+L38: ""italic"": false,
+L45: ""coordinate"": ""L5"",
+L46: ""bold"": false,
+L47: ""italic"": false,
+L54: ""coordinate"": ""M5"",
+L55: ""bold"": false,
+L56: ""italic"": false,
+L63: ""coordinate"": ""L6"",
+L64: ""bold"": false,
+L65: ""italic"": false,
+L72: ""coordi
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.structure.json
+L1: {
+L2: ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx"",
+L3: ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.md"",
+L4: ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.structure.json"",
+L5: ""file_name"": ""スケジュール_r2.xlsx"",
+L6: ""file_type"": ""xlsx"",
+L7: ""source_sha1"": ""a21f0d9eddac0778568eca834134a6c80d2c41f2"",
+L17: ""dimension"": ""A1:O26"",
+L18: ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.sheets/スケジュール.csv"",
+L19: ""merged_ranges"": [],
+L27: ""coordinate"": ""A1"",
+L28: ""bold"": true,
+L29: ""italic"": false,
+L36: ""coordinate"": ""B1"",
+L37: ""bold"": true,
+L38: ""italic"": false,
+L45: ""coordinate"": ""C1"",
+L46: ""bold"": true,
+L47: ""italic"": false,
+L54: ""coordinate"": ""D1"",
+L55: ""bold"": true,
+L56: ""italic"": false,
+L63: ""coordinate"": ""E1"",
+L64: ""bold"": true,
+L65: ""italic"": false,
+L72: ""coordinate""
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.sheets/スケジュール.csv
+L4: No.,タスクID,依存タスク,ステータス,フェーズ,タスク名,詳細・内容,クリティカルパス,マイルストーン,チェックポイント,成果物,開始日,終了日,担当者,備考
+L5: 1,T01,-,未着手,P1 立上げ・前提固定,プロジェクトキックオフ実施,スコープ、対象データ(data\train.csv)、目的変数(SALE PRICE)、役割分担、会議運営を確認。議事メモ即日配布,○,MS1: キックオフ完了・前提固定,CP1: キックオフ完了確認,キックオフ議事メモ,2025-08-06 00:00:00,2025-08-06 00:00:00,佐藤 健一,M01 キックオフ会議（クライアント窓口: 前田 美咲 部長）
+L6: 2,T02,T01,未着手,P1 立上げ・前提固定,正本前提・スコープ・役割分担確定,正本前提整理、スコープ確定、役割分担の文書化,,,,前提確定メモ,2025-08-06 00:00:00,2025-08-07 00:00:00,佐藤 健一 / 藤田 彩,
+L7: 3,T03,T01,未着手,P1 ",EDA/EDA046/raw_responses/index_095.json
+96,fallback_bm25_llm,line_search,meeting_action_status_lookup,青葉与信マネジメントのチェックポイント2として設定されている内容に関連するタスクIDを教えてください。,,わかりません,False,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-09.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-29.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-05-27.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-09.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-29.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-09.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-29.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-05-27.pdf.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-09.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-29.docx.structure.json,12000,"## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-09.pdf.md
+L1: # PDF Markdown: 会議録_2025-04-09.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-09.pdf`
+L5: - source_sha1: `0f692e3bbdca8df82b0b9825b16a739c5877db04`
+L6: - page_count: 7
+L10: ### Page 1
+L12: 会議録
+L13: 1. 会議情報
+L14: • 会議 ID: M01
+L15: • 会議種別: キックオフ・前提確認会
+L16: • 日時: 2025-04-09
+L20: 能時点確認、スコープ境界と週次運営の承認
+L21: • 出席者:
+L22: o 青葉与信マネジメント株式会社（審査企画部） 中村 浩一（主担当）
+L23: o 株式会社データアステル（データサイエンス部） 伊藤 翔太（PM）
+L24: o 株式会社データアステル（データサイエンス部） 山本 彩乃（リード
+L57: と前提定義の登録を早急に行う合意。
+L58: • 分析はキックオフ後に着手し、初回結果は次回会議で共有する。
+L59: 4. 進捗サマリ
+L60: • 実施済み : キックオフ実施、データ受領確認、スコープ・役割分担・レビュ
+L61: ー計画の合意。分析は未着手。
+L93: 変更: なし（本会議で既存の決定を変更した事項はなし）
+L94: 6. アクションアイテム
+L95: ID Action Owner Due Date Status
+L96: A01 loan_status
+L97: の正式定義
+L113: ### Page 5
+L115: ID Action Owner Due Date Status
+L116: 否」を確認
+L117: ・回答
+L154: ### Page 6
+L156: ID Action Owner Due Date Status
+L157: 案）作成
+L158: 注 : A05 は本日実行済（受領データと保管場所の確認完了のため「 Done 」）。完
+L174: 4. スコープ・納期（スコープクリープ）（中）
+L175: o 懸念: 追加要望が固定価格・短納期計画に影響を与える。
+L176
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-29.pdf.md
+L1: # PDF Markdown: 会議録_2025-04-29.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-04-29.pdf`
+L5: - source_sha1: `7599d0043cca89d6ddf9ca46919c0e08032b98db`
+L6: - page_count: 10
+L10: ### Page 1
+L12: 会議録
+L13: 1. 会議情報
+L14: • 会議 ID: M02
+L15: • 会議種別: 中間レビュー会
+L16: • 日時: 2025-04-29
+L18: に向けた論点優先順位を決定する
+L19: • 出席者:
+L20: o 青葉与信マネジメント株式会社 審査企画部 中村 浩一
+L21: o 株式会社データアステル（データサイエンス部） 伊藤 翔太、山本 彩
+L22: 乃、藤田 彩、岡田 佑樹
+L27: 4. リーケージ懸念変数（interest_rate / grade 等）の扱い方針確定
+L28: 5. 追加深掘り論点の優先順位決定と担当割当
+L29: 6. prior open actions の確認（A01〜A06）
+L31: ### Page 2
+L54: • 深掘り論点の優先順位
+L55: o M02 時点での優先順位を決定（詳細は決定事項・アクション参照）。
+L56: • prior open actions の確認
+L58: ### Page 3
+L61: 料）は本会議で提示・配布したためクローズと判断（詳細はアクシ
+L62: ョンに明記）。
+L63: 4. 進捗サマリ
+L64: • 完了（本会議まで）
+L65: o データ読込・EDA 実施、初期サマリとベースラインモデルの出力
+L118: 4) 時系列情報欠落への代替案検討（将来のデータ収集提案）
+L119: o 承認者: 中村 浩一（口頭合意）
+L120: 変更: prior open action A06 を「完了（Closed）」に変更。理由: 中間レビュー資料
+L121: を作成・配布し本会議で発表したため。承認: データアステル側（山本 / 藤田）報
+L122: 告により確認。
+L123: 6. アクションア
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-05-27.pdf.md
+L1: # PDF Markdown: 会議録_2025-05-27.pdf
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/会議録/会議録_2025-05-27.pdf`
+L5: - source_sha1: `52a36e5a43f89568f135d5453a28dad59fce7cb5`
+L6: - page_count: 9
+L10: ### Page 1
+L12: 会議録
+L13: 1. 会議情報
+L14: • 会議 ID: M03
+L15: • 会議種別: 最終報告・検収会
+L16: • 日時: 2025-05-27
+L20: ェーズ論点確認; 検収可否決定
+L21: • 出席者:
+L22: o 青葉与信マネジメント株式会社（審査企画部） 中村 浩一（主担当）
+L23: o 関係レビュー担当者（クライアント側）
+L24: o 株式会社データアステル（データサイエンス部） 山田 直樹（エグゼ
+L34: 点確認
+L35: 4. 検収判定（承認可否）と検収後作業のスケジュール確認
+L36: 5. 未解決アクションの扱い（Prior open actions の最終整理）
+L37: 3. 主要議論
+L38: • 最終報告書の要旨と主要指標を受託者より提示（ROC-AUC 0.7127、
+L48: 響する点を再確認。
+L49: • 既存の未完アクション（A01〜A11）をレビュー。最終報告書に含め済みの
+L50: 項目（A08/A09/A10）は完了扱い、文書登録や監査証跡の未整備分
+L51: （A01/A02/A03/A07/A11）は検収後の短期間で完了することを合意。
+L52: • 検収手続きについて、契約条件（甲は受領後 5 営業日以内に検収合否通知）
+L56: ### Page 3
+L58: 4. 進捗サマリ
+L59: • 完了（今回まで）: 最終報告書作成・配布、モデル評価結果出力
+L60: （artifacts/analysis_outputs/*）、中間レビューでの指摘反映。A08/A09/A10
+L61: の分析結果は最終報告書に反映済み。
+L62: • 継続／未完了: A01（loan_status 文書化）、A02（interest_rate/g
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-09.docx.md
+L1: # Word Markdown: 報告資料_2025-04-09.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-09.docx`
+L5: - source_sha1: `935bb364071c034a1efd2af1427186b4a2f1ab5d`
+L6: - paragraph_count: 97
+L15: <!-- block_index=2 type=paragraph style=Block Text -->
+L16: チェックポイント: M01（キックオフ・前提確認会）
+L17: チェックポイント日付: 2025-04-09
+L18: 報告期間: 2025-04-09 to 2025-04-09
+L26: <!-- block_index=5 type=paragraph style=Compact -->
+L27: 本チェックポイント（M01：キックオフ）は所定日に設定されています（meeting_id: M01, meeting_date: 2025-04-09）。議題は「loan_status の業務定義確定、interest_rate/grade の利用可能時点確認、スコープ/週次運営の合意」です（Report facts checkpoint に記載の purpose／expected_decisions に準拠）。
+L29: <!-- block_index=6 type=paragraph style=Compact -->
+L86: <!-- block_index=25 type=paragraph style=Compact -->
+L87: Report facts の prior_state.open_action_count = 0。ただし、キックオフでの合意事項・決定事項（議事録）が未登録であるため、正式なアクション登録が必要（議事録登録とアクション生成を推奨）。
+L89: <!-- block_index=26 type=paragraph style=Normal -->
+L143: <!-- block_index=44 type=paragraph style=Co
+
+## source: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-29.docx.md
+L1: # Word Markdown: 報告資料_2025-04-29.docx
+L3: ## Source
+L4: - raw_path: `share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/05.会議/報告資料/報告資料_2025-04-29.docx`
+L5: - source_sha1: `2f51f1292baf5a245be541cc1c650725ce1f978c`
+L6: - paragraph_count: 106
+L15: <!-- block_index=2 type=paragraph style=First Paragraph -->
+L16: 対象チェックポイント: M02（中間レビュー会）
+L17: 会議日: 2025-04-29
+L18: 報告対象期間: 2025-04-09 〜 2025-04-29
+L26: <!-- block_index=5 type=paragraph style=Compact -->
+L27: 本報告はチェックポイント M02 時点（2025-04-29）の状況をまとめた中間分析報告",EDA/EDA046/raw_responses/index_096.json

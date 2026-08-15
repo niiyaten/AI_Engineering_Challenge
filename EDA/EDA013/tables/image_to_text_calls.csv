@@ -1,0 +1,38 @@
+﻿image_path,status,model,elapsed_sec,error_message,content_preview
+data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/reports/figures/figure_06.png,ok,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,6.756,,"The user wants me to extract information from the provided image and convert it into a specific JSON format for RAG search.
+
+**1. Analyze the Image:**
+* **Title:** ""day による件数推移"" (Trend of the number of items by day).
+* **X-axis:** ""日"" (Day), ranging from 0 to 30 (roughly). The ticks are at intervals of 5 (0, 5, 10, 15, 20, 25, 30).
+* **Left Y-axis:** ""件数"" (Number of items), ranging from 200 to 1600.
+* **Right Y-axis:** ""目的変数平均"" (Average of the dependent variable), ranging from 0.05 to 0.25.
+* **"
+data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/reports/figures/categorical_distribution_top3.png,ok,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,12.435,,"The user wants me to convert the provided image into a RAG search text format.
+I need to extract:
+1. **OCR Text**: All readable text from the image (titles, axis labels, category names, numbers).
+2. **Chart Description**: A summary of what the charts show (titles, types of data).
+3. **Extracted Values**: Specific data points or trends visible in the charts.
+4. **Search Summary**: A concise summary of the content.
+5. **Confidence Notes**: Any uncertainties or notes about the data.
+
+**Step 1: Anal"
+data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/reports/figures/feature_correlation_heatmap.png,ok,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,8.83,,"The user wants me to convert the provided image into a RAG search-ready text format.
+I need to extract:
+1. **OCR Text**: All visible text in the image (titles, axis labels, numbers, etc.).
+2. **Chart Description**: A summary of what the chart is (type, title, axes).
+3. **Extracted Values**: Key numerical values or trends visible (e.g., correlation values).
+4. **Search Summary**: A concise summary for search purposes.
+5. **Confidence Notes**: Any notes on uncertainty or assumptions.
+
+**Step 1: An"
+data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/reports/figures/missing_rate_top20.png,ok,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,14.203,,"The user wants me to convert the provided image into RAG search text.
+I need to extract:
+1. **OCR Text**: All readable text from the image.
+2. **Chart Description**: What the chart is about (title, axes, type).
+3. **Extracted Values**: Data points if visible (likely none in this specific empty plot).
+4. **Search Summary**: A summary of what the chart shows.
+5. **Confidence Notes**: Any uncertainties.
+
+**Step 1: Analyze the Image**
+* **Title**: ""欠損率 上位20項目"" (Top 20 items by missing rate).
+* **Y-a"

@@ -1,0 +1,2 @@
+/opt/pyvenv/lib/python3.13/site-packages/openpyxl/reader/drawings.py:67: UserWarning: wmf image format is not supported so the image is being dropped
+  warn(msg)

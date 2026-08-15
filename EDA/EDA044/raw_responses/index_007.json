@@ -1,0 +1,63 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 106,
+  "prompt_tokens": 5380,
+  "completion_tokens": 537,
+  "reasoning_tokens": 469,
+  "raw": {
+    "id": "gen-1783594842-6P9iHNkeAOLC7gRXRpFL",
+    "object": "chat.completion",
+    "created": 1783594842,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"行ラベル（0,1,2…）でグループ化し、各列（平均 / temp, 平均 / atemp, 平均 / hum, 平均 / windspeed, 平均 / cnt）の平均値を算出する。\"}",
+          "refusal": null,
+          "reasoning": "We need to answer: \"青潮モビリティサービスの基礎分析.pptxにおいて、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。\"\n\nWe have root data: train.xlsx structure JSON. The yellow highlight likely refers to cells with fill=00000000? Actually fill=00000000 is black? Yellow highlight maybe fill=FFFF00? But none in data. Maybe yellow highlight refers to cells with fill=00000000? Not sure. But we need to answer extraction condition and aggregation content.\n\nWe need to use only the provided evidence. The evidence shows cells B4, C4, D4, E4, F4, J4, L4, M4 etc. They are header cells with cell_value like \"平均 / temp\" etc. So maybe the yellow highlight refers to these header cells? The question: \"黄色ハイライトされている数値に対応するデータの抽出条件と集計内容\" So we need to state extraction condition and aggregation content for the yellow highlighted numbers. The numbers likely are the averages shown in the table. The extraction condition: filter by row label? The table has columns: col_1=行ラベル, col_2=平均 / temp, col_3=平均 / atemp, col_4=平均 / hum, col_5=平均 / windspeed, col_6=平均 / cnt. So extraction condition: group by 行ラベル (row label) and compute mean of each variable. So answer: extraction condition: group by 行ラベル (0,1,2,3...). Aggregation: compute average of temp, atemp, hum, windspeed, cnt.\n\nThus answer: \"行ラベルでグループ化し、各列の平均を算出\" etc.\n\nWe need JSON: {\"answer\":\"...\"} within 320 chars.\n\nLet's craft: \"行ラベル（0,1,2…）でグループ化し、各列（平均 / temp, 平均 / atemp, 平均 / hum, 平均 / windspeed, 平均 / cnt）の平均値を算出する。\"\n\nThat's within 320 chars.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"青潮モビリティサービスの基礎分析.pptxにおいて、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。\"\n\nWe have root data: train.xlsx structure JSON. The yellow highlight likely refers to cells with fill=00000000? Actually fill=00000000 is black? Yellow highlight maybe fill=FFFF00? But none in data. Maybe yellow highlight refers to cells with fill=00000000? Not sure. But we need to answer extraction condition and aggregation content.\n\nWe need to use only the provided evidence. The evidence shows cells B4, C4, D4, E4, F4, J4, L4, M4 etc. They are header cells with cell_value like \"平均 / temp\" etc. So maybe the yellow highlight refers to these header cells? The question: \"黄色ハイライトされている数値に対応するデータの抽出条件と集計内容\" So we need to state extraction condition and aggregation content for the yellow highlighted numbers. The numbers likely are the averages shown in the table. The extraction condition: filter by row label? The table has columns: col_1=行ラベル, col_2=平均 / temp, col_3=平均 / atemp, col_4=平均 / hum, col_5=平均 / windspeed, col_6=平均 / cnt. So extraction condition: group by 行ラベル (row label) and compute mean of each variable. So answer: extraction condition: group by 行ラベル (0,1,2,3...). Aggregation: compute average of temp, atemp, hum, windspeed, cnt.\n\nThus answer: \"行ラベルでグループ化し、各列の平均を算出\" etc.\n\nWe need JSON: {\"answer\":\"...\"} within 320 chars.\n\nLet's craft: \"行ラベル（0,1,2…）でグループ化し、各列（平均 / temp, 平均 / atemp, 平均 / hum, 平均 / windspeed, 平均 / cnt）の平均値を算出する。\"\n\nThat's within 320 chars.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5380,
+      "completion_tokens": 537,
+      "total_tokens": 5917,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001156,
+        "upstream_inference_prompt_cost": 7.801e-05,
+        "upstream_inference_completions_cost": 3.759e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 469,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

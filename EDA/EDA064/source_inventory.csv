@@ -1,0 +1,3 @@
+﻿path,purpose,question_coverage,selected_source_information,answer_information,timestamp,availability,reliability_note
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG_test49_openrouter_poc\data\work\gate19_test100_final_candidate\inventory\file_records.jsonl,current document inventory,all,True,False,latest worktree,readable,strict-run metadata
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG_test49_openrouter_poc\data\work\gate19_test100_final_candidate\extracted\search_records.jsonl,current 1614 search chunks,all,True,False,latest worktree,readable,current strict extraction search records

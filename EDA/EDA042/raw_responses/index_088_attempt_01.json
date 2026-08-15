@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 44,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783593206-MQwlLkNWhkUr3RR7fWuD",
+    "object": "chat.completion",
+    "created": 1783593206,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"解釈分析・特徴量整理、業務活用示唆整理、最終報告書ドラフト作成\"}",
+          "refusal": null,
+          "reasoning": "We need answer: \"蒼樹会 みなみ野女性医療センターの提案書内のスケジュール案において、第5週目に実施することになっている項目は何ですか。\"\n\nWe have schedule.xlsx data. Need to find week 5 tasks. The schedule likely has start dates. We need to determine week numbers relative to start date? The schedule start date is 2025-04-03. Week 1: 2025-04-03 to 2025-04-09? Let's compute. Week 1: 4/3-4/9. Week 2: 4/10-4/16. Week 3: 4/17-4/23. Week 4: 4/24-4/30. Week 5: 5/1-5/7. So tasks in week 5: tasks with start date 2025-05-01 to 2025-05-07. Looking at rows: row 13: T14 start 2025-05-01 end 2025-05-02. row 14: T15 start 2025-05-05 end 2025-05-07. row 15: T16 start 2025-05-05 end 2025-05-09 (ends 5/9, but part of week 5). So tasks in week 5: T14, T15, T16. But question: \"第5週目に実施することになっている項目は何ですか。\" Might refer to a single item? Maybe schedule has a weekly summary. But likely they want the task name(s). Could be \"解釈分析・特徴量整理\" (T14), \"業務活用示唆整理\" (T15), \"最終報告書ドラフト作成\" (T16). But maybe they want the main item: \"解釈分析・特徴量整理\" because it's the first in week 5. But question singular: \"項目は何ですか\" could be plural. Provide all tasks.\n\nThus answer: \"解釈分析・特徴量整理、業務活用示唆整理、最終報告書ドラフト作成\". Provide in Japanese. Provide JSON.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer: \"蒼樹会 みなみ野女性医療センターの提案書内のスケジュール案において、第5週目に実施することになっている項目は何ですか。\"\n\nWe have schedule.xlsx data. Need to find week 5 tasks. The schedule likely has start dates. We need to determine week numbers relative to start date? The schedule start date is 2025-04-03. Week 1: 2025-04-03 to 2025-04-09? Let's compute. Week 1: 4/3-4/9. Week 2: 4/10-4/16. Week 3: 4/17-4/23. Week 4: 4/24-4/30. Week 5: 5/1-5/7. So tasks in week 5: tasks with start date 2025-05-01 to 2025-05-07. Looking at rows: row 13: T14 start 2025-05-01 end 2025-05-02. row 14: T15 start 2025-05-05 end 2025-05-07. row 15: T16 start 2025-05-05 end 2025-05-09 (ends 5/9, but part of week 5). So tasks in week 5: T14, T15, T16. But question: \"第5週目に実施することになっている項目は何ですか。\" Might refer to a single item? Maybe schedule has a weekly summary. But likely they want the task name(s). Could be \"解釈分析・特徴量整理\" (T14), \"業務活用示唆整理\" (T15), \"最終報告書ドラフト作成\" (T16). But maybe they want the main item: \"解釈分析・特徴量整理\" because it's the first in week 5. But question singular: \"項目は何ですか\" could be plural. Provide all tasks.\n\nThus answer: \"解釈分析・特徴量整理、業務活用示唆整理、最終報告書ドラフト作成\". Provide in Japanese. Provide JSON.\n\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5455,
+      "completion_tokens": 534,
+      "total_tokens": 5989,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001164775,
+        "upstream_inference_prompt_cost": 7.90975e-05,
+        "upstream_inference_completions_cost": 3.738e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 493,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+﻿top_k,loose_hit_count,loose_hit_rate,exact_hit_count,exact_hit_rate,mean_term_coverage
+1,5,0.1667,4,0.1333,0.1917
+3,5,0.1667,4,0.1333,0.1917
+5,5,0.1667,4,0.1333,0.2133
+10,5,0.1667,4,0.1333,0.2133

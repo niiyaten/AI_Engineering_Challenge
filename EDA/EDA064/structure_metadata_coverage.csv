@@ -1,0 +1,7 @@
+﻿attribute,current_1614,historical_chunks,planner_use
+page_slide_sheet,available_in_metadata,schema_dependent,document_probe
+table_cell_row,partial,schema_dependent,executor_input
+comments_notes,route_specific,schema_dependent,executor_input
+bold_color_fill,not_in_generic_record,schema_dependent,structure_enrichment
+bbox_relationships_neighbors,partial,schema_dependent,layout_and_probe
+charts_images,record_type_only,schema_dependent,visual_probe

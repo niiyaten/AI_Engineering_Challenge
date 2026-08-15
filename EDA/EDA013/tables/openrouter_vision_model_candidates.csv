@@ -1,0 +1,2 @@
+﻿rank,model,source,selected_first_success
+1,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,cli_arg,True

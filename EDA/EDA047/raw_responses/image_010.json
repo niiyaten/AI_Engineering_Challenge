@@ -1,0 +1,12 @@
+{
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "status": "http_200",
+  "finish_reason": "",
+  "content_length": 0,
+  "raw": {
+    "error": {
+      "message": "error code: 524\n",
+      "code": 504
+    }
+  }
+}

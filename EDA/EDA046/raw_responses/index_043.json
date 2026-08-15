@@ -1,0 +1,63 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 18,
+  "prompt_tokens": 4758,
+  "completion_tokens": 94,
+  "reasoning_tokens": 74,
+  "raw": {
+    "id": "gen-1783602324-2dM5gk8Qygb7WlTmxNtc",
+    "object": "chat.completion",
+    "created": 1783602324,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"石川 直樹\"}",
+          "refusal": null,
+          "reasoning": "We need answer: \"東都のCTにおいて、甲側の主担当者をフルネームで教えてください。\"\n\nWe have contract doc: in markdown, block_index=7 shows \"主担当者：石川 直樹\". That is the main person. So answer: 石川 直樹. Provide JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer: \"東都のCTにおいて、甲側の主担当者をフルネームで教えてください。\"\n\nWe have contract doc: in markdown, block_index=7 shows \"主担当者：石川 直樹\". That is the main person. So answer: 石川 直樹. Provide JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4758,
+      "completion_tokens": 94,
+      "total_tokens": 4852,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.5571e-05,
+        "upstream_inference_prompt_cost": 6.8991e-05,
+        "upstream_inference_completions_cost": 6.58e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

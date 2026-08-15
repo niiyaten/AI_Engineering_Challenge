@@ -1,0 +1,13 @@
+{
+  "called_function": "rag_competition.planner.candidate_files_for_question",
+  "search_index": "rag_competition.search.BM25Index",
+  "search_unit": "SearchRecord, then aggregated by file_id",
+  "vector_search": false,
+  "bm25_search": true,
+  "strict_resolver_used": false,
+  "file_score_components": [],
+  "document_aggregation": "BM25 hit scores are summed per file_id; one CandidateFile is emitted per file",
+  "tie_breaking": "descending score, then raw_path.casefold(), then file_id",
+  "explicit_filename_priority": "not a separate strict-resolution stage; document_hints can contribute score",
+  "capability_specific_resolver_used": false
+}

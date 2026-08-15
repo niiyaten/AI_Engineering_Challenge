@@ -1,0 +1,7 @@
+﻿extension,extraction_method,extracted_files,total_text_length,mean_text_length,total_line_count
+.csv,csv_summary_sample,18,163772,9098.4,2860
+.csv,csv_full,11,57364,5214.9,734
+.ipynb,ipynb_cells_text_limited_outputs,11,311200,28290.9,8585
+.json,json_pretty_text,28,77125,2754.5,2420
+.md,markdown_raw_text,31,45068,1453.8,1260
+.py,python_raw_text,100,465066,4650.7,12130

@@ -1,0 +1,216 @@
+# test_001
+
+## Question
+恒一会 かえで総合病院の最終報告書old版と最新版を比較したとき、案件遂行に関連する実質的な変更を挙げてください。
+
+## Route
+diff_check
+
+## Generated Answer
+医療法人社団 恒一会 かえで総合病院 御中、2025-09-19 の変更管理チェックポイントは契約上の追加対応要否を判定する重要日です。追加要求が出た場合は change_request_policy（time_and_materials）に従って見積り・承認の流れを確保してください。、会議議事録: artifacts/meeting_minutes/会議録_2025-09-02.md（M01）および本中間レビュー議事録（M02）をプロジェクトの唯一基準として管理してください。、open actions = 7（prior_state.open_action_count = 7）。PM はこれらクローズを優先し、中間レビューで決定された前処理方針と継続モデル候補（expected_decisions）に基づくリソース配分を確定してください。、7. 最終報告書作成 — 検収対応
+
+## Retrieved Records
+
+### Rank 1
+- score: 92.774171
+- record_id: `generic_chunk_7cde7193942a486e`
+- record_type: `generic_chunk`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/05.会議/報告資料/報告資料_2025-09-16.docx`
+
+```text
+style=Compact -->
+実行アーティファクト（再現元）: artifacts/analysis_outputs/run_summary.json, artifacts/analysis_outputs/metrics.json, artifacts/analysis_outputs/experiments/leaderboard.json（Report facts.trace.source_files に記載）
+
+<!-- block_index=94 type=paragraph style=Compact -->
+会議議事録: artifacts/meeting_minutes/会議録_2025-09-02.md（M01）および本中間レビュー議事録（M02）をプロジェクトの唯一基準として管理してください。
+
+<!-- block_index=95 type=paragraph style=Compact -->
+要注意（PM 向け）
+
+<!-- block_index=96 type=paragraph style=Compact -->
+open actions = 7（prior_state.open_action_count = 7）。PM はこれらクローズを優先し、中間レビューで決定された前処理方針と継続モデル候補（expected_decisions）に基づくリソース配分を確定してください。
+
+<!-- block_index=97 type=paragraph style=Compact -->
+2025-09-19 の変更管理チェックポイントは契約上の追加対応要否を判定する重要日です。追加要求が出た場合は change_request_policy（time_and_materials）に従って見積り・承認の流れを確保してください。
+
+<!-- block_index=98 type=paragraph style=First Paragraph -->
+以上
+
+<!-- block_index=99 type=paragraph style=Body Text -->
+（作成: データアステル / 分析チーム — 報告は Report facts JSON（checkpoint=M02, stage=interim）に基づく内容です）
+```
+
+### Rank 2
+- score: 87.417805
+- record_id: `metadata_8cda600cb73d3838`
+- record_type: `metadata`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx`
+
+```text
+ファイル名: 医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx
+元パス: share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx
+ファイル種別: pptx
+```
+
+### Rank 3
+- score: 87.417805
+- record_id: `metadata_d570985f0177469e`
+- record_type: `metadata`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx`
+
+```text
+ファイル名: 医療法人社団 恒一会 かえで総合病院_最終報告.pptx
+元パス: share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx
+ファイル種別: pptx
+```
+
+### Rank 4
+- score: 82.029983
+- record_id: `pptx_slide_d5fd9fa3daf2271a`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx`
+
+```text
+Slide 18
+17. 総括
+本プロジェクトは、提案・契約どおりの期間内に分析基盤および初期モデルを整備し、判定支援として実用性のある示唆（閾値運用案、運用前パイロット設計、データ品質管理方針）を提示した。
+主要な成果と今後の方向性
+内部検証結果
+良好。スコア上位の患者を優先的にフォローする運用に即した施策が実行可能である。
+実運用化の条件
+外部検証やパイロットによる再確認、運用フローの整備が必須である。
+推奨アクション
+運用パイロット→評価→本番化の順で進めることを推奨する。
+推奨する次のステップ
+運用パイロット
+実施
+精度・業務負荷
+評価
+閾値最終
+チューニング
+本番化検討
+ご不明点や追加の検証依頼があれば、会議にてご指示ください。
+```
+
+### Rank 5
+- score: 82.029983
+- record_id: `pptx_slide_b348a01e2b898800`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx`
+
+```text
+Slide 18
+17. 総括
+本プロジェクトは、提案・契約どおりの期間内に分析基盤および初期モデルを整備し、判定支援として実用性のある示唆（閾値運用案、運用前パイロット設計、データ品質管理方針）を提示した。
+主要な成果と今後の方向性
+内部検証結果
+良好。スコア上位の患者を優先的にフォローする運用に即した施策が実行可能である。
+実運用化の条件
+外部検証やパイロットによる再確認、運用フローの整備が必須である。
+推奨アクション
+運用パイロット→評価→本番化の順で進めることを推奨する。
+推奨する次のステップ
+運用パイロット
+実施
+精度・業務負荷
+評価
+閾値最終
+チューニング
+本番化検討
+ご不明点や追加の検証依頼があれば、会議にてご指示ください。
+```
+
+### Rank 6
+- score: 81.652783
+- record_id: `pptx_slide_2b4627d8049a828c`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx`
+
+```text
+Slide 4
+3. 実施方法
+実施方針
+単一データソース前提で
+再現可能な手順を採用
+説明可能性を重視し
+線形系と非線形モデルを比較
+医療文脈での
+慎重な解釈を徹底
+主な作業フロー
+1
+キックオフ
+(M01)
+スコープ・
+前提確定
+2
+データ受領
+読込検証
+train.csv
+3
+EDA
+分布・外れ値
+確認
+4
+前処理設計
+id除外
+Gender処理
+5
+モデル試作
+線形系
+比較試行
+6
+改善・
+最終確定
+hist_gradient
+_boosting
+7
+最終報告書
+作成
+検収対応
+再現性トレース
+● 実験アーティファクト：run_summary.json、metrics.json、experiments/leaderboard.json
+● 中間レビュー議事録：会議録_2025-09-16.md（M02）
+```
+
+### Rank 7
+- score: 81.007814
+- record_id: `pptx_slide_a87a60a92a1b1530`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx`
+
+```text
+Slide 4
+3. 実施方法
+実施方針
+単一データソース前提で再現可能な手順を採用
+説明可能性を重視し線形系と非線形モデルを比較
+医療文脈での慎重な解釈を徹底
+主な作業フロー
+1. キックオフ (M01) — スコープ・前提確定
+2. データ受領 読込検証 — train.csv
+3. EDA — 分布・外れ値確認
+4. 前処理設計 — id除外 Gender処理
+5. モデル試作 — 線形系比較試行
+6. 改善・最終確定 — hist_gradient_boosting
+7. 最終報告書作成 — 検収対応
+再現性トレース
+● 実験アーティファクト：run_summary.json、metrics.json、experiments/leaderboard.json
+● 中間レビュー議事録：会議録_2025-09-16.md（M02）
+```
+
+### Rank 8
+- score: 78.64889
+- record_id: `pptx_slide_98e63002a3936f17`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx`
+
+```text
+Slide 1
+最終分析報告書
+肝疾患有無予測分析プロジェクト
+医療法人社団 恒一会 かえで総合病院 御中
+株式会社データアステル
+契約期間：2025年9月2日 開始（5週間）
+実績工数：140時間
+最終請求金額（税込）：3,850,000円
+```

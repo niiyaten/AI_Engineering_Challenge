@@ -1,0 +1,113 @@
+diff --git a/src/rag_competition/answer_gate.py b/src/rag_competition/answer_gate.py
+index cca6770..ded5fcc 100644
+--- a/src/rag_competition/answer_gate.py
++++ b/src/rag_competition/answer_gate.py
+@@ -174,6 +174,8 @@ def evaluate_answer_gate(
+             "uniqueness",
+             "answer_format_valid",
+         )
++    elif question_type == "pptx_timeline":
++        required = ("presence", "condition_match", "source_location", "uniqueness", "timeline_headers_unique", "marker_overlap_verified", "answer_format_valid")
+     else:
+         required = ("presence",)
+     if verification and any(verification.get(name) is not True for name in required):
+diff --git a/src/rag_competition/extractors.py b/src/rag_competition/extractors.py
+index cec2c7d..ff1c04e 100644
+--- a/src/rag_competition/extractors.py
++++ b/src/rag_competition/extractors.py
+@@ -129,6 +129,8 @@ def extract_pptx(file: FileRecord, raw_path: Path) -> tuple[dict[str, Any], list
+         image_count = 0
+         raw_shape_cursor = 0
+         for shape_index, shape in enumerate(slide.shapes):
++            # タイムラインや工程表では、文字を持たないバー／線も意味を持つ。
++            # 座標をIRに残し、後段の決定的な位置対応に使えるようにする。
+             if hasattr(shape, "text") and shape.text:
+                 texts.append(shape.text.strip())
+                 shape_runs: list[dict[str, Any]] = []
+@@ -164,6 +166,8 @@ def extract_pptx(file: FileRecord, raw_path: Path) -> tuple[dict[str, Any], list
+                             })
+                     raw_shape_cursor += 1
+                 shapes.append({"shape_index": shape_index, "text": shape.text.strip(), "runs": shape_runs, "left": shape.left, "top": shape.top, "width": shape.width, "height": shape.height})
++            else:
++                shapes.append({"shape_index": shape_index, "text": "", "runs": [], "left": shape.left, "top": shape.top, "width": shape.width, "height": shape.height, "shape_type": str(getattr(shape, "shape_type", ""))})
+             if getattr(shape, "has_table", False):
+                 rows = [[cell.text.strip() for cell in row.cells] for row in shape.table.rows]
+                 tables.append(rows)
+diff --git a/src/rag_competition/route_registry.py b/src/rag_competition/route_registry.py
+index cd46e7d..898c476 100644
+--- a/src/rag_competition/route_registry.py
++++ b/src/rag_competition/route_registry.py
+@@ -40,6 +40,10 @@ class RouteDecision:
+ 
+ 
+ ROUTES = (
++    RouteDefinition(
++        "pptx.timeline.schedule_lookup", "pptx_timeline_lookup", "PPTX工程表の週・活動対応", 
++        ("timeline_schedule_lookup",), ("pptx",), ("single_source", "unknown"), "execute_pptx_timeline_lookup", "pptx_timeline_geometry",
++    ),
+     RouteDefinition(
+         "excel.regression.predict_from_coefficients", "coefficient_prediction", "Excel regression coefficient prediction",
+         ("coefficient_prediction",), ("xlsx", "xlsm"), ("single_source", "unknown"), "execute_table_question", "workbook_formula_binding",
+@@ -74,7 +78,9 @@ ROUTES = (
+ def _intent(question: str) -> dict[str, Any]:
+     q = question or ""
+     lower = q.lower()
+-    if any(token in q for token in ("目盛り", "y軸", "Y軸", "ytick", "y-tick", "y-axis", "axis tick", "tick maximum")) and any(token in q for token in ("Notebook", "notebook", "ipynb", "可視化", "グラフ", "visualization")):
++    if ("週目" in q or re.search(r"\bW\d+\b", q, re.I)) and any(token in q for token in ("スケジュール", "実施予定", "予定")):
++        primary = "timeline_schedule_lookup"
++    elif any(token in q for token in ("目盛り", "y軸", "Y軸", "ytick", "y-tick", "y-axis", "axis tick", "tick maximum")) and any(token in q for token in ("Notebook", "notebook", "ipynb", "可視化", "グラフ", "visualization")):
+         primary = "notebook_axis_tick_lookup"
+     elif (
+         any(token in q for token in ("\u56de\u5e30\u4fc2\u6570", "\u56de\u5e30\u5206\u6790"))
+diff --git a/src/rag_competition/tool_registry.py b/src/rag_competition/tool_registry.py
+index f6881f1..ac4d9f5 100644
+--- a/src/rag_competition/tool_registry.py
++++ b/src/rag_competition/tool_registry.py
+@@ -22,6 +22,7 @@ from .llm_client import OpenRouterClient
+ from .cross_source_calculation import execute_cross_source_calculation, is_cross_source_calculation_question
+ from .id_count_executor import execute_id_count, is_id_count_question
+ from .route_registry import choose_route
++from .pptx_timeline_executor import execute_pptx_timeline_lookup, is_pptx_timeline_question
+ 
+ 
+ @dataclass(frozen=True)
+@@ -287,6 +288,14 @@ def run_answer_pipeline(
+                 status = "completed" if chart_output.get("status") == "success" and answer else "unsupported"
+                 failure_stage = chart_output.get("failure_stage", "") or ("evidence_failure" if status != "completed" else "")
+                 operation_names = chart_output.get("operations_executed", operation_names)
++            elif project_root and is_pptx_timeline_question(question) and route_decision.route_selected:
++                timeline_output = execute_pptx_timeline_lookup(question, selected_files, extraction_by_file)
++                answer = str(timeline_output.get("answer", ""))
++                all_evidence = list(timeline_output.get("evidence", []))
++                tool_outputs.append(timeline_output)
++                status = "completed" if timeline_output.get("status") == "success" and answer else "unsupported"
++                failure_stage = timeline_output.get("failure_stage", "") or ("evidence_failure" if status != "completed" else "")
++                operation_names = timeline_output.get("operations_executed", ["pptx_timeline_lookup"])
+             elif table_executor_enabled and project_root and (
+                 question_id in table_question_ids
+                 or (route_decision.route_selected and route_decision.executor == "execute_table_question")
+@@ -426,7 +435,9 @@ def run_answer_pipeline(
+             evidence=all_evidence,
+             execution_success=status in {"completed", "dry_run"} and not dry_run,
+             preview_only=preview_only,
+-            ambiguous=any("ambiguous" in warning.lower() for warning in warnings) or any(output.get("ambiguous") for output in tool_outputs),
++            ambiguous=any("ambiguous" in warning.lower() for warning in warnings) or any(
++                output.get("ambiguous") for output in tool_outputs if isinstance(output, dict)
++            ),
+             question_type=(tool_outputs[-1].get("question_type", "") if tool_outputs and isinstance(tool_outputs[-1], dict) else ""),
+             verification=(tool_outputs[-1].get("verification", {}) if tool_outputs and isinstance(tool_outputs[-1], dict) else {}),
+             semantic_contract=semantic_contract,
+@@ -446,7 +457,12 @@ def run_answer_pipeline(
+             selected_files=[item.raw_path for item in actual_selected_files],
+             evidence_locations=all_evidence,
+             operations_executed=operation_names,
+-            calculation_trace=[trace for output in tool_outputs for trace in output.get("calculation_trace", [])],
++            calculation_trace=[
++                trace
++                for output in tool_outputs
++                if isinstance(output, dict)
++                for trace in output.get("calculation_trace", [])
++            ],
+             confidence=min(1.0, len(all_evidence) / 5.0) if not dry_run else 0.0,
+             status=status,
+             warnings=list(dict.fromkeys(warnings))[:30],

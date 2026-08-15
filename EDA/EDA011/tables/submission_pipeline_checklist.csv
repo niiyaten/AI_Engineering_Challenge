@@ -1,0 +1,9 @@
+﻿step,status,source
+extract_files,done,EDA002/EDA004
+query_route,prototype_done,EDA011/question_routes.csv
+whole_doc_context,prototype_done,EDA010/EDA011
+table_calculation,inventory_done,EDA011 table inventory
+format_extraction,inventory_done,EDA011 format inventory
+image_ocr,needs_model_or_ocr,EDA011 image inventory
+diff_check,inventory_done,EDA011 diff inventory
+submission_generation,not_started,EDA005 baseline only

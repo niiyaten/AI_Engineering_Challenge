@@ -1,0 +1,19 @@
+{
+  "eda": "EDA014",
+  "created_at": "2026-07-08T00:14:15",
+  "purpose": "Convert Excel/CSV/TSV files into Markdown, JSON metadata, and calculation-ready CSV files.",
+  "parameters": {
+    "sample_rows": 10,
+    "style_limit": 500,
+    "formula_limit": 300
+  },
+  "target_count": 52,
+  "outputs": {
+    "report": "EDA/EDA014/eda014_report.md",
+    "conversion_log": "EDA/EDA014/tables/tabular_conversion_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA014/eda014.py"
+  ]
+}

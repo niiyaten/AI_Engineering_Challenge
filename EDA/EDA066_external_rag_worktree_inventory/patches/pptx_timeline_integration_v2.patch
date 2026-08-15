@@ -1,0 +1,124 @@
+diff --git a/src/rag_competition/answer_gate.py b/src/rag_competition/answer_gate.py
+index cca6770..9aaf356 100644
+--- a/src/rag_competition/answer_gate.py
++++ b/src/rag_competition/answer_gate.py
+@@ -174,6 +174,16 @@ def evaluate_answer_gate(
+             "uniqueness",
+             "answer_format_valid",
+         )
++    elif question_type == "pptx_timeline":
++        required = (
++            "presence",
++            "condition_match",
++            "source_location",
++            "uniqueness",
++            "timeline_headers_unique",
++            "marker_overlap_verified",
++            "answer_format_valid",
++        )
+     else:
+         required = ("presence",)
+     if verification and any(verification.get(name) is not True for name in required):
+diff --git a/src/rag_competition/extractors.py b/src/rag_competition/extractors.py
+index cec2c7d..5d0d96c 100644
+--- a/src/rag_competition/extractors.py
++++ b/src/rag_competition/extractors.py
+@@ -129,6 +129,7 @@ def extract_pptx(file: FileRecord, raw_path: Path) -> tuple[dict[str, Any], list
+         image_count = 0
+         raw_shape_cursor = 0
+         for shape_index, shape in enumerate(slide.shapes):
++            # 工程表のバーや線は文字を持たないため、座標付きでIRへ残す。
+             if hasattr(shape, "text") and shape.text:
+                 texts.append(shape.text.strip())
+                 shape_runs: list[dict[str, Any]] = []
+@@ -163,7 +164,9 @@ def extract_pptx(file: FileRecord, raw_path: Path) -> tuple[dict[str, Any], list
+                                 "fill_color_source": color_info.get("shape_fill_source", "unknown"),
+                             })
+                     raw_shape_cursor += 1
+-                shapes.append({"shape_index": shape_index, "text": shape.text.strip(), "runs": shape_runs, "left": shape.left, "top": shape.top, "width": shape.width, "height": shape.height})
++                shapes.append({"shape_index": shape_index, "text": shape.text.strip(), "runs": shape_runs, "left": shape.left, "top": shape.top, "width": shape.width, "height": shape.height, "shape_type": str(getattr(shape, "shape_type", "")), "rotation": float(getattr(shape, "rotation", 0) or 0)})
++            else:
++                shapes.append({"shape_index": shape_index, "text": "", "runs": [], "left": shape.left, "top": shape.top, "width": shape.width, "height": shape.height, "shape_type": str(getattr(shape, "shape_type", "")), "rotation": float(getattr(shape, "rotation", 0) or 0)})
+             if getattr(shape, "has_table", False):
+                 rows = [[cell.text.strip() for cell in row.cells] for row in shape.table.rows]
+                 tables.append(rows)
+@@ -177,6 +180,7 @@ def extract_pptx(file: FileRecord, raw_path: Path) -> tuple[dict[str, Any], list
+         "slide_count": len(slides),
+         "slides": slides,
+         "document_title": file.file_name,
++        "slide_size": {"width": presentation.slide_width, "height": presentation.slide_height},
+         "intermediate_representation": "document_ir_v1",
+     }
+     records = []
+diff --git a/src/rag_competition/route_registry.py b/src/rag_competition/route_registry.py
+index cd46e7d..3d18aff 100644
+--- a/src/rag_competition/route_registry.py
++++ b/src/rag_competition/route_registry.py
+@@ -40,6 +40,10 @@ class RouteDecision:
+ 
+ 
+ ROUTES = (
++    RouteDefinition(
++        "pptx.timeline.schedule_lookup", "pptx_timeline_lookup", "PPTX工程表の週・活動対応",
++        ("timeline_schedule_lookup",), ("pptx",), ("single_source", "unknown"), "execute_pptx_timeline_lookup", "pptx_timeline_geometry",
++    ),
+     RouteDefinition(
+         "excel.regression.predict_from_coefficients", "coefficient_prediction", "Excel regression coefficient prediction",
+         ("coefficient_prediction",), ("xlsx", "xlsm"), ("single_source", "unknown"), "execute_table_question", "workbook_formula_binding",
+@@ -74,7 +78,9 @@ ROUTES = (
+ def _intent(question: str) -> dict[str, Any]:
+     q = question or ""
+     lower = q.lower()
+-    if any(token in q for token in ("目盛り", "y軸", "Y軸", "ytick", "y-tick", "y-axis", "axis tick", "tick maximum")) and any(token in q for token in ("Notebook", "notebook", "ipynb", "可視化", "グラフ", "visualization")):
++    if ("週目" in q or re.search(r"\bW\s*\d+\b", q, re.I)) and any(token in q for token in ("スケジュール", "実施予定", "予定")):
++        primary = "timeline_schedule_lookup"
++    elif any(token in q for token in ("目盛り", "y軸", "Y軸", "ytick", "y-tick", "y-axis", "axis tick", "tick maximum")) and any(token in q for token in ("Notebook", "notebook", "ipynb", "可視化", "グラフ", "visualization")):
+         primary = "notebook_axis_tick_lookup"
+     elif (
+         any(token in q for token in ("\u56de\u5e30\u4fc2\u6570", "\u56de\u5e30\u5206\u6790"))
+diff --git a/src/rag_competition/tool_registry.py b/src/rag_competition/tool_registry.py
+index bdc63ca..368675c 100644
+--- a/src/rag_competition/tool_registry.py
++++ b/src/rag_competition/tool_registry.py
+@@ -22,6 +22,7 @@ from .llm_client import OpenRouterClient
+ from .cross_source_calculation import execute_cross_source_calculation, is_cross_source_calculation_question
+ from .id_count_executor import execute_id_count, is_id_count_question
+ from .route_registry import choose_route
++from .pptx_timeline_executor import execute_pptx_timeline_lookup, is_pptx_timeline_question
+ 
+ 
+ @dataclass(frozen=True)
+@@ -50,6 +51,7 @@ TOOL_NAMES = (
+     "notebook_inspection",
+     "notebook_axis_tick_lookup",
+     "chart_series_lookup",
++    "pptx_timeline_lookup",
+     "cross_file_aggregation",
+     "answer_formatting",
+     "generated_python",
+@@ -66,8 +68,8 @@ def build_tool_registry() -> dict[str, ToolSpec]:
+             supported_file_types=("docx", "pptx", "xlsx", "pdf", "csv", "tsv", "py", "ipynb", "md", "png", "jpg"),
+             input_schema={"question": "string", "files": "FileRecord[]", "search_records": "SearchRecord[]", "conditions": "object"},
+             output_schema={"answer": "string", "evidence": "Evidence[]", "warnings": "string[]"},
+-            implementation_status=("implemented" if name in {"document_lookup", "verbatim_extraction", "format_extraction", "location_lookup", "table_lookup", "table_filter", "table_aggregation", "calculation", "cross_file_aggregation", "answer_formatting", "code_inspection", "notebook_inspection", "notebook_axis_tick_lookup", "chart_series_lookup"} else "not_implemented"),
+-            executor=("execute_document_question" if name in {"document_lookup", "verbatim_extraction", "format_extraction", "location_lookup"} else "execute_code_inspection" if name == "code_inspection" else "execute_notebook_inspection" if name == "notebook_inspection" else "execute_notebook_axis_ticks" if name == "notebook_axis_tick_lookup" else "execute_generic_evidence_tool"),
++            implementation_status=("implemented" if name in {"document_lookup", "verbatim_extraction", "format_extraction", "location_lookup", "table_lookup", "table_filter", "table_aggregation", "calculation", "cross_file_aggregation", "answer_formatting", "code_inspection", "notebook_inspection", "notebook_axis_tick_lookup", "chart_series_lookup", "pptx_timeline_lookup"} else "not_implemented"),
++            executor=("execute_document_question" if name in {"document_lookup", "verbatim_extraction", "format_extraction", "location_lookup"} else "execute_code_inspection" if name == "code_inspection" else "execute_notebook_inspection" if name == "notebook_inspection" else "execute_notebook_axis_ticks" if name == "notebook_axis_tick_lookup" else "execute_pptx_timeline_lookup" if name == "pptx_timeline_lookup" else "execute_generic_evidence_tool"),
+             requires_python=name == "generated_python",
+             requires_vision=name in {"format_extraction"},
+         )
+@@ -287,6 +289,14 @@ def run_answer_pipeline(
+                 status = "completed" if chart_output.get("status") == "success" and answer else "unsupported"
+                 failure_stage = chart_output.get("failure_stage", "") or ("evidence_failure" if status != "completed" else "")
+                 operation_names = chart_output.get("operations_executed", operation_names)
++            elif project_root and is_pptx_timeline_question(question) and route_decision.route_selected:
++                timeline_output = execute_pptx_timeline_lookup(question, selected_files, extraction_by_file, project_root)
++                answer = str(timeline_output.get("answer", ""))
++                all_evidence = list(timeline_output.get("evidence", []))
++                tool_outputs.append(timeline_output)
++                status = "completed" if timeline_output.get("status") == "success" and answer else "unsupported"
++                failure_stage = timeline_output.get("failure_stage", "") or ("evidence_failure" if status != "completed" else "")
++                operation_names = timeline_output.get("operations_executed", ["pptx_timeline_lookup"])
+             elif table_executor_enabled and project_root and (
+                 question_id in table_question_ids
+                 or (route_decision.route_selected and route_decision.executor == "execute_table_question")

@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 分析データの中で、1つでも欠損値がある行数が最も多い案件を、主略称で答えてください。\nroute: fallback_bm25_llm\nsubtype: missing_row_count\n候補生成方法: raw_csv_missing_row_count\n候補信頼度: high\nneeds_review: False\nEDA035回答: AOMINE\n回答候補: AOMINE\n参照元: data/raw/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.csv\n根拠抜粋:\n('AOMINE', 13556, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.csv')\n('AOMINE', 13556, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/data/train.csv')\n('SHR', 3932, 'data/raw/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.csv')\n('SHR', 3932, 'data/raw/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv')\n('TOTO', 166, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv')\n('TOTO', 166, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv')\n('KSS', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv')\n('KSS', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv')\n('KAEDE', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv')\n('KAEDE', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv')\n('MINAMINO', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv')\n('MINAMINO', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv')\n('HIGASHI', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/03.データ/train.csv')\n('HIGASHI', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/data/train.csv')\n('AOBM', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.csv')\n('AOBM', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv')\n('AYM', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv')\n('AYM', 0, 'data/raw/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv')"
+    }
+  ],
+  "gold_answer_not_included": true
+}

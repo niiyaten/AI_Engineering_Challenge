@@ -1,0 +1,8 @@
+﻿metric,value
+target_questions,8.0
+document_found,8.0
+answer_hit_whole_document,4.0
+answer_hit_context,4.0
+clipped_by_char_limit,1.0
+mean_document_chars,9723.1
+max_document_chars,38748.0

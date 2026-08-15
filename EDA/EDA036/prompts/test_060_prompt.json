@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 白峰信用リスク評価の最終報告資料内で未完事項として挙げられているIDをすべて抽出してください。\nroute: document_whole_context\nsubtype: unfinished_id_extraction\n候補生成方法: pptx_markdown_unfinished_id_regex\n候補信頼度: high\nneeds_review: False\nEDA035回答: AI-05、AI-09、AI-08\n回答候補: AI-05、AI-09、AI-08\n参照元: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/06.報告書/白峰信用リスク評価株式会社_最終報告.pptx.md\n根拠抜粋:\n要アクション(未完事項)\nAI-05: 着手金支払の事後確認\nAI-09: Attr37の最終採否比較\nAI-08: 前処理仕様の確定\n\n※ 本書は「確認済事項(Facts)」と「仮定(Assumptions)」を明確に分離して記載している。\n\n"
+    }
+  ],
+  "gold_answer_not_included": true
+}

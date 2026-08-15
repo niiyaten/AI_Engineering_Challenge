@@ -1,0 +1,41 @@
+{
+  "eda": "EDA013",
+  "created_at": "2026-07-07T13:11:16",
+  "purpose": "Build canonical embedding input records from processed Markdown/JSON and image-to-text outputs.",
+  "parameters": {
+    "max_chars": 1200,
+    "image_call_limit": 4,
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "model_try_limit": 1,
+    "max_tokens": 1200,
+    "dry_run": false
+  },
+  "inputs": [
+    {
+      "path": "EDA/EDA012/tables/docx_markdown_conversion_log.csv",
+      "sha1": "e8717b604e3eda3622d8c6ce76ad54404954a24a",
+      "bytes": 23113
+    },
+    {
+      "path": "EDA/EDA011/tables/image_file_inventory.csv",
+      "sha1": "0bf457c66d2b16471a6104fca47b1e4f3d4ff27f",
+      "bytes": 9888
+    },
+    {
+      "path": "EDA/EDA011/tables/image_question_inventory.csv",
+      "sha1": "fb66f3aab952d33c4b0c57e33643c2c49b4a911e",
+      "bytes": 645
+    }
+  ],
+  "outputs": {
+    "embedding_records": "data/processed/embedding/embedding_records.jsonl",
+    "report": "EDA/EDA013/eda013_report.md",
+    "tables": "EDA/EDA013/tables"
+  },
+  "record_count": 936,
+  "secret_handling": "API key is read from OPENROUTER_API_KEY or project-local .apikey and is not written to logs.",
+  "repro_steps": [
+    "uv run python EDA/EDA012/eda012.py --clean-output",
+    "uv run python EDA/EDA013/eda013.py --image-call-limit 4 --model nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free --model-try-limit 1 --max-tokens 1200"
+  ]
+}

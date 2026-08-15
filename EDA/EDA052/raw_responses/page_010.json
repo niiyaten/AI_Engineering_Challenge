@@ -1,0 +1,51 @@
+{
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 1025,
+  "raw": {
+    "id": "gen-1783643597-cllT9TAXXafTndCanuXv",
+    "object": "chat.completion",
+    "created": 1783643597,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"meeting_id\": \"\",\n  \"date\": \"2025-05-15\",\n  \"page_title\": \"クロージング\",\n  \"progress_summary\": \"最終成果物の提出と検収手続きの進捗状況\",\n  \"action_items\": [\n    {\n      \"action_id\": \"A14\",\n      \"content\": \"QAレビューの再実施\",\n      \"owner\": \"池田\",\n      \"due\": \"2025-05-30\",\n      \"status\": \"進行中\"\n    },\n    {\n      \"action_id\": \"A13\",\n      \"content\": \"検収判断の最終決定\",\n      \"owner\": \"クライアント側\",\n      \"due\": \"2025-05-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A15\",\n      \"content\": \"検収対応方針の書面化\",\n      \"owner\": \"伊藤翔太\",\n      \"due\": \"2025-05-30\",\n      \"status\": \"進行中\"\n    },\n    {\n      \"action_id\": \"A16\",\n      \"content\": \"検収判断の通知\",\n      \"owner\": \"金木美咲\",\n      \"due\": \"2025-05-22\",\n      \"status\": \"完了\"\n    }\n  ],\n  \"comments\": [\n    \"QAレビューの再実施は、池田が担当し、2025年5月30日までに完了する予定です。\",\n    \"検収判断の最終決定は、2025年5月22日に完了しました。\",\n    \"検収対応方針の書面化は、伊藤翔太が担当し、2025年5月30日までに完了する予定です。\"\n  ],\n  \"checkpoints\": [\n    \"A14: QAレビューの再実施\",\n    \"A13: 検収判断の最終決定\",\n    \"A15: 検収対応方針の書面化\"\n  ],\n  \"visible_text\": \"QAレビューの再実施、検収判断の最終決定、検収対応方針の書面化、検収判断の通知\"\n}\n```\n",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3627,
+      "completion_tokens": 552,
+      "total_tokens": 4179,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

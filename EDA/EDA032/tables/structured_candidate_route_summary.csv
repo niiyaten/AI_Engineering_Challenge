@@ -1,0 +1,8 @@
+﻿route,count,candidate_count,match_count
+table_calculation,7,7,6
+document_whole_context,5,5,5
+fallback_bm25_llm,5,5,5
+code_reading,4,4,4
+format_extraction,2,2,2
+diff_check,1,1,1
+image_ocr,1,1,1

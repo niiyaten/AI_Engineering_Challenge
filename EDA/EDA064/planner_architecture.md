@@ -1,0 +1,3 @@
+# Multistage planner architecture
+
+Question analysis -> deterministic Top-5 document candidates -> bounded document probes -> planner selection only when rules remain ambiguous -> executor classification -> Python file analysis -> evidence -> verification -> gate. Top-5 is the recommended default probe budget because Top-1 misses labeled sources. Use Top-10 only as an evidence-recovery fallback when the Top-5 probes cannot establish a document: labeled Gate 19 recall rises from 0.500 at Top-5 to 0.625 at Top-10. LLM, if introduced later, should choose among probe summaries only; Python remains responsible for extraction, calculation, layout, and verification. Human labels remain offline evaluation data only.

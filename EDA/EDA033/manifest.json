@@ -1,0 +1,23 @@
+{
+  "eda": "EDA033",
+  "inputs": [
+    "EDA\\EDA032\\tables\\structured_candidate_answers.csv"
+  ],
+  "outputs": [
+    "EDA/EDA033/tables/llm_structured_candidate_answer_log.csv",
+    "EDA/EDA033/tables/llm_structured_candidate_attempt_log.csv",
+    "EDA/EDA033/prompts/valid_XXX_prompt.json",
+    "EDA/EDA033/eda033_report.md"
+  ],
+  "models": [
+    "openai/gpt-oss-120b:free",
+    "openai/gpt-oss-20b:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "deepseek/deepseek-chat-v3-0324:free"
+  ],
+  "target_count": 25,
+  "llm_answer_count": 25,
+  "llm_match_count": 24,
+  "candidate_match_count": 24,
+  "secret_handling": "API key is read from .apikey or environment variable and is not stored."
+}

@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは構造化データから作られた回答候補を、提出用の短い最終回答に整えるアシスタントです。提示された候補、根拠、信頼度だけを使ってください。外部知識や推測で候補にない値を足さないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が複数項目の場合は、候補内の順序をできるだけ保ち、日本語の読点「、」で区切ってください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する最終回答だけを返してください。\n\n質問: 東都人材プラットフォームのtrain.xlsxにおいて、trainシートでフィルターで抽出されている条件を教えてください。\nroute: table_calculation\n候補生成方法: table_calculation_reuse\n候補信頼度: high\n回答候補: Gender=Male、Country=India、target=2\n補足: EDA030のローカル計算結果を再利用\n根拠抜粋:\ntrainシートのAutoFilter ref=A1:J11530から3条件を抽出。"
+    }
+  ],
+  "gold_answer_not_included": true
+}

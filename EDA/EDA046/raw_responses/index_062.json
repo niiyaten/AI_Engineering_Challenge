@@ -1,0 +1,63 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "content_length": 0,
+  "prompt_tokens": 6815,
+  "completion_tokens": 1200,
+  "reasoning_tokens": 1011,
+  "raw": {
+    "id": "gen-1783602541-qDdN5Cfn4CtLgPuUNLZm",
+    "object": "chat.completion",
+    "created": 1783602541,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need to answer: \"青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\"\n\nWe need to find in the final report (pptx) the model comparison section. The relevant lines: L227: 4. 分析結果 ― モデル比較. L229: モデル比較証跡― 主要モデルの性能ランキング. L255: - chart_type: `COLUMN_CLUSTERED (51)`. L256: - title: F1 (macro) vs Accuracy ― モデル比較. L257: - series_count: 2. But we need the setting differences that caused the score difference between top 2 models. We need to find details of models and their settings. Search for model names or parameters. Let's search within the markdown for \"モデル\" or \"設定\".Search for \"モデル\" in the markdown.We have only the snippet lines. But maybe the markdown contains more content beyond L255. We need to find the model comparison details. Let's search for \"モデル比較\" or \"モデル\" in the markdown.We can search for \"モデル比較\" in the markdown.But we only have the snippet. Maybe the markdown includes more lines after L256. Let's scroll further.We need to parse the markdown file. The file path: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md. We have lines up to maybe 400. But we only saw up to 353. The relevant section might be after 353. Let's search for \"モデル\" again.We can search for \"モデル\" in the entire file. But we only have snippet. Let's approximate: The model comparison likely lists models like \"XGBoost\", \"RandomForest\", \"LogisticRegression\" etc. The top 2 models might be XGBoost and LightGBM. The setting difference could be hyperparameters like learning rate, max_depth, n_estimators, etc. But we need to base on the source. Let's search for \"XGBoost\" or \"LightGBM\".Search for \"XGBoost\".We don't have that. Let's search for \"LightGBM\".No. Maybe the models are \"CatBoost\", \"GradientBoosting\", \"LogisticRegression\". Let's search for \"Gradient\".Search for \"Gradient\".We don't have. Maybe the models are \"RandomForest\", \"GradientBoostingClassifier\". Search for \"Random\".Search for \"Random\".We don't have. Maybe the models are \"XGBClassifier\". Search for \"XGB\".We don't have. So maybe the markdown includes a table of model performance. Let's search for \"F1\".Search for \"F1\".We saw \"F1 (macro) vs Accuracy\". But no values. Maybe the markdown includes a chart. The chart is a column clustered chart. The chart might have data points. But the markdown may not include the data. The chart data might be in the assets folder. But we don't have that. The question: \"モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\" So we need to identify the setting difference that caused the score difference between the top 2 models. That likely refers to a specific hyperparameter difference. The answer must be based on the source. We need to find the setting difference. Let's search for \"設定\" in the markdown.Search for \"設定\".We saw \"設定\" in L331: \"運用責任者（モデルオーナー）の設定\". But that's about operational setting. Not model hyperparameters.\n\nMaybe the markdown includes a table of model performance with columns: Model, F1, Accuracy, etc. The top 2 models might be \"XGBoost\" and \"LightGBM\". The difference might be \"max_depth\" or \"learning_rate\". But we need evidence.\n\nLet's search for \"max_depth\".Search for \"max_depth\".No.\n\nSearch for \"learning_rate\".No.\n\nSearch for \"n_estimators\".No.\n\nSearch for \"depth\".No.\n\nSearch for \"tree\".No.\n\nSearch for \"boost\".No.\n\nSearch for \"gradient\".No.\n\nSearch for \"logistic\".No.\n\nSearch for \"regression\".We saw \"回帰分析\" in train.xlsx. But not relevant.\n\nMaybe the model comparison section includes a chart with data points but not textual description. The question might be answered by referencing the chart's data. But we don't have the chart data. However, the markdown might include the chart data as a table. Let's search for \"chart_data\".Search for \"chart\".We saw \"chart_type\". But no data.\n\nMaybe the markdown includes a table of model performance",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\"\n\nWe need to find in the final report (pptx) the model comparison section. The relevant lines: L227: 4. 分析結果 ― モデル比較. L229: モデル比較証跡― 主要モデルの性能ランキング. L255: - chart_type: `COLUMN_CLUSTERED (51)`. L256: - title: F1 (macro) vs Accuracy ― モデル比較. L257: - series_count: 2. But we need the setting differences that caused the score difference between top 2 models. We need to find details of models and their settings. Search for model names or parameters. Let's search within the markdown for \"モデル\" or \"設定\".Search for \"モデル\" in the markdown.We have only the snippet lines. But maybe the markdown contains more content beyond L255. We need to find the model comparison details. Let's search for \"モデル比較\" or \"モデル\" in the markdown.We can search for \"モデル比較\" in the markdown.But we only have the snippet. Maybe the markdown includes more lines after L256. Let's scroll further.We need to parse the markdown file. The file path: data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md. We have lines up to maybe 400. But we only saw up to 353. The relevant section might be after 353. Let's search for \"モデル\" again.We can search for \"モデル\" in the entire file. But we only have snippet. Let's approximate: The model comparison likely lists models like \"XGBoost\", \"RandomForest\", \"LogisticRegression\" etc. The top 2 models might be XGBoost and LightGBM. The setting difference could be hyperparameters like learning rate, max_depth, n_estimators, etc. But we need to base on the source. Let's search for \"XGBoost\" or \"LightGBM\".Search for \"XGBoost\".We don't have that. Let's search for \"LightGBM\".No. Maybe the models are \"CatBoost\", \"GradientBoosting\", \"LogisticRegression\". Let's search for \"Gradient\".Search for \"Gradient\".We don't have. Maybe the models are \"RandomForest\", \"GradientBoostingClassifier\". Search for \"Random\".Search for \"Random\".We don't have. Maybe the models are \"XGBClassifier\". Search for \"XGB\".We don't have. So maybe the markdown includes a table of model performance. Let's search for \"F1\".Search for \"F1\".We saw \"F1 (macro) vs Accuracy\". But no values. Maybe the markdown includes a chart. The chart is a column clustered chart. The chart might have data points. But the markdown may not include the data. The chart data might be in the assets folder. But we don't have that. The question: \"モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\" So we need to identify the setting difference that caused the score difference between the top 2 models. That likely refers to a specific hyperparameter difference. The answer must be based on the source. We need to find the setting difference. Let's search for \"設定\" in the markdown.Search for \"設定\".We saw \"設定\" in L331: \"運用責任者（モデルオーナー）の設定\". But that's about operational setting. Not model hyperparameters.\n\nMaybe the markdown includes a table of model performance with columns: Model, F1, Accuracy, etc. The top 2 models might be \"XGBoost\" and \"LightGBM\". The difference might be \"max_depth\" or \"learning_rate\". But we need evidence.\n\nLet's search for \"max_depth\".Search for \"max_depth\".No.\n\nSearch for \"learning_rate\".No.\n\nSearch for \"n_estimators\".No.\n\nSearch for \"depth\".No.\n\nSearch for \"tree\".No.\n\nSearch for \"boost\".No.\n\nSearch for \"gradient\".No.\n\nSearch for \"logistic\".No.\n\nSearch for \"regression\".We saw \"回帰分析\" in train.xlsx. But not relevant.\n\nMaybe the model comparison section includes a chart with data points but not textual description. The question might be answered by referencing the chart's data. But we don't have the chart data. However, the markdown might include the chart data as a table. Let's search for \"chart_data\".Search for \"chart\".We saw \"chart_type\". But no data.\n\nMaybe the markdown includes a table of model performance",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6815,
+      "completion_tokens": 1200,
+      "total_tokens": 8015,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001828175,
+        "upstream_inference_prompt_cost": 9.88175e-05,
+        "upstream_inference_completions_cost": 8.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1011,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eda": "EDA040",
+  "input": "EDA/EDA039/tables/test_format_route_result.csv",
+  "target_count": 9,
+  "before_non_unknown_count": 43,
+  "added_non_unknown_count": 3,
+  "after_non_unknown_count": 46,
+  "openrouter_used": true,
+  "outputs": [
+    "EDA/EDA040/tables/test_table_route_result.csv",
+    "EDA/EDA040/tables/test_table_route_attempt_log.csv",
+    "EDA/EDA040/predictions/predictions.csv",
+    "EDA/EDA040/predictions/eda040_table_route_submission.zip",
+    "EDA/EDA040/eda040_report.md"
+  ]
+}

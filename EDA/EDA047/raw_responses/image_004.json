@@ -1,0 +1,52 @@
+{
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 874,
+  "raw": {
+    "id": "gen-1783638078-glzo4ueiHdxA1cpJLS4M",
+    "object": "chat.completion",
+    "created": 1783638078,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"image_summary\": \"カテゴリ分布を示す3つの水平バー図。\",\n  \"visible_text\": [\n    \"dtday のカテゴリ分布\",\n    \"season のカテゴリ分布\",\n    \"yr のカテゴリ分布\"\n  ],\n  \"tables\": [],\n  \"charts\": [\n    {\n      \"title\": \"dtday のカテゴリ分布\",\n      \"x_axis\": \"件数\",\n      \"y_axis\": \"dtday\",\n      \"series\": \"2011-01-01から2011-02-07までの日付\",\n      \"color_gradient\": \"濃紫から黄緑\"\n    },\n    {\n      \"title\": \"season のカテゴリ分布\",\n      \"x_axis\": \"件数\",\n      \"y_axis\": \"season\",\n      \"series\": [\"1\", \"2\", \"3\", \"4\"],\n      \"color_gradient\": \"黄緑から濃紫\"\n    },\n    {\n      \"title\": \"yr のカテゴリ分布\",\n      \"x_axis\": \"件数\",\n      \"y_axis\": \"yr\",\n      \"series\": [\"0\"],\n      \"color\": \"濃紺\"\n    }\n  ],\n  \"seating_or_spatial_relations\": [],\n  \"answer_relevant_notes\": [\n    \"dtdayの分布は日付ごとに色が変化し、2011-01-01は最も濃い色、2011-02-07は最も明るい色である。\",\n    \"seasonの分布では、season=3が最も高い値、season=1が最も低い値を示している。\",\n    \"yrの分布は単一の値（0）で構成され、件数が最大値を示している。\"\n  ]\n}\n```\n",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2937,
+      "completion_tokens": 435,
+      "total_tokens": 3372,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "eda": "EDA019",
+  "created_at": "2026-07-08T00:29:20",
+  "purpose": "Validate existing Markdown files and copy them into processed share.",
+  "target_count": 31,
+  "outputs": {
+    "report": "EDA/EDA019/eda019_report.md",
+    "quality_log": "EDA/EDA019/tables/markdown_quality_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA019/eda019.py"
+  ]
+}

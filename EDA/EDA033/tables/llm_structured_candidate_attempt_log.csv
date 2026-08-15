@@ -1,0 +1,50 @@
+﻿index,model,status,ok,elapsed_sec,answer,error_message
+0,openai/gpt-oss-120b:free,429,False,1.047,,Provider returned error
+0,openai/gpt-oss-20b:free,200,True,6.359,hr、weekday、weathersit、temp,
+1,openai/gpt-oss-120b:free,429,False,0.769,,Provider returned error
+1,openai/gpt-oss-20b:free,200,True,25.656,20日,
+2,openai/gpt-oss-120b:free,429,False,1.261,,Provider returned error
+2,openai/gpt-oss-20b:free,200,True,5.143,Recall,
+3,openai/gpt-oss-120b:free,429,False,0.805,,Provider returned error
+3,openai/gpt-oss-20b:free,200,True,3.894,"4,384,250円",
+4,openai/gpt-oss-120b:free,429,False,0.768,,Provider returned error
+4,openai/gpt-oss-20b:free,200,True,4.36,hist_gradient_boosting,
+6,openai/gpt-oss-120b:free,429,False,0.894,,Provider returned error
+6,openai/gpt-oss-20b:free,200,True,5.624,Gender=Male、disease=1、Age=68で抽出されたデータに対する平均 / ALP,
+7,openai/gpt-oss-120b:free,429,False,0.814,,Provider returned error
+7,openai/gpt-oss-20b:free,200,True,4.391,32歳,
+9,openai/gpt-oss-120b:free,429,False,1.616,,Provider returned error
+9,openai/gpt-oss-20b:free,200,True,8.53,QAレビューア:池田 直哉 → 小林 直樹,
+10,openai/gpt-oss-120b:free,429,False,0.807,,Provider returned error
+10,openai/gpt-oss-20b:free,200,True,5.034,0値の疑似欠損,
+11,openai/gpt-oss-120b:free,429,False,0.807,,Provider returned error
+11,openai/gpt-oss-20b:free,200,True,2.454,Gender=Male、Country=India、target=2,
+12,openai/gpt-oss-120b:free,429,False,0.802,,Provider returned error
+12,openai/gpt-oss-20b:free,200,True,6.376,"5,775,000円",
+13,openai/gpt-oss-120b:free,429,False,1.36,,Provider returned error
+13,openai/gpt-oss-20b:free,200,True,3.422,1526,
+14,openai/gpt-oss-120b:free,429,False,0.944,,Provider returned error
+14,openai/gpt-oss-20b:free,200,True,8.167,アサインされていない,
+15,openai/gpt-oss-120b:free,429,False,0.818,,Provider returned error
+15,openai/gpt-oss-20b:free,200,True,14.713,MINAMINO、SHR、AYM,
+16,openai/gpt-oss-120b:free,200,True,1.805,43日,
+17,openai/gpt-oss-120b:free,429,False,1.333,,Provider returned error
+17,openai/gpt-oss-20b:free,200,True,4.356,未連絡,
+20,openai/gpt-oss-120b:free,429,False,0.795,,Provider returned error
+20,openai/gpt-oss-20b:free,200,True,17.904,T09、T08、T10、T11、T12,
+21,openai/gpt-oss-120b:free,429,False,2.834,,Provider returned error
+21,openai/gpt-oss-20b:free,200,True,4.137,Attrition = No、Gender = Female、MaritalStatus = Single、EducationField = Human Resources,
+22,openai/gpt-oss-120b:free,429,False,0.797,,Provider returned error
+22,openai/gpt-oss-20b:free,200,True,11.155,season,
+23,openai/gpt-oss-120b:free,429,False,0.99,,Provider returned error
+23,openai/gpt-oss-20b:free,200,True,5.064,"見込金額(税込): 4,675,000 JPY",
+24,openai/gpt-oss-120b:free,429,False,0.772,,Provider returned error
+24,openai/gpt-oss-20b:free,200,True,4.509,Attr7,
+25,openai/gpt-oss-120b:free,429,False,0.876,,Provider returned error
+25,openai/gpt-oss-20b:free,200,True,4.935,1. データ理解・EDA,
+26,openai/gpt-oss-120b:free,429,False,0.786,,Provider returned error
+26,openai/gpt-oss-20b:free,200,True,4.561,train_0077、train_0216、train_0242、train_0722,
+27,openai/gpt-oss-120b:free,429,False,0.78,,Provider returned error
+27,openai/gpt-oss-20b:free,200,True,2.573,0.010301,
+28,openai/gpt-oss-120b:free,429,False,0.776,,Provider returned error
+28,openai/gpt-oss-20b:free,200,True,6.075,object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。,

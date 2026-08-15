@@ -1,0 +1,18 @@
+{
+  "eda": "EDA030",
+  "inputs": [
+    "EDA\\EDA029\\tables\\eda024_failure_source_diagnosis.csv",
+    "data/raw/share",
+    "data/processed/share"
+  ],
+  "outputs": [
+    "EDA/EDA030/eda030_report.md",
+    "EDA/EDA030/tables/table_valid_calculation_results.csv",
+    "EDA/EDA030/tables/table_subtype_summary.csv",
+    "EDA/EDA030/tables/table_calculation_case_plan.csv",
+    "EDA/EDA030/tables/cross_project_tax_details.csv"
+  ],
+  "table_case_count": 7,
+  "answer_match_count": 6,
+  "needs_review_count": 1
+}

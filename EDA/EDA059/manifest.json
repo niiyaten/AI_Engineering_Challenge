@@ -1,0 +1,11 @@
+{
+  "eda": "EDA059",
+  "source_audit": "EDA\\EDA058\\tables\\answer_source_audit.csv",
+  "summary_csv": "EDA\\EDA059\\tables\\question_answer_source_confidence.csv",
+  "report": "EDA\\EDA059\\eda059_report.md",
+  "row_count": 100,
+  "unknown_indices": [
+    44,
+    58
+  ]
+}

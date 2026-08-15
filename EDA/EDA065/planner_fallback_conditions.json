@@ -1,0 +1,20 @@
+{
+  "adopt_strict_when": [
+    "explicit filename resolves uniquely",
+    "source contract resolved",
+    "content verification succeeds",
+    "no source-set ambiguity"
+  ],
+  "planner_fallback_when": [
+    "strict not applicable",
+    "no selected documents",
+    "ambiguous or contradictory source set",
+    "strict selection lacks required source role or file relation"
+  ],
+  "multiple_document_policy": "retain required roles and evaluate all-required-document recall",
+  "same_name_policy": "compare normalized relative path and project identity, never basename alone",
+  "companyless_policy": "do not default to internal; use probes and retain external candidates",
+  "seating_policy": "probe layout metadata then use coordinate executor; Vision only after native structure is insufficient",
+  "vision_condition": "selected document contains relevant visual/layout structure and text/coordinates cannot resolve it",
+  "abstain_condition": "Top-10 probes leave multiple equally plausible documents or required source relation unverified"
+}

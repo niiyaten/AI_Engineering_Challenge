@@ -1,0 +1,55 @@
+{
+  "id": "gen-1783650909-Jx7vzwZywqru614T1VyZ",
+  "object": "chat.completion",
+  "created": 1783650909,
+  "model": "openai/gpt-oss-20b:free",
+  "provider": "Darkbloom",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "わかりません",
+        "refusal": null,
+        "reasoning": "We need to answer: \"青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\"\n\nWe need to use only the provided answer candidates. The answer candidates are basically the content of the markdown file. We need to find the setting difference that caused the score difference between top 2 models. The table shows both models are \"extra_trees\" but with different F1 macro: 0.6027 vs 0.5953. So the difference is likely due to different hyperparameters or training settings. But the provided content does not explicitly mention the setting difference. It only lists the models and scores. There's no mention of different settings. The question asks: \"設定差分は何ですか\" meaning what setting difference caused the score difference. The answer candidates don't provide that. So we cannot answer. We should respond \"わかりません\".",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "We need to answer: \"青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。\"\n\nWe need to use only the provided answer candidates. The answer candidates are basically the content of the markdown file. We need to find the setting difference that caused the score difference between top 2 models. The table shows both models are \"extra_trees\" but with different F1 macro: 0.6027 vs 0.5953. So the difference is likely due to different hyperparameters or training settings. But the provided content does not explicitly mention the setting difference. It only lists the models and scores. There's no mention of different settings. The question asks: \"設定差分は何ですか\" meaning what setting difference caused the score difference. The answer candidates don't provide that. So we cannot answer. We should respond \"わかりません\".",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3680,
+    "completion_tokens": 219,
+    "total_tokens": 3899,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.869e-05,
+      "upstream_inference_prompt_cost": 5.336e-05,
+      "upstream_inference_completions_cost": 1.533e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 205,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "_http_status": 200
+}

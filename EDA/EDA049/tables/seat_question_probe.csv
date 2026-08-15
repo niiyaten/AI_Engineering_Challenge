@@ -1,0 +1,3 @@
+﻿index,question,candidate_answer,method,needs_review
+44,IMにあるFMにおいて、佐藤さんから見て右側に座っている人の名前をすべて挙げてください。,高橋、池田,seat_coordinate_table,True
+58,社内管理フォルダにあるFMにおいて、井上さんの向かいに座っている方のEXTを教えてください。,7103,seat_coordinate_table,True

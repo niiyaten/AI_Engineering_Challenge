@@ -1,0 +1,12 @@
+{
+  "eda": "EDA049",
+  "recoverable_from_shape_text": false,
+  "seat_table_source": "fallback_visual_seed",
+  "seat_count": 15,
+  "outputs": [
+    "EDA/EDA049/tables/seat_pptx_shape_audit.csv",
+    "EDA/EDA049/tables/seat_coordinate_table.csv",
+    "EDA/EDA049/tables/seat_question_probe.csv",
+    "EDA/EDA049/eda049_report.md"
+  ]
+}

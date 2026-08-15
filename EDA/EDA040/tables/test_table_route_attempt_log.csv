@@ -1,0 +1,151 @@
+﻿index,subtype,question,local_answer,llm_answer,answer_after_eda040,adopted_by_eda040,method,status,used_paths,evidence
+29,histogram_recompute,恒一会 かえで総合病院のtrain.xlsx内のTPのヒストグラムで、3番目にカウント数が多いビンの範囲を小数第6位までで答えてください。,5.667456以上6.143320未満,,5.667456以上6.143320未満,True,numpy_histogram_10bins,local_answer,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv,"path=data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv, counts=[17, 34, 3, 310, 272, 589, 526, 651, 735, 363], edges=[3.28813849, 3.76400204, 4.23986558, 4.71572912, 5.19159267, 5.66745621, 6.14331976, 6.6191833, 7.09504684, 7.57091039, 8.04677393]"
+38,line_search,社内管理のAPRに照らして、APR-M3が必要な案件を主略称ですべて挙げ、それらの契約金額(税込)の合計を答えてください。,,,わかりません,False,llm_table_context_needed,llm_table_context_needed,,
+57,line_search,青葉のTXにて算出された回帰係数を用いて全データの予測値を計算し、正解データに対する F1 スコアが最大となるように閾値を設定したときの F1 スコアを答えてください。小数第5位まで求めてください。,,,わかりません,False,llm_table_context_needed,http_200,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/青葉与信マネジメント株式会社_最終報告.pptx.md,"# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md
+F1 (macro)
+| F1 (macro) | 0.6027 |
+| 順位 | モデル | F1 (macro) | Accuracy |
+- title: F1 (macro) vs Accuracy ― モデル比較
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/青葉与信マネジメント株式会社_最終報告.pptx.md
+F1 (macro)
+| F1 (macro) | 0.6027 |
+| 順位 | モデル | F1 (macro) | Accuracy |
+- title: F1 (macro) vs Accuracy ― モデル比較"
+63,line_search,青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。,,,わかりません,False,llm_table_context_needed,http_200,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.data.csv,"# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9
+概要,,,,,,,,
+,,,,,,,,
+回帰統計,,,,,,,,
+重相関 R,0.2748636840840207,,,,,,,
+重決定 R2,0.0755500448282403,,,,,,,
+補正 R2,0.0753915314614413,,,,,,,
+標準誤差,0.3949104501024004,,,,,,,
+観測数,17500,,,,,,,
+,,,,,,,,
+分散分析表,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,
+回帰,3,222.99100405359104,74.33033468453034,476.616239714603,1.0253735358509992e-297,,,
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv
+loan_amnt,interest_rate,credit_score,loan_status
+1256.7108,10.60377869,680.4317659,0
+569.5596067,17.30556544,713.0631282,0
+1118.83805,14.04134157,696.137378,1
+610.7217277,13.04834802,656.3730904,0
+1180.02684,11.38486247,657.211233,0
+1172.219819,11.39718304,712.157342,0
+2433.646304,10.10181044,713.2019707,0
+1021.9603,18.09302821,658.2994753,0
+1200.74142,11.0905065,771.9640874,0
+1731.132899,17.73240798,657.732889,1
+3517.81442,17.67489417,675.9959048,0
+1138.61238,13.83419115,658.2411451,0
+"
+64,line_search,青潮モビリティサービスの最終報告PDFにおいて、将来のフェーズAとフェーズBを実施した場合の想定工数は合計で何時間ですか。,,,わかりません,False,llm_table_context_needed,llm_table_context_needed,,
+83,line_search,蒼樹会 みなみ野女性医療センターのtrain.xlsxにおいて、回帰分析の結果として記載されている係数をindex=1770のデータに当てはめたときの予測値はいくつですか。小数第5位まで答えてください。,,,わかりません,False,llm_table_context_needed,http_200,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md,"# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10
+概要,,,,,,,,,
+,,,,,,,,,
+回帰統計,,,,,,,,,
+重相関 R,0.37420501012081375,,,,,,,,
+重決定 R2,0.14002938959951833,,,,,,,,
+補正 R2,0.1377292341721683,,,,,,,,
+標準誤差,0.3960823631066126,,,,,,,,
+観測数,3000,,,,,,,,
+,,,,,,,,,
+分散分析表,,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,,
+回帰,8,76.40521605291087,9.55065200661386,60.87822932941777,1.6300547177079886e-92,,,,
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.0854323999999,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.206816418999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+"
+90,line_search,青潮モビリティサービスのスケジュール.xlsxにおいて、バッファとして使用した工数の合計は何時間ですか。,14時間,,14時間,True,schedule_buffer_hours_sum,local_answer,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx.sheets/WBSスケジュール.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx.sheets/WBSスケジュール_rev.csv,"No=8 | タスクID=B01 | 種別=バッファ | フェーズ=1. 立上げ・定義確認 | タスク名=リスクバッファ① | 詳細・成果物=定義差異確認の追加深掘り対応 | 担当者=― | 開始日=2025-07-28 | 終了日=2025-07-29 | 工数(h)=2.0 | ステータス=完了
+No=15 | タスクID=B02 | 種別=バッファ | フェーズ=2. 前処理設計・ベースライン構築 | タスク名=リスクバッファ② | 詳細・成果物=ベースライン評価の再実行・図表調整 | 担当者=― | 開始日=2025-08-04 | 終了日=2025-08-05 | 工数(h)=2.0 | ステータス=完了
+No=25 | タスクID=B03 | 種別=バッファ | フェーズ=4. 示唆整理・最終報告準備 | タスク名=リスクバッファ③ | 詳細・成果物=最終報告書ドラフト修正 | 担当者=― | 開始日=2025-08-18 | 終了日=2025-08-21 | 工数(h)=1.0 | ステータス=完了
+No=31 | タスクID=B04 | 種別=バッファ | フェーズ=5. 最終化・検収対応 | タスク名=リスクバッファ④ | 詳細・成果物=最終報告会後の軽微指摘反映 | 担当者=― | 開始日=2025-08-26 | 終了日=2025-08-27 | 工数(h)=1.0 | ステータス=完了
+No=8 | タスクID=B01 | 種別=バッファ | フェーズ=1. 立上げ・定義確認 | タスク名=リスクバッファ① | 詳細・成果物=定義差異確認の追加深掘り対応 | 担当者=― | 開始日=2025-07-28 | 終了日=2025-07-29 | 工数(h)=2.0 | ステータス=完了
+No=15 | タスクID=B02 | 種別=バッファ | フェーズ=2. 前処理設計・ベースライン構築 | タスク名=リスクバッファ② | 詳細・成果物=ベースライン評価の再実行・図表調整 | 担当者=― | 開始日=2025-08-04 | 終了日=2025-08-05 | 工数(h)=2.0 | ステータス=完了
+No=25 | タスクID=B03 | 種別=バッファ | フェーズ=4. 示唆整理・最終報告準備 | タスク名=リスクバッファ③ | 詳細・成果物=最終報告書ドラフト修正 | 担当者=― | 開始日=2025-08-18 | 終了日=2025-08-21 | 工数(h)=2.0 | ステータス=完了
+No=31 | タスクID=B04 | 種別=バッファ | フェーズ=5. 最終化・検収対応 | タスク名=リスクバッファ④ | 詳細・成果物=最終報告会後の軽微指摘反映 | 担当者=― | 開始日=2025-08-26 | 終了日=2025-08-27 | 工数(h)=2.0 | ステータス=完了"
+92,line_search,恒一会 かえで総合病院案件において、マイルストーンID、タスクID、アクションIDの3種類のIDは合計でいくつ発行されていますか。マークダウンファイル以外から算出してください。,41件,,41件,True,non_markdown_id_count,local_answer,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/00.提案/提案書.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_outputs/experiments/leaderboard.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_outputs/experiments/leaderboard.csv.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/05.会議/会議録/会議録_2025-09-02.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/05.会議/会議録/会議録_2025-09-16.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/05.会議/会議録/会議録_2025-09-30.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/05.会議/報告資料/報告資料_2025-09-02.docx.structure.json,"MS=['MS3'], T=['T01', 'T02', 'T03', 'T04', 'T05', 'T06', 'T08', 'T10', 'T11', 'T12', 'T13', 'T14', 'T15', 'T16'], A=['A0', 'A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08', 'A09', 'A1', 'A10', 'A11', 'A12', 'A13', 'A14', 'A15', 'A16', 'A17', 'A18', 'A19', 'A2', 'A3', 'A4', 'A5', 'A6']"
+94,schedule_ms_role_filter,蒼樹会 みなみ野女性医療センターのスケジュール.xlsxにおいて、MS3に紐づくタスクのうち、ビジネスアナリストが関わっているタスクIDを答えてください。,,,わかりません,False,schedule_role_not_in_table,http_200,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.sheets/スケジュール管理表.csv,MS3 and role rows were not found together

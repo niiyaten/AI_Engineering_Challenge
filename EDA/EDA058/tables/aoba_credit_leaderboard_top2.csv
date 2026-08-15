@@ -1,0 +1,3 @@
+﻿trial_index,status,model_type,n_estimators,use_date_features,random_state,test_size,task_type,primary_metric,primary_value,secondary_metric,secondary_value
+10,ok,extra_trees,500,True,42,0.2,classification,f1_macro,0.60266642,accuracy,0.778
+6,ok,extra_trees,300,True,42,0.2,classification,f1_macro,0.59534963,accuracy,0.77514286

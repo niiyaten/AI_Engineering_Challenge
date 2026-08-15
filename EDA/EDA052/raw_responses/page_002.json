@@ -1,0 +1,58 @@
+{
+  "status": "http_200",
+  "finish_reason": "error",
+  "content_length": 1845,
+  "raw": {
+    "id": "gen-1783642888-4uCil48EwPX20AOfnY5Y",
+    "object": "chat.completion",
+    "created": 1783642888,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "error",
+        "native_finish_reason": null,
+        "error": {
+          "code": 502,
+          "message": "Upstream error from Nvidia: EngineCore encountered an issue. See stack trace (above) for the root cause.",
+          "metadata": {
+            "error_type": "provider_unavailable"
+          }
+        },
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"meeting_id\": \"\",\n  \"date\": \"2025-07-22\",\n  \"page_title\": \"最終受入の議論とアクションアイテム\",\n  \"progress_summary\": \"完了（今回まで）\",\n  \"action_items\": [\n    {\n      \"action_id\": \"A10\",\n      \"content\": \"着手金の支払確認を会議前に完了報告（AI-05 終了扱い）。検収金は最終検収後（検収期日：2025-07-22想定）に請求・確認を行う。\",\n      \"owner\": \"着手金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A14\",\n      \"content\": \"検収金に必要な納品物と検証項目を確定（詳細はアクション AI-14 にて納品物一覧とチェックリストを提示）。必須検証項目：ROC-AUC、Recall（運用閾値）、Precision@top10%、Brier score、SHAP 寄与、前処理仕様、実行再現手順、監査ログ。承認：出席者一同。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A15\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-15 にて検収後請求）。検収金要求・支払確認：AI-15（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A16\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-16 にて検収後請求）。検収金要求・支払確認：AI-16（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A17\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-17 にて検収後請求）。検収金要求・支払確認：AI-17（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A18\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-18 にて検収後請求）。検収金要求・支払確認：AI-18（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A19\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-19 にて検収後請求）。検収金要求・支払確認：AI-19（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A20\",\n      \"content\": \"最終モデルの検証と検収を確定（詳細はアクション AI-20 にて検収後請求）。検収金要求・支払確認：AI-20（予定どおり検収後請求）。\",\n      \"owner\": \"検収金担当\",\n      \"due\": \"2025-07-22\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1752,
+      "completion_tokens": 932,
+      "total_tokens": 2684,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

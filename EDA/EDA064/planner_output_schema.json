@@ -1,0 +1,37 @@
+{
+  "scope": "string",
+  "scope_reason": "string",
+  "explicit_documents": [
+    "string"
+  ],
+  "candidate_documents": [
+    {
+      "document_id": "string",
+      "score": "number"
+    }
+  ],
+  "selected_documents": [
+    "string"
+  ],
+  "document_probe_requests": [
+    "string"
+  ],
+  "question_type": "string",
+  "required_file_types": [
+    "string"
+  ],
+  "required_attributes": [
+    "string"
+  ],
+  "required_capabilities": [
+    "string"
+  ],
+  "execution_steps": [
+    "string"
+  ],
+  "requires_calculation": false,
+  "requires_vision": false,
+  "expected_answer_type": "string",
+  "ambiguity": false,
+  "abstain_reason": "string"
+}

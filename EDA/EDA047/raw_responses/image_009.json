@@ -1,0 +1,52 @@
+{
+  "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 1263,
+  "raw": {
+    "id": "gen-1783601235-IPidZVP4dubh6iEcdItk",
+    "object": "chat.completion",
+    "created": 1783601235,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"image_summary\": \"複数のヒストグラムとその正規分布曲線を示した分析結果の可視化。\",\n  \"visible_text\": [\"BOROUGH の分布\", \"TAX CLASS AT PRESENT の分布\", \"BLOCK の分布\", \"LOT の分布\", \"ZIP CODE の分布\", \"RESIDENTIAL UNITS の分布\"],\n  \"tables\": [],\n  \"charts\": [\n    {\n      \"title\": \"BOROUGH の分布\",\n      \"x_axis\": \"BOROUGH\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    },\n    {\n      \"title\": \"TAX CLASS AT PRESENT の分布\",\n      \"x_axis\": \"TAX CLASS AT PRESENT\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    },\n    {\n      \"title\": \"BLOCK の分布\",\n      \"x_axis\": \"BLOCK\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    },\n    {\n      \"title\": \"LOT の分布\",\n      \"x_axis\": \"LOT\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    },\n    {\n      \"title\": \"ZIP CODE の分布\",\n      \"x_axis\": \"ZIP CODE\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    },\n    {\n      \"title\": \"RESIDENTIAL UNITS の分布\",\n      \"x_axis\": \"RESIDENTIAL UNITS\",\n      \"y_axis\": \"件数\",\n      \"series\": \"正規分布曲線\"\n    }\n  ],\n  \"seating_or_spatial_relations\": [],\n  \"answer_relevant_notes\": [\n    \"BOROUGHの分布は1.0と4.0にピークを持つ\",\n    \"TAX CLASS AT PRESENTの分布は1.0と2.0にピークを持つ\",\n    \"BLOCKの分布は0から16000までの範囲を持つ\",\n    \"LOTの分布は0から16000までの範囲を持つ\",\n    \"ZIP CODEの分布は0から12000までの範囲を持つ\",\n    \"RESIDENTIAL UNITSの分布は0から1750までの範囲を持つ\"\n  ]\n}\n```\n",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3180,
+      "completion_tokens": 587,
+      "total_tokens": 3767,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

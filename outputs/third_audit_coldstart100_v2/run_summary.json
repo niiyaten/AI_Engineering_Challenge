@@ -1,0 +1,50 @@
+{
+  "cold_start": true,
+  "question_count": 100,
+  "answered_count": 100,
+  "abstained_count": 0,
+  "evidence_answered_count": 100,
+  "remaining50_route_count": 49,
+  "audit_route_count": 19,
+  "base_route_count": 30,
+  "timeout_count": 0,
+  "exception_count": 0,
+  "prepare_seconds": 4.433,
+  "execution_wall_seconds": 652.398,
+  "total_wall_seconds": 656.831,
+  "question_elapsed_seconds": 529.573,
+  "runtime_inputs": {
+    "source_mode": "share_zip_cold_prepare",
+    "prepared_source_tree": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/work/third_audit_coldstart100_v2/office/prepared_share",
+    "share_zip": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/materials/share.zip",
+    "questions": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/questions/integrated100_questions.csv",
+    "fact_catalog": false,
+    "prior_answers": false,
+    "expected_answers": false,
+    "external_api": false
+  },
+  "office_events": [
+    {
+      "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/~$スケジュール.xlsx",
+      "status": "ignored_office_temp"
+    },
+    {
+      "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx",
+      "status": "decrypted",
+      "derivation": "DA******************sx"
+    },
+    {
+      "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx",
+      "status": "decrypted",
+      "derivation": "ka*********02"
+    },
+    {
+      "source": "共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/~$提案書.pptx",
+      "status": "ignored_office_temp"
+    },
+    {
+      "source": "共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/.~lock.青葉与信マネジメント株式会社_最終報告old.pptx#",
+      "status": "ignored_office_temp"
+    }
+  ]
+}

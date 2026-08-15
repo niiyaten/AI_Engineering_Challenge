@@ -1,0 +1,8 @@
+﻿route,question_count,success_status_200_count,unknown_answer_count,retrieval_fallback_count
+code_reading,3,0,0,3
+diff_check,9,2,0,8
+document_whole_context,14,0,0,14
+fallback_bm25_llm,37,0,0,37
+format_extraction,17,1,0,16
+image_ocr,3,0,0,3
+table_calculation,17,0,0,17

@@ -1,0 +1,16 @@
+﻿outcome,required_source_type,count
+unknown,pptx,4
+unknown,csv,3
+near_correct,docx,3
+unknown,py_or_ipynb,2
+unknown,xlsx,2
+wrong,py_or_ipynb,2
+near_correct,image,1
+near_correct,pptx,1
+wrong,docx,1
+unknown,xlsx_pivot,1
+wrong,pptx_or_docx_versions,1
+unknown,docx,1
+unknown,image,1
+wrong,xlsx_pivot,1
+wrong,pptx,1

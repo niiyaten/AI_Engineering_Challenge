@@ -1,0 +1,14 @@
+{
+  "eda": "EDA017",
+  "created_at": "2026-07-08T00:26:36",
+  "purpose": "Convert Python programs into Markdown and AST-based structure JSON.",
+  "target_count": 100,
+  "outputs": {
+    "report": "EDA/EDA017/eda017_report.md",
+    "conversion_log": "EDA/EDA017/tables/python_conversion_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA017/eda017.py"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "eda": "EDA056",
+  "base": "EDA/EDA055/predictions/eda055_chart_format_formula_predictions.csv",
+  "before_unknown": 9,
+  "after_unknown": 6,
+  "adopted_count": 3,
+  "submission_zip": "EDA/EDA056/predictions/eda056_meeting_operation_schedule_submission.zip"
+}

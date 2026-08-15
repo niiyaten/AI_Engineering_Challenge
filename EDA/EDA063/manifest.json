@@ -1,0 +1,12 @@
+{
+  "eda": "EDA063",
+  "input_csv": "data\\processed\\share\\share\\質問回答\\questions_test_expanded.csv",
+  "output_csv": "EDA\\EDA063\\tables\\test_question_classification.csv",
+  "attempt_csv": "EDA\\EDA063\\tables\\openrouter_classification_attempts.csv",
+  "report": "EDA\\EDA063\\eda063_report.md",
+  "model": "openai/gpt-oss-20b:free",
+  "question_count": 100,
+  "classified_count": 100,
+  "api_error_count": 0,
+  "api_key": ".apikey (not stored)"
+}

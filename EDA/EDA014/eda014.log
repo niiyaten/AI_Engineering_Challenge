@@ -1,0 +1,434 @@
+2026-07-08 00:09:00,857 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\京橋信用ソリューションズ株式会社\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:09:01,922 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\02.計画\~$スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 289, in process_xlsx
+    raise RuntimeError("temporary_office_file")
+RuntimeError: temporary_office_file
+2026-07-08 00:09:02,864 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 291, in process_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-07-08 00:09:08,511 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:09:09,384 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:09:11,398 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:09:16,085 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\02.計画\スケジュール_r1.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type datetime is not JSON serializable
+2026-07-08 00:09:16,144 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\02.計画\スケジュール_r2.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:09:51,312 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:10:14,276 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\03.データ\train.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:10:14,653 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社青葉バイオメディカル機器\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:10:17,445 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\白峰信用リスク評価株式会社\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+2026-07-08 00:11:24,485 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 417, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 355, in process_xlsx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type datetime is not JSON serializable
+2026-07-08 00:12:06,303 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\02.計画\~$スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 427, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 299, in process_xlsx
+    raise RuntimeError("temporary_office_file")
+RuntimeError: temporary_office_file
+2026-07-08 00:12:06,304 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\02.計画\スケジュール.xlsx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 427, in process_file
+    record, status = process_xlsx(path, args.sample_rows, args.style_limit, args.formula_limit)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA014\eda014.py", line 301, in process_xlsx
+    wb = load_workbook(path, data_only=False, read_only=False)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1329, in __init__
+    self._RealGetContents()
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\zipfile.py", line 1396, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

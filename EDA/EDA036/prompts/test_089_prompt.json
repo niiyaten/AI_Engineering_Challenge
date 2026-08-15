@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 京橋信用ソリューションズのスケジュール.xlsxにおいて、フェーズNo6にて最後に開始するタスク名は何ですか。\nroute: table_calculation\nsubtype: schedule_phase_last_task\n候補生成方法: schedule_csv_phase_last_start\n候補信頼度: high\nneeds_review: False\nEDA035回答: 最終モデル確定・再評価\n回答候補: 最終モデル確定・再評価\n参照元: data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/02.計画/スケジュール.xlsx.sheets/WBSタスク一覧.csv\n根拠抜粋:\nタスクID                      T23\nフェーズNo.                    6.0\nフェーズ名            最終成果物化・納品・検収会\nタスク名               最終モデル確定・再評価\n詳細・補足           最終モデルの確定と再評価実施\n担当者                      鈴木 美咲\n開始日                 2025-11-01\n終了日                 2025-11-05\n日数                  =H24-G24+1\n依存タスク                      T22\n成果物                     最終評価結果\nステータス                       完了\nCP                           ●\n備考                            \n_date      2025-11-01 00:00:00"
+    }
+  ],
+  "gold_answer_not_included": true
+}

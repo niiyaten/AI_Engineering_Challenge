@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは構造化データから作られた回答候補を、提出用の短い最終回答に整えるアシスタントです。提示された候補、根拠、信頼度だけを使ってください。外部知識や推測で候補にない値を足さないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が複数項目の場合は、候補内の順序をできるだけ保ち、日本語の読点「、」で区切ってください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する最終回答だけを返してください。\n\n質問: 東都人材プラットフォームの提案書P7において、赤で強調されている箇所の文字列を抜き出してください。\nroute: document_whole_context\n候補生成方法: format_metadata_pptx_slide_runs\n候補信頼度: medium\n回答候補: 1. データ理解・EDA\n補足: nan\n根拠抜粋:\ndata\\processed\\share\\share\\共有ドライブ\\プロジェクト\\株式会社東都人材プラットフォーム\\00.提案\\提案書.pptx.structure.json slide=7: 1. データ理解・EDA color=#FFFFFF\ndata\\processed\\share\\share\\共有ドライブ\\プロジェクト\\株式会社東都人材プラットフォーム\\00.提案\\提案書.pptx.structure.json slide=7: 2. 前処理設計 color=#FFFFFF\ndata\\processed\\share\\share\\共有ドライブ\\プロジェクト\\株式会社東都人材プラットフォーム\\00.提案\\提案書.pptx.structure.json slide=7: 3. モデル構築 color=#FFFFFF\ndata\\processed\\share\\share\\共有ドライブ\\プロジェクト\\株式会社東都人材プラットフォーム\\00.提案\\提案書.pptx.structure.json slide=7: 4. 評価・解釈 color=#FFFFFF\ndata\\processed\\share\\share\\共有ドライブ\\プロジェクト\\株式会社東都人材プラットフォーム\\00.提案\\提案書.pptx.structure.json slide=7: 5. 業務示唆整理 color=#FFFFFF"
+    }
+  ],
+  "gold_answer_not_included": true
+}

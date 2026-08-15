@@ -1,0 +1,19 @@
+ M src/rag_competition/answer_gate.py
+ M src/rag_competition/extractors.py
+ M src/rag_competition/route_registry.py
+ M src/rag_competition/tool_registry.py
+?? data/output/notebook_replay/
+?? data/output/pptx_timeline_integration_51_88_run1/
+?? data/output/pptx_timeline_integration_51_88_run2/
+?? data/output/pptx_timeline_integration_test51_run1/
+?? data/output/pptx_timeline_integration_test51_run2/
+?? data/output/pptx_timeline_integration_test51_run3/
+?? data/output/pptx_timeline_integration_test51_run4/
+?? data/output/pptx_timeline_integration_test_full_fresh/
+?? data/output/pptx_timeline_integration_valid_fresh/
+?? data/output/pptx_timeline_verification_v1/
+?? data/output/unittest_protected_source_selection/
+?? data/output/unittest_source_selection/
+?? data/work/
+?? src/rag_competition/pptx_timeline_executor.py
+?? tests/test_pptx_timeline_executor.py

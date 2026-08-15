@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは構造化データから作られた回答候補を、提出用の短い最終回答に整えるアシスタントです。提示された候補、根拠、信頼度だけを使ってください。外部知識や推測で候補にない値を足さないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が複数項目の場合は、候補内の順序をできるだけ保ち、日本語の読点「、」で区切ってください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する最終回答だけを返してください。\n\n質問: 蒼泉会の分析コードにおいて、CATは dtype とユニーク数の条件でどのように判定していますか。\nroute: code_reading\n候補生成方法: code_structure_cat_condition\n候補信頼度: high\n回答候補: object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。\n補足: nan\n根拠抜粋:\n[i + 1 :]:\n            feature_name = f\"{left}__x__{right}\"\n            out[feature_name] = pd.to_numeric(out[left], errors=\"coerce\") * pd.to_numeric(out[right], errors=\"coerce\")\n            pair_count += 1\n            if pair_count >= max_interaction_pairs:\n                return out\n    return out\n\n\ndef is_identifier_like_column(name: str) -> bool:\n    normalized = str(name).strip().lower()\n    if normalized in IDENTIFIER_EXACT_NAMES:\n        return True\n    return normalized.startswith(IDENTIFIER_PREFIXES) or normalized.endswith(IDENTIFIER_SUFFIXES)\n\n\ndef select_feature_columns(\n    X: pd.DataFrame, categorical_unique_limit: int = MAX_CATEGORICAL_UNIQUE\n) -> tuple[pd.DataFrame, dict[str, object]]:\n    selected_columns: list[str] = []\n    excluded_columns: list[dict[str, object]] = []\n\n    for col in X.columns:\n        series = X[col]\n        if is_identifier_like_column(col):\n            excluded_columns.append(\n                {\n                    \"column\": col,\n                    \"reason\": \"identifier_like_name\",\n                }\n            )\n            continue\n\n        is_categorical = (\n            pd.api.types.is_object_dtype(series)\n            or pd.api.types.is_string_dtype(series)\n            or pd.api.types.is_categorical_dtype(series)\n        )\n        if is_categorical:\n            unique_count = int(series.dropna().nunique())\n            if unique_count >= categorical_unique_limit:\n                excluded_columns.append(\n                    {\n                        \"column\": col,\n                        \"reason\": \"high_cardinality_categorical\",\n                        \"unique_count\": unique_count,\n                        \"threshold\": categorical_un"
+    }
+  ],
+  "gold_answer_not_included": true
+}

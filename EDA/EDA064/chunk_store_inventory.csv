@@ -1,0 +1,5 @@
+﻿store,path,file_count,chunk_count,avg_chunks_per_document,schema,granularity,candidate_mode_used,embedding_model,stale_status
+current_strict_search_records,E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG_test49_openrouter_poc\data\work\gate19_test100_final_candidate\extracted\search_records.jsonl,384,1614,4.18,SearchRecord,format-specific search record,True,none,current
+EDA002,E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\texts\text_chunks.jsonl,unknown,1230,unknown,historical jsonl,historical text chunk,False,unknown,historical
+EDA004,E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA004\texts\text_chunks.jsonl,unknown,1311,unknown,historical jsonl,historical text chunk,False,unknown,historical
+historical_referenced_12139,provenance_not_found_in_current_EDA_tree,unknown,12139,unknown,unverified,unverified,unknown,unknown,reported_reference_requires_provenance

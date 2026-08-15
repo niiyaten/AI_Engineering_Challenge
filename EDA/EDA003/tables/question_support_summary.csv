@@ -1,0 +1,5 @@
+﻿support_category,question_count,top5_loose_hit_rate,mean_top1_score
+EDA002対象形式で拾える可能性あり,4,0.5,207.5197
+EDA002対象形式を明示,3,0.3333,478.855
+対象外形式の可能性が高い,8,0.125,106.409
+形式不明,15,0.0667,140.8411

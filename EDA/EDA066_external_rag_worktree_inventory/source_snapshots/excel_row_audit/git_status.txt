@@ -1,0 +1,18 @@
+ M src/rag_competition/answer_gate.py
+ M src/rag_competition/extractors.py
+ M src/rag_competition/route_registry.py
+ M src/rag_competition/tool_registry.py
+?? data/output/excel_same_row_reachability_audit_v1/
+?? data/output/overnight_capability_progress_v1/
+?? data/output/overnight_pptx_timeline_targeted_v1/
+?? data/output/overnight_pptx_timeline_targeted_v2/
+?? data/output/pptx_timeline_formal_targeted_v1/
+?? data/output/raw_baseline_manifest_gate15_v1/
+?? data/output/raw_integrity_audit_before_excel_row_v1/
+?? data/output/test94_cross_document_role_join_audit_v1/
+?? data/output/unit_reproducibility_repair_v1/
+?? data/output/unittest_protected_source_selection/
+?? data/output/unittest_source_selection/
+?? data/work/
+?? src/rag_competition/pptx_timeline_executor.py
+?? tests/test_pptx_timeline_executor.py

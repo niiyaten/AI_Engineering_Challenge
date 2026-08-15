@@ -1,0 +1,8 @@
+この画像を、RAG検索用のテキストに変換してください。
+日本語で、画像内の文字、グラフのタイトル、軸名、凡例、読み取れる数値、傾向を具体的に書いてください。
+不明な値は推測せず、不明と書いてください。
+出力はJSONだけにしてください。キーは ocr_text, chart_description, extracted_values, search_summary, confidence_notes です。
+
+画像ファイル名: feature_correlation_heatmap.png
+関連しそうな質問:
+- なし

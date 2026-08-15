@@ -1,0 +1,3 @@
+﻿has_document_hint,question_count,baseline_top5,guided_top5,improved,worsened
+False,22,0.2727,0.2727,0,0
+True,8,0.5,0.5,0,0

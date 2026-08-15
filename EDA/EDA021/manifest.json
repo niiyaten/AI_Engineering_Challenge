@@ -1,0 +1,23 @@
+{
+  "eda": "EDA021",
+  "created_at": "2026-07-08T00:42:26",
+  "purpose": "Run local BM25 RAG on test questions and create predictions.csv/zip.",
+  "parameters": {
+    "top_k": 8,
+    "max_answer_chars": 900
+  },
+  "inputs": {
+    "embedding_records": "data/processed/embedding/embedding_records.jsonl",
+    "questions_test": "data/raw/share/share/質問回答/questions_test.csv"
+  },
+  "outputs": {
+    "predictions_csv": "EDA/EDA021/predictions/predictions.csv",
+    "submission_zip": "EDA/EDA021/predictions/eda021_local_rag_submission.zip",
+    "report": "EDA/EDA021/eda021_report.md"
+  },
+  "prediction_count": 100,
+  "repro_steps": [
+    "uv run python EDA/EDA020/eda020.py",
+    "uv run python EDA/EDA021/eda021.py"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "eda": "EDA047",
+  "total_image_count": 56,
+  "processed_image_count": 8,
+  "success_count": 5,
+  "outputs": [
+    "EDA/EDA047/tables/image_asset_inventory.csv",
+    "EDA/EDA047/tables/image_to_text_results.csv",
+    "EDA/EDA047/image_to_text_records.jsonl",
+    "EDA/EDA047/image_to_text_context.md",
+    "EDA/EDA047/eda047_report.md",
+    "EDA/EDA047/raw_responses"
+  ]
+}

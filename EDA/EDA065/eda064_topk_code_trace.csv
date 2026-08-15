@@ -1,0 +1,4 @@
+﻿stage,module,function,input,output,selection_unit,ranking,notes
+question analysis,EDA064/run_eda064.py,analyze_questions,test question,QuestionAnalysis,question,False,offline reuse of current heuristic analysis
+candidate ranking,rag_competition.planner,candidate_files_for_question,QuestionAnalysis + FileRecord + SearchRecord,CandidateFile[],file after SearchRecord aggregation,True,BM25 plus metadata score
+offline evaluation,EDA064/run_eda064.py,top-k comparison,CandidateFile[] + offline labels,Top-1/3/5/10 metrics,document path,False,labels are never given to the candidate function

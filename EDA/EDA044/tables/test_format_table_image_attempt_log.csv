@@ -1,0 +1,1943 @@
+﻿index,route,subtype,question,local_answer,llm_answer,answer_after_eda044,adopted_by_eda044,method,status,finish_reason,used_paths,evidence,raw_response_path
+7,format_extraction,xlsx_yellow_cell_context,青潮モビリティサービスの基礎分析.pptxにおいて、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。,,"行ラベル(0,1,2...)でグループ化し、各列(平均 / temp, 平均 / atemp, 平均 / hum, 平均 / windspeed, 平均 / cnt)の平均値を算出する。","行ラベル(0,1,2...)でグループ化し、各列(平均 / temp, 平均 / atemp, 平均 / hum, 平均 / windspeed, 平均 / cnt)の平均値を算出する。",True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / temp | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=C4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / atemp | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=D4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / hum | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=E4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / windspeed | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=F4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / cnt | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=J4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / temp | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=L4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / windspeed | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=M4 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=平均 / cnt | col_1=行ラベル | col_2=平均 / temp | col_3=平均 / atemp | col_4=平均 / hum | col_5=平均 / windspeed | col_6=平均 / cnt | col_9=行ラベル | col_10=平均 / temp | col_11=行ラベル | col_12=平均 / windspeed | col_13=平均 / cnt
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.48274573517465574 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=C5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.465032168968318 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=D5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.6477822908204703 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=E5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.1818010560519889 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=F5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=143.84565393988626 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=J5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.48274573517465574 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=L5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.1818010560519889 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=M5 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=143.84565393988626 | col_1=0 | col_2=0.48274573517465574 | col_3=0.465032168968318 | col_4=0.6477822908204703 | col_5=0.1818010560519889 | col_6=143.84565393988626 | col_9=0 | col_10=0.48274573517465574 | col_11=0 | col_12=0.1818010560519889 | col_13=143.84565393988626
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.4983967611336044 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=C6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.4777585425101219 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=D6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.6460647773279358 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=E6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.18390809716599016 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=F6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=145.92793522267206 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=J6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.4983967611336044 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=L6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.18390809716599016 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=M6 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=145.92793522267206 | col_1=1 | col_2=0.4983967611336044 | col_3=0.4777585425101219 | col_4=0.6460647773279358 | col_5=0.18390809716599016 | col_6=145.92793522267206 | col_9=1 | col_10=0.4983967611336044 | col_11=1 | col_12=0.18390809716599016 | col_13=145.92793522267206
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B7 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.5053355155482828 | col_1=2 | col_2=0.5053355155482828 | col_3=0.48501211129296257 | col_4=0.656702127659576 | col_5=0.1869637479541717 | col_6=147.57610474631753 | col_9=2 | col_10=0.5053355155482828 | col_11=2 | col_12=0.1869637479541717 | col_13=147.57610474631753
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=C7 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.48501211129296257 | col_1=2 | col_2=0.5053355155482828 | col_3=0.48501211129296257 | col_4=0.656702127659576 | col_5=0.1869637479541717 | col_6=147.57610474631753 | col_9=2 | col_10=0.5053355155482828 | col_11=2 | col_12=0.1869637479541717 | col_13=147.57610474631753
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=D7 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.656702127659576 | col_1=2 | col_2=0.5053355155482828 | col_3=0.48501211129296257 | col_4=0.656702127659576 | col_5=0.1869637479541717 | col_6=147.57610474631753 | col_9=2 | col_10=0.5053355155482828 | col_11=2 | col_12=0.1869637479541717 | col_13=147.57610474631753
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=E7 | fill=00000000 | number_format=#,##0.000;[Red]\-",EDA/EDA044/raw_responses/index_007.json
+11,format_extraction,format_metadata,青嶺不動産アセットマネジメントの報告資料の中で、太字、下線、イタリックのすべてに該当する箇所を抽出してください。,,該当箇所はありません,該当箇所はありません,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/会議録/会議録_2025-08-06.docx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B22 | fill=FFFFFF00 | number_format=#,##0_);[Red](#,##0) | cell_value= | 
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/会議録/会議録_2025-08-06.docx.structure.json | paragraph=24 | text=4,250,000円 | paragraph=商務: 契約開始日 2025-08-06、想定工数170h、見込金額(税抜)4,250,000円、支払は最終一括精算で合意済み(契約書参照)。",EDA/EDA044/raw_responses/index_011.json
+17,format_extraction,xlsx_yellow_cell_context,AYMのMMにおいて、黄色ハイライトかつREDになっている数値を対象に、最初のMMから最後のMMまでの上昇率を計算してください。上昇率は (最後の値 - 最初の値) / 最初の値 × 100 で求め、小数第2位まで答えてください。,,208.40%,208.40%,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=B17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=係数 | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=C17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=標準誤差 | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=D17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=t | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=E17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=P-値 | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=F17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=下限 95% | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=G17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=上限 95% | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=H17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=下限 95.0% | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=I17 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=上限 95.0% | col_2=係数 | col_3=標準誤差 | col_4=t | col_5=P-値 | col_6=下限 95% | col_7=上限 95% | col_8=下限 95.0% | col_9=上限 95.0%
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=B18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.21480000000000193 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=C18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.0029852424031758095 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=D18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=71.95395582331602 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=E18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=F18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.20894862761005936 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=G18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.2206513723899445 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=H18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.20894862761005936 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=I18 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.2206513723899445 | col_1=切片 | col_2=0.21480000000000193 | col_3=0.0029852424031758095 | col_4=71.95395582331602 | col_5=0 | col_6=0.20894862761005936 | col_7=0.2206513723899445 | col_8=0.20894862761005936 | col_9=0.2206513723899445
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=B19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=-0.002936377358220739 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=C19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.003122287844254627 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=D19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=-0.9404569676764476 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=E19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.34699619667801396 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=F19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=-0.009056372460088821 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=G19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.003183617743647343 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=H19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=-0.009056372460088821 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=I19 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.003183617743647343 | col_1=loan_amnt | col_2=-0.002936377358220739 | col_3=0.003122287844254627 | col_4=-0.9404569676764476 | col_5=0.34699619667801396 | col_6=-0.009056372460088821 | col_7=0.003183617743647343 | col_8=-0.009056372460088821 | col_9=0.003183617743647343
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=B20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.09184998188683878 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148 | col_5=1.3001665533777522e-168 | col_6=0.08541641681988402 | col_7=0.09828354695379354 | col_8=0.08541641681988402 | col_9=0.09828354695379354
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=C20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.0032822643922774614 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148 | col_5=1.3001665533777522e-168 | col_6=0.08541641681988402 | col_7=0.09828354695379354 | col_8=0.08541641681988402 | col_9=0.09828354695379354
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=D20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=27.983724316342148 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148 | col_5=1.3001665533777522e-168 | col_6=0.08541641681988402 | col_7=0.09828354695379354 | col_8=0.08541641681988402 | col_9=0.09828354695379354
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=E20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=1.3001665533777522e-168 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148 | col_5=1.3001665533777522e-168 | col_6=0.08541641681988402 | col_7=0.09828354695379354 | col_8=0.08541641681988402 | col_9=0.09828354695379354
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=F20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.08541641681988402 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148 | col_5=1.3001665533777522e-168 | col_6=0.08541641681988402 | col_7=0.09828354695379354 | col_8=0.08541641681988402 | col_9=0.09828354695379354
+data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.structure.json | sheet=回帰分析 | cell=G20 | fill=00000000 | number_format=#,##0.000;[Red]\-#,##0.000 | cell_value=0.09828354695379354 | col_1=interest_rate | col_2=0.09184998188683878 | col_3=0.0032822643922774614 | col_4=27.983724316342148",EDA/EDA044/raw_responses/index_017.json
+33,image_ocr,line_search,青潮モビリティサービスの基礎分析.docxのグラフ2で、x=3のときの青色の折れ線のyの値を小数第5位で答えてください。,,,わかりません,False,llm_needed,http_200,error,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md
+# Word Markdown: 基礎分析.docx
+- raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx
+## Body
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md
+# PowerPoint Markdown: 基礎分析.pptx
+- raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx
+- chart_count: 0
+- image_path: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf
+- content_type: image/x-wmf
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json
+""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx"",
+""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md"",
+""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json"",
+""file_name"": ""基礎分析.docx"",
+""block_index"": 1,
+""block_type"": ""paragraph"",
+""style"": ""Normal"",
+""text"": """",
+""text"": """",
+""block_index"": 2,
+""block_type"": ""paragraph"",
+""style"": ""Normal"",
+""text"": """",
+""text"": """",
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json
+""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx"",
+""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md"",
+""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json"",
+""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets"",
+""file_name"": ""基礎分析.pptx"",
+""file_type"": ""pptx"",
+""text_shape_count"": 1,
+""chart_count"": 0,
+""shape_index"": 1,
+""shape_type"": ""PICTURE (13)"",
+""text"": """",
+""text_frame"": null,
+""image_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf"",
+""image_ext"": ""wmf"",
+""content_type"": ""image/x-wmf"",
+""bytes"": 24668,
+""chart"": null
+""shape_index"": 2,
+""shape_type"": ""TEXT_BOX (17)"",
+""text"": ""表1"",
+""text_frame"": {
+""text"": ""表1"",
+""text"": ""表1"",
+""text"": ""表"",
+""text"": ""1"",
+""chart"": null
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json
+{
+  ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx"",
+  ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.md"",
+  ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json"",
+  ""file_name"": ""train.xlsx"",
+  ""file_type"": ""xlsx"",
+  ""source_sha1"": ""b6d5678faf6d7cfcc46a6e2b785e5f8ce86b7f34"",
+  ""sheet_count"": 4,
+  ""total_formula_count_captured"": 0,
+  ""total_chart_count"": 0,
+  ""sheets"": [
+    {
+      ""sheet_name"": ""Sheet1"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 1,
+      ""max_column"": 1,
+      ""dimension"": ""A1:A1"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [],
+      ""styled_cell_count_captured"": 0,
+      ""charts"": [],
+      ""chart_count"": 0,
+      ""profile"": {
+        ""row_count"": 0,
+        ""column_count"": 0,
+        ""columns"": [],
+        ""dtypes"": {},
+        ""missing_count"": {},
+        ""sample_rows"": []
+      }
+    },
+    {
+      ""sheet_name"": ""Sheet2"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 11,
+      ""max_column"": 13,
+      ""dimension"": ""A1:M11"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [
+        {
+          ""coordinate"": ""I3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""J3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""K3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""L3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""M3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""B4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""C4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""D4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""E4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""F4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+       
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+行ラベル,平均 / temp,平均 / atemp,平均 / hum,平均 / windspeed,平均 / cnt,,,行ラベル,平均 / temp,行ラベル,平均 / windspeed,平均 / cnt
+0,0.48274573517465574,0.465032168968318,0.6477822908204703,0.1818010560519889,143.84565393988626,,,0,0.48274573517465574,0,0.1818010560519889,143.84565393988626
+1,0.4983967611336044,0.4777585425101219,0.6460647773279358,0.18390809716599016,145.92793522267206,,,1,0.4983967611336044,1,0.18390809716599016,145.92793522267206
+2,0.5053355155482828,0.48501211129296257,0.656702127659576,0.1869637479541717,147.57610474631753,,,2,0.5053355155482828,2,0.1869637479541717,147.57610474631753
+3,0.502392188771362,0.47892123677786846,0.6831244914564725,0.1955530512611865,137.64768104149715,,,3,0.502392188771362,3,0.1955530512611865,137.64768104149715
+4,0.4932734693877577,0.47101028571428527,0.6186775510204087,0.2074124897959166,142.49142857142857,,,4,0.4932734693877577,4,0.2074124897959166,142.49142857142857
+5,0.47610976594027604,0.4573454398708637,0.6237853107344645,0.18643260694107988,146.89749798224375,,,5,0.47610976594027604,5,0.18643260694107988,146.89749798224375
+6,0.466060126582278,0.44865893987341876,0.6284335443037973,0.19611226265822596,142.20174050632912,,,6,0.466060126582278,6,0.19611226265822596,142.20174050632912
+総計,0.48906882591092327,0.4690004511278196,0.6434297281665636,0.19117226142277868,143.79444765760556,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13,col_14,col_15,col_16,col_17,col_18,col_19,col_20,col_21,col_22,col_23,col_24,col_25
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,
+,列ラベル,,,,,,,,,,,,,,,,,,,,,,,
+,カラム1,,,,,,,カラム2,,,,,,,カラム3,,,,,,,全体の カラム1,全体の カラム2,全体の カラム3
+行ラベル,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,,,
+0,0.8,0.76,0.74,0.8,0.76,0.82,0.82,1,1.0,0.94,1.0,1.0,1.0,1.0,173,177.0,55.0,52.0,56.0,80.0,145.0,0.82,1,177
+1,0.78,0.76,0.74,0.78,0.74,0.8,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,124,119.0,39.0,28.0,32.0,50.0,95.0,0.82,1,124
+2,0.8,0.74,0.72,0.78,0.74,0.78,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,106,63.0,26.0,16.0,25.0,38.0,79.0,0.82,1,106
+3,0.8,0.74,0.72,0.76,0.74,0.78,0.78,1,1.0,1.0,1.0,1.0,1.0,1.0,59,26.0,21.0,9.0,14.0,12.0,51.0,0.8,1,59
+4,0.78,0.72,0.72,0.76,0.72,0.76,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,23,17.0,10.0,11.0,9.0,13.0,16.0,0.78,1,23
+5,0.78,0.72,0.7,0.76,0.72,0.74,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,39,34.0,36.0,35.0,32.0,32.0,18.0,0.78,1,39
+6,0.8,0.72,0.74,0.74,0.72,0.76,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,33,121.0,134.0,145.0,130.0,120.0,40.0,0.8,1,145
+7,0.8,0.74,0.76,0.76,0.74,0.8,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,71,332.0,365.0,370.0,342.0,332.0,87.0,0.8,1,370
+8,0.82,0.8,0.78,0.8,0.76,0.84,0.84,1,1.0,0.94,1.0,1.0,0.94,1.0,142,476.0,504.0,540.0,555.0,564.0,182.0,0.84,1,564
+9,0.82,0.82,0.8,0.82,0.84,0.86,0.84,1,1.0,0.94,1.0,1.0,1.0,1.0,231,238.0,275.0,244.0,280.0,264.0,247.0,0.86,1,280
+10,0.86,0.86,0.82,0.82,0.86,0.9,0.86,1,0.93,0.94,1.0,1.0,1.0,1.0,365,280.0,161.0,154.0,147.0,200.0,337.0,0.9,1,365
+11,0.86,0.88,0.86,0.84,0.9,0.92,0.9,1,0.87,0.94,1.0,0.94,1.0,1.0,423,349.0,186.0,185.0,192.0,230.0,418.0,0.92,1,423
+12,0.9,0.9,0.86,0.88,0.92,0.96,0.92,0.94,0.79,1.0,1.0,0.94,0.94,1.0,455,447.0,237.0,260.0,233.0,272.0,493.0,0.96,1,493
+13,0.9,0.9,0.9,0.9,0.9,0.94,0.94,0.94,0.94,1.0,1.0,0.88,1.0,1.0,472,423.0,234.0,236.0,232.0,308.0,497.0,0.94,1,497
+14,0.9,0.92,0.9,0.92,0.92,0.96,0.92,1,1.0,1.0,1.0,0.87,1.0,1.0,500,408.0,651.0,213.0,228.0,303.0,472.0,0.96,1,651
+15,0.92,0.9,0.9,0.92,0.94,0.96,0.94,1,1.0,1.0,1.0,0.89,0.94,1.0,469,408.0,601.0,207.0,240.0,381.0,506.0,0.96,1,601
+16,0.92,0.9,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,0.94,1.0,491,452.0,444.0,328.0,323.0,427.0,471.0,0.96,1,491
+17,0.92,0.86,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,1.0,1.0,438,620.0,625.0,638.0,628.0,591.0,475.0,0.96,1,638
+18,0.88,0.86,0.86,0.9,0.9,0.92,0.92,1,0.94,1.0,1.0,0.94,1.0,0.94,414,609.0,585.0,621.0,586.0,564.0,444.0,0.92,1,621
+19,0.86,0.84,0.86,0.84,0.86,0.9,0.82,1,0.94,1.0,0.94,1.0,0.94,0.94,387,436.0,465.0,446.0,455.0,394.0,406.0,0.9,1,465
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011-01-01,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011-01-01,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011-01-01,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011-01-01,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011-01-01,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011-01-01,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011-01-01,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011-01-01,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011-01-01,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011-01-01,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011-01-01,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011-01-01,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011-01-01,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011-01-01,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011-01-01,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011-01-01,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011-01-01,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011-01-01,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011-01-01,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011-01-01,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011-01-01,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011-01-01,1,0,1,21,0,6,0,2,0.4",EDA/EDA044/raw_responses/index_033.json
+38,table_calculation,line_search,社内管理のAPRに照らして、APR-M3が必要な案件を主略称ですべて挙げ、それらの契約金額(税込)の合計を答えてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.sheets/Pivot.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/02.計画/スケジュール.xlsx.sheets/WBSタスク一覧.csv | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/02.計画/スケジュール.xlsx.sheets/マイルストーン.csv | data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/02.計画/スケジュール.xlsx.sheets/リソース計画.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv.data.csv
+id,age,job,marital,education,default,balance,housing,loan,contact,day,month,duration,campaign,pdays,previous,poutcome,y
+1,39,blue-collar,married,secondary,no,1756,yes,no,cellular,3,apr,939,1,-1,0,unknown,1
+2,51,entrepreneur,married,primary,no,1443,no,no,cellular,18,feb,172,10,-1,0,unknown,1
+3,36,management,single,tertiary,no,436,no,no,cellular,13,apr,567,1,595,2,failure,1
+4,63,retired,married,secondary,no,474,no,no,cellular,25,jan,423,1,-1,0,unknown,1
+5,31,management,single,tertiary,no,354,no,no,cellular,30,apr,502,1,9,2,success,1
+6,29,blue-collar,single,secondary,no,260,yes,no,unknown,2,jun,707,14,-1,0,unknown,1
+7,37,services,married,secondary,no,52,yes,no,cellular,6,sep,908,1,185,9,success,1
+8,32,technician,single,secondary,no,230,yes,no,cellular,18,may,442,1,266,8,failure,1
+9,31,admin.,single,secondary,no,0,yes,no,cellular,7,may,895,2,295,2,failure,1
+10,32,self-employed,single,tertiary,no,1815,no,no,telephone,10,aug,235,1,102,2,failure,1
+11,35,self-employed,single,tertiary,no,353,no,no,cellular,12,aug,582,1,-1,0,unknown,1
+12,34,technician,divorced,secondary,no,1451,yes,no,unknown,30,may,1097,15,-1,0,unknown,1
+13,34,admin.,single,tertiary,no,625,no,yes,unknown,31,aug,34,1,-1,0,unknown,1
+14,31,management,divorced,tertiary,no,883,yes,no,cellular,5,mar,112,2,106,1,failure,1
+15,38,blue-collar,married,primary,no,5839,yes,no,unknown,4,jun,984,2,-1,0,unknown,1
+16,71,technician,married,tertiary,no,383,no,no,cellular,27,apr,388,3,-1,0,unknown,1
+17,62,management,married,tertiary,no,557,no,no,cellular,14,aug,185,1,-1,0,unknown,1
+18,66,retired,married,secondary,no,154,no,no,cellular,15,jul,268,5,181,2,failure,1
+19,46,blue-collar,married,primary,no,369,yes,no,unknown,13,may,916,2,-1,0,unknown,1
+20,29,admin.,single,tertiary,no,89,yes,no,cellular,22,jul,120,1,-1,0,unknown,0
+21,28,self-employed,married,tertiary,no,112,yes,yes,cellular,5,may,145,1,-1,0,unknown,0
+22,67,retired,married,primary,no,708,no,no,cellular,11,sep,96,2,-1,0,unknown,0
+23,42,management,married,tertiary,no,4,yes,no,cellular,17,jul,795,1,-1,0,unknown,1
+24,33,admin.,divorced,secondary,no,420,yes,no,telephone,6,feb,112,2,-1,0,unknown,0
+25,39,services,single,secondary,no,158,yes,no,unknown,6,jun,354,2,-1,0,unknown,0
+26,57,retired,divorced,tertiary,no,66,yes,no,cellular,11,may,798,2,-1,0,unknown,0
+27,43,management,single,tertiary,no,0,no,no,cellular,11,aug,155,2,-1,0,unknown,0
+28,46,services,divorced,unknown,no,973,no,no,cellular,2,feb,297,1,-1,0,unknown,0
+29,31,blue-collar,married,primary,no,-81,yes,no,cellular,22,jul,261,1,-1,0,unknown,0
+30,36,technician,single,secondary,no,524,yes,no,cellular,8,apr,95,1,-1,0,unknown,0
+31,33,technician,single,secondary,no,0,yes,yes,cellular,9,feb,47,2,12,4,other,0
+32,52,admin.,single,unknown,no,2227,no,no,cellular,24,feb,242,2,-1,0,unknown,1
+33,30,self-employed,single,tertiary,no,800,no,no,unknown,6,may,95,2,-1,0,unknown,0
+34,41,management,married,tertiary,no,-4,yes,no,cellular,8,may,72,1,368,1,failure,0
+35,29,blue-collar,marr
+# data/processed/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv.data.csv
+id,age,job,marital,education,default,balance,housing,loan,contact,day,month,duration,campaign,pdays,previous,poutcome,y
+1,39,blue-collar,married,secondary,no,1756,yes,no,cellular,3,apr,939,1,-1,0,unknown,1
+2,51,entrepreneur,married,primary,no,1443,no,no,cellular,18,feb,172,10,-1,0,unknown,1
+3,36,management,single,tertiary,no,436,no,no,cellular,13,apr,567,1,595,2,failure,1
+4,63,retired,married,secondary,no,474,no,no,cellular,25,jan,423,1,-1,0,unknown,1
+5,31,management,single,tertiary,no,354,no,no,cellular,30,apr,502,1,9,2,success,1
+6,29,blue-collar,single,secondary,no,260,yes,no,unknown,2,jun,707,14,-1,0,unknown,1
+7,37,services,married,secondary,no,52,yes,no,cellular,6,sep,908,1,185,9,success,1
+8,32,technician,single,secondary,no,230,yes,no,cellular,18,may,442,1,266,8,failure,1
+9,31,admin.,single,secondary,no,0,yes,no,cellular,7,may,895,2,295,2,failure,1
+10,32,self-employed,single,tertiary,no,1815,no,no,telephone,10,aug,235,1,102,2,failure,1
+11,35,self-employed,single,tertiary,no,353,no,no,cellular,12,aug,582,1,-1,0,unknown,1
+12,34,technician,divorced,secondary,no,1451,yes,no,unknown,30,may,1097,15,-1,0,unknown,1
+13,34,admin.,single,tertiary,no,625,no,yes,unknown,31,aug,34,1,-1,0,unknown,1
+14,31,management,divorced,tertiary,no,883,yes,no,cellular,5,mar,112,2,106,1,failure,1
+15,38,blue-collar,married,primary,no,5839,yes,no,unknown,4,jun,984,2,-1,0,unknown,1
+16,71,technician,married,tertiary,no,383,no,no,cellular,27,apr,388,3,-1,0,unknown,1
+17,62,management,married,tertiary,no,557,no,no,cellular,14,aug,185,1,-1,0,unknown,1
+18,66,retired,married,secondary,no,154,no,no,cellular,15,jul,268,5,181,2,failure,1
+19,46,blue-collar,married,primary,no,369,yes,no,unknown,13,may,916,2,-1,0,unknown,1
+20,29,admin.,single,tertiary,no,89,yes,no,cellular,22,jul,120,1,-1,0,unknown,0
+21,28,self-employed,married,tertiary,no,112,yes,yes,cellular,5,may,145,1,-1,0,unknown,0
+22,67,retired,married,primary,no,708,no,no,cellular,11,sep,96,2,-1,0,unknown,0
+23,42,management,married,tertiary,no,4,yes,no,cellular,17,jul,795,1,-1,0,unknown,1
+24,33,admin.,divorced,secondary,no,420,yes,no,telephone,6,feb,112,2,-1,0,unknown,0
+25,39,services,single,secondary,no,158,yes,no,unknown,6,jun,354,2,-1,0,unknown,0
+26,57,retired,divorced,tertiary,no,66,yes,no,cellular,11,may,798,2,-1,0,unknown,0
+27,43,management,single,tertiary,no,0,no,no,cellular,11,aug,155,2,-1,0,unknown,0
+28,46,services,divorced,unknown,no,973,no,no,cellular,2,feb,297,1,-1,0,unknown,0
+29,31,blue-collar,married,primary,no,-81,yes,no,cellular,22,jul,261,1,-1,0,unknown,0
+30,36,technician,single,secondary,no,524,yes,no,cellular,8,apr,95,1,-1,0,unknown,0
+31,33,technician,single,secondary,no,0,yes,yes,cellular,9,feb,47,2,12,4,other,0
+32,52,admin.,single,unknown,no,2227,no,no,cellular,24,feb,242,2,-1,0,unknown,1
+33,30,self-employed,single,tertiary,no,800,no,no,unknown,6,may,95,2,-1,0,unknown,0
+34,41,management,married,tertiary,no,-4,yes,no,cellular,8,may,72,1,368,1,failure,0
+35,29,blue-collar,marr
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv.data.csv
+id,Age,Gender,T_Bil,D_Bil,ALP,ALT_GPT,AST_GOT,TP,Alb,AG_ratio,disease
+0,42,Male,0.78636166,0.154074643,162.2678008,26.05397923,37.41339528,6.041335156,3.584787512,0.793957209,1
+1,65,Female,0.939514501,0.17426218,175.3153959,14.34678457,11.60656874,6.249219594,3.499155134,0.954350735,0
+2,29,Male,1.221597065,0.374222506,151.1647211,13.22654867,11.10905365,6.752647561,3.498901047,1.065018779,1
+3,65,Female,0.889106548,0.122545251,177.4290338,15.37638557,15.24710052,6.33308691,3.440846711,0.953816853,0
+4,59,Male,1.990933149,0.603733934,183.7934989,23.20275661,54.16268506,6.128990153,2.560995295,0.958612118,0
+5,53,Male,0.876721333,0.162195667,171.4689256,15.3679334,14.95317862,6.3095179,2.88190133,0.726222123,0
+6,48,Male,1.847723272,0.472662127,274.4825013,18.80977694,28.75957261,7.56880783,4.386260715,0.994751768,0
+7,18,Male,1.021281769,0.181433926,174.4831531,11.92675243,19.42223186,5.906836816,3.029504524,0.746890172,1
+8,44,Male,0.963628825,0.17213745,196.7627596,14.14057703,16.91577491,6.283292248,4.181381904,1.048647779,1
+9,62,Male,0.825141699,0.141228779,165.8757207,23.91031737,37.35550892,7.083740568,4.137600747,1.015404753,0
+10,21,Male,0.834757873,7.609721168,158.6802398,354.4360325,183.7809555,5.301785908,3.352337407,0.867027257,1
+11,60,Male,0.994512936,0.432460185,162.5186869,16.92457306,15.79906044,7.154259319,3.601708401,0.993726452,0
+12,30,Male,0.909794183,0.241390505,147.1447913,14.4783538,20.1432887,7.743216495,3.662636949,0.888727146,0
+13,34,Male,0.984957109,0.285289734,176.2961067,26.10355427,23.33471756,7.876727142,2.766077792,0.605125062,1
+14,12,Male,0.73375286,0.197748919,264.0212868,16.12739426,37.13923322,7.091049083,4.331515636,0.99922072,0
+15,53,Male,0.976170754,0.170160789,177.1457053,16.35838803,16.3045359,7.156111364,4.240423273,0.973325306,0
+16,53,Female,0.81949771,0.134342717,168.037077,15.76248681,14.06262894,6.293499958,3.492327962,0.989994494,0
+17,54,Male,2.33562911,1.132262397,168.9314947,14.83349911,20.27200039,6.964801659,2.599397672,0.490030705,1
+18,32,Male,0.858411255,0.195606958,136.3969484,26.75301281,87.66550606,6.013674332,3.493982304,0.709083145,0
+19,49,Female,1.19484433,0.291025513,153.4223415,13.08777665,98.37929841,6.032299314,3.065930287,0.561721181,0
+20,12,Male,0.737636724,0.189936725,144.5134446,18.26206933,18.60408438,7.086679425,4.33563553,0.976443043,0
+21,36,Male,0.916234177,0.224051551,167.4060372,21.07544614,39.57739162,6.138598599,3.516346172,1.058804082,1
+22,12,Male,0.932756078,0.182854092,173.6563928,17.27013667,16.39925617,7.135621069,4.235875029,0.962158726,0
+23,43,Male,1.666476145,0.525929751,183.011544,56.51633744,43.83675927,5.25177061,3.597626462,0.740088764,0
+24,37,Male,0.79164696,0.217992326,145.4989539,11.86183631,12.27152772,3.457521523,2.237122603,1.011925067,0
+25,57,Female,0.909101662,0.084488325,179.1210362,9.232643332,13.40707831,5.454453124,2.781782163,0.697945117,0
+26,44,Male,0.669989974,0.149867379,160.1132986,15.60743582,24.53127685,7.115091717,4.207674
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.xlsx.sheets/Pivot.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11
+,,,,,,,,,,
+,,,,,,,,,,
+Gender,disease,Age,平均 / T_Bil,平均 / D_Bil,平均 / ALP,平均 / ALT_GPT,平均 / AST_GOT,平均 / TP,平均 / Alb,平均 / AG_ratio
+Female,0,7,0.796608648,0.232766111,272.0907195,56.99294059,39.05950777,6.097503121,3.693512962,0.999179104
+,,12,0.9213185965999999,0.1427898196,174.43889442,16.118331050000002,16.593730684,6.8806616976,3.8502664002,0.9972024232000001
+,,16,0.871110186,0.1023122145,172.018244,14.75172411,15.180227455,6.256495139,4.1955964425,0.9646018155
+,,17,0.8203817255999999,0.1562888846,223.14925646,25.120451082,36.639136166,7.132571638799999,3.5095050977999995,0.8023607126
+,,18,1.00866792,0.212606353,146.7241259,23.66409496,13.36368822,6.884974611,4.513344235,1.211250604
+,,19,0.7962088165,0.2232314305,160.806622,10.155557072,15.988375755,6.05483675,2.4880054575,0.6132957735
+,,20,0.9530616863333333,0.19801020633333333,165.87544526666667,14.322025889999999,14.61425729,6.593355258,3.7590148093333333,0.850067177
+,,21,0.7761562316153845,0.13633431019230768,161.00629364615386,14.519205341269233,15.321790335,6.373962250307691,3.6998969146153846,0.9617297244615385
+,,22,0.8792783439999999,0.151416606,168.98478773333335,16.29211419,23.71059155,6.262404606333334,3.4911957109999996,0.969793385
+,,23,0.931366511,0.14375763,152.0933238,20.15619234,18.16165567,7.083486571,4.007315074,0.975167802
+,,25,0.947565722,0.156468138,175.0210094,18.66993462,13.8981004,7.181867267,4.132082562,1.012779477
+,,26,0.8141987112857143,0.21515617157142858,169.3269726285714,20.16292821792857,29.830356699285716,6.460753619285714,3.5914415560000004,0.8424962359999998
+,,27,1.0226416249999999,0.1412797215,172.97308085,19.163246215,16.693034095,4.893523074,2.7057816789999998,0.8612824699999999
+,,28,0.816945432,0.12736473166666668,167.68421340476186,17.91574162476191,19.286159151904762,6.742052550904762,3.9197995347142864,0.9739121085714285
+,,29,0.818185348,0.151569269,156.3363694,24.25939354,36.62210128,7.573277687,4.292741282,0.736858311
+,,30,0.8381799248,0.0766106326,158.50261736,15.983358640199999,17.375083414,7.2142317612,3.9661785018000004,0.9280196155999999
+,,32,0.80423513125,0.126904115,250.24793235,18.0919933925,23.9598032975,6.38690862875,3.5824363740000003,0.98920190725
+,,34,0.7595181934,0.1501673688,199.143889,16.088014408,24.844932828000005,6.4576025058,3.7069385186000003,0.8706726928
+,,36,1.067159742,0.124894557,487.5292602,20.12757055,24.37495763,6.993426656,3.557626822,0.935868341
+,,37,1.0205864215,0.1788432495,190.4474342,16.323633385,16.551441135,6.731921026,3.5737353814999997,0.760949876
+,,3",EDA/EDA044/raw_responses/index_038.json
+39,image_ocr,line_search,青潮モビリティサービスのtrain.xlsxのSheet1にあるグラフ1はどのカラムを可視化したものですか。,,Sheet1にはグラフが存在しないため、可視化されたカラムはありません,Sheet1にはグラフが存在しないため、可視化されたカラムはありません,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md
+- chart_count: 0
+- image_path: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json
+""chart_count"": 0,
+""image_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf"",
+""chart"": null
+""chart"": null
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json
+{
+  ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx"",
+  ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.md"",
+  ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json"",
+  ""file_name"": ""train.xlsx"",
+  ""file_type"": ""xlsx"",
+  ""source_sha1"": ""b6d5678faf6d7cfcc46a6e2b785e5f8ce86b7f34"",
+  ""sheet_count"": 4,
+  ""total_formula_count_captured"": 0,
+  ""total_chart_count"": 0,
+  ""sheets"": [
+    {
+      ""sheet_name"": ""Sheet1"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 1,
+      ""max_column"": 1,
+      ""dimension"": ""A1:A1"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [],
+      ""styled_cell_count_captured"": 0,
+      ""charts"": [],
+      ""chart_count"": 0,
+      ""profile"": {
+        ""row_count"": 0,
+        ""column_count"": 0,
+        ""columns"": [],
+        ""dtypes"": {},
+        ""missing_count"": {},
+        ""sample_rows"": []
+      }
+    },
+    {
+      ""sheet_name"": ""Sheet2"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 11,
+      ""max_column"": 13,
+      ""dimension"": ""A1:M11"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [
+        {
+          ""coordinate"": ""I3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""J3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""K3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""L3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""M3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""B4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""C4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""D4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""E4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""F4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+       
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+行ラベル,平均 / temp,平均 / atemp,平均 / hum,平均 / windspeed,平均 / cnt,,,行ラベル,平均 / temp,行ラベル,平均 / windspeed,平均 / cnt
+0,0.48274573517465574,0.465032168968318,0.6477822908204703,0.1818010560519889,143.84565393988626,,,0,0.48274573517465574,0,0.1818010560519889,143.84565393988626
+1,0.4983967611336044,0.4777585425101219,0.6460647773279358,0.18390809716599016,145.92793522267206,,,1,0.4983967611336044,1,0.18390809716599016,145.92793522267206
+2,0.5053355155482828,0.48501211129296257,0.656702127659576,0.1869637479541717,147.57610474631753,,,2,0.5053355155482828,2,0.1869637479541717,147.57610474631753
+3,0.502392188771362,0.47892123677786846,0.6831244914564725,0.1955530512611865,137.64768104149715,,,3,0.502392188771362,3,0.1955530512611865,137.64768104149715
+4,0.4932734693877577,0.47101028571428527,0.6186775510204087,0.2074124897959166,142.49142857142857,,,4,0.4932734693877577,4,0.2074124897959166,142.49142857142857
+5,0.47610976594027604,0.4573454398708637,0.6237853107344645,0.18643260694107988,146.89749798224375,,,5,0.47610976594027604,5,0.18643260694107988,146.89749798224375
+6,0.466060126582278,0.44865893987341876,0.6284335443037973,0.19611226265822596,142.20174050632912,,,6,0.466060126582278,6,0.19611226265822596,142.20174050632912
+総計,0.48906882591092327,0.4690004511278196,0.6434297281665636,0.19117226142277868,143.79444765760556,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13,col_14,col_15,col_16,col_17,col_18,col_19,col_20,col_21,col_22,col_23,col_24,col_25
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,
+,列ラベル,,,,,,,,,,,,,,,,,,,,,,,
+,カラム1,,,,,,,カラム2,,,,,,,カラム3,,,,,,,全体の カラム1,全体の カラム2,全体の カラム3
+行ラベル,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,,,
+0,0.8,0.76,0.74,0.8,0.76,0.82,0.82,1,1.0,0.94,1.0,1.0,1.0,1.0,173,177.0,55.0,52.0,56.0,80.0,145.0,0.82,1,177
+1,0.78,0.76,0.74,0.78,0.74,0.8,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,124,119.0,39.0,28.0,32.0,50.0,95.0,0.82,1,124
+2,0.8,0.74,0.72,0.78,0.74,0.78,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,106,63.0,26.0,16.0,25.0,38.0,79.0,0.82,1,106
+3,0.8,0.74,0.72,0.76,0.74,0.78,0.78,1,1.0,1.0,1.0,1.0,1.0,1.0,59,26.0,21.0,9.0,14.0,12.0,51.0,0.8,1,59
+4,0.78,0.72,0.72,0.76,0.72,0.76,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,23,17.0,10.0,11.0,9.0,13.0,16.0,0.78,1,23
+5,0.78,0.72,0.7,0.76,0.72,0.74,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,39,34.0,36.0,35.0,32.0,32.0,18.0,0.78,1,39
+6,0.8,0.72,0.74,0.74,0.72,0.76,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,33,121.0,134.0,145.0,130.0,120.0,40.0,0.8,1,145
+7,0.8,0.74,0.76,0.76,0.74,0.8,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,71,332.0,365.0,370.0,342.0,332.0,87.0,0.8,1,370
+8,0.82,0.8,0.78,0.8,0.76,0.84,0.84,1,1.0,0.94,1.0,1.0,0.94,1.0,142,476.0,504.0,540.0,555.0,564.0,182.0,0.84,1,564
+9,0.82,0.82,0.8,0.82,0.84,0.86,0.84,1,1.0,0.94,1.0,1.0,1.0,1.0,231,238.0,275.0,244.0,280.0,264.0,247.0,0.86,1,280
+10,0.86,0.86,0.82,0.82,0.86,0.9,0.86,1,0.93,0.94,1.0,1.0,1.0,1.0,365,280.0,161.0,154.0,147.0,200.0,337.0,0.9,1,365
+11,0.86,0.88,0.86,0.84,0.9,0.92,0.9,1,0.87,0.94,1.0,0.94,1.0,1.0,423,349.0,186.0,185.0,192.0,230.0,418.0,0.92,1,423
+12,0.9,0.9,0.86,0.88,0.92,0.96,0.92,0.94,0.79,1.0,1.0,0.94,0.94,1.0,455,447.0,237.0,260.0,233.0,272.0,493.0,0.96,1,493
+13,0.9,0.9,0.9,0.9,0.9,0.94,0.94,0.94,0.94,1.0,1.0,0.88,1.0,1.0,472,423.0,234.0,236.0,232.0,308.0,497.0,0.94,1,497
+14,0.9,0.92,0.9,0.92,0.92,0.96,0.92,1,1.0,1.0,1.0,0.87,1.0,1.0,500,408.0,651.0,213.0,228.0,303.0,472.0,0.96,1,651
+15,0.92,0.9,0.9,0.92,0.94,0.96,0.94,1,1.0,1.0,1.0,0.89,0.94,1.0,469,408.0,601.0,207.0,240.0,381.0,506.0,0.96,1,601
+16,0.92,0.9,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,0.94,1.0,491,452.0,444.0,328.0,323.0,427.0,471.0,0.96,1,491
+17,0.92,0.86,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,1.0,1.0,438,620.0,625.0,638.0,628.0,591.0,475.0,0.96,1,638
+18,0.88,0.86,0.86,0.9,0.9,0.92,0.92,1,0.94,1.0,1.0,0.94,1.0,0.94,414,609.0,585.0,621.0,586.0,564.0,444.0,0.92,1,621
+19,0.86,0.84,0.86,0.84,0.86,0.9,0.82,1,0.94,1.0,0.94,1.0,0.94,0.94,387,436.0,465.0,446.0,455.0,394.0,406.0,0.9,1,465
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011-01-01,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011-01-01,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011-01-01,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011-01-01,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011-01-01,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011-01-01,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011-01-01,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011-01-01,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011-01-01,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011-01-01,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011-01-01,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011-01-01,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011-01-01,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011-01-01,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011-01-01,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011-01-01,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011-01-01,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011-01-01,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011-01-01,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011-01-01,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011-01-01,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011-01-01,1,0,1,21,0,6,0,2,0.4,0.4091,0.87,0.193999999999999,34
+23,2011-01-01,1,0,1,22,0,6,0,2,0.4,0.4091,0.94,0.2239,28
+24,2011-01-01,1,0,1,23,0,6,0,2,0.46,0.4545,0.88,0.2985,39
+25,2011-01-02,1,0,1,0,0,0,0,2,0.46,0.4545,0.88,0.2985,17
+",EDA/EDA044/raw_responses/index_039.json
+47,format_extraction,xlsx_yellow_cell_context,青嶺不動産アセットマネジメントのtrain.xlsxにおいて、黄色ハイライトセルは予測と実際の誤差を計算していますが、その予測値の対象となっている不動産の建設年を算出してください。,,2025年,2025年,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/会議録/会議録_2025-08-06.docx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.xlsx.structure.json | sheet=Sheet2 | cell=B22 | fill=FFFFFF00 | number_format=#,##0_);[Red](#,##0) | cell_value= | 
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/会議録/会議録_2025-08-06.docx.structure.json | paragraph=24 | text=4,250,000円 | paragraph=商務: 契約開始日 2025-08-06、想定工数170h、見込金額(税抜)4,250,000円、支払は最終一括精算で合意済み(契約書参照)。",EDA/EDA044/raw_responses/index_047.json
+54,image_ocr,line_search,青潮モビリティサービスの基礎分析.docxのグラフ1で、x=3のときのyの値を小数第5位で答えてください。,,13.00000,13.00000,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md
+# Word Markdown: 基礎分析.docx
+- raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx
+## Body
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md
+# PowerPoint Markdown: 基礎分析.pptx
+- raw_path: share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx
+- chart_count: 0
+- image_path: data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf
+- content_type: image/x-wmf
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json
+""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx"",
+""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.md"",
+""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.docx.structure.json"",
+""file_name"": ""基礎分析.docx"",
+""block_index"": 1,
+""block_type"": ""paragraph"",
+""style"": ""Normal"",
+""text"": """",
+""text"": """",
+""block_index"": 2,
+""block_type"": ""paragraph"",
+""style"": ""Normal"",
+""text"": """",
+""text"": """",
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json
+""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx"",
+""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.md"",
+""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.structure.json"",
+""assets_dir"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets"",
+""file_name"": ""基礎分析.pptx"",
+""file_type"": ""pptx"",
+""text_shape_count"": 1,
+""chart_count"": 0,
+""shape_index"": 1,
+""shape_type"": ""PICTURE (13)"",
+""text"": """",
+""text_frame"": null,
+""image_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/05.会議/報告資料/基礎分析.pptx.assets/slide001_shape001.wmf"",
+""image_ext"": ""wmf"",
+""content_type"": ""image/x-wmf"",
+""bytes"": 24668,
+""chart"": null
+""shape_index"": 2,
+""shape_type"": ""TEXT_BOX (17)"",
+""text"": ""表1"",
+""text_frame"": {
+""text"": ""表1"",
+""text"": ""表1"",
+""text"": ""表"",
+""text"": ""1"",
+""chart"": null
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json
+{
+  ""raw_relative_path"": ""share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx"",
+  ""processed_markdown_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.md"",
+  ""processed_structure_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.structure.json"",
+  ""file_name"": ""train.xlsx"",
+  ""file_type"": ""xlsx"",
+  ""source_sha1"": ""b6d5678faf6d7cfcc46a6e2b785e5f8ce86b7f34"",
+  ""sheet_count"": 4,
+  ""total_formula_count_captured"": 0,
+  ""total_chart_count"": 0,
+  ""sheets"": [
+    {
+      ""sheet_name"": ""Sheet1"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 1,
+      ""max_column"": 1,
+      ""dimension"": ""A1:A1"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet1.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [],
+      ""styled_cell_count_captured"": 0,
+      ""charts"": [],
+      ""chart_count"": 0,
+      ""profile"": {
+        ""row_count"": 0,
+        ""column_count"": 0,
+        ""columns"": [],
+        ""dtypes"": {},
+        ""missing_count"": {},
+        ""sample_rows"": []
+      }
+    },
+    {
+      ""sheet_name"": ""Sheet2"",
+      ""sheet_state"": ""visible"",
+      ""max_row"": 11,
+      ""max_column"": 13,
+      ""dimension"": ""A1:M11"",
+      ""exported_csv_path"": ""data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv"",
+      ""merged_ranges"": [],
+      ""auto_filter_ref"": """",
+      ""hidden_rows"": [],
+      ""hidden_columns"": [],
+      ""formulas"": [],
+      ""formula_count_captured"": 0,
+      ""styled_cells"": [
+        {
+          ""coordinate"": ""I3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""J3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""K3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""L3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""M3"",
+          ""bold"": true,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": """",
+          ""number_format"": ""General""
+        },
+        {
+          ""coordinate"": ""B4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""C4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""D4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""E4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+          ""fill_color"": ""00000000"",
+          ""number_format"": ""#,##0.000;[Red]\\-#,##0.000""
+        },
+        {
+          ""coordinate"": ""F4"",
+          ""bold"": false,
+          ""italic"": false,
+          ""underline"": false,
+          ""font_color"": """",
+       
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+行ラベル,平均 / temp,平均 / atemp,平均 / hum,平均 / windspeed,平均 / cnt,,,行ラベル,平均 / temp,行ラベル,平均 / windspeed,平均 / cnt
+0,0.48274573517465574,0.465032168968318,0.6477822908204703,0.1818010560519889,143.84565393988626,,,0,0.48274573517465574,0,0.1818010560519889,143.84565393988626
+1,0.4983967611336044,0.4777585425101219,0.6460647773279358,0.18390809716599016,145.92793522267206,,,1,0.4983967611336044,1,0.18390809716599016,145.92793522267206
+2,0.5053355155482828,0.48501211129296257,0.656702127659576,0.1869637479541717,147.57610474631753,,,2,0.5053355155482828,2,0.1869637479541717,147.57610474631753
+3,0.502392188771362,0.47892123677786846,0.6831244914564725,0.1955530512611865,137.64768104149715,,,3,0.502392188771362,3,0.1955530512611865,137.64768104149715
+4,0.4932734693877577,0.47101028571428527,0.6186775510204087,0.2074124897959166,142.49142857142857,,,4,0.4932734693877577,4,0.2074124897959166,142.49142857142857
+5,0.47610976594027604,0.4573454398708637,0.6237853107344645,0.18643260694107988,146.89749798224375,,,5,0.47610976594027604,5,0.18643260694107988,146.89749798224375
+6,0.466060126582278,0.44865893987341876,0.6284335443037973,0.19611226265822596,142.20174050632912,,,6,0.466060126582278,6,0.19611226265822596,142.20174050632912
+総計,0.48906882591092327,0.4690004511278196,0.6434297281665636,0.19117226142277868,143.79444765760556,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13,col_14,col_15,col_16,col_17,col_18,col_19,col_20,col_21,col_22,col_23,col_24,col_25
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,
+,列ラベル,,,,,,,,,,,,,,,,,,,,,,,
+,カラム1,,,,,,,カラム2,,,,,,,カラム3,,,,,,,全体の カラム1,全体の カラム2,全体の カラム3
+行ラベル,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,,,
+0,0.8,0.76,0.74,0.8,0.76,0.82,0.82,1,1.0,0.94,1.0,1.0,1.0,1.0,173,177.0,55.0,52.0,56.0,80.0,145.0,0.82,1,177
+1,0.78,0.76,0.74,0.78,0.74,0.8,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,124,119.0,39.0,28.0,32.0,50.0,95.0,0.82,1,124
+2,0.8,0.74,0.72,0.78,0.74,0.78,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,106,63.0,26.0,16.0,25.0,38.0,79.0,0.82,1,106
+3,0.8,0.74,0.72,0.76,0.74,0.78,0.78,1,1.0,1.0,1.0,1.0,1.0,1.0,59,26.0,21.0,9.0,14.0,12.0,51.0,0.8,1,59
+4,0.78,0.72,0.72,0.76,0.72,0.76,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,23,17.0,10.0,11.0,9.0,13.0,16.0,0.78,1,23
+5,0.78,0.72,0.7,0.76,0.72,0.74,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,39,34.0,36.0,35.0,32.0,32.0,18.0,0.78,1,39
+6,0.8,0.72,0.74,0.74,0.72,0.76,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,33,121.0,134.0,145.0,130.0,120.0,40.0,0.8,1,145
+7,0.8,0.74,0.76,0.76,0.74,0.8,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,71,332.0,365.0,370.0,342.0,332.0,87.0,0.8,1,370
+8,0.82,0.8,0.78,0.8,0.76,0.84,0.84,1,1.0,0.94,1.0,1.0,0.94,1.0,142,476.0,504.0,540.0,555.0,564.0,182.0,0.84,1,564
+9,0.82,0.82,0.8,0.82,0.84,0.86,0.84,1,1.0,0.94,1.0,1.0,1.0,1.0,231,238.0,275.0,244.0,280.0,264.0,247.0,0.86,1,280
+10,0.86,0.86,0.82,0.82,0.86,0.9,0.86,1,0.93,0.94,1.0,1.0,1.0,1.0,365,280.0,161.0,154.0,147.0,200.0,337.0,0.9,1,365
+11,0.86,0.88,0.86,0.84,0.9,0.92,0.9,1,0.87,0.94,1.0,0.94,1.0,1.0,423,349.0,186.0,185.0,192.0,230.0,418.0,0.92,1,423
+12,0.9,0.9,0.86,0.88,0.92,0.96,0.92,0.94,0.79,1.0,1.0,0.94,0.94,1.0,455,447.0,237.0,260.0,233.0,272.0,493.0,0.96,1,493
+13,0.9,0.9,0.9,0.9,0.9,0.94,0.94,0.94,0.94,1.0,1.0,0.88,1.0,1.0,472,423.0,234.0,236.0,232.0,308.0,497.0,0.94,1,497
+14,0.9,0.92,0.9,0.92,0.92,0.96,0.92,1,1.0,1.0,1.0,0.87,1.0,1.0,500,408.0,651.0,213.0,228.0,303.0,472.0,0.96,1,651
+15,0.92,0.9,0.9,0.92,0.94,0.96,0.94,1,1.0,1.0,1.0,0.89,0.94,1.0,469,408.0,601.0,207.0,240.0,381.0,506.0,0.96,1,601
+16,0.92,0.9,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,0.94,1.0,491,452.0,444.0,328.0,323.0,427.0,471.0,0.96,1,491
+17,0.92,0.86,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,1.0,1.0,438,620.0,625.0,638.0,628.0,591.0,475.0,0.96,1,638
+18,0.88,0.86,0.86,0.9,0.9,0.92,0.92,1,0.94,1.0,1.0,0.94,1.0,0.94,414,609.0,585.0,621.0,586.0,564.0,444.0,0.92,1,621
+19,0.86,0.84,0.86,0.84,0.86,0.9,0.82,1,0.94,1.0,0.94,1.0,0.94,0.94,387,436.0,465.0,446.0,455.0,394.0,406.0,0.9,1,465
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011-01-01,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011-01-01,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011-01-01,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011-01-01,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011-01-01,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011-01-01,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011-01-01,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011-01-01,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011-01-01,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011-01-01,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011-01-01,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011-01-01,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011-01-01,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011-01-01,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011-01-01,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011-01-01,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011-01-01,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011-01-01,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011-01-01,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011-01-01,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011-01-01,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011-01-01,1,0,1,21,0,6,0,2,0.4",EDA/EDA044/raw_responses/index_054.json
+57,table_calculation,line_search,青葉のTXにて算出された回帰係数を用いて全データの予測値を計算し、正解データに対する F1 スコアが最大となるように閾値を設定したときの F1 スコアを答えてください。小数第5位まで求めてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/02.計画/スケジュール.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/02.計画/スケジュール.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/02.計画/スケジュール.xlsx.sheets/sheet1.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+12,1493.010459,3 years,6.884324802,A1,0 years,credit_card,722.4684121,Joint App,0
+13,1138.156973,3 years,14.2537142,C5,6 years,house,727.7930126,Individual,0
+14,1216.649361,3 years,14.85282714,C5,10 years,credit_card,681.0775638,Individual,0
+15,1117.901967,3 years,11.13501505,B2,9 years,debt_consolidation,678.455296,Individual,0
+16,1200.108241,3 years,13.53819052,C2,10 years,debt_consolidation,661.8360037,Joint App,1
+17,3347.320281,3 years,18.14503372,C5,6 years,house,658.7728397,Individual,0
+18,607.8591359,5 years,13.91814021,A3,3 years,other,711.4747089,Individual,0
+19,1084.770085,3 years,13.34123386,C1,6 years,debt_consolidation,680.3856589,Individual,1
+20,588.796192,3 years,11.84229441,B4,3 years,credit_card,658.5515223,Individual,0
+21,3305.292017,3 years,10.53674638,B2,10 years,debt_consolidation,729.7285224,Joint App,0
+22,1043.372181,3 years,6.276508049,A1,0 years,debt_consolidation,716.9506951,Individual,0
+23,2162.669838,5 years,7.199168703,A5,2 years,credit_card,672.5360141,Individual,0
+24,2441.04673,5 years,23.40934748,D3,3 years,debt_consolidation,667.2449015,Joint App,0
+25,1601.529052,3 years,5.765244763,A2,3 years,debt_consolidation,728.2410101,Individual,0
+26,1573.489614,5 years,18.43572911,C5,6 years,debt_consolidation,659.4292567,Individual,0
+27,1587.141477,5 years,24.954923,D4,4 years,debt_consolidation,657.1116202,Individual,0
+28,513.9582601,3 years,10.32068604,B5,4 years,debt_consolidation,765.1859223,Individual,1
+29,1166.412877,3 years,14.62657824,D1,2 years,debt_consolidation,677.1565303,Individual,0
+30,1150.749142,3 years,23.91966969,A3,7 years,debt_consolidation,660.2389303,Individual,1
+31,3371.248263,5 years,14.35784547,C3,10 years,credit_card,668.5714598,Joint App,0
+32,1157.122985,3 years,14.56576897,C4,6 years,credit_card,679.6749456,Joint App,0
+33,1153.693699,3 years,23
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+12,1493.010459,3 years,6.884324802,A1,0 years,credit_card,722.4684121,Joint App,0
+13,1138.156973,3 years,14.2537142,C5,6 years,house,727.7930126,Individual,0
+14,1216.649361,3 years,14.85282714,C5,10 years,credit_card,681.0775638,Individual,0
+15,1117.901967,3 years,11.13501505,B2,9 years,debt_consolidation,678.455296,Individual,0
+16,1200.108241,3 years,13.53819052,C2,10 years,debt_consolidation,661.8360037,Joint App,1
+17,3347.320281,3 years,18.14503372,C5,6 years,house,658.7728397,Individual,0
+18,607.8591359,5 years,13.91814021,A3,3 years,other,711.4747089,Individual,0
+19,1084.770085,3 years,13.341233859999999,C1,6 years,debt_consolidation,680.3856589,Individual,1
+20,588.796192,3 years,11.84229441,B4,3 years,credit_card,658.5515223,Individual,0
+21,3305.292017,3 years,10.53674638,B2,10 years,debt_consolidation,729.7285224,Joint App,0
+22,1043.372181,3 years,6.276508049,A1,0 years,debt_consolidation,716.9506951,Individual,0
+23,2162.669838,5 years,7.199168703,A5,2 years,credit_card,672.5360141,Individual,0
+24,2441.04673,5 years,23.40934748,D3,3 years,debt_consolidation,667.2449015,Joint App,0
+25,1601.529052,3 years,5.765244763,A2,3 years,debt_consolidation,728.2410101,Individual,0
+26,1573.489614,5 years,18.43572911,C5,6 years,debt_consolidation,659.4292567,Individual,0
+27,1587.141477,5 years,24.954923,D4,4 years,debt_consolidation,657.1116202,Individual,0
+28,513.9582601,3 years,10.32068604,B5,4 years,debt_consolidation,765.1859223,Individual,1
+29,1166.412877,3 years,14.62657824,D1,2 years,debt_consolidation,677.1565303,Individual,0
+30,1150.749142,3 years,23.91966969,A3,7 years,debt_consolidation,660.2389303,Individual,1
+31,3371.248263,5 years,14.35784547,C3,10 years,credit_card,668.5714598,Joint App,0
+32,1157.122985,3 years,14.56576897,C4,6 years,credit_card,679.6749456,Joint App,0
+33,1153.693699,3 y
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9
+概要,,,,,,,,
+,,,,,,,,
+回帰統計,,,,,,,,
+重相関 R,0.2748636840840207,,,,,,,
+重決定 R2,0.0755500448282403,,,,,,,
+補正 R2,0.0753915314614413,,,,,,,
+標準誤差,0.3949104501024004,,,,,,,
+観測数,17500,,,,,,,
+,,,,,,,,
+分散分析表,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,
+回帰,3,222.99100405359104,74.33033468453034,476.616239714603,1.0253735358509992e-297,,,
+残差,17496,2728.575795947008,0.15595426360008047,,,,,
+合計,17499,2951.566800000599,,,,,,
+,,,,,,,,
+,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%
+切片,0.21480000000000193,0.0029852424031758095,71.95395582331602,0,0.20894862761005936,0.2206513723899445,0.20894862761005936,0.2206513723899445
+loan_amnt,-0.002936377358220739,0.003122287844254627,-0.9404569676764476,0.34699619667801396,-0.009056372460088821,0.003183617743647343,-0.009056372460088821,0.003183617743647343
+interest_rate,0.09184998188683878,0.0032822643922774614,27.983724316342148,1.3001665533777522e-168,0.08541641681988402,0.09828354695379354,0.08541641681988402,0.09828354695379354
+credit_score,-0.04156587018040919,0.003273291547913653,-12.698493113729102,8.760491388066374e-37,-0.047981847578867164,-0.03514989278195122,-0.047981847578867164,-0.03514989278195122
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv
+loan_amnt,interest_rate,credit_score,loan_status
+1256.7108,10.60377869,680.4317659,0
+569.5596067,17.30556544,713.0631282,0
+1118.83805,14.04134157,696.137378,1
+610.7217277,13.04834802,656.3730904,0
+1180.02684,11.38486247,657.211233,0
+1172.219819,11.39718304,712.157342,0
+2433.646304,10.10181044,713.2019707,0
+1021.9603,18.09302821,658.2994753,0
+1200.74142,11.0905065,771.9640874,0
+1731.132899,17.73240798,657.732889,1
+3517.81442,17.67489417,675.9959048,0
+1138.61238,13.83419115,658.2411451,0
+1493.010459,6.884324802,722.4684121,0
+1138.156973,14.2537142,727.7930126,0
+1216.649361,14.85282714,681.0775638,0
+1117.901967,11.13501505,678.455296,0
+1200.108241,13.53819052,661.8360037,1
+3347.320281,18.14503372,658.7728397,0
+607.8591359,13.91814021,711.4747089,0
+1084.770085,13.341233859999999,680.3856589,1
+588.796192,11.84229441,658.5515223,0
+3305.292017,10.53674638,729.7285224,0
+1043.372181,6.276508049,716.9506951,0
+2162.669838,7.199168703,672.5360141,0
+2441.04673,23.40934748,667.2449015,0
+1601.529052,5.765244763,728.2410101,0
+1573.489614,18.43572911,659.4292567,0
+1587.141477,24.954923,657.1116202,0
+513.9582601,10.32068604,765.1859223,1
+1166.412877,14.62657824,677.1565303,0
+1150.749142,23.91966969,660.2389303,1
+3371.248263,14.35784547,668.5714598,0
+1157.122985,14.56576897,679.6749456,0
+1153.693699,23.61739408,658.4969531,0
+1142.61222,7.304050309,678.716899,0
+1635.98505,7.938720744,721.2080867,1
+1108.914897,13.87861324,679.1463983,0
+1563.736951,7.051022597,714.6139314,0
+1180.972912,10.57679369,660.8961357,1
+1154.275822,13.42969098,658.5056701,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv
+loan_amnt,interest_rate,credit_score,loan_status
+""=STANDARDIZE(抽出!A2, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B2, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C2, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A3, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B3, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C3, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A4, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B4, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C4, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",1
+""=STANDARDIZE(抽出!A5, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B5, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C5, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A6, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B6, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C6, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A7, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B7, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C7, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A8, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B8, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C8, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A9, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B9, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C9, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A10, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B10, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C10, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A11, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B11, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C11, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",1
+""=STANDARDIZE(抽出!A12, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B12, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C12, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A13, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A",EDA/EDA044/raw_responses/index_057.json
+63,table_calculation,line_search,青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/02.計画/スケジュール.xlsx.sheets/Sheet2.csv,"
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv.data.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+12,1493.010459,3 years,6.884324802,A1,0 years,credit_card,722.4684121,Joint App,0
+13,1138.156973,3 years,14.2537142,C5,6 years,house,727.7930126,Individual,0
+14,1216.649361,3 years,14.85282714,C5,10 years,credit_card,681.0775638,Individual,0
+15,1117.901967,3 years,11.13501505,B2,9 years,debt_consolidation,678.455296,Individual,0
+16,1200.108241,3 years,13.53819052,C2,10 years,debt_consolidation,661.8360037,Joint App,1
+17,3347.320281,3 years,18.14503372,C5,6 years,house,658.7728397,Individual,0
+18,607.8591359,5 years,13.91814021,A3,3 years,other,711.4747089,Individual,0
+19,1084.770085,3 years,13.34123386,C1,6 years,debt_consolidation,680.3856589,Individual,1
+20,588.796192,3 years,11.84229441,B4,3 years,credit_card,658.5515223,Individual,0
+21,3305.292017,3 years,10.53674638,B2,10 years,debt_consolidation,729.7285224,Joint App,0
+22,1043.372181,3 years,6.276508049,A1,0 years,debt_consolidation,716.9506951,Individual,0
+23,2162.669838,5 years,7.199168703,A5,2 years,credit_card,672.5360141,Individual,0
+24,2441.04673,5 years,23.40934748,D3,3 years,debt_consolidation,667.2449015,Joint App,0
+25,1601.529052,3 years,5.765244763,A2,3 years,debt_consolidation,728.2410101,Individual,0
+26,1573.489614,5 years,18.43572911,C5,6 years,debt_consolidation,659.4292567,Individual,0
+27,1587.141477,5 years,24.954923,D4,4 years,debt_consolidation,657.1116202,Individual,0
+28,513.9582601,3 years,10.32068604,B5,4 years,debt_consolidation,765.1859223,Individual,1
+29,1166.412877,3 years,14.62657824,D1,2 years,debt_consolidation,677.1565303,Individual,0
+30,1150.749142,3 years,23.91966969,A3,7 years,debt_consolidation,660.2389303,Individual,1
+31,3371.248263,5 years,14.35784547,C3,10 years,credit_card,668.5714598,Joint App,0
+32,1157.122985,3 years,14.56576897,C4,6 years,credit_card,679.6749456,Joint App,0
+33,1153.693699,3 years,23
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/train.csv
+id,loan_amnt,term,interest_rate,grade,employment_length,purpose,credit_score,application_type,loan_status
+0,1256.7108,5 years,10.60377869,B1,5 years,debt_consolidation,680.4317659,Individual,0
+1,569.5596067,3 years,17.30556544,C5,3 years,house,713.0631282,Individual,0
+2,1118.83805,3 years,14.04134157,C3,2 years,debt_consolidation,696.137378,Individual,1
+3,610.7217277,3 years,13.04834802,C2,5 years,medical,656.3730904,Individual,0
+4,1180.02684,3 years,11.38486247,B3,10 years,debt_consolidation,657.211233,Individual,0
+5,1172.219819,3 years,11.39718304,B3,5 years,debt_consolidation,712.157342,Joint App,0
+6,2433.646304,3 years,10.10181044,B3,10 years,debt_consolidation,713.2019707,Individual,0
+7,1021.9603,5 years,18.09302821,D4,4 years,debt_consolidation,658.2994753,Individual,0
+8,1200.74142,5 years,11.0905065,B1,7 years,debt_consolidation,771.9640874,Individual,0
+9,1731.132899,5 years,17.73240798,D3,4 years,debt_consolidation,657.732889,Individual,1
+10,3517.81442,5 years,17.67489417,D3,5 years,debt_consolidation,675.9959048,Individual,0
+11,1138.61238,3 years,13.83419115,C1,10 years,debt_consolidation,658.2411451,Individual,0
+12,1493.010459,3 years,6.884324802,A1,0 years,credit_card,722.4684121,Joint App,0
+13,1138.156973,3 years,14.2537142,C5,6 years,house,727.7930126,Individual,0
+14,1216.649361,3 years,14.85282714,C5,10 years,credit_card,681.0775638,Individual,0
+15,1117.901967,3 years,11.13501505,B2,9 years,debt_consolidation,678.455296,Individual,0
+16,1200.108241,3 years,13.53819052,C2,10 years,debt_consolidation,661.8360037,Joint App,1
+17,3347.320281,3 years,18.14503372,C5,6 years,house,658.7728397,Individual,0
+18,607.8591359,5 years,13.91814021,A3,3 years,other,711.4747089,Individual,0
+19,1084.770085,3 years,13.341233859999999,C1,6 years,debt_consolidation,680.3856589,Individual,1
+20,588.796192,3 years,11.84229441,B4,3 years,credit_card,658.5515223,Individual,0
+21,3305.292017,3 years,10.53674638,B2,10 years,debt_consolidation,729.7285224,Joint App,0
+22,1043.372181,3 years,6.276508049,A1,0 years,debt_consolidation,716.9506951,Individual,0
+23,2162.669838,5 years,7.199168703,A5,2 years,credit_card,672.5360141,Individual,0
+24,2441.04673,5 years,23.40934748,D3,3 years,debt_consolidation,667.2449015,Joint App,0
+25,1601.529052,3 years,5.765244763,A2,3 years,debt_consolidation,728.2410101,Individual,0
+26,1573.489614,5 years,18.43572911,C5,6 years,debt_consolidation,659.4292567,Individual,0
+27,1587.141477,5 years,24.954923,D4,4 years,debt_consolidation,657.1116202,Individual,0
+28,513.9582601,3 years,10.32068604,B5,4 years,debt_consolidation,765.1859223,Individual,1
+29,1166.412877,3 years,14.62657824,D1,2 years,debt_consolidation,677.1565303,Individual,0
+30,1150.749142,3 years,23.91966969,A3,7 years,debt_consolidation,660.2389303,Individual,1
+31,3371.248263,5 years,14.35784547,C3,10 years,credit_card,668.5714598,Joint App,0
+32,1157.122985,3 years,14.56576897,C4,6 years,credit_card,679.6749456,Joint App,0
+33,1153.693699,3 y
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/回帰分析.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9
+概要,,,,,,,,
+,,,,,,,,
+回帰統計,,,,,,,,
+重相関 R,0.2748636840840207,,,,,,,
+重決定 R2,0.0755500448282403,,,,,,,
+補正 R2,0.0753915314614413,,,,,,,
+標準誤差,0.3949104501024004,,,,,,,
+観測数,17500,,,,,,,
+,,,,,,,,
+分散分析表,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,
+回帰,3,222.99100405359104,74.33033468453034,476.616239714603,1.0253735358509992e-297,,,
+残差,17496,2728.575795947008,0.15595426360008047,,,,,
+合計,17499,2951.566800000599,,,,,,
+,,,,,,,,
+,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%
+切片,0.21480000000000193,0.0029852424031758095,71.95395582331602,0,0.20894862761005936,0.2206513723899445,0.20894862761005936,0.2206513723899445
+loan_amnt,-0.002936377358220739,0.003122287844254627,-0.9404569676764476,0.34699619667801396,-0.009056372460088821,0.003183617743647343,-0.009056372460088821,0.003183617743647343
+interest_rate,0.09184998188683878,0.0032822643922774614,27.983724316342148,1.3001665533777522e-168,0.08541641681988402,0.09828354695379354,0.08541641681988402,0.09828354695379354
+credit_score,-0.04156587018040919,0.003273291547913653,-12.698493113729102,8.760491388066374e-37,-0.047981847578867164,-0.03514989278195122,-0.047981847578867164,-0.03514989278195122
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/抽出.csv
+loan_amnt,interest_rate,credit_score,loan_status
+1256.7108,10.60377869,680.4317659,0
+569.5596067,17.30556544,713.0631282,0
+1118.83805,14.04134157,696.137378,1
+610.7217277,13.04834802,656.3730904,0
+1180.02684,11.38486247,657.211233,0
+1172.219819,11.39718304,712.157342,0
+2433.646304,10.10181044,713.2019707,0
+1021.9603,18.09302821,658.2994753,0
+1200.74142,11.0905065,771.9640874,0
+1731.132899,17.73240798,657.732889,1
+3517.81442,17.67489417,675.9959048,0
+1138.61238,13.83419115,658.2411451,0
+1493.010459,6.884324802,722.4684121,0
+1138.156973,14.2537142,727.7930126,0
+1216.649361,14.85282714,681.0775638,0
+1117.901967,11.13501505,678.455296,0
+1200.108241,13.53819052,661.8360037,1
+3347.320281,18.14503372,658.7728397,0
+607.8591359,13.91814021,711.4747089,0
+1084.770085,13.341233859999999,680.3856589,1
+588.796192,11.84229441,658.5515223,0
+3305.292017,10.53674638,729.7285224,0
+1043.372181,6.276508049,716.9506951,0
+2162.669838,7.199168703,672.5360141,0
+2441.04673,23.40934748,667.2449015,0
+1601.529052,5.765244763,728.2410101,0
+1573.489614,18.43572911,659.4292567,0
+1587.141477,24.954923,657.1116202,0
+513.9582601,10.32068604,765.1859223,1
+1166.412877,14.62657824,677.1565303,0
+1150.749142,23.91966969,660.2389303,1
+3371.248263,14.35784547,668.5714598,0
+1157.122985,14.56576897,679.6749456,0
+1153.693699,23.61739408,658.4969531,0
+1142.61222,7.304050309,678.716899,0
+1635.98505,7.938720744,721.2080867,1
+1108.914897,13.87861324,679.1463983,0
+1563.736951,7.051022597,714.6139314,0
+1180.972912,10.57679369,660.8961357,1
+1154.275822,13.42969098,658.5056701,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/03.データ/train.xlsx.sheets/標準化.csv
+loan_amnt,interest_rate,credit_score,loan_status
+""=STANDARDIZE(抽出!A2, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B2, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C2, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A3, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B3, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C3, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A4, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B4, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C4, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",1
+""=STANDARDIZE(抽出!A5, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B5, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C5, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A6, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B6, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C6, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A7, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B7, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C7, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A8, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B8, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C8, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A9, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B9, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C9, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A10, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B10, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C10, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A11, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B11, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C11, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",1
+""=STANDARDIZE(抽出!A12, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A$17501))"",""=STANDARDIZE(抽出!B12, AVERAGE(抽出!B$2:B$17501), _xlfn.STDEV.P(抽出!B$2:B$17501))"",""=STANDARDIZE(抽出!C12, AVERAGE(抽出!C$2:C$17501), _xlfn.STDEV.P(抽出!C$2:C$17501))"",0
+""=STANDARDIZE(抽出!A13, AVERAGE(抽出!A$2:A$17501), _xlfn.STDEV.P(抽出!A$2:A",EDA/EDA044/raw_responses/index_063.json
+64,table_calculation,line_search,青潮モビリティサービスの最終報告PDFにおいて、将来のフェーズAとフェーズBを実施した場合の想定工数は合計で何時間ですか。,,0,0,True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.tsv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.tsv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx.sheets/WBSスケジュール.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx.sheets/WBSスケジュール_rev.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/02.計画/スケジュール.xlsx.md,"
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.tsv.data.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011/1/1,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011/1/1,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011/1/1,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011/1/1,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011/1/1,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011/1/1,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011/1/1,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011/1/1,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011/1/1,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011/1/1,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011/1/1,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011/1/1,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011/1/1,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011/1/1,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011/1/1,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011/1/1,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011/1/1,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011/1/1,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011/1/1,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011/1/1,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011/1/1,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011/1/1,1,0,1,21,0,6,0,2,0.4,0.4091,0.87,0.194,34
+23,2011/1/1,1,0,1,22,0,6,0,2,0.4,0.4091,0.94,0.2239,28
+24,2011/1/1,1,0,1,23,0,6,0,2,0.46,0.4545,0.88,0.2985,39
+25,2011/1/2,1,0,1,0,0,0,0,2,0.46,0.4545,0.88,0.2985,17
+26,2011/1/2,1,0,1,1,0,0,0,2,0.44,0.4394,0.94,0.2537,17
+27,2011/1/2,1,0,1,2,0,0,0,2,0.42,0.4242,1.0,0.2836,9
+28,2011/1/2,1,0,1,3,0,0,0,2,0.46,0.4545,0.94,0.194,6
+29,2011/1/2,1,0,1,4,0,0,0,2,0.46,0.4545,0.94,0.194,3
+30,2011/1/2,1,0,1,6,0,0,0,3,0.42,0.4242,0.77,0.2985,2
+31,2011/1/2,1,0,1,7,0,0,0,2,0.4,0.4091,0.76,0.194,1
+32,2011/1/2,1,0,1,8,0,0,0,3,0.4,0.4091,0.71,0.2239,8
+33,2011/1/2,1,0,1,9,0,0,0,2,0.38,0.3939,0.76,0.2239,20
+34,2011/1/2,1,0,1,10,0,0,0,2,0.36,0.3485,0.81,0.2239,53
+35,2011/1/2,1,0,1,11,0,0,0,2,0.36,0.3333,0.71,0.2537,70
+36,2011/1/2,1,0,1,12,0,0,0,2,0.36,0.3333,0.66,0.2985,93
+37,2011/1/2,1,0,1,13,0,0,0,2,0.36,0.3485,0.66,0.1343,75
+38,2011/1/2,1,0,1,14,0,0,0,3,0.36,0.3485,0.76,0.194,59
+39,2011/1/2,1,0,1,15,0,0,0,3,0.34,0.3333,0.81,0.1642,74
+40,2011/1/2,1,0,1,16,0,0,0,3,0.34,0.3333,0.71,0.1642,76
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet2.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+行ラベル,平均 / temp,平均 / atemp,平均 / hum,平均 / windspeed,平均 / cnt,,,行ラベル,平均 / temp,行ラベル,平均 / windspeed,平均 / cnt
+0,0.48274573517465574,0.465032168968318,0.6477822908204703,0.1818010560519889,143.84565393988626,,,0,0.48274573517465574,0,0.1818010560519889,143.84565393988626
+1,0.4983967611336044,0.4777585425101219,0.6460647773279358,0.18390809716599016,145.92793522267206,,,1,0.4983967611336044,1,0.18390809716599016,145.92793522267206
+2,0.5053355155482828,0.48501211129296257,0.656702127659576,0.1869637479541717,147.57610474631753,,,2,0.5053355155482828,2,0.1869637479541717,147.57610474631753
+3,0.502392188771362,0.47892123677786846,0.6831244914564725,0.1955530512611865,137.64768104149715,,,3,0.502392188771362,3,0.1955530512611865,137.64768104149715
+4,0.4932734693877577,0.47101028571428527,0.6186775510204087,0.2074124897959166,142.49142857142857,,,4,0.4932734693877577,4,0.2074124897959166,142.49142857142857
+5,0.47610976594027604,0.4573454398708637,0.6237853107344645,0.18643260694107988,146.89749798224375,,,5,0.47610976594027604,5,0.18643260694107988,146.89749798224375
+6,0.466060126582278,0.44865893987341876,0.6284335443037973,0.19611226265822596,142.20174050632912,,,6,0.466060126582278,6,0.19611226265822596,142.20174050632912
+総計,0.48906882591092327,0.4690004511278196,0.6434297281665636,0.19117226142277868,143.79444765760556,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/Sheet3.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13,col_14,col_15,col_16,col_17,col_18,col_19,col_20,col_21,col_22,col_23,col_24,col_25
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,
+,列ラベル,,,,,,,,,,,,,,,,,,,,,,,
+,カラム1,,,,,,,カラム2,,,,,,,カラム3,,,,,,,全体の カラム1,全体の カラム2,全体の カラム3
+行ラベル,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,0,1.0,2.0,3.0,4.0,5.0,6.0,,,
+0,0.8,0.76,0.74,0.8,0.76,0.82,0.82,1,1.0,0.94,1.0,1.0,1.0,1.0,173,177.0,55.0,52.0,56.0,80.0,145.0,0.82,1,177
+1,0.78,0.76,0.74,0.78,0.74,0.8,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,124,119.0,39.0,28.0,32.0,50.0,95.0,0.82,1,124
+2,0.8,0.74,0.72,0.78,0.74,0.78,0.82,1,1.0,1.0,1.0,1.0,1.0,1.0,106,63.0,26.0,16.0,25.0,38.0,79.0,0.82,1,106
+3,0.8,0.74,0.72,0.76,0.74,0.78,0.78,1,1.0,1.0,1.0,1.0,1.0,1.0,59,26.0,21.0,9.0,14.0,12.0,51.0,0.8,1,59
+4,0.78,0.72,0.72,0.76,0.72,0.76,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,23,17.0,10.0,11.0,9.0,13.0,16.0,0.78,1,23
+5,0.78,0.72,0.7,0.76,0.72,0.74,0.76,1,1.0,0.94,1.0,1.0,1.0,1.0,39,34.0,36.0,35.0,32.0,32.0,18.0,0.78,1,39
+6,0.8,0.72,0.74,0.74,0.72,0.76,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,33,121.0,134.0,145.0,130.0,120.0,40.0,0.8,1,145
+7,0.8,0.74,0.76,0.76,0.74,0.8,0.8,1,1.0,0.94,1.0,1.0,1.0,1.0,71,332.0,365.0,370.0,342.0,332.0,87.0,0.8,1,370
+8,0.82,0.8,0.78,0.8,0.76,0.84,0.84,1,1.0,0.94,1.0,1.0,0.94,1.0,142,476.0,504.0,540.0,555.0,564.0,182.0,0.84,1,564
+9,0.82,0.82,0.8,0.82,0.84,0.86,0.84,1,1.0,0.94,1.0,1.0,1.0,1.0,231,238.0,275.0,244.0,280.0,264.0,247.0,0.86,1,280
+10,0.86,0.86,0.82,0.82,0.86,0.9,0.86,1,0.93,0.94,1.0,1.0,1.0,1.0,365,280.0,161.0,154.0,147.0,200.0,337.0,0.9,1,365
+11,0.86,0.88,0.86,0.84,0.9,0.92,0.9,1,0.87,0.94,1.0,0.94,1.0,1.0,423,349.0,186.0,185.0,192.0,230.0,418.0,0.92,1,423
+12,0.9,0.9,0.86,0.88,0.92,0.96,0.92,0.94,0.79,1.0,1.0,0.94,0.94,1.0,455,447.0,237.0,260.0,233.0,272.0,493.0,0.96,1,493
+13,0.9,0.9,0.9,0.9,0.9,0.94,0.94,0.94,0.94,1.0,1.0,0.88,1.0,1.0,472,423.0,234.0,236.0,232.0,308.0,497.0,0.94,1,497
+14,0.9,0.92,0.9,0.92,0.92,0.96,0.92,1,1.0,1.0,1.0,0.87,1.0,1.0,500,408.0,651.0,213.0,228.0,303.0,472.0,0.96,1,651
+15,0.92,0.9,0.9,0.92,0.94,0.96,0.94,1,1.0,1.0,1.0,0.89,0.94,1.0,469,408.0,601.0,207.0,240.0,381.0,506.0,0.96,1,601
+16,0.92,0.9,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,0.94,1.0,491,452.0,444.0,328.0,323.0,427.0,471.0,0.96,1,491
+17,0.92,0.86,0.9,0.92,0.92,0.96,0.94,1,1.0,1.0,1.0,0.94,1.0,1.0,438,620.0,625.0,638.0,628.0,591.0,475.0,0.96,1,638
+18,0.88,0.86,0.86,0.9,0.9,0.92,0.92,1,0.94,1.0,1.0,0.94,1.0,0.94,414,609.0,585.0,621.0,586.0,564.0,444.0,0.92,1,621
+19,0.86,0.84,0.86,0.84,0.86,0.9,0.82,1,0.94,1.0,0.94,1.0,0.94,0.94,387,436.0,465.0,446.0,455.0,394.0,406.0,0.9,1,465
+20,0.84,0.8,0.82,0.8,0.84,0.86,0.82,1,0.94,1.0,0.94,0.94,0.94,0.94,279,386.0,346.0,342.0,352.0,343.0,314.0,0.86,1,386
+21,0.8,0.76,0.82,0.8,0.82,0.82,0.82,0.94,0.94,1.0,1.0,0.94,1.0,1.0,229,457.0,267.0,257.0,323.0,261.0,252.0,0.82,1,457
+22,0.78,0.76,0.8,0.78,0.82,0.84,0.8,1,0.94,1.0,0.94,1.0,1.0,1.0,181,326.0,194.0,186.0,207.0,231.0,223
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/03.データ/train.xlsx.sheets/train.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011-01-01,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011-01-01,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011-01-01,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011-01-01,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011-01-01,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011-01-01,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011-01-01,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011-01-01,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011-01-01,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011-01-01,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011-01-01,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011-01-01,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011-01-01,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011-01-01,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011-01-01,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011-01-01,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011-01-01,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011-01-01,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011-01-01,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011-01-01,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011-01-01,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011-01-01,1,0,1,21,0,6,0,2,0.4,0.4091,0.87,0.193999999999999,34
+23,2011-01-01,1,0,1,22,0,6,0,2,0.4,0.4091,0.94,0.2239,28
+24,2011-01-01,1,0,1,23,0,6,0,2,0.46,0.4545,0.88,0.2985,39
+25,2011-01-02,1,0,1,0,0,0,0,2,0.46,0.4545,0.88,0.2985,17
+26,2011-01-02,1,0,1,1,0,0,0,2,0.44,0.4394,0.94,0.2537,17
+27,2011-01-02,1,0,1,2,0,0,0,2,0.42,0.4242,1.0,0.2836,9
+28,2011-01-02,1,0,1,3,0,0,0,2,0.46,0.4545,0.94,0.193999999999999,6
+29,2011-01-02,1,0,1,4,0,0,0,2,0.46,0.4545,0.94,0.193999999999999,3
+30,2011-01-02,1,0,1,6,0,0,0,3,0.42,0.4242,0.77,0.2985,2
+31,2011-01-02,1,0,1,7,0,0,0,2,0.4,0.4091,0.76,0.193999999999999,1
+32,2011-01-02,1,0,1,8,0,0,0,3,0.4,0.4091,0.71,0.2239,8
+33,2011-01-02,1,0,1,9,0,0,0,2,0.38,0.3939,0.76,0.2239,20
+34,2011-01-02,1,0,1,10,0,0,0,2,0.36,0.3485,0.81,0.2239,53
+35,2011-01-02,1,0,1,11,0,0,0,2,0.36,0.3333,0.71,0.2537,70
+36,2011-01-02,1,0,1,12,0,0,0,2,0.36,0.3333,0.66,0.2985,93
+37,2011-01-02,1,0,1,13,0,0,0,2,0.36,0.3485,0.66,0.1343,75
+38,2011-01-02,1,0,1,14,0,0,0,3,0.36,0.3485,0.76,0.193999999999999,59
+39,2011-01-02,1,0,1,15,0,0,0,3,0.34,0.3333,0.81,0.1642,74
+40,2011-01-02,1,0,1,16,0,0,0,3,0.34,0.3333,0.71,0.1642,76
+
+# data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/train.tsv.data.csv
+id,dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,cnt
+1,2011-01-01,1,0,1,0,0,6,0,1,0.24,0.2879,0.81,0.0,16
+2,2011-01-01,1,0,1,1,0,6,0,1,0.22,0.2727,0.8,0.0,40
+3,2011-01-01,1,0,1,2,0,6,0,1,0.22,0.2727,0.8,0.0,32
+4,2011-01-01,1,0,1,3,0,6,0,1,0.24,0.2879,0.75,0.0,13
+5,2011-01-01,1,0,1,4,0,6,0,1,0.24,0.2879,0.75,0.0,1
+6,2011-01-01,1,0,1,5,0,6,0,2,0.24,0.2576,0.75,0.0896,1
+7,2011-01-01,1,0,1,6,0,6,0,1,0.22,0.2727,0.8,0.0,2
+8,2011-01-01,1,0,1,7,0,6,0,1,0.2,0.2576,0.86,0.0,3
+9,2011-01-01,1,0,1,8,0,6,0,1,0.24,0.2879,0.75,0.0,8
+10,2011-01-01,1,0,1,9,0,6,0,1,0.32,0.3485,0.76,0.0,14
+11,2011-01-01,1,0,1,10,0,6,0,1,0.38,0.3939,0.76,0.2537,36
+12,2011-01-01,1,0,1,11,0,6,0,1,0.36,0.3333,0.81,0.2836,56
+13,2011-01-01,1,0,1,12,0,6,0,1,0.42,0.4242,0.77,0.2836,84
+14,2011-01-01,1,0,1,13,0,6,0,2,0.46,0.4545,0.72,0.2985,94
+15,2011-01-01,1,0,1,14,0,6,0,2,0.46,0.4545,0.72,0.2836,106
+16,2011-01-01,1,0,1,15,0,6,0,2,0.44,0.4394,0.77,0.2985,110
+17,2011-01-01,1,0,1,16,0,6,0,2,0.42,0.4242,0.82,0.2985,93
+18,2011-01-01,1,0,1,17,0,6,0,2,0.44,0.4394,0.82,0.2836,67
+19,2011-01-01,1,0,1,18,0,6,0,3,0.42,0.4242,0.88,0.2537,35
+20,2011-01-01,1,0,1,19,0,6,0,3,0.42,0.4242,0.88,0.2537,37
+21,2011-01-01,1,0,1,20,0,6,0,2,0.4,0.4091,0.87,0.2537,36
+22,2011-01-01,1,0,1,21,0,6,0,2,0.4,0.4091,0.87,0.1939999999999999,34
+23,2011-01-01,1,0,1,22,0,6,0,2,0.4,0.4091,0.94,0.2239,28
+24,2011-01-01,1,0,1,23,0,6,0,2,0.46,0.4545,0.88,0.2985,39
+25,2011-01-02,1,0,1,0,0,0,0,2,0.46,0.4545,0.88,0.2985,17
+26,2011-01-02,1,0,1,1,0,0,0,2,0.44,0.4394,0.94,0.2537,17
+27,2011-01-02,1,0,1,2,0,0,0,2,0.42,0.4242,1.0,0.2836,9
+28,2011-01-02,1,0,1,3,0,0,0,2,0.46,0.4545,0.94,0.1939999999999999,6
+29,2011-01-02,1,0,1,4,0,0,0,2,0.46,0.4545,0.94,0.1939999999999999,3
+30,2011-01-02,1,0,1,6,0,0,0,3,0.42,0.4242,0.77,0.2985,2
+31,2011-01-02,1,0,1,7,0,0,0,2,0.4,0.4091,0.76,0.1939999999999999,1
+32,2011-01-02,1,0,1,8,0,0,0,3,0.4,0.4091,0.71,0.2239,8
+33,2011-01-02,1,0,1,9,0,0,0,2,0.38,0.3939,0.76,0.2239,20
+34,2011-01-02,1,0,1,10,0,0,0,2,0.36,0.3485,0.81,0.2239,53
+35,2011-01-02,1,0,1,11,0,0,0,2,0.36,0.3333,0.71,0.2537,70
+36,2011-01-02,1,0,1,12,0,0,0,2,0.36,0.3333,0.66,0.2985,93
+37,2011-01-02,1,0,1,13,0,0,0,2,0.36,0.3485,0.66,0.1343,75
+38,2011-01-02,1,0,1,14,0,0,0,3,0.36,0.3485,0.76,0.1939999999999999,59
+39",EDA/EDA044/raw_responses/index_064.json
+65,format_extraction,xlsx_yellow_cell_context,白峰信用リスク評価のtrain.xlsxにおいて、表示されている相関係数シートで、黄色ハイライトになっているセルの条件を答えてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B4 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value= | col_1=値 | col_4=値
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E4 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value= | col_1=値 | col_4=値
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B5 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=404.7439376049982 | col_1=合計 / Attr1 | col_2=404.7439376049982 | col_4=合計 / Attr11 | col_5=651.3064629300005
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E5 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=651.3064629300005 | col_1=合計 / Attr1 | col_2=404.7439376049982 | col_4=合計 / Attr11 | col_5=651.3064629300005
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B6 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4311.140515387998 | col_1=合計 / Attr2 | col_2=4311.140515387998 | col_4=合計 / Attr12 | col_5=22527.873227200915
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E6 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=22527.873227200915 | col_1=合計 / Attr2 | col_2=4311.140515387998 | col_4=合計 / Attr12 | col_5=22527.873227200915
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B7 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=959.1613502900029 | col_1=合計 / Attr3 | col_2=959.1613502900029 | col_4=合計 / Attr13 | col_5=5251.1294988700065
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E7 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=5251.1294988700065 | col_1=合計 / Attr3 | col_2=959.1613502900029 | col_4=合計 / Attr13 | col_5=5251.1294988700065
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B8 | fill=FF00B0F0 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=90804.49533060042 | col_1=合計 / Attr4 | col_2=90804.49533060042 | col_4=合計 / Attr14 | col_5=496.7626821439983
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E8 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=496.7626821439983 | col_1=合計 / Attr4 | col_2=90804.49533060042 | col_4=合計 / Attr14 | col_5=496.7626821439983
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B9 | fill=FF00B0F0 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=-11850477.417452984 | col_1=合計 / Attr5 | col_2=-11850477.417452984 | col_4=合計 / Attr15 | col_5=24702356.995286945
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E9 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=24702356.995286945 | col_1=合計 / Attr5 | col_2=-11850477.417452984 | col_4=合計 / Attr15 | col_5=24702356.995286945
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B10 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=-669.3705435665522 | col_1=合計 / Attr6 | col_2=-669.3705435665522 | col_4=合計 / Attr16 | col_5=25367.590261037065
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E10 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=25367.590261037065 | col_1=合計 / Attr6 | col_2=-669.3705435665522 | col_4=合計 / Attr16 | col_5=25367.590261037065
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B11 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=496.65805014399837 | col_1=合計 / Attr7 | col_2=496.65805014399837 | col_4=合計 / Attr17 | col_5=165311.23401070037
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E11 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=165311.23401070037 | col_1=合計 / Attr7 | col_2=496.65805014399837 | col_4=合計 / Attr17 | col_5=165311.23401070037
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B12 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=154355.26636147787 | col_1=合計 / Attr8 | col_2=154355.26636147787 | col_4=合計 / Attr18 | col_5=550.3782721439993
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E12 | fill=FF00B0F0 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=550.3782721439993 | col_1=合計 / Attr8 | col_2=154355.26636147787 | col_4=合計 / Attr18 | col_5=550.3782721439993
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=B13 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=13591.47428179494 | col_1=合計 / Attr9 | col_2=13591.47428179494 | col_4=合計 / Attr19 | col_5=-99.06131084899982
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet5 | cell=E13 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=-99.06131084899982 | col_1=合計 / Attr9 | col_2=13591.47428179494 | col_4=合計 / Attr19 | col_5=-99.06131084899982
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=B2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value=1.0 | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=C2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=D2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=E2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=F2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=G2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=H2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=I2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=J2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=K2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=L2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=M2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=N2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=O2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=P2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=Q2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=R2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=S2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=T2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=U2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=V2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=W2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=X2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=Y2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=Z2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=AA2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=AB2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=AC2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=AD2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/03.データ/train.xlsx.structure.json | sheet=Sheet3 | cell=AE2 | fill=00000000 | number_format=#,##0.00_);[Red](#,##0.00) | cell_value= | 相関=Attr1 | Attr1=1.0
+data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/0",EDA/EDA044/raw_responses/index_065.json
+80,format_extraction,xlsx_yellow_cell_context,東都人材プラットフォームのtrain.xlsxにおいて、Sheet2の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json,"
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.xlsx.structure.json | sheet=Sheet1 | cell=E1409 | fill=FFFFFF00 | number_format=General | cell_value=12.0 | Country=Spain | 個数=12.0",EDA/EDA044/raw_responses/index_080.json
+83,table_calculation,line_search,蒼樹会 みなみ野女性医療センターのtrain.xlsxにおいて、回帰分析の結果として記載されている係数をindex=1770のデータに当てはめたときの予測値はいくつですか。小数第5位まで答えてください。,,,わかりません,False,llm_needed,http_200,length,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.sheets/スケジュール管理表.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/06.報告書/医療法人社団 蒼樹会 みなみ野女性医療センター_最終報告.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md,"
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.3751267390000002,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.7007466109999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10
+概要,,,,,,,,,
+,,,,,,,,,
+回帰統計,,,,,,,,,
+重相関 R,0.37420501012081375,,,,,,,,
+重決定 R2,0.14002938959951833,,,,,,,,
+補正 R2,0.1377292341721683,,,,,,,,
+標準誤差,0.3960823631066126,,,,,,,,
+観測数,3000,,,,,,,,
+,,,,,,,,,
+分散分析表,,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,,
+回帰,8,76.40521605291087,9.55065200661386,60.87822932941777,1.6300547177079886e-92,,,,
+残差,2991,469.2317839470784,0.1568812383641185,,,,,,
+合計,2999,545.6369999999893,,,,,,,
+,,,,,,,,,
+,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%,
+DiabetesPedigreeFunction,0.11143479393830226,0.027377997323329344,4.070231749323257,4.818242576977036e-05,0.057753182086742245,0.16511640578986228,0.057753182086742245,0.16511640578986228,
+Pregnancies,0.016039579192854515,0.0026438670251842634,6.066711767297239,1.4695825913856418e-09,0.010855597261782392,0.021223561123926638,0.010855597261782392,0.021223561123926638,
+BMI,0.012622074783422584,0.0010030238725670902,12.584022303595091,2.0093932703099462e-35,0.010655388266176357,0.014588761300668811,0.010655388266176357,0.014588761300668811,
+Age,0.00971358116067913,0.0009493980378951116,10.231305282887341,3.574614364895786e-24,0.007852041897561095,0.011575120423797165,0.007852041897561095,0.011575120423797165,
+Glucose,0.0009004601996171766,0.00034766541743164143,2.5900194683419344,0.009643618342067386,0.00021877264693147887,0.0015821477523028744,0.00021877264693147887,0.0015821477523028744,
+Insulin,0.000262628214967161,0.00016824222595386467,1.5610124835080272,0.11862659921654997,-6.725398072587039e-05,0.0005925104106601924,-6.725398072587039e-05,0.0005925104106601924,
+BloodPressure,-0.00034584886824208706,0.0004582553312257603,-0.7547077899061124,0.45048374892064436,-0.0012443764168150893,0.0005526786803309153,-0.0012443764168150893,0.0005526786803309153,
+SkinThickness,-0.001213536268033534,0.0005154408444992841,-2.3543657453308775,0.018618658938230243,-0.002224190737024696,-0.000202881799042372,-0.002224190737024696,-0.000202881799042372,
+切片,-0.6569464764590836,0.060819252033074894,-10.801620449094328,1.0449486004332276e-26,-0.7761982771727779,-0.5376946757453892,-0.7761982771727779,-0.5376946757453892,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.0854323999999,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.206816418999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.375126739,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.700746610999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.3751267390000002,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.7007466109999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv
+- normalized_csv_path: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv
+| index | int64 | 0 |
+| index | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age | Outcome |
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md
+# Excel Workbook: train.xlsx
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx
+| Sheet1 | 33 | 10 | A1:J33 | 0 | 83 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv |
+| train | 3000 | 10 | A1:J3001 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv |
+| index | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age | Outcome |
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv
+- normalized_csv_path: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+| index | int64 | 0 |
+| index | Pregnancies | Glucose | BloodPressure | SkinThickness | Insulin | BMI | DiabetesPedigreeFunction | Age | Outcome |
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py
+return pd.Series(classes[indices], index=X.index)
+y_series = pd.Series(y_train).reset_index(drop=True)
+global_priors = y_series.value_counts(normalize=True).reindex(classes, fill_value=0.0)
+oof = pd.Series(index=X_train.index, dtype=""float64"")
+y_valid_series = pd.Series(y_valid).reset_index(drop=True)
+best_score = float(f1_score(y_valid_series, pd.Series(best_pred).reset_index(drop=True), average=""macro""))
+working_df = df.copy().reset_index(drop=True)
+.reset_index(drop=True)
+preview.to_csv(output_dir / ""train_preview.csv"", index=False, encoding=""utf-8-sig"")
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.sheets/スケジュール管理表.csv
+No.,フェーズ,タスクID,タスク名,タスク詳細,担当者,開始日,終了日,依存タスク,成果物,関連マイルストーン,関連会議,ステータス,備考
+1,フェーズ1：立上げ・計画確定,T01,キックオフ実施・開始合意,目的・スコープ・体制・連絡運用の合意、議事録確定,伊藤 翔太、松本 真央,2025-04-03,2025-04-03,-,キックオフ議事録,MS1,キックオフ,完了,CP1：キックオフ完了。クリティカルパス上のタスク。
+2,フェーズ1：立上げ・計画確定,T02,データ受領確認・前提条件固定,対象データの受領確認と分析前提条件の固定,伊藤 翔太、岡田 佑樹,2025-04-03,2025-04-04,T01,前提条件整理メモ,MS1,-,完了,クリティカルパス上のタスク
+3,フェーズ1：立上げ・計画確定,T03,体制・連絡ルール確定,プロジェクト体制と連絡運用ルールの策定,伊藤 翔太,2025-04-04,2025-04-07,T01,進行管理ルール,-,-,完了,
+4,フェーズ2：データ理解・品質診断,T04,データプロファイリング実施,データの基本統計量・分布・型を確認,岡田 佑樹,2025-04-08,2025-04-10,T02,プロファイル結果,-,-,完了,クリティカルパス上のタスク
+5,フェーズ2：データ理解・品質診断,T05,データ品質診断・疑似欠損論点整理,0値の扱いに関する論点整理、疑似欠損候補の明確化,鈴木 美咲、岡田 佑樹,2025-04-10,2025-04-14,T04,分析用データ理解メモ,MS2,-,完了,クリティカルパス上のタスク。重点監視対象。
+6,フェーズ2：データ理解・品質診断,T06,データ理解レビュー・論点確定,データ品質の主要論点確定、0値論点整理完了確認,鈴木 美咲、松本 真央,2025-04-15,2025-04-15,T05,論点一覧,MS2,週次進捗確認,完了,CP2：データ理解完了。クリティカルパス上のタスク。
+7,フェーズ3：前処理・評価設計,T07,前処理案設計,前処理ルールの策定（欠損補完、正規化等）,鈴木 美咲、岡田 佑樹,2025-04-16,2025-04-18,T06,前処理案,MS3,-,完了,クリティカルパス上のタスク
+8,フェーズ3：前処理・評価設計,T08,評価指標・比較観点設計,モデル評価指標と比較条件",EDA/EDA044/raw_responses/index_083.json
+94,table_calculation,schedule_ms_role_filter,蒼樹会 みなみ野女性医療センターのスケジュール.xlsxにおいて、MS3に紐づくタスクのうち、ビジネスアナリストが関わっているタスクIDを答えてください。,,[],[],True,openrouter_compressed_candidate,http_200,stop,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.sheets/スケジュール管理表.csv | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/06.報告書/医療法人社団 蒼樹会 みなみ野女性医療センター_最終報告.pdf.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md,"
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.3751267390000002,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.7007466109999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv
+col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10
+概要,,,,,,,,,
+,,,,,,,,,
+回帰統計,,,,,,,,,
+重相関 R,0.37420501012081375,,,,,,,,
+重決定 R2,0.14002938959951833,,,,,,,,
+補正 R2,0.1377292341721683,,,,,,,,
+標準誤差,0.3960823631066126,,,,,,,,
+観測数,3000,,,,,,,,
+,,,,,,,,,
+分散分析表,,,,,,,,,
+,自由度,変動,分散,観測された分散比,有意 F,,,,
+回帰,8,76.40521605291087,9.55065200661386,60.87822932941777,1.6300547177079886e-92,,,,
+残差,2991,469.2317839470784,0.1568812383641185,,,,,,
+合計,2999,545.6369999999893,,,,,,,
+,,,,,,,,,
+,係数,標準誤差,t ,P-値,下限 95%,上限 95%,下限 95.0%,上限 95.0%,
+DiabetesPedigreeFunction,0.11143479393830226,0.027377997323329344,4.070231749323257,4.818242576977036e-05,0.057753182086742245,0.16511640578986228,0.057753182086742245,0.16511640578986228,
+Pregnancies,0.016039579192854515,0.0026438670251842634,6.066711767297239,1.4695825913856418e-09,0.010855597261782392,0.021223561123926638,0.010855597261782392,0.021223561123926638,
+BMI,0.012622074783422584,0.0010030238725670902,12.584022303595091,2.0093932703099462e-35,0.010655388266176357,0.014588761300668811,0.010655388266176357,0.014588761300668811,
+Age,0.00971358116067913,0.0009493980378951116,10.231305282887341,3.574614364895786e-24,0.007852041897561095,0.011575120423797165,0.007852041897561095,0.011575120423797165,
+Glucose,0.0009004601996171766,0.00034766541743164143,2.5900194683419344,0.009643618342067386,0.00021877264693147887,0.0015821477523028744,0.00021877264693147887,0.0015821477523028744,
+Insulin,0.000262628214967161,0.00016824222595386467,1.5610124835080272,0.11862659921654997,-6.725398072587039e-05,0.0005925104106601924,-6.725398072587039e-05,0.0005925104106601924,
+BloodPressure,-0.00034584886824208706,0.0004582553312257603,-0.7547077899061124,0.45048374892064436,-0.0012443764168150893,0.0005526786803309153,-0.0012443764168150893,0.0005526786803309153,
+SkinThickness,-0.001213536268033534,0.0005154408444992841,-2.3543657453308775,0.018618658938230243,-0.002224190737024696,-0.000202881799042372,-0.002224190737024696,-0.000202881799042372,
+切片,-0.6569464764590836,0.060819252033074894,-10.801620449094328,1.0449486004332276e-26,-0.7761982771727779,-0.5376946757453892,-0.7761982771727779,-0.5376946757453892,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.0854323999999,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.206816418999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.375126739,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.700746610999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+index,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome
+0,8,110,76,0,0,39.54714069,0.288327632,26,0
+2,8,91,74,32,0,39.50844511,0.475600795,50,0
+6,1,84,68,0,0,51.00015846,0.237506745,21,1
+7,3,112,82,0,0,39.46270953,0.491201923,25,0
+8,1,144,68,0,0,52.12379986,0.276319931,29,0
+11,7,87,64,0,0,33.40949964,0.429289517,43,1
+13,1,123,68,0,0,33.8458069,0.239329088,22,0
+16,0,91,80,0,0,39.27348633,0.191756394,21,0
+18,9,125,68,0,0,27.3563974,0.655653899,25,0
+19,3,100,60,20,0,34.085432399999995,0.441404817,22,0
+20,7,151,58,22,0,33.11571728,0.2068164189999999,21,0
+21,1,95,84,17,0,33.16760286,0.25676352,22,0
+24,9,165,62,17,0,27.8265293,0.434245961,46,1
+25,5,135,76,36,0,40.1772721,0.200997321,41,0
+26,6,102,70,41,0,38.49225795,0.839904215,30,0
+27,0,95,85,0,0,38.9977284,1.3751267390000002,21,1
+28,0,100,82,28,0,33.36314111,0.213466034,26,0
+35,2,96,64,20,0,38.01980277,0.273568725,26,0
+38,3,111,74,20,180,33.53103457,0.484472675,23,0
+40,8,91,76,0,0,33.79385383,0.246290075,22,0
+41,5,107,90,27,82,50.38266635,0.22932769,43,1
+43,3,88,82,0,0,51.30007286,0.259092051,36,0
+46,3,140,90,18,0,33.68083672,0.24605641,26,0
+47,2,132,80,0,0,27.86343653,0.186034123,21,0
+48,5,107,62,0,0,27.45543544,0.246469012,43,0
+51,1,108,64,21,0,33.38658938,0.256018242,21,0
+52,0,155,72,0,0,52.33561493,0.500600782,31,1
+54,3,111,74,20,180,39.03059969,0.459825882,22,0
+55,1,99,62,22,66,32.9828873,0.524432004,21,0
+56,0,155,80,0,0,33.61674893,1.192233977,25,0
+58,9,88,85,0,180,40.3301701,0.744345968,36,1
+59,1,95,66,15,0,26.63584068,0.271238352,25,0
+60,7,122,74,0,0,33.52900549,0.22342473,43,0
+62,3,173,90,0,95,38.91140149,0.790896383,24,0
+63,6,99,88,0,0,39.81969486,0.230541403,25,0
+65,1,90,76,28,0,28.55193662,0.245137743,22,0
+67,7,99,62,0,0,27.10285942,0.7007466109999999,22,0
+68,0,100,66,27,0,33.00213135,0.471040867,37,0
+69,7,107,60,0,0,27.73736764,0.257590983,43,0
+71,1,137,68,0,0,28.92793279,0.309462309,26,0
+
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv
+- normalized_csv_path: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv.data.csv
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.md
+# Excel Workbook: train.xlsx
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx
+| Sheet1 | 33 | 10 | A1:J33 | 0 | 83 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/Sheet1.csv |
+| train | 3000 | 10 | A1:J3001 | 0 | 0 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.xlsx.sheets/train.csv |
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv
+- normalized_csv_path: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv.data.csv
+# data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py.md
+- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py
+| src.preprocess | train_valid_test_split | |
+| _is_metric_better | 20 | task_type, candidate, current, min_delta | |
+| _tune_class_decision_weights | 141 | model, X_valid, y_valid | |
+| 279 | cfg.get | ['categorical_unique_limit_override'] | {} |
+| 283 | cfg.get | ['validation_size'] | {} |
+def _is_metric_better(task_type: str, candidate: float, current: float | None, min_delta: float) -> bool:
+return candidate < (current - float(min_delta))
+return candidate > (current + float(min_delta))
+for tr_idx, va_idx in splitter.split(X_train, y_series):
+tr_labels = train_labels.iloc[tr_idx]
+tr_target = (y_series.iloc[tr_idx] == cls).astype(float)
+mapped = train_labels.iloc[va_idx].map(stats[""enc""]).fillna(float(global_priors.loc[cls]))
+oof.iloc[va_idx] = mapped.values
+def _tune_class_decision_weights(model, X_valid: pd.DataFrame, y_valid: pd.Series) -> dict | None:
+if len(X_valid) == 0 or not hasattr(model, ""predict_proba""):
+proba = model.predict_proba(X_valid)
+y_valid_series = pd.Series(y_valid).reset_index(drop=True)
+candidate_values = [0.7, 0.85, 1.0, 1.15, 1.3]
+best_pred = _predict_with_class_weights(model, X_valid, best_weights.tolist())
+best_score = float(f1_score(y_valid_series, pd.Series(best_pred).reset_index(drop=True), average=""macro""))
+""weights"": {str(classes[idx]): float(best_weights[idx]) for idx in range(len(classes))},
+for idx, class_name in enumerate(classes):
+for candidate_weight in candidate_values:
+test_weights[idx] = float(candidate_weight)
+score = float(f1_score(y_valid_series, pred, average=""macro""))
+""candidate_weight"": float(candidate_weight),
+""validation_f1_macro"": best_score,
+""class_weights"": {str(classes[idx]): float(best_weights[idx]) for idx in range(len(classes))},
+""validation_f1_macro"": best_score,
+""class_weights"": {str(classes[idx]): float(best_weights[idx]) for idx in range(len(classes))},
+from src.preprocess import split_feature_target, train_valid_test_split
+categorical_unique_limit_override = cfg.get(""categorical_unique_limit_override"")
+validation_size = float(cfg.get(""validation_size"", 0.1))
+if categorical_unique_limit_override is not None:
+fe",EDA/EDA044/raw_responses/index_094.json
+97,format_extraction,xlsx_yellow_cell_context,青葉バイオメディカル機器のtrain.xlsxにおいて、黄色ハイライトが交差している2つのセルの値の差の絶対値を計算してください。,3778,,3778,True,local_yellow_first_two_abs_diff,local_answer,,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.sheets/train.csv | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json,"0     6151
+1     2373
+2     1878
+3    13525
+4     2293
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B3 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value= | 
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B4 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=平均 / MonthlyIncome | col_1=行ラベル | col_2=平均 / MonthlyIncome
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B5 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6989.955882352941 | col_1=No | col_2=6989.955882352941
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B6 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7216.258064516129 | col_1=Female | col_2=7216.258064516129
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B7 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7404.811320754717 | col_1=Divorced | col_2=7404.811320754717
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B8 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6090.4 | col_1=Life Sciences | col_2=6090.4
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B9 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=5994 | col_1=Marketing | col_2=5994
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B10 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=8172.541666666667 | col_1=Medical | col_2=8172.541666666667
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B11 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=11808 | col_1=Other | col_2=11808
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B12 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=8227 | col_1=Technical Degree | col_2=8227
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B13 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7408.56 | col_1=Married | col_2=7408.56
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B14 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=9140 | col_1=Human Resources | col_2=9140
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B15 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6836.568181818182 | col_1=Life Sciences | col_2=6836.568181818182
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B16 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=9047.842105263158 | col_1=Marketing | col_2=9047.842105263158
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B17 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7602.325581395349 | col_1=Medical | col_2=7602.325581395349
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B18 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4684.285714285715 | col_1=Other | col_2=4684.285714285715
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B19 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7360.222222222223 | col_1=Technical Degree | col_2=7360.222222222223
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B20 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6730.1 | col_1=Single | col_2=6730.1
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B21 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=17328 | col_1=Human Resources | col_2=17328
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B22 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6519 | col_1=Life Sciences | col_2=6519
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B23 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=8534.333333333334 | col_1=Marketing | col_2=8534.333333333334
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B24 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6334.925925925926 | col_1=Medical | col_2=6334.925925925926
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B25 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=3887.5 | col_1=Other | col_2=3887.5
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B26 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6870.5 | col_1=Technical Degree | col_2=6870.5
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B27 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6835.771978021978 | col_1=Male | col_2=6835.771978021978
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B28 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7141.85046728972 | col_1=Divorced | col_2=7141.85046728972
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B29 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=2434.5 | col_1=Human Resources | col_2=2434.5
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B30 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7354.176470588235 | col_1=Life Sciences | col_2=7354.176470588235
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B31 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6820.75 | col_1=Marketing | col_2=6820.75
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B32 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=8064.08 | col_1=Medical | col_2=8064.08
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B33 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7102.222222222223 | col_1=Other | col_2=7102.222222222223
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B34 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4609.375 | col_1=Technical Degree | col_2=4609.375
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B35 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6764.09375 | col_1=Married | col_2=6764.09375
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B36 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=9636.666666666666 | col_1=Human Resources | col_2=9636.666666666666
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B37 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7338.115942028986 | col_1=Life Sciences | col_2=7338.115942028986
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B38 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7280.733333333334 | col_1=Marketing | col_2=7280.733333333334
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B39 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=5751.017857142857 | col_1=Medical | col_2=5751.017857142857
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B40 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6219.833333333333 | col_1=Other | col_2=6219.833333333333
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B41 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7129.818181818182 | col_1=Technical Degree | col_2=7129.818181818182
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B42 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6616.371134020618 | col_1=Single | col_2=6616.371134020618
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B43 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=3886 | col_1=Human Resources | col_2=3886
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B44 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7003.930232558139 | col_1=Life Sciences | col_2=7003.930232558139
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B45 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4850.7 | col_1=Marketing | col_2=4850.7
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B46 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=7583.1 | col_1=Medical | col_2=7583.1
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B47 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4194.142857142857 | col_1=Other | col_2=4194.142857142857
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B48 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=5229 | col_1=Technical Degree | col_2=5229
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B49 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4482 | col_1=Yes | col_2=4482
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B50 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=4297.229166666667 | col_1=Female | col_2=4297.229166666667
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B51 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=3893.5 | col_1=Divorced | col_2=3893.5
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B52 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=6065 | col_1=Human Resources | col_2=6065
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.xlsx.structure.json | sheet=Pivot | cell=B53 | fill=00000000 | number_format=#,##0.0;[Red]\-#,##0.0 | cell_value=2741 | col_1=Life Sciences",

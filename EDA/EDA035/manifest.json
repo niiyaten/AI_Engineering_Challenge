@@ -1,0 +1,14 @@
+{
+  "eda": "EDA035",
+  "input": "EDA/EDA034/tables/test_pipeline_answer_log.csv",
+  "test_count": 100,
+  "before_non_unknown_count": 17,
+  "adopted_count": 14,
+  "after_non_unknown_count": 31,
+  "outputs": [
+    "EDA/EDA035/tables/test_unknown_reduction_log.csv",
+    "EDA/EDA035/predictions/predictions.csv",
+    "EDA/EDA035/predictions/eda035_unknown_reduction_submission.zip",
+    "EDA/EDA035/eda035_report.md"
+  ]
+}

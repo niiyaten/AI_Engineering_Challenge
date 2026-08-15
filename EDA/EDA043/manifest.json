@@ -1,0 +1,18 @@
+{
+  "eda": "EDA043",
+  "input_result": "EDA/EDA042/tables/test_document_retry_result.csv",
+  "input_retry": "EDA/EDA042/tables/test_document_retry_attempt_log.csv",
+  "input_context": "EDA/EDA041/tables/test_document_search_route_attempt_log.csv",
+  "target_count": 15,
+  "before_non_unknown_count": 59,
+  "added_non_unknown_count": 12,
+  "after_non_unknown_count": 71,
+  "outputs": [
+    "EDA/EDA043/tables/test_compressed_context_retry_result.csv",
+    "EDA/EDA043/tables/test_compressed_context_retry_attempt_log.csv",
+    "EDA/EDA043/predictions/predictions.csv",
+    "EDA/EDA043/predictions/eda043_compressed_context_retry_submission.zip",
+    "EDA/EDA043/eda043_report.md",
+    "EDA/EDA043/raw_responses"
+  ]
+}

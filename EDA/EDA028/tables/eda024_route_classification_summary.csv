@@ -1,0 +1,8 @@
+﻿route,question_count,correct_count,near_correct_count,unknown_count,wrong_count,partial_or_over_answer_count,answer_extraction_error_count,wrong_evidence_or_missing_process_count,answer_in_topk_context_count,avg_token_recall
+code_reading,4,0,0,2,2,0,0,1,0,0.0304
+diff_check,1,0,0,0,1,0,0,1,0,0.0
+document_whole_context,7,2,2,2,1,2,0,1,4,0.5714
+fallback_bm25_llm,8,3,2,3,0,1,0,0,3,0.5312
+format_extraction,2,0,0,2,0,0,0,0,0,0.0
+image_ocr,1,0,1,0,0,1,0,0,0,0.5
+table_calculation,7,0,0,5,2,0,0,0,0,0.0516

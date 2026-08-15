@@ -1,0 +1,10 @@
+﻿new_route_candidate,count,indices,recommended_next_action
+meeting_action_status_lookup,4,"18,49,93,96",会議ID/日付/アクションIDをキーに会議録と報告資料を結合する
+model_formula_recompute,3,"57,63,83",係数表、実装コード、train.csvを結合してpandasで再計算する
+contract_alias_contact_lookup,2,"43,46",社内用語集、契約書、体制表、座席/連絡先情報を結合して検索する
+cross_project_contract_aggregation,2,"38,79",全案件の契約書/最終報告/スケジュール/社内管理基準を正規化して集計する
+proposal_operation_clause_lookup,2,"52,75",PPTXスライド構造と契約条項をキーワードではなく節単位で検索する
+seating_chart_spatial_ocr,2,"44,58",座席表画像をVision/OCRに送り、座席座標とラベルを構造化する
+spreadsheet_format_semantic_context,2,"65,80",styled_cellsと同じ行/列/周辺表を結合し、色の意味を推定する
+structured_diff_semantic_filter,2,"62,95",PPTX/XLSX/Notebookを構造単位で比較し、状態変更や設定差分を分類する
+chart_value_extraction,1,33,元データ、chart XML、画像OCR/Visionを組み合わせて値を抽出する

@@ -1,0 +1,656 @@
+﻿index,route,required_source_type,failure_area,question,gold_answer,eda024_answer,candidate_answer,candidate_match,method,confidence,source_paths,evidence,notes
+0,format_extraction,pptx,format_metadata_extraction,青潮モビリティサービスの最終報告における、モビリティ需要の要因分析のページで、マーカーされている単語をすべて抜き出してください。,hr、weekday、weathersit、temp,わかりません,hr、weekday、weathersit、temp,True,structured_text_factor_candidate_without_marker_metadata,low,data\processed\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\04.分析\analysis_project\notebooks\01_eda.ipynb.structure.json,"try:
+    num_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+    cat_like_cols = [c for c in df.columns if c not in num_cols or (pd.api.types.is_numeric_dtype(df[c]) and df[c].nunique(dropna=True) <= 12)]
+    summary = {
+        '総行数': df.shape[0],
+        '総列数': df.shape[1],
+        '数値列数': len(num_cols),
+        'カテゴリ候補列数': len(cat_like_cols),
+        '欠損セル総数': int(df.isnull().sum().sum())
+    }
+    print(pd.Series(summary))
+    if target_col in df.columns and target_col in num_cols:
+        corr_s = df[num_cols].corr(numeric_only=True)[target_col].drop(target_col, errors='ignore').abs().sort_values(ascending=False)
+        print('\n目的変数との相関 上位5')
+        print(corr_s.head(5))
+    print('\nEDA完了')
+except Exception as _eda_exc:
+    print(f""[warn] EDA section fallback: summary_code: {_eda_exc}"")
+    summary_rows = []
+    summary_rows.append(f""レコード数: {len(df):,}"")
+    summary_rows.append(f""列数: {df.shape[1]:,}"")
+    summary_rows.append(f""欠損率上位列: {', '.join((df.isna().mean()*100).sort_values(ascending=False).head(3).index.tolist())}"")
+    summary_rows.append(f""数値列数: {len(df.select_dtypes(include=['number']).columns)}"")
+    summary_rows.append(f""カテゴリ列数: {len([c for c in df.columns if not pd.api.types.is_numeric_dtype(df[c])])}"")
+    summary_rows.append(f""目的変数候補: {target_col}"")
+    print(""主要サマリ"")
+    for row in summary_rows:
+        print(f""- {row}"")
+
+総行数         8645
+総列数           15
+数値列数          14
+カテゴリ候補列数       8
+欠損セル総数         0
+dtype: int64
+
+目的変数との相関 上位5
+temp      0.451233
+atemp     0.447029
+hr        0.407486
+hum       0.288615
+season    0.221719
+Name: cnt, dtype: float64
+
+EDA完了",PDF側にマーカー情報が残っていないため低信頼
+1,image_ocr,image,answer_formatting,KSSのfigure_06.pngにおいて、dayによる件数推移とあわせて表示されているTG平均が最も低い日は何日ですか。,20日,20,20日,True,previous_answer_normalization,medium,,EDA024回答を表記補正: 20,
+2,document_whole_context,pptx,answer_formatting,恒一会 かえで総合病院の提案書内で、重視するとされている評価指標を答えてください。,Recall,"Recall, Precision, F1‑score, ROC‑AUC, Accuracy",Recall,True,processed_text_regex,medium,data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\00.提案\提案書.pptx.md,"質向上の要請
+
+かえで総合病院では、医療の質向上、業務効率化、患者安全性の確保を目的として、診療・検査データの活用高度化が求められている。
+
+現状の課題
+
+diseaseの判定に関する定量的な分析基盤や初期予測モデルが未整備であり、判断材料が担当者依存となる余地がある。
+
+医療データ特有の留意点
+
+入力不整合、臨床運用差異、外れ値の扱い、解釈の過大主張防止、トレーサビリティ確保への配慮が不可欠である。
+
+▼
+
+本プロジェクトの位置づけ
+data\train.csv(3,500行、12列、UTF-8-SIG)を対象に、目的変数 disease(0:無、1:有)について、分析基盤と初期予測モデルを整備し、今後の業務実装可否を判断できる状態を作ることを目的とする。
+※本取り組みは診断行為を代替するものではなく、判定支援材料を整備する分析プロジェクトとして位置づける。
+
+
+### Slide 4
+
+02
+
+目的
+
+1
+
+データ品質、分布、利用可能性の明確化
+
+2
+
+diseaseを目的変数とした初期予測モデルの構築
+
+3
+
+モデル精度と解釈可能性の両面評価
+
+4
+
+業務活用可否を判断するための材料整理
+
+5
+
+後続文書における用語・前提・制約・評価指標の統一
+
+分析KPI
+
+ROC-AUC
+
+モデル全体の識別力
+
+Accuracy
+
+全体正解率
+
+Precision
+
+陽性予測の正確さ
+
+Recall ★重視
+
+見逃し抑制(医療文脈で最重要)
+
+F1-score
+
+PrecisionとRecallの調和平均
+
+※単純な正解率のみでの判断は行わない。医療文脈上は見逃し抑制の観点からRecallを重視しつつ、誤検知過多を避けるためPrecisionも併記する。
+
+
+### Slide 5
+
+03
+
+スコープ ─ 対象範囲
+
+1
+
+データ読込・構造確認
+
+train.csvの読込、構造確認、品質確認、基本集計
+
+2
+
+二値分類分析
+
+diseaseを目的変数とした分類分析の実施
+
+3
+
+前処理設計・実装
+
+idを除く説明変数の前処理設計と実装
+
+4
+
+探索的データ分析
+
+分布、外れ値傾向、目的変数との関係把握
+
+5
+
+モデル構築・比較
+
+初期モデルの構築および複数モデルの比較評価
+
+6
+
+性能確認・重要度整理
+
+評価指標に基づく性能確認、変数重要度の整理
+
+7
+
+業務示唆・報告
+
+業務活用観点での示唆整理、報告資料・成果物作成
+
+
+### Slide 6
+
+03
+
+スコープ ─ 対象データ
+
+対象データ
+
+ファイル data\train.csv
+
+行数 3,500
+
+列数 12
+
+目的変数 disease(0:無、1:有)
+
+粒度 患者単位スナップショット(時系列なし)
+
+#### Notes
+
+【備考】
+スコープ対象外
+✖  実運用システムへの組込み、API化、電子カルテ連携
+✖  医師の診断を代替する臨床判断ロジックの確定
+✖  外部データ取得、追加アノテーション、他システムとのデータ統合
+✖  本データに存在しないKPIの算出
+✖  本番監視、継続学習、MLOps基盤構築
+✖  別途評価用データを前提とした本番精度保証
+✖  個票レベルでの個人特定、患者追跡、属性拡張
+
+
+### Slide 7
+
+04
+
+分析アプローチ ─ 全体フロー
+
+再現可能性、説明可能性、医療分野における慎重な解釈を重視した分析プロセス
+
+4.1
+データ理解
+品質確認
+カラム定義、分布
+外れ値・入力不整合
+
+▶
+
+4.2
+前処理
+欠損補完、カテゴリ変換
+id除外、再現性確保
+
+▶
+
+4.3
+モデル構築
+複数モデル比較
+ROC-AUC等で評価
+
+▶
+
+4.4
+解釈・示唆
+重要特徴量、誤判定
+業務利用の可能性
+
+▶
+
+4.5
+成果の
+位置づけ
+初期分析として
+次段階への基礎資料",
+3,table_calculation,docx,calculation,全案件で支払った税込金額をもとに、消費税額の総額を計算してください。,"4,394,250円",1875000円,"4,384,250円",False,table_calculation_reuse,needs_review,data\processed\share\share\共有ドライブ\プロジェクト\京橋信用ソリューションズ株式会社\06.報告書\京橋信用ソリューションズ株式会社_最終報告.pptx.md | data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\06.報告書\医療法人社団 恒一会 かえで総合病院_最終報告.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/01.契約/契約書.docx.md | data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\06.報告書\医療法人社団 蒼泉会 ひがし丘総合病院_最終報告.pdf.md | data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\06.報告書\株式会社東都人材プラットフォーム_最終報告.pptx.md | data\processed\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\06.報告書\株式会社青嶺不動産アセットマネジメント_最終報告.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青潮モビリティサービス/01.契約/契約書.docx.md | data\processed\share\share\共有ドライブ\プロジェクト\株式会社青葉バイオメディカル機器\06.報告書\株式会社青葉バイオメディカル機器_最終報告.pptx.md | data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/01.契約/契約書.docx.md | data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/01.契約/契約書.docx.md,"10案件の消費税額を合計。計算値=4,384,250円。valid goldとは10,000円差があり、PDF抽出または正解側の要確認差分として記録。",EDA030のローカル計算結果を再利用
+4,code_reading,py_or_ipynb,code_retrieval_or_output_extraction,青嶺不動産アセットマネジメントの modeling.py において、前処理器の sparse_output が False になる model_type は何ですか。,hist_gradient_boosting,わかりません,hist_gradient_boosting,True,code_regex_sparse_output,high,data\processed\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\04.分析\analysis_project\src\modeling.py.md,"def build_pipeline(
+    X: pd.DataFrame,
+    task_type: str,
+    random_state: int,
+    model_type: str,
+    model_params: dict,
+) -> Pipeline:
+    model_key = (model_type or ""random_forest"").strip().lower()
+    preprocessor = build_preprocessor(X, sparse_output=model_key != ""hist_gradient_boosting"")
+    # REGION: MODEL_SELECTION START
+    n_estimators = to_int(model_params.get(""n_estimators""), 300)
+    max_depth = model_params.get(""max_depth"")
+    if max_depth in ("""", ""None"", ""null""):
+        max_depth = None
+    min_samples_leaf = to_int(mode",
+6,table_calculation,xlsx_pivot,calculation,恒一会 かえで総合病院のtrain.xlsx内の PivotTable で集計されている表から、ALPの平均が最も高いものの抽出条件を教えてください。,Gender=Male、disease=1、Age=68で抽出されたデータに対する平均 / ALP,わかりません,Gender=Male、disease=1、Age=68で抽出されたデータに対する平均 / ALP,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\03.データ\train.csv,"Gender,disease,AgeでALP平均を集計し、最大値=873.697898の組み合わせを取得。",EDA030のローカル計算結果を再利用
+7,table_calculation,csv,calculation,恒一会 かえで総合病院のプロジェクトデータ（train.csv）において、disease=1の女性の中で、ALT_GPTの平均値が最も高い年齢は何歳ですか。,32歳,わかりません,32歳,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\03.データ\train.csv,disease=1かつGender=Femaleで217行に絞り、Age別ALT_GPT平均の最大値=250.500039を取得。,EDA030のローカル計算結果を再利用
+9,diff_check,pptx_or_docx_versions,diff_pipeline,青嶺不動産アセットマネジメントの提案書について、oldフォルダ内の旧版と提案フォルダ直下の最新版を比較し、変更された箇所を変更前と変更後で答えてください。,QAレビューア：池田 直哉 → 小林 直樹,変更なし,QAレビューア:池田 直哉 → 小林 直樹,True,pptx_old_new_structure_diff,medium,data\processed\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\00.提案\old\提案書.pptx.md | data\processed\share\share\共有ドライブ\プロジェクト\株式会社青嶺不動産アセットマネジメント\00.提案\提案書.pptx.md,old=池田 直哉 new=小林 直樹,
+10,document_whole_context,pptx,target_retrieval,蒼樹会 みなみ野女性医療センターの最終報告書にて、影響度が最も高いとされている残余リスクを抜き出してください。,0値の疑似欠損,わかりません,0値の疑似欠損,True,processed_text_regex,medium,data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\00.提案\提案書.pptx.md,"- image_count: 0
+- chart_count: 0
+
+## Slides
+
+### Slide 1
+
+データ分析プロジェクト提案書
+
+糖尿病リスク早期把握に向けた分析基盤整備
+
+提出先
+医療法人社団 蒼樹会
+みなみ野女性医療センター
+医療情報・品質改善推進室 林 さくら 室長
+
+提出元
+株式会社データアステル
+データサイエンス部
+
+2025-04-03
+
+
+### Slide 2
+
+エグゼクティブサマリー
+
+プロジェクト概要
+
+医療法人社団 蒼樹会 みなみ野女性医療センターにおける糖尿病リスク早期把握のためのデータ分析基盤整備プロジェクト。train.csv(3,000行×10カラム)を対象に、Outcome(糖尿病有無)の予測可能性を検証し、業務活用可否を判断できる分析基盤を整備する。
+
+契約期間
+6週間
+2025-04-03 起点
+
+契約金額
+¥3,960,000
+税込・固定価格
+
+対象データ
+3,000行
+10カラム・二値分類
+
+陽性率
+23.9%
+不均衡データ対応
+
+主要目的
+
+1
+
+糖尿病判定に寄与する主要因子の特定
+
+2
+
+再利用可能な前処理・分析・評価の標準手順定義
+
+3
+
+業務活用可否を判断できる水準での精度・解釈性整理
+
+分析アプローチ
+
+データ理解
+品質確認
+
+前処理設計
+方針策定
+
+モデル構築
+性能比較
+
+示唆整理
+業務活用
+
+主要リスク: 疑似欠損(0値)の存在 / クラス不均衡(陽性率23.9%) / 解釈の過剰一般化の回避 / 個人情報の慎重な取り扱い
+
+2
+
+
+### Slide 3
+
+1. 背景
+
+医療法人社団 蒼樹会 みなみ野女性医療センターでは、医療品質向上・業務効率化・患者安全性の観点から、データを活用した意思決定高度化が求められている。特に、糖尿病リスクの早期把握は、診療優先順位付け、保健指導対象の抽出、フォローアップ設計の標準化に直結する重要テーマである。
+
+対象データ概要
+
+データソース
+train.csv
+
+レコード数
+3,000行
+
+カラム数
+10
+
+目的変数
+Outcome(0/1)
+
+主な特徴量:妊娠回数、血糖値、血圧、皮膚厚、インスリン、BMI、糖尿病血統、年齢
+
+本プロジェクトのアプローチ
+
+データ品質確認
+前処理方針の明文化
+
+説明可能な分析
+複数モデル比較
+
+業務判断に資する
+論点整理
+
+単なる精度確認に留まらず、データ品質確認から業務判断に資する論点整理までを一体で実施
+
+3
+
+
+### Slide 4
+
+現状の課題
+
+因子寄与度の未整理
+糖尿病有無の判定に関連する因子の寄与度が定量的に整理されていない
+
+1
+
+疑似欠損データ
+BloodPressure、SkinThickness、Insulin、BMIに実務上の疑似欠損を疑うべき0値等が含まれる
+
+2
+
+手順の未標準化
+前処理ルール、評価指標、分析手順の統一が必要である
+
+3
+
+説明責任の確保
+医療分野として、説明責任を満たさないブラックボックス的判断や根拠のない臨床主張を避ける必要がある
+
+4
+
+運用と再現性の両立
+患者アウトカム改善に資する示唆と、現場運用に耐える再現性ある手順整備の両立が必要である
+
+5
+
+これらの課題に対し、本プロジェクトではデータ品質確認から業務論点整理まで一体で取り組む
+
+4
+
+
+### Slide 5
+
+2. プロジェクト目的
+
+1
+
+主要因子の特定
+Outcomeを目的変数とする分類分析を実施し、糖尿病判定に寄与する主要因子を特定する
+
+2
+
+標準手順の定義
+医療情報・品質改善推進室が再利用可能な、前処理・分析・評価の標準手順を定義する
+
+3
+
+活用可否の判断基盤
+今後の業務活用可否を判断できる水準で、分析精度・解釈性・運用上の留意点を整理する
+
+PoC/分析初期フェーズ重視観点",
+11,table_calculation,xlsx,calculation,東都人材プラットフォームのtrain.xlsxにおいて、trainシートでフィルターで抽出されている条件を教えてください。,Gender=Male、Country=India、target=2,わかりません,Gender=Male、Country=India、target=2,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\03.データ\train.xlsx,trainシートのAutoFilter ref=A1:J11530から3条件を抽出。,EDA030のローカル計算結果を再利用
+12,fallback_bm25_llm,docx,answer_formatting,京橋信用ソリューションズの契約金額（税込）はいくらですか。,"5,775,000円","¥5,775,000","5,775,000円",True,processed_text_regex,medium,data\processed\share\share\共有ドライブ\プロジェクト\京橋信用ソリューションズ株式会社\00.提案\提案書_final.pptx.md,"10/29-11/04
+
+中間報告、レビュー反映、最終モデル方針確定、監査・再現性記録整理
+
+M4: 中間報告完了
+
+W6
+11/05-11/11
+
+最終報告、最終成果物提出、QA反映、検収対応
+
+M5: 最終報告 / M6: 検収
+
+11
+
+
+### Slide 12
+
+7. 成果物定義
+
+※ 成果物はいずれも、監査証跡、アクセス制御、説明可能性を重視した金融業務向け文書品質で整備する
+
+12
+
+#### Table
+
+| 成果物 | 内容 |
+| --- | --- |
+| 提案書 | 背景、課題、分析方針、体制、スケジュール、見積前提を記載 |
+| 契約ドラフト | スコープ、納品物、金額、支払条件、変更管理条件を記載 |
+| スケジュール | 6週間の作業計画、レビュー日、納品日を記載 |
+| 議事録 | キックオフ、要件確認、中間報告、最終報告の記録 |
+| 中間報告書 | データ理解、EDA結果、前処理方針、初期モデル結果、論点整理 |
+| 最終報告書 | モデル評価結果、重要変数、セグメント示唆、リスク・制約、次段階提案 |
+| 分析補足資料 | カラム一覧、変数採用/除外理由、duration含有/非含有モデル比較、指標定義一覧 |
+| 再現性管理情報 | 使用ファイル、前処理条件、実行条件、成果物版数、作成日 |
+
+
+### Slide 13
+
+8. 費用見積
+
+契約金額(税抜)
+¥5,250,000
+
+消費税額
+¥525,000
+
+契約金額(税込)
+¥5,775,000
+
+契約形態: 固定価格契約 ― 契約時に金額を固定し、工数実績による事後精算は行わない
+
+支払条件
+
+第1回(着手金)  50%
+条件: 契約締結後5営業日以内
+税抜: ¥2,625,000 | 消費税: ¥262,500
+税込合計: ¥2,887,500
+
+第2回(検収金)  50%
+条件: 最終成果物の検収完了後5営業日以内
+税抜: ¥2,625,000 | 消費税: ¥262,500
+税込合計: ¥2,887,500
+
+※ 契約範囲外の追加対応は、変更管理手続に基づき別途協議のうえ対応する
+
+13
+
+
+### Slide 14
+
+9. リスクと対応策(1/2)
+
+⚠ クラス不均衡による評価誤認
+契約率11.7%のため、Accuracyが高くても業務価値が低い可能性がある
+▶ AUC、Precision、Recall、F1、上位スコア群契約率を併用し、Accuracy単独評価を避ける
+
+⚠ durationによる情報リーク
+接触前判断用途では不適切な高精度が出る可能性がある
+▶ duration含有モデルと非含有モデルを分離し、用途別に明確に報告する
+
+⚠ 年情報欠如による時系列制約
+day・monthのみで厳密な時系列安定性評価が困難
+▶ 時系列予測ではなく表形式分類問題として扱い、制約を報告書に明示する
+
+⚠ 外れ値の影響
+balance、duration、campaign、previousの極端値がモデル挙動を歪める可能性がある
+▶ 分布確認、ロバスト処理、変換、ビニング等の妥当性を検証する
+
+14
+
+
+### Slide 15
+
+9. リスクと対応策(2/2)
+
+⚠ 公平性・属性利用の論点
+age等の属性に起因する判断差が説明責任上の論点となる
+▶ 重要変数の寄与を可視化し、公平性・バイアスの初期確認結果を成果物に含める
+
+⚠ 単一データソース依存
+外部要因を加味できず、業務上の完全判断には限界がある
+▶ 本分析結果を優先順位付け支援と位置づけ、判断補助としての利用前提を明記する
+
+⚠ スケジュール圧縮
+6週間の短期間でレビュー遅延が生じると品質・納期に影響する
+▶ 週次で進捗・論点を共有し、中間報告で意思決定事項を早期確定する
+
+⚠ 文書整合",
+13,table_calculation,csv,calculation,青葉与信マネジメントの分析対象データにおいて、term=3 years、grade=B1、purpose=credit_cardに該当するloan_amntの平均を算出してください。四捨五入して整数値で出してください。,1526,わかりません,1526,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\03.データ\train.csv,条件一致141行のloan_amnt平均=1526.404170を四捨五入。,EDA030のローカル計算結果を再利用
+14,fallback_bm25_llm,pptx,target_retrieval,青葉バイオメディカル機器案件において、鈴木 美咲さんはどの役割としてアサインされていますか。,アサインされていない,わかりません,アサインされていない,True,processed_text_regex,medium,,,
+15,fallback_bm25_llm,docx,target_retrieval,中間報告会または中間レビューが2025年7月1日以前に実施された案件を、主略称ですべて挙げてください。,MINAMINO、SHR、AYM,わかりません,MINAMINO、SHR、AYM,True,schedule_csv_middle_review_filter,medium,,"MINAMINO: data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\02.計画\スケジュール.xlsx.sheets\スケジュール管理表.csv 9 フェーズ3:前処理・評価設計 T09 中間レビュー資料作成 前処理・評価方針書および中間レビュー資料の作成 松本 真央、鈴木 美咲 2025-04-21 2025-04-23 T07, T08 中間レビュー資料、前処理・評価方針書 MS3 - 完了 クリティカルパス上のタスク
+SHR: data\processed\share\share\共有ドライブ\プロジェクト\白峰信用リスク評価株式会社\02.計画\スケジュール.xlsx.sheets\WBS.csv T16 フェーズ3 中間レビュー 中間レビュー実施(M03) MS5: 候補モデル比較軸、しきい値、セグメント方針合意 伊藤 翔太 / 山本 彩乃 PM / DS 2025-06-17 2025-06-17 =IF(AND(H17<>"""",I17<>""""),NETWORKDAYS(H17,I17),"""") T15 中間レビュー議事録 完了 nan ● マイルストーンMS5
+AYM: data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv T11 3. 探索的分析・仮説整理 04/17~04/28 中間レビュー資料作成 探索的分析結果を中間レビュー資料に集約 藤田 彩 2025-04-24 00:00:00 2025-04-28 00:00:00 =IF(G13="""","""",NETWORKDAYS(G13,H13)) T09, T10 中間レビュー資料 完了 ● nan",
+16,fallback_bm25_llm,image,target_retrieval,MINAMINOのPLにおいて、M01当日を1日目として数えた場合、M01の日からFR実施までの日数は何日ですか。,43日,わかりません,43日,True,schedule_csv_inclusive_day_count,high,data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\02.計画\スケジュール.xlsx.sheets\スケジュール管理表.csv,M01=2025-04-03 FR=2025-05-15 inclusive_days=43,
+17,document_whole_context,docx,answer_formatting,京橋信用ソリューションズのカラム説明において、カラム名pdaysの値-1は何を表していますか。,未連絡,未連絡を表します。,未連絡,True,processed_text_regex,medium,data\processed\share\share\共有ドライブ\プロジェクト\京橋信用ソリューションズ株式会社\03.データ\カラム説明.md,"字列 | 職業 | `blue-collar`, `management` |
+| **marital** | 文字列 | 婚姻状況 | `married`, `single` |
+| **education** | 文字列 | 学歴 | `secondary`, `tertiary` |
+| **default** | 文字列 | 債務不履行(デフォルト)の有無 | `no`, `yes` |
+| **balance** | 整数 | 年間平均残高(口座残高) | `1756`, `436` |
+| **housing** | 文字列 | 住宅ローンの有無 | `yes`, `no` |
+| **loan** | 文字列 | 個人ローンの有無 | `no`, `yes` |
+| **contact** | 文字列 | 連絡手段 | `cellular`, `telephone` |
+| **day** | 整数 | 最後に連絡した日(日にち) | `3`, `18` |
+| **month** | 文字列 | 最後に連絡した月 | `apr`, `feb` |
+| **duration** | 整数 | 最後の連絡の通話時間(秒) | `939`, `172` |
+| **campaign** | 整数 | 今回のキャンペーンにおける連絡回数 | `1`, `10` |
+| **pdays** | 整数 | 前回のキャンペーンで最後に連絡してからの経過日数(-1は未連絡) | `-1`, `595` |
+| **previous** | 整数 | 今回のキャンペーンより前に行われた連絡回数 | `0`, `2` |
+| **poutcome** | 文字列 | 前回のキャンペーンの結果 | `unknown`, `success` |
+| **y** | 整数 | (目的変数)定期預金などを契約したかどうか(目的変数 / 1: 契約, 0: 未契約など) | `1`, `0` |",
+20,fallback_bm25_llm,docx,answer_formatting,AYMのPLにおいて、探索的分析・仮説整理フェーズに一致するタスクIDをすべて挙げてください。,T09、T10、T11、T12,"T09, T10",T09、T08、T10、T07、T11、T12,True,schedule_csv_phase_task_ids,high,data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv | data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\Sheet2.csv | data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\Sheet3.csv,"data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv T09 3. 探索的分析・仮説整理 04/17~04/28 基準不良率・単変量分析 不良率把握、単変量分析を実施 山本 彩乃 2025-04-17 00:00:00 2025-04-22 00:00:00 =IF(G11="""","""",NETWORKDAYS(G11,H11)) T08 単変量分析結果 完了 ● nan
+data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv T10 3. 探索的分析・仮説整理 04/17~04/28 セグメント別分析・仮説整理 セグメント別不良率比較、仮説整理 山本 彩乃 / 藤田 彩 2025-04-21 00:00:00 2025-04-25 00:00:00 =IF(G12="""","""",NETWORKDAYS(G12,H12)) T07, T08 セグメント分析資料 完了 nan nan
+data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv T11 3. 探索的分析・仮説整理 04/17~04/28 中間レビュー資料作成 探索的分析結果を中間レビュー資料に集約 藤田 彩 2025-04-24 00:00:00 2025-04-28 00:00:00 =IF(G13="""","""",NETWORKDAYS(G13,H13)) T09, T10 中間レビュー資料 完了 ● nan
+data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\02.計画\スケジュール.xlsx.sheets\sheet1.csv T12 3. 探索的分析・仮説整理 04/17~04/28 中間レビュー会実施 中間レビューで分析結果・論点を合意 伊藤 翔太 / 中村 浩一 2025-04-29 00:00:00 2025-04-29 00:00:00 =IF(G14="""","""",NETWORKDAYS(G14,H14)) T11 中間レビュー議事録 完了 ● MS3対応",
+21,table_calculation,xlsx_pivot,calculation,青葉バイオメディカル機器のtrain.xlsxのPivotシートにおいて、平均月収が最も高い層の抽出条件を答えてください。,Attrition = No、Gender = Female、MaritalStatus = Single、EducationField = Human Resources,MaritalStatus = Divorced,Attrition = No、Gender = Female、MaritalStatus = Single、EducationField = Human Resources,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\株式会社青葉バイオメディカル機器\03.データ\train.csv,"Attrition,Gender,MaritalStatus,EducationFieldでMonthlyIncome平均を集計し、最大値=17328.000000の組を取得。",EDA030のローカル計算結果を再利用
+22,code_reading,py_or_ipynb,code_retrieval_or_output_extraction,AOSHIOの NB01_eda.ipynbにおいて、観察結果サマリで出力されている「TGとの相関 上位5」の中で、相関係数が最も小さいカラム名を答えてください。,season,わかりません,season,True,notebook_output_parse,high,data\processed\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\04.分析\analysis_project\notebooks\01_eda.ipynb.structure.json,"data\processed\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\04.分析\analysis_project\notebooks\01_eda.ipynb.structure.json cell=20
+総行数         8645
+総列数           15
+数値列数          14
+カテゴリ候補列数       8
+欠損セル総数         0
+dtype: int64
+
+目的変数との相関 上位5
+temp      0.451233
+atemp     0.447029
+hr        0.407486
+hum       0.288615
+season    0.221719
+Name: cnt, dtype: float64
+
+EDA完了",
+23,format_extraction,xlsx,format_metadata_extraction,AOSHIOのM02資料（docx）において、黄色でハイライトされている部分をすべて抜き出してください。,"見込金額（税込）: 4,675,000 JPY",わかりません,"見込金額(税込): 4,675,000 JPY",True,format_metadata_docx_highlight,high,data\processed\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\05.会議\報告資料\報告資料_2025-08-06.docx.structure.json,"data\processed\share\share\共有ドライブ\プロジェクト\株式会社青潮モビリティサービス\05.会議\報告資料\報告資料_2025-08-06.docx.structure.json block=91: 見込金額(税込): 4,675,000 JPY",
+24,code_reading,py_or_ipynb,code_retrieval_or_output_extraction,白峰信用リスク評価の 01_eda.ipynb にある特徴量相関ヒートマップの図で可視化されている特徴量のうち、classとの相関係数の絶対値が最も小さい特徴量名を答えてください。,Attr7,Attr14,Attr7,True,raw_csv_corr_heatmap_recompute,high,data\raw\share\share\共有ドライブ\プロジェクト\白峰信用リスク評価株式会社\03.データ\train.csv,"Attr25    0.061353
+Attr10    0.060909
+Attr2     0.060658
+Attr38    0.060390
+Attr3     0.058883
+Attr51    0.058636
+Attr6     0.055811
+Attr35    0.043522
+Attr22    0.038195
+Attr24    0.035449
+Attr33    0.031301
+Attr29    0.025291
+Attr48    0.025219
+Attr14    0.022981
+Attr7     0.022977",
+25,document_whole_context,pptx,target_retrieval,東都人材プラットフォームの提案書P7において、赤で強調されている箇所の文字列を抜き出してください。,1. データ理解・EDA,わかりません,1. データ理解・EDA,True,format_metadata_pptx_slide_runs,medium,data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json,"data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json slide=7: 1. データ理解・EDA color=#FFFFFF
+data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json slide=7: 2. 前処理設計 color=#FFFFFF
+data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json slide=7: 3. モデル構築 color=#FFFFFF
+data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json slide=7: 4. 評価・解釈 color=#FFFFFF
+data\processed\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\00.提案\提案書.pptx.structure.json slide=7: 5. 業務示唆整理 color=#FFFFFF",
+26,table_calculation,csv,calculation,青葉バイオメディカル機器のtrain.csvにおいて、EducationFieldがMarketingかつMonthlyIncomeが10000より大きいデータを抽出し、Ageの平均値を計算してください。その平均値に最も近い年齢のidをすべて答えてください。,train_0077、train_0216、train_0242、train_0722,わかりません,train_0077、train_0216、train_0242、train_0722,True,table_calculation_reuse,high,data\raw\share\share\共有ドライブ\プロジェクト\株式会社青葉バイオメディカル機器\03.データ\train.csv,条件一致13行のAge平均=46.230769。最小距離=0.230769のidを抽出。,EDA030のローカル計算結果を再利用
+27,document_whole_context,pptx,target_retrieval,蒼泉会 ひがし丘総合病院案件において、中間報告資料に記載されたMacro F1スコアの詳細値と、最終分析出力metrics.jsonに記録されているMacro F1スコアの詳細値を用いて、改善幅を小数第6位まで答えてください。,0.010301,0.010310,0.010301,True,metrics_json_macro_f1_delta,high,data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\05.会議\報告資料\報告資料_2025-07-22.docx.md | data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\04.分析\analysis_outputs\metrics.json,"mid_macro_f1=0.7319904178115971 source=data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\05.会議\報告資料\報告資料_2025-07-22.docx.md
+final_f1_macro=0.7422917255604067 source=data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\04.分析\analysis_outputs\metrics.json",
+28,code_reading,py_or_ipynb,code_retrieval_or_output_extraction,蒼泉会の分析コードにおいて、CATは dtype とユニーク数の条件でどのように判定していますか。,object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。,cat_cols = [c for c in df.columns if df[c].dtype == 'object' or str(df[c].dtype) == 'category'] その後、各cに対してユニーク数を df[c].nunique(dropna=True) で算出し、必要に応じて高カードリストに格納する。,object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。,True,code_structure_cat_condition,high,data\processed\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼泉会 ひがし丘総合病院\04.分析\analysis_project\src\features.py.md,"[i + 1 :]:
+            feature_name = f""{left}__x__{right}""
+            out[feature_name] = pd.to_numeric(out[left], errors=""coerce"") * pd.to_numeric(out[right], errors=""coerce"")
+            pair_count += 1
+            if pair_count >= max_interaction_pairs:
+                return out
+    return out
+
+
+def is_identifier_like_column(name: str) -> bool:
+    normalized = str(name).strip().lower()
+    if normalized in IDENTIFIER_EXACT_NAMES:
+        return True
+    return normalized.startswith(IDENTIFIER_PREFIXES) or normalized.endswith(IDENTIFIER_SUFFIXES)
+
+
+def select_feature_columns(
+    X: pd.DataFrame, categorical_unique_limit: int = MAX_CATEGORICAL_UNIQUE
+) -> tuple[pd.DataFrame, dict[str, object]]:
+    selected_columns: list[str] = []
+    excluded_columns: list[dict[str, object]] = []
+
+    for col in X.columns:
+        series = X[col]
+        if is_identifier_like_column(col):
+            excluded_columns.append(
+                {
+                    ""column"": col,
+                    ""reason"": ""identifier_like_name"",
+                }
+            )
+            continue
+
+        is_categorical = (
+            pd.api.types.is_object_dtype(series)
+            or pd.api.types.is_string_dtype(series)
+            or pd.api.types.is_categorical_dtype(series)
+        )
+        if is_categorical:
+            unique_count = int(series.dropna().nunique())
+            if unique_count >= categorical_unique_limit:
+                excluded_columns.append(
+                    {
+                        ""column"": col,
+                        ""reason"": ""high_cardinality_categorical"",
+                        ""unique_count"": unique_count,
+                        ""threshold"": categorical_un",

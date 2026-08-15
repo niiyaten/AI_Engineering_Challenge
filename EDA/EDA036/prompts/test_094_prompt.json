@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 蒼樹会 みなみ野女性医療センターのスケジュール.xlsxにおいて、MS3に紐づくタスクのうち、ビジネスアナリストが関わっているタスクIDを答えてください。\nroute: table_calculation\nsubtype: schedule_ms_role_filter\n候補生成方法: schedule_csv_ms_role_filter\n候補信頼度: none\nneeds_review: False\nEDA035回答: わかりません\n回答候補: \n参照元: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/02.計画/スケジュール.xlsx.sheets/スケジュール管理表.csv\n根拠抜粋:\nEmpty DataFrame\nColumns: [No., フェーズ, タスクID, タスク名, タスク詳細, 担当者, 開始日, 終了日, 依存タスク, 成果物, 関連マイルストーン, 関連会議, ステータス, 備考]\nIndex: []"
+    }
+  ],
+  "gold_answer_not_included": true
+}

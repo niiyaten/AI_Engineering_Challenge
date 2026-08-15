@@ -1,0 +1,15 @@
+{
+  "eda": "EDA051",
+  "contract_record_count": 11,
+  "role_record_count": 49,
+  "resource_record_count": 327,
+  "project_master_count": 11,
+  "outputs": [
+    "EDA/EDA051/tables/contract_terms_inventory.csv",
+    "EDA/EDA051/tables/role_assignment_inventory.csv",
+    "EDA/EDA051/tables/schedule_resource_inventory.csv",
+    "EDA/EDA051/tables/project_master_aggregation.csv",
+    "EDA/EDA051/tables/cross_project_question_probe.csv",
+    "EDA/EDA051/eda051_report.md"
+  ]
+}

@@ -1,0 +1,5 @@
+EXTRACTED /mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/work/independent4_v2/extracted
+CONTENT_ROOT /mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/work/independent4_v2/extracted/share/share
+PREPARED_ROOT /mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/work/independent4_v2/office/prepared_share
+OFFICE_EVENTS 5
+UNRESOLVED []

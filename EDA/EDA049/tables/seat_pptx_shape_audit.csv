@@ -1,0 +1,4 @@
+﻿slide_number,shape_index,shape_type,name,left_pt,top_pt,width_pt,height_pt,has_text,text,has_image,image_path
+1,1,PICTURE (13),Picture 2,0.0,0.0,1280.0,714.0,False,,True,data/processed/share/share/共有ドライブ/社内管理/座席表.pptx.assets/slide001_shape001.png
+1,2,AUTO_SHAPE (1),正方形/長方形 2,1102.0,258.0,108.0,66.0,False,,False,
+1,3,AUTO_SHAPE (1),正方形/長方形 3,1144.0,276.0,12.0,66.0,False,,False,

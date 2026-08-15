@@ -1,0 +1,42 @@
+{
+  "independent_execution": [
+    {
+      "index": 24,
+      "answered": true,
+      "answer": "AOMINE",
+      "route": "remaining50_generalization",
+      "method": "cross_project_missing_row_count",
+      "evidence_count": 1,
+      "diagnostics": {
+        "missing_row_count": 13556,
+        "remaining50_attempts": [
+          {
+            "handler": "_cross_project_operations",
+            "answered": true,
+            "reason": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "answered": true,
+      "answer": "AOMINE",
+      "route": "remaining50_generalization",
+      "method": "tm_estimate_actual_hours_gap",
+      "evidence_count": 2,
+      "diagnostics": {
+        "gap_hours": 14.5,
+        "remaining50_attempts": [
+          {
+            "handler": "_cross_project_operations",
+            "answered": true,
+            "reason": ""
+          }
+        ]
+      }
+    }
+  ],
+  "pytest": "24/24 passed",
+  "full_coldstart": "100/100 answered; evidence 100/100; 0 abstain/timeout/exception"
+}

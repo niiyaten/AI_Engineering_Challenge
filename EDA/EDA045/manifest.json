@@ -1,0 +1,11 @@
+{
+  "eda": "EDA045",
+  "input": "EDA/EDA044/tables/test_format_table_image_result.csv",
+  "remaining_count": 20,
+  "new_route_candidate_count": 9,
+  "outputs": [
+    "EDA/EDA045/tables/remaining_route_gap_inventory.csv",
+    "EDA/EDA045/tables/remaining_route_gap_summary.csv",
+    "EDA/EDA045/eda045_report.md"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "eda": "EDA038",
+  "input": "EDA/EDA037/tables/test_unhandled_route_candidates.csv",
+  "target_count": 9,
+  "before_non_unknown_count": 37,
+  "added_non_unknown_count": 6,
+  "after_non_unknown_count": 43,
+  "openrouter_used": true,
+  "outputs": [
+    "EDA/EDA038/tables/test_diff_route_result.csv",
+    "EDA/EDA038/tables/test_diff_route_attempt_log.csv",
+    "EDA/EDA038/predictions/predictions.csv",
+    "EDA/EDA038/predictions/eda038_diff_route_submission.zip",
+    "EDA/EDA038/eda038_report.md"
+  ]
+}

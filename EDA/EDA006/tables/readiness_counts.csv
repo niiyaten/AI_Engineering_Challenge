@@ -1,0 +1,7 @@
+﻿context_quality_for_llm,question_count
+ready_for_llm,10
+needs_table_tool,8
+needs_better_retrieval,8
+needs_format_extraction,2
+needs_image_ocr,1
+needs_diff_tool,1

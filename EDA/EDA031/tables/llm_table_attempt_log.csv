@@ -1,0 +1,15 @@
+﻿index,model,status,ok,elapsed_sec,answer,error_message
+3,openai/gpt-oss-120b:free,429,False,1.04,,Provider returned error
+3,openai/gpt-oss-20b:free,200,True,2.578,"4,384,250円",
+6,openai/gpt-oss-120b:free,429,False,0.831,,Provider returned error
+6,openai/gpt-oss-20b:free,200,True,2.768,Gender=Male、disease=1、Age=68,
+7,openai/gpt-oss-120b:free,429,False,0.865,,Provider returned error
+7,openai/gpt-oss-20b:free,200,True,3.733,32歳,
+11,openai/gpt-oss-120b:free,429,False,0.97,,Provider returned error
+11,openai/gpt-oss-20b:free,200,True,1.408,"Gender=Male, Country=India, target=2",
+13,openai/gpt-oss-120b:free,429,False,0.98,,Provider returned error
+13,openai/gpt-oss-20b:free,200,True,14.997,1526,
+21,openai/gpt-oss-120b:free,429,False,0.78,,Provider returned error
+21,openai/gpt-oss-20b:free,200,True,2.028,"Attrition = No, Gender = Female, MaritalStatus = Single, EducationField = Human Resources",
+26,openai/gpt-oss-120b:free,429,False,0.977,,Provider returned error
+26,openai/gpt-oss-20b:free,200,True,7.28,"train_0077, train_0216, train_0242, train_0722",

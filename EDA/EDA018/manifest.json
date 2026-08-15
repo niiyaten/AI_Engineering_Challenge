@@ -1,0 +1,14 @@
+{
+  "eda": "EDA018",
+  "created_at": "2026-07-08T00:28:07",
+  "purpose": "Convert Notebook files into cell-level Markdown and structure JSON.",
+  "target_count": 11,
+  "outputs": {
+    "report": "EDA/EDA018/eda018_report.md",
+    "conversion_log": "EDA/EDA018/tables/notebook_conversion_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA018/eda018.py"
+  ]
+}

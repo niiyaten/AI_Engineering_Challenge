@@ -1,0 +1,10 @@
+2026-07-04 16:34:03,390 [INFO] chunks_path=/mnt/data/SIGNATE_Agentic_RAG/EDA/EDA002/texts/text_chunks.jsonl
+2026-07-04 16:34:03,391 [INFO] question_source=zip: /mnt/data/share.zip
+2026-07-04 16:34:03,391 [INFO] valid_questions=30 test_questions=100
+2026-07-04 16:34:04,572 [INFO] BM25 index built: chunks=1230 vocab=26452 avg_doc_len=1966.20
+2026-07-04 16:34:06,322 [INFO] Top5 loose hit rate: 0.1667
+2026-07-05 01:36:34,626 [INFO] chunks_path=E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\texts\text_chunks.jsonl
+2026-07-05 01:36:34,626 [INFO] question_source=directory: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\質問回答
+2026-07-05 01:36:34,628 [INFO] valid_questions=30 test_questions=100
+2026-07-05 01:36:35,731 [INFO] BM25 index built: chunks=1230 vocab=26448 avg_doc_len=1965.15
+2026-07-05 01:36:38,533 [INFO] Top5 loose hit rate: 0.1667

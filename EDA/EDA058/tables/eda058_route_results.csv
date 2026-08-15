@@ -1,0 +1,2 @@
+﻿index,question,answer,route,source_paths,evidence
+62,青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。,n_estimatorsが500と300で異なります。,aoba_credit_model_diff_top2,data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\06.報告書\青葉与信マネジメント株式会社_最終報告.pptx.md | data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\04.分析\analysis_outputs\experiments\leaderboard.csv.data.csv | data\processed\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\04.分析\analysis_outputs\experiments\leaderboard.csv.md,"{""n_estimators"": [""500"", ""300""]}"

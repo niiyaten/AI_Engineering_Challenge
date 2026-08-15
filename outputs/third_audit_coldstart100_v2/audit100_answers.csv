@@ -1,0 +1,101 @@
+﻿index,question,answered,answer,confidence,route,method,reason,elapsed_seconds,evidence_count
+0,白峰信用リスク評価の提案書old.pptxから提案書.pptxへの更新内容のうち、案件遂行に関連する実質的な変更を挙げてください。,True,分析アプローチの全体像に、「データ理解・品質確認」「前処理方針策定」「モデル比較」「リスクセグメンテーション」「ガバナンス・監査対応」の5段階と、各段階の具体的作業内容が追加された。,0.95,audit_generalization,pptx_numbered_execution_stage_diff,,1.756447,2
+1,恒一会 かえで総合病院の最終報告書old版と最新版を比較したとき、案件遂行に関連する実質的な変更を挙げてください。,True,案件遂行に関する実質的な変更なし（体制・スコープ・分析手順の内容は同一で、主にレイアウト・図表化の変更）。,0.96,remaining50_generalization,pptx_semantic_equivalence_diff,,1.705903,2
+2,青嶺不動産アセットマネジメントのスケジュール_r2.xlsxにおいて、オレンジにハイライトされている行のタスク名をすべて答えてください。,True,プロジェクトキックオフ実施、中間報告会実施、最終報告会実施,0.98,remaining50_generalization,xlsx_orange_row_extract,,1.652404,3
+3,恒一会 かえで総合病院の契約書において、太字で記載されている箇所のうち、日付以外のものをすべて抽出してください。,True,"time_and_materials／実績工数に基づき、案件完了後に最終成果物の検収を経て一括精算する。／30分単位／25,000円／時間",1.0,base_recovery,office_run_format_exact_extract,,3.053284,4
+4,蒼泉会 ひがし丘総合病院の01_eda.ipynbを確認して、目的変数と相関が最も高い数値特徴量を教えてください。,True,BMI,0.98,remaining50_generalization,notebook_target_correlation_recompute,,1.639711,2
+5,青潮モビリティサービスの最終報告にて最良モデルとしているモデルのパラメータであるmax_depthはいくらに設定されていますか。,True,6,1.0,base_recovery,runtime_parameter_config_resolution,,3.147514,3
+6,蒼泉会 ひがし丘総合病院案件において、提案時の税込み見込み金額と最終請求金額の差額はいくらですか。,True,実績工数の最終確定値および確定した最終請求金額が資料に含まれていないため、差額は算出できません。,0.995,tm_invoice_difference,tm_final_invoice_not_determinable,,1.887054,6
+7,青潮モビリティサービスの基礎分析.pptxにおいて、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。,True,hr=8、weekday=2で抽出したtempの最大値：0.78,0.97,audit_generalization,visual_yellow_matrix_recompute,,4.222611,2
+8,東都人材プラットフォームのデータサイエンティスト調査資料において、米国平均給与における機械学習（ML）エンジニアとデータエンジニアの差はいくらですか。,True,"14,744ドル",0.95,base_recovery,document_profession_numeric_difference,,4.997647,2
+9,青葉与信マネジメントの最終報告資料の最新版になる際に修正されたもののうち、案件遂行に関連する変更を挙げてください。,True,案件遂行に関する実質的な変更なし（体制・スコープ・分析手順の内容は同一で、主にレイアウト・図表化の変更）。,0.96,remaining50_generalization,pptx_semantic_equivalence_diff,,1.627789,2
+10,恒一会 かえで総合病院のtrain.xlsxにおいて、AG_ratioのヒストグラムで最も多いカウント数はいくつですか。,True,958,0.98,remaining50_generalization,histogram_count_recompute,,3.319435,2
+11,青嶺不動産アセットマネジメントの報告資料の中で、太字、下線、イタリックのすべてに該当する箇所を抽出してください。,True,該当箇所なし,1.0,base_recovery,office_run_format_exact_none,,3.064417,1
+12,蒼泉会 ひがし丘総合病院の報告資料_2025-07-08.docxにおいて、WBS観点の進捗状況の見出しがあるのは何ページですか。,True,2ページ,0.99,base_recovery,precise_page_lookup,,7.890821,1
+13,データアステル社の中でもっとも多くの案件にかかわっている人の内線番号を教えてください。,True,7104,0.98,remaining50_generalization,cross_project_staff_count_then_seat_ocr,,9.275354,1
+14,青葉与信マネジメントの提案書_v1.pptxから提案書_v3.pptxに修正されたもののうち、案件遂行に関連する変更を挙げてください。,True,案件遂行に関する実質的な変更なし（体制・スコープ・分析手順の内容は同一で、主にレイアウト・図表化の変更）。,0.96,remaining50_generalization,pptx_semantic_equivalence_diff,,1.686149,2
+15,東都人材プラットフォームのtrain.xlsxにおいて、Sheet1の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。,True,Gender=Male、target=2、Age=40-44、Country=Spainで抽出した件数：12,0.98,audit_generalization,xlsx_yellow_pivot_recompute,,1.648466,2
+16,青葉与信マネジメントの中間報告資料にて、黄色ハイライトかつ赤字となっている部分を抜き出してください。,True,0.589,0.99,audit_generalization,docx_run_format_intersection,,1.552957,1
+17,AYMのMMにおいて、黄色ハイライトかつREDになっている数値を対象に、最初のMMから最後のMMまでの上昇率を計算してください。上昇率は （最後の値 - 最初の値） / 最初の値 × 100 で求め、小数第2位まで答えてください。,True,2.32%,0.98,audit_generalization,pdf_highlighted_metric_growth,,1.650061,2
+18,白峰信用リスク評価の会議ID：M04の会議録にて、進捗サマリが記載されているページ番号を答えてください。,True,2ページ,0.98,remaining50_generalization,meeting_heading_page_ocr_lookup,,12.835037,1
+19,青嶺不動産アセットマネジメントのスケジュール_r2.xlsxにおいて、2025-08-11から2025-09-09の間に開始日または終了日が設定されているタスクIDをすべて挙げてください。,True,T04、T05、T06、T07、T08、T09、T10、T11、T12、T13、T14、T15、T16、T17,0.98,base_recovery,table_date_range_filter,,3.039963,14
+20,東都人材プラットフォームの報告資料_2025-08-18.pdf で、渡辺遥と藤田彩の2人が担当となっている優先タスクを抽出してください。,True,分析計画書初版作成,0.98,remaining50_generalization,priority_report_id_to_wbs_owner_join,,22.280401,2
+21,青葉バイオメディカル機器のクライアントの主担当者の役職は何ですか。,True,人材戦略部長,1.0,base_recovery,contract_client_primary_role_extract,,3.0941,1
+22,白峰信用リスク評価の01_eda_old.ipynbから01_eda.ipynbへの変更内容のうち、内容として変わっている点は何ですか。,True,記述統計の埋め込み画像が更新され、旧版のAttr1～Attr64に加えて、新版では目的変数classの記述統計が追加された。,0.98,remaining50_generalization,notebook_output_semantic_diff,,1.925822,2
+23,ひがし丘の案件において、案件終了後のACTHが155時間10分だった場合の税込請求額は提案書内で記載の見込税込金額と比べて何円の減額になりますか。,True,"398,750円",0.98,remaining50_generalization,tm_hypothetical_billing_difference,,1.804121,2
+24,分析データの中で、1つでも欠損値がある行数が最も多い案件を、主略称で答えてください。,True,"AOMINE、13,556行",0.98,remaining50_generalization,cross_project_missing_row_count,,1.835374,1
+25,白峰信用リスク評価のtrain.xlsxにおいて、青色ハイライト部分の合計値を求めてください。四捨五入して整数で答えてください。,True,"-11,851,246",0.98,remaining50_generalization,xlsx_blue_fill_sum,,2.461322,3
+26,2025-08-15 から 2025-09-07 の間に契約期間が重なっている案件の中で、契約期間が 40日 を超えている案件を、主略称ですべて挙げてください。,True,TOTO、AOMINE,0.98,remaining50_generalization,cross_project_contract_overlap_duration,,3.024715,2
+27,恒一会 かえで総合病院の提案書において、スコープ対象外としている項目はいくつありますか。,True,7項目,0.98,remaining50_generalization,proposal_out_of_scope_count,,1.560659,1
+28,蒼樹会 みなみ野女性医療センターの分析結果として予測に影響が高いと報告されている特徴量の中で、最もターゲットとの相関が高い特徴量を答えてください。,True,BMI,0.98,remaining50_generalization,reported_features_target_correlation,,19.257077,2
+29,恒一会 かえで総合病院のtrain.xlsx内のTPのヒストグラムで、3番目にカウント数が多いビンの範囲を小数第6位までで答えてください。,True,"(6.088138, 6.288138]",0.98,remaining50_generalization,histogram_ranked_bin_recompute,,1.632785,2
+30,青葉与信マネジメントの分析対象データにおいて、標準化されたloan_amntが0未満の行のうち、purpose=credit_cardに該当し、かつloan_amntがpurpose=credit_card全体の平均を上回る行の割合は何%ですか。小数第2位まで答えてください。,True,1.18%,0.99,audit_generalization,standardized_conditional_ratio,,1.735394,1
+31,固定金額契約の中で、分析データ1行あたりの契約金額（税込）が最も高い案件を、主略称と1行あたりの金額で答えてください。1行あたりの金額は円単位で切り上げてください。,True,"MINAMINO、1,320円/行",0.98,remaining50_generalization,fixed_contract_amount_per_customer_row,,3.027442,2
+32,青嶺不動産アセットマネジメントの分析出力 metrics.json の feature_selection.selected_columns に含まれている列のうち、分析コードで生成された数値交互作用特徴量の列名をすべて答えてください。,True,BOROUGH__x__BLOCK、BOROUGH__x__LOT、BOROUGH__x__ZIP CODE、BLOCK__x__LOT、BLOCK__x__ZIP CODE、LOT__x__ZIP CODE,0.96,base_recovery,json_code_generated_feature_names,,15.452467,2
+33,青潮モビリティサービスの基礎分析.docxのグラフ2で、x=3のときの青色の折れ線のyの値を小数第5位で答えてください。,True,0.18696,0.98,remaining50_generalization,docx_embedded_chart_point_lookup,,1.62767,1
+34,MINAMINOにおいて、M01時点では未完了で、M02までの間に完了したAIのうち、伊藤さんが担当しているものを抽出してください。,True,A08「分析用リポジトリ／環境・アクセス権の整備（データ格納先・アクセス確認）」、A09「週次定例のスケジュール確定（初回：2025-04-10）と招集送付」,0.98,remaining50_generalization,meeting_action_open_to_closed_owner_filter,,21.243657,2
+35,京橋信用ソリューションズの京橋信用ソリューションズ株式会社_最終報告.pptxにおいて、F1スコアにてgradient_boostingに次ぐ順位のモデルの Accuracy はいくつですか。,True,0.90527,0.995,scoring_precision,pptx_displayed_ranked_metric,,1.557367,1
+36,恒一会 かえで総合病院案件において、中間報告時点のF1スコア実測値と最終報告時点のF1スコア実測値の差を絶対値で答えてください。,True,0.09619113,0.98,remaining50_generalization,interim_report_vs_metrics_f1_difference,,2.217454,2
+37,AOBMにおいて、見込金額（税込）と確定金額（税込）の差を、ESTHとACTHの差で割った1時間あたりの減少金額を計算してください。,True,"22,000円/時間",0.97,audit_generalization,contract_amount_hours_unit_difference,,1.616127,4
+38,社内管理のAPRに照らして、APR-M3が必要な案件を主略称ですべて挙げ、それらの契約金額（税込）の合計を答えてください。,True,該当なし。契約金額（税込）の合計は0円。,0.95,audit_generalization,approval_policy_cross_project_apply,,1.763926,1
+39,青潮モビリティサービスのtrain.xlsxのSheet1にあるグラフ1はどのカラムを可視化したものですか。,True,hum,0.98,remaining50_generalization,xlsx_chartex_series_label,,1.536226,1
+40,2026年7月1日時点で存在する案件について、支払月ごとの精算総額が多い月を上位3つ、総額とあわせて答えてください。,True,"1位：2025年10月 11,412,500円、2位：2025年9月 9,858,750円、3位：2025年8月 8,118,000円",0.98,remaining50_generalization,cross_project_monthly_settlement_ranking,,24.398618,13
+41,AOBMのPLANにおいて、加藤さんが担当者に含まれるタスクIDはいくつありますか。,True,11件,0.98,remaining50_generalization,schedule_owner_task_count,,1.614585,1
+42,蒼泉会 ひがし丘総合病院のtrain.xlsxのSheet1において、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。,True,sex=female、smoker=yes、region=southeastで抽出したcharges=2のデータに対するbmiの平均：35.95093,0.98,audit_generalization,xlsx_yellow_pivot_recompute,,1.549143,2
+43,東都のCTにおいて、甲側の主担当者をフルネームで教えてください。,True,石川 直樹,0.99,base_recovery,document_client_name_extract,,3.107905,1
+44,IMにあるFMにおいて、佐藤さんから見て右側に座っている人の名前をすべて挙げてください。,True,鈴木,0.95,base_recovery,local_ocr_spatial_layout,,11.047383,1
+45,京橋信用ソリューションズの会議録_2025-10-29.pdfと会議録_2025-11-11.pdfにおいて、会議ID M2 から M3 にかけて完了したアクションアイテムのIDをすべて挙げてください。,True,A01、A02、A03、A07、A08、A09、A10,0.99,audit_generalization,minutes_action_state_transition,,1.573169,2
+46,着手金が最も高い案件について、その案件のESの内線番号を教えてください。,True,7201,0.98,remaining50_generalization,max_upfront_payment_es_seat_lookup,,9.029443,2
+47,青嶺不動産アセットマネジメントのtrain.xlsxにおいて、黄色ハイライトセルは予測と実際の誤差を計算していますが、その予測値の対象となっている不動産の建設年を算出してください。,True,1899年,0.99,audit_generalization,xlsx_formula_reference_positional_raw_row,,9.184487,2
+48,青嶺不動産アセットマネジメントのニューヨーク不動産市場の最新動向調査.pdfにおいて、提案されているマンション税の新税率のうち、現行税率からの絶対値の増加が最も小さい価格帯はどこですか。,True,100万ドル超～500万ドル以下,0.94,audit_generalization,pdf_rate_band_min_absolute_change,,1.690205,1
+49,東都人材プラットフォームの会議録において、コメントがついている部分をそのまま抽出してください。,True,WBS・進捗管理台帳確定（タスク割振・ガント更新）,1.0,base_recovery,docx_commented_range_text,,3.048546,1
+50,東都人材プラットフォームのデータサイエンティスト調査において、Salary.com が公表しているデータサイエンティストの年間基本給について、上位90%の層と中央値の差はいくらですか。,True,"13,222ドル",0.98,remaining50_generalization,docx_nested_salary_table_difference,,1.578849,1
+51,白峰信用リスク評価の提案書.pptxにおいて、モデルの高度化（説明性・セグメント分析）の実行予定スケジュールは案件開始から第何週目に実施予定でしょうか。,True,第6週～第8週,1.0,base_recovery,pptx_timeline_geometry_range,,3.205598,1
+52,蒼樹会 みなみ野女性医療センターの今後の運用に関する記載の中で、データアステル側の役割として「別契約」と明記されているものを抽出してください。,True,監視ダッシュボード構築,0.98,remaining50_generalization,final_report_separate_contract_role,,53.308832,1
+53,TOTOのFR書にて記載のある選択特徴量のうち、ENG-FTはいくつありますか。,True,6,0.98,remaining50_generalization,final_report_engineered_feature_count,,1.55237,1
+54,青潮モビリティサービスの基礎分析.docxのグラフ1で、x=3のときのyの値を小数第5位で答えてください。,True,0.50534,0.98,remaining50_generalization,docx_embedded_chart_point_lookup,,1.546905,1
+55,事後精算案件のうち、提案時の見積工数と最終報告で報告されている実績工数の乖離が最も大きい案件を主略称で挙げてください。,True,AOMINE、14.5時間,0.98,remaining50_generalization,tm_estimate_actual_hours_gap,,24.594908,2
+56,蒼泉会 ひがし丘総合病院の01_eda.ipynbにおける目的変数分析の可視化において、y軸に実際に表示されている目盛りの最大値は何ですか。,True,1200,0.98,remaining50_generalization,target_distribution_axis_tick_recompute,,4.652154,2
+57,青葉のTXにて算出された回帰係数を用いて全データの予測値を計算し、正解データに対する F1 スコアが最大となるように閾値を設定したときの F1 スコアを答えてください。小数第5位まで求めてください。,True,0.42396,0.98,remaining50_generalization,regression_threshold_f1_optimization,,1.688347,2
+58,社内管理フォルダにあるFMにおいて、井上さんの向かいに座っている方のEXTを教えてください。,True,7103,0.95,base_recovery,local_ocr_spatial_layout,,11.000986,1
+59,京ソのPP_final.pptxにおいて、この案件にかかる金額の提示がまとまっているのは何ページですか。,True,13ページ,0.99,base_recovery,precise_page_lookup,,3.097059,1
+60,白峰信用リスク評価の最終報告資料内で未完事項として挙げられているIDをすべて抽出してください。,True,AI-05、AI-08、AI-09,1.0,base_recovery,open_action_ids_slide_extract,,2.972976,1
+61,京橋信用ソリューションズの分析コードにおいて、今回の学習で勾配ブースティング法のモデルに実際に渡される n_estimators、learning_rate、random_state はそれぞれいくつですか。設定ファイルに明示されていない値がある場合も、実行時にコード上で適用される値を含めて答えてください。,True,n_estimators=300、learning_rate=0.1、random_state=42,1.0,base_recovery,runtime_parameter_config_resolution,,2.982073,3
+62,青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。,True,上位2件はいずれもextra_treesで、n_estimatorsが500と300で異なる。,0.98,remaining50_generalization,leaderboard_top2_parameter_diff,,1.567003,1
+63,青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。,True,0.15002,0.98,remaining50_generalization,regression_coeff_prediction,,1.661694,2
+64,青潮モビリティサービスの最終報告PDFにおいて、将来のフェーズAとフェーズBを実施した場合の想定工数は合計で何時間ですか。,True,80～130時間,0.98,remaining50_generalization,future_phase_hours_sum,,10.838185,1
+65,白峰信用リスク評価のtrain.xlsxにおいて、表示されている相関係数シートで、黄色ハイライトになっているセルの条件を答えてください。,True,Sheet2は相関係数が-0.9未満のセルが黄色ハイライト、Sheet3は相関係数が-0.99未満のセルが黄色ハイライト。,0.98,remaining50_generalization,xlsx_conditional_format_thresholds,,1.939989,2
+66,京橋信用ソリューションズのEDAの日付分析の可視化において、件数が最も高いのは何日ですか。,True,20日,0.98,remaining50_generalization,date_feature_peak_day_recompute,,1.634773,2
+67,完了案件のうち、社内管理のAPRでAPR-M2に該当する案件の中で、提案時金額とFR時の金額が異なる案件を案件略称ですべて挙げてください。,True,AOMINE、AOSHIO、AOBM,0.98,remaining50_generalization,apr_rule_and_proposal_final_amount_change,,21.052674,6
+68,東都人材プラットフォームのデータサイエンス市場の未来予測.pdfにおいて、投資実装係数の計算式が記載されているページの数値情報を式に代入し、投資実装係数を小数で答えてください。,True,1.3986,0.98,remaining50_generalization,pdf_formula_page_values,,18.858287,1
+69,白峰信用リスク評価の最終報告資料において、パイロット運用は本番化スケジュール上で第何週目から第何週目に実施予定ですか。,True,第5週～第6週,1.0,base_recovery,pptx_timeline_geometry_range,,2.987947,1
+70,白峰信用リスク評価の5月27日の報告資料で Open として優先フォロー対象に挙げられているアクションIDの中で、会議録において完了となっていないIDを上げてください。,True,AI-05,0.96,audit_generalization,bounded_ocr_report_minutes_action_join,,13.05841,2
+71,青嶺不動産アセットマネジメントの会議録の中で、太字、下線、イタリックのすべてに該当する箇所を抽出してください。,True,"4,250,000円",1.0,audit_generalization,docx_multi_format_intersection,,1.576961,1
+72,KSSにおいて、データエンジニアが担当するタスクIDはいくつありますか。,True,5件（T03、T07、T11、T12、T25）,0.98,remaining50_generalization,schedule_role_task_count,,1.612707,2
+73,恒一会のPPで言及されている One-Hot Encoding のカテゴリ数閾値を実装設定から確認したうえで、その条件により One-Hot Encoding の対象となるカテゴリ列をすべて答えてください。,True,カテゴリ数閾値は100（ユニーク数100未満）。対象列はGender。,1.0,base_recovery,onehot_feature_plan_and_schema_resolution,,3.120028,2
+74,青葉与信マネジメントの提案書_v1.pptxから提案書_v2.pptxに修正されたもののうち、案件遂行に関連する変更を挙げてください。,True,プロジェクト体制のビジネスアナリストが藤田 彩から井上 里奈に変更された。,0.98,remaining50_generalization,pptx_role_semantic_diff,,1.631332,2
+75,MINAMINOのPP内のPL案において、モデル構築は第何週に実施することになっていますか。,True,第4週,1.0,base_recovery,pptx_timeline_geometry_range,,3.015068,1
+76,"AOMINEの契約条件において、契約単価が現状よりも2,000円高く、実績工数が11.2時間少なかった場合、税込請求金額は、実際の税込請求金額と比べていくら変動しますか。",True,"79,200円増加",0.98,remaining50_generalization,tm_rate_hours_sensitivity,,1.680618,2
+77,蒼泉会 ひがし丘総合病院のtrain.xlsxのSheet2において、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。,True,"children=3、smoker=noで抽出したageの合計：4,674",0.98,audit_generalization,xlsx_yellow_pivot_recompute,,1.645087,2
+78,ひがし丘の契約条件において、ACTHが200時間を超えた場合の精算方法に関する規定内容を答えてください。,True,"ACTHが200時間を超えても上限精算にはならず、実績工数を30分単位（30分未満切り上げ）で集計し、時間単価25,000円（税別）を乗じて月次精算する。",1.0,base_recovery,contract_overrun_settlement_rule,,3.421557,8
+79,恒一会 かえで総合病院の計画フォルダ内において、データアステル側の担当者のうち、1タスク当たりの想定工数（想定工数 ÷ 担当タスク数）が最も大きい人のフルネームと、その1タスク当たりの想定工数を小数第2位で答えてください。ファイルに鍵がかかっている場合は社内管理を確認してください。,True,池田 直哉、7.00時間/タスク,0.98,remaining50_generalization,resource_hours_per_assigned_task,,1.593703,1
+80,東都人材プラットフォームのtrain.xlsxにおいて、Sheet2の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。,True,Gender=Male、target=3、Age=30-34、Profession=Software Engineerで抽出した件数：61,0.98,audit_generalization,embedded_table_yellow_hierarchy_recompute,,5.862419,2
+81,京橋信用ソリューションズとの契約書において、太字で記載されている部分を抽出してください。,True,契約締結日兼効力発生日：2025-10-01,1.0,base_recovery,office_run_format_exact_extract,,3.105919,1
+82,蒼泉会 ひがし丘総合病院のスケジュール.xlsxにおいて、WBSシートでオレンジ色にハイライトされている行のタスクIDをすべて教えてください。,True,T02、T14、T16、T22、T24,0.98,remaining50_generalization,xlsx_orange_row_extract,,1.617672,5
+83,蒼樹会 みなみ野女性医療センターのtrain.xlsxにおいて、回帰分析の結果として記載されている係数をindex=1770のデータに当てはめたときの予測値はいくつですか。小数第5位まで答えてください。,True,0.38317,0.99,audit_generalization,xlsx_regression_recompute,,1.775386,9
+84,東都人材プラットフォームの最終報告書で分析結果が記載されている中で、モデル毎のF1スコアがランキング形式で記載されているページ数を教えてください。,True,5ページ,1.0,base_recovery,pptx_ranked_metric_display_page,,3.022241,1
+85,青葉バイオメディカル機器の最終報告において、設定されたKPIとして未達成とされている項目を挙げてください。,True,該当なし（全6項目が達成）,0.98,base_recovery,kpi_unmet_none_extract,,2.997018,1
+86,各案件のPP・契約書・PLAN・FRにおいて、DA側の実施体制として役割付きで記載されている人物は全部で何人ですか。,True,19人,0.97,audit_generalization,structured_cross_project_role_person_dedup,,2.633459,80
+87,完了案件のうち、社内管理のAPRでAPR-M1に該当し、かつ顧客データのサンプル数が10000行以上の案件を、案件略称ですべて挙げてください。,True,AYM,0.98,remaining50_generalization,apr_rule_and_sample_count_filter,,3.389231,1
+88,蒼樹会 みなみ野女性医療センターの提案書内のスケジュール案において、第5週目に実施することになっている項目は何ですか。,True,解釈・業務示唆整理,1.0,base_recovery,pptx_timeline_geometry_item_at_week,,3.151675,1
+89,京橋信用ソリューションズのスケジュール.xlsxにおいて、フェーズNo6にて最後に開始するタスク名は何ですか。,True,最終報告・成果物提出・検収会,1.0,base_recovery,schedule_phase_last_start_task,,3.089325,1
+90,青潮モビリティサービスのスケジュール.xlsxにおいて、バッファとして使用した工数の合計は何時間ですか。,True,8時間,1.0,base_recovery,schedule_buffer_hours_sum,,3.090944,1
+91,京橋信用ソリューションズの顧客データにおいて、目的変数と最も強い負の相関を持つカラムは何ですか。,True,campaign,1.0,base_recovery,table_strongest_negative_correlation,,2.969846,2
+92,恒一会 かえで総合病院案件において、マイルストーンID、タスクID、アクションIDの3種類のIDは合計でいくつ発行されていますか。マークダウンファイル以外から算出してください。,True,49,1.0,audit_generalization,structured_role_scoped_id_total,,1.900871,5
+93,蒼樹会 みなみ野女性医療センターのアクションIDA10の内容をそのまま抜き出してください。,True,前処理パイプライン実装：0値を疑似欠損（NA）扱いの処理と補完ロジック（中央値等）の実装・ドキュメント化,0.98,remaining50_generalization,image_pdf_action_table_geometry_ocr,,9.133842,1
+94,蒼樹会 みなみ野女性医療センターのスケジュール.xlsxにおいて、MS3に紐づくタスクのうち、ビジネスアナリストが関わっているタスクIDを答えてください。,True,T09,0.99,base_recovery,schedule_milestone_role_task_ids,,3.099192,1
+95,青嶺不動産アセットマネジメントのスケジュール_r1.xlsxとスケジュール_r2.xlsxを比較したとき、未着手から完了への変更を除いて、案件遂行に関連する変更点を挙げてください。,True,T15の担当者が「渡辺 遥」から「渡辺 遥 / 小林 直樹」に変更された。,0.95,base_recovery,xlsx_semantic_diff,,15.148507,2
+96,青葉与信マネジメントのチェックポイント2として設定されている内容に関連するタスクIDを教えてください。,True,T05、T06、T07、T08,1.0,base_recovery,schedule_checkpoint_related_task_ids,,3.162318,1
+97,青葉バイオメディカル機器のtrain.xlsxにおいて、黄色ハイライトが交差している2つのセルの値の差の絶対値を計算してください。,True,272,0.98,remaining50_generalization,xlsx_highlight_band_intersection_difference,,2.180174,2
+98,TM案件において、RATEが変更されたのは何年何月1日からと想定されますか。,True,2025年7月1日,0.98,remaining50_generalization,tm_rate_change_effective_month_inference,,3.037221,2
+99,蒼樹会 みなみ野女性医療センターの糖尿病統計情報調査結果において、死亡率が最も高い都道府県の死亡率は、4番目に低い都道府県の死亡率の何倍ですか。小数第2位まで求めてください。,True,2.49倍,0.98,remaining50_generalization,displayed_rank_mortality_ratio,,1.577937,1

@@ -1,0 +1,8 @@
+﻿route,question_count,exact_match_count,contains_gold_count,answer_in_topk_context_count,avg_token_recall
+code_reading,4,0,0,0,0.0237
+diff_check,1,0,0,0,0.0714
+document_whole_context,7,0,0,3,0.0429
+fallback_bm25_llm,8,0,0,2,0.0
+format_extraction,2,0,0,0,0.0833
+image_ocr,1,0,0,0,0.0
+table_calculation,7,0,0,0,0.0079

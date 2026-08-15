@@ -1,0 +1,14 @@
+{
+  "eda": "EDA016",
+  "created_at": "2026-07-08T00:25:02",
+  "purpose": "Convert PDF files into page-level Markdown and structure JSON.",
+  "target_count": 28,
+  "outputs": {
+    "report": "EDA/EDA016/eda016_report.md",
+    "conversion_log": "EDA/EDA016/tables/pdf_conversion_log.csv",
+    "processed_root": "data/processed/share"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA016/eda016.py"
+  ]
+}

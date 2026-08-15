@@ -1,0 +1,11 @@
+{
+  "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+  "status": "http_429",
+  "finish_reason": "",
+  "message_keys": [],
+  "content_length": 0,
+  "reasoning_present": false,
+  "raw": {
+    "error_body": "{\"error\":{\"message\":\"Rate limit exceeded: limit_rpm/qwen/qwen3-next-80b-a3b-instruct-2509/94248808-ba97-4e3c-be60-1cb0928db51d. High demand for qwen/qwen3-next-80b-a3b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"8\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1783592520000\"},\"provider_name\":null}},\"user_id\":\"user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K\"}"
+  }
+}

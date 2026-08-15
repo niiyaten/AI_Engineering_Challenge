@@ -1,0 +1,2 @@
+﻿index,context_path,prompt_path,model,model_candidates,status,api_key_source,true_answer,llm_answer,contains_true_answer,error_message
+2,EDA/EDA007/contexts/valid_002_context.md,EDA/EDA008/prompts/valid_002_prompt.json,openai/gpt-oss-20b:free,openai/gpt-oss-20b:free,ok,.apikey,Recall,f1_macro、AUC‑ROC、top10% precision,False,

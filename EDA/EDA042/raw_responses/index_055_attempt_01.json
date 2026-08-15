@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 0,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783592888-ov0eOLHBHsafK7LOstQO",
+    "object": "chat.completion",
+    "created": 1783592888,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need to answer: \"事後精算案件のうち、提案時の見積工数と最終報告で報告されている実績工数の乖離が最も大きい案件を主略称で挙げてください。\"\n\nWe have multiple projects. Need to find the one with largest difference between estimated hours at proposal and actual hours reported in final report. We need to look into the final report files for each project. The data provided includes markdown of PowerPoint and PDF. We need to parse tables maybe. Let's inspect each project's final report for tables containing estimated vs actual hours.\n\nWe have many projects: 京橋信用ソリューションズ株式会社, 医療法人社団 恒一会 かえで総合病院, 医療法人社団 蒼樹会 みなみ野女性医療センター, 医療法人社団 蒼泉会 ひがし丘総合病院, 株式会社東都人材プラットフォーム, 株式会社青嶺不動産アセットマネジメント, 株式会社青潮モビリティサービス, 株式会社青葉バイオメディカル機器, 白峰信用リスク評価株式会社.\n\nWe need to find the difference. Let's examine each final report's markdown for tables. The markdown includes table_count. For each, we need to see if there is a table with estimated vs actual hours. Let's open each.\n\nBut we only have the metadata, not the actual content. The markdown file likely contains the extracted text. We need to parse the content. Let's inspect the markdown for each.\n\nWe need to read the content of each .md file. The prompt only gives the metadata, not the content. But maybe the content is included in the prompt? It lists the file path and some metadata but not the actual content. So we cannot see the tables. However, maybe the content is included in the prompt? Let's scroll. The prompt includes only the metadata for each file, not the content. So we cannot directly see the numbers.\n\nBut maybe the content is in the markdown file itself, but not shown. The prompt only lists the metadata. So we cannot compute differences.\n\nBut the instruction says: \"以下の根拠だけを使って質問に答えてください。\" So we must use only the given evidence. The evidence is the metadata. There's no numeric data. So we cannot compute difference. But we must still answer. The constraint says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must provide an answer. But we have no data. We need to infer maybe from the table counts? The project with most tables might have more data. But difference between estimated and actual hours is not given.\n\nWe might need to guess based on the number of tables? The project with the largest table count might have more detailed reporting, maybe largest difference. But that's speculation.\n\nAlternatively, maybe the final report includes a table of \"工数\" but we don't see it. But we can guess which project likely had the largest difference. Maybe the one with the most complex project: \"株式会社青葉バイオメディカル機器\" has 21 slides, 7 tables. That might indicate more detailed analysis. But difference could be large.\n\nAlternatively, \"医療法人社団 恒一会 かえで総合病院\" has 18 slides, 5 tables. \"医療法人社団 蒼樹会 みなみ野女性医療センター\" has 15 pages, but no tables? Actually PDF. \"医療法人社団 蒼泉会 ひがし丘総合病院\" has 18 pages, but no tables? Not sure.\n\n\"白峰信用リスク評価株式会社\" has 19 slides, 3 tables.\n\n\"京橋信用ソリューションズ株式会社\" has 17 slides, 3 tables.\n\n\"株式会社東都人材プラットフォーム\" has 16 slides, 2 tables.\n\n\"株式会社青嶺不動産アセットマネジメント\" has 17 slides, 0 tables.\n\n\"株式会社青潮モビリティサービス\" has 13 pages, no",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"事後精算案件のうち、提案時の見積工数と最終報告で報告されている実績工数の乖離が最も大きい案件を主略称で挙げてください。\"\n\nWe have multiple projects. Need to find the one with largest difference between estimated hours at proposal and actual hours reported in final report. We need to look into the final report files for each project. The data provided includes markdown of PowerPoint and PDF. We need to parse tables maybe. Let's inspect each project's final report for tables containing estimated vs actual hours.\n\nWe have many projects: 京橋信用ソリューションズ株式会社, 医療法人社団 恒一会 かえで総合病院, 医療法人社団 蒼樹会 みなみ野女性医療センター, 医療法人社団 蒼泉会 ひがし丘総合病院, 株式会社東都人材プラットフォーム, 株式会社青嶺不動産アセットマネジメント, 株式会社青潮モビリティサービス, 株式会社青葉バイオメディカル機器, 白峰信用リスク評価株式会社.\n\nWe need to find the difference. Let's examine each final report's markdown for tables. The markdown includes table_count. For each, we need to see if there is a table with estimated vs actual hours. Let's open each.\n\nBut we only have the metadata, not the actual content. The markdown file likely contains the extracted text. We need to parse the content. Let's inspect the markdown for each.\n\nWe need to read the content of each .md file. The prompt only gives the metadata, not the content. But maybe the content is included in the prompt? It lists the file path and some metadata but not the actual content. So we cannot see the tables. However, maybe the content is included in the prompt? Let's scroll. The prompt includes only the metadata for each file, not the content. So we cannot directly see the numbers.\n\nBut maybe the content is in the markdown file itself, but not shown. The prompt only lists the metadata. So we cannot compute differences.\n\nBut the instruction says: \"以下の根拠だけを使って質問に答えてください。\" So we must use only the given evidence. The evidence is the metadata. There's no numeric data. So we cannot compute difference. But we must still answer. The constraint says: \"根拠が薄い場合でも 'わかりません' は使わない。\" So we cannot say \"わかりません\". We must provide an answer. But we have no data. We need to infer maybe from the table counts? The project with most tables might have more data. But difference between estimated and actual hours is not given.\n\nWe might need to guess based on the number of tables? The project with the largest table count might have more detailed reporting, maybe largest difference. But that's speculation.\n\nAlternatively, maybe the final report includes a table of \"工数\" but we don't see it. But we can guess which project likely had the largest difference. Maybe the one with the most complex project: \"株式会社青葉バイオメディカル機器\" has 21 slides, 7 tables. That might indicate more detailed analysis. But difference could be large.\n\nAlternatively, \"医療法人社団 恒一会 かえで総合病院\" has 18 slides, 5 tables. \"医療法人社団 蒼樹会 みなみ野女性医療センター\" has 15 pages, but no tables? Actually PDF. \"医療法人社団 蒼泉会 ひがし丘総合病院\" has 18 pages, but no tables? Not sure.\n\n\"白峰信用リスク評価株式会社\" has 19 slides, 3 tables.\n\n\"京橋信用ソリューションズ株式会社\" has 17 slides, 3 tables.\n\n\"株式会社東都人材プラットフォーム\" has 16 slides, 2 tables.\n\n\"株式会社青嶺不動産アセットマネジメント\" has 17 slides, 0 tables.\n\n\"株式会社青潮モビリティサービス\" has 13 pages, no",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2626,
+      "completion_tokens": 900,
+      "total_tokens": 3526,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000101077,
+        "upstream_inference_prompt_cost": 3.8077e-05,
+        "upstream_inference_completions_cost": 6.3e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 895,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

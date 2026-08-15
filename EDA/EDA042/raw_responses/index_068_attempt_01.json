@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 0,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783592960-9U9GnSKX3rPgHd1MSY7D",
+    "object": "chat.completion",
+    "created": 1783592960,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need to answer: \"投資実装係数の計算式が記載されているページの数値情報を式に代入し、投資実装係数を小数で答えてください。\"\n\nWe need to find the PDF \"データサイエンス市場の未来予測.pdf\" and locate the calculation formula for 投資実装係数 (investment implementation coefficient). We need to use the numeric values from that page, substitute into the formula, compute the coefficient as a decimal.\n\nWe have the PDF markdown file path: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/データサイエンス市場の未来予測.pdf.md. We need to inspect its content. The markdown likely contains the PDF text extracted. We need to find the formula and numeric values.\n\nWe need to parse the markdown. Let's open the file content. But we don't have direct file reading. We need to infer from the provided data. The markdown file is referenced but not included. We need to guess the content? The question expects we can find the formula and numbers. But we only have the metadata. We might need to assume typical formula? But we need to produce a numeric answer.\n\nWe need to search within the provided data for \"投資実装係数\" or similar. Let's search the provided text. The provided text includes many paragraphs but not the PDF content. The PDF markdown file is not included. So we cannot see the formula. But maybe the formula is in the PDF and we need to compute. But we don't have the numbers.\n\nWe might need to approximate? But the instruction says \"根拠だけを使って質問に答えてください.\" So we must use only the provided evidence. The evidence includes the PDF markdown file path but not content. So we cannot compute. But maybe the PDF markdown file content is included in the data? The snippet shows only the header of the markdown file, not the content. So we cannot find the formula.\n\nThus we cannot answer. But the instruction says \"根拠が薄い場合でも 'わかりません' は使わない.\" So we cannot say \"わかりません\". We must produce an answer. But we have no evidence. We might need to guess? But we cannot guess.\n\nMaybe the formula is standard: 投資実装係数 = (投資額 / 実装コスト) or something. But we don't know numbers.\n\nWe need to find numeric values. The PDF might contain numbers like \"投資実装係数 = 0.85\" or something. But we don't know.\n\nWe could search the entire dataset for \"投資実装係数\" but we only have the provided text. Let's search manually: The provided text includes many paragraphs but not that phrase. So no.\n\nThus we cannot answer. But we must produce a JSON with answer. We could produce a plausible numeric answer? But that would be unsupported.\n\nMaybe the PDF contains a formula: 投資実装係数 = (投資額 / 実装コスト) * 100? But we don't know.\n\nWe might need to produce a generic answer like \"0.75\" but that would be random.\n\nGiven the instruction, we must not say \"わかりません\". But we can produce an answer based on assumption? But that would violate evidence.\n\nMaybe we can produce \"0.0\"? But that is also unsupported.\n\nWe need to think: The question: \"投資実装係数の計算式が記載されているページの数値情報を式に代入し、投資実装係数を小数で答えてください。\"\n\nWe need to find the formula and numeric values. The PDF has 15 pages. The formula might be on page X. We need to compute.\n\nBut we don't have the PDF content. So we cannot compute.\n\nThus we cannot answer. But we cannot say \"わかりません\". We could produce a placeholder like \"0.0\" but that is not based on evidence.\n\nMaybe we can produce \"0.0\" as a default? But that would be wrong.\n\nWe might need to produce an answer that is \"0.0\" but we need to justify with evidence. But we have no",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"投資実装係数の計算式が記載されているページの数値情報を式に代入し、投資実装係数を小数で答えてください。\"\n\nWe need to find the PDF \"データサイエンス市場の未来予測.pdf\" and locate the calculation formula for 投資実装係数 (investment implementation coefficient). We need to use the numeric values from that page, substitute into the formula, compute the coefficient as a decimal.\n\nWe have the PDF markdown file path: data/processed/share/share/共有ドライブ/プロジェクト/株式会社東都人材プラットフォーム/00.提案/データサイエンス市場の未来予測.pdf.md. We need to inspect its content. The markdown likely contains the PDF text extracted. We need to find the formula and numeric values.\n\nWe need to parse the markdown. Let's open the file content. But we don't have direct file reading. We need to infer from the provided data. The markdown file is referenced but not included. We need to guess the content? The question expects we can find the formula and numbers. But we only have the metadata. We might need to assume typical formula? But we need to produce a numeric answer.\n\nWe need to search within the provided data for \"投資実装係数\" or similar. Let's search the provided text. The provided text includes many paragraphs but not the PDF content. The PDF markdown file is not included. So we cannot see the formula. But maybe the formula is in the PDF and we need to compute. But we don't have the numbers.\n\nWe might need to approximate? But the instruction says \"根拠だけを使って質問に答えてください.\" So we must use only the provided evidence. The evidence includes the PDF markdown file path but not content. So we cannot compute. But maybe the PDF markdown file content is included in the data? The snippet shows only the header of the markdown file, not the content. So we cannot find the formula.\n\nThus we cannot answer. But the instruction says \"根拠が薄い場合でも 'わかりません' は使わない.\" So we cannot say \"わかりません\". We must produce an answer. But we have no evidence. We might need to guess? But we cannot guess.\n\nMaybe the formula is standard: 投資実装係数 = (投資額 / 実装コスト) or something. But we don't know numbers.\n\nWe need to find numeric values. The PDF might contain numbers like \"投資実装係数 = 0.85\" or something. But we don't know.\n\nWe could search the entire dataset for \"投資実装係数\" but we only have the provided text. Let's search manually: The provided text includes many paragraphs but not that phrase. So no.\n\nThus we cannot answer. But we must produce a JSON with answer. We could produce a plausible numeric answer? But that would be unsupported.\n\nMaybe the PDF contains a formula: 投資実装係数 = (投資額 / 実装コスト) * 100? But we don't know.\n\nWe might need to produce a generic answer like \"0.75\" but that would be random.\n\nGiven the instruction, we must not say \"わかりません\". But we can produce an answer based on assumption? But that would violate evidence.\n\nMaybe we can produce \"0.0\"? But that is also unsupported.\n\nWe need to think: The question: \"投資実装係数の計算式が記載されているページの数値情報を式に代入し、投資実装係数を小数で答えてください。\"\n\nWe need to find the formula and numeric values. The PDF has 15 pages. The formula might be on page X. We need to compute.\n\nBut we don't have the PDF content. So we cannot compute.\n\nThus we cannot answer. But we cannot say \"わかりません\". We could produce a placeholder like \"0.0\" but that is not based on evidence.\n\nMaybe we can produce \"0.0\" as a default? But that would be wrong.\n\nWe might need to produce an answer that is \"0.0\" but we need to justify with evidence. But we have no",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7468,
+      "completion_tokens": 900,
+      "total_tokens": 8368,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000171286,
+        "upstream_inference_prompt_cost": 0.000108286,
+        "upstream_inference_completions_cost": 6.3e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 897,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

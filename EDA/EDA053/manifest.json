@@ -1,0 +1,18 @@
+{
+  "eda": "EDA053",
+  "before_unknown": 16,
+  "safe_unknown": 14,
+  "aggressive_unknown": 12,
+  "safe_zip": "EDA/EDA053/predictions/eda053_safe_unknown_reduction_submission.zip",
+  "aggressive_zip": "EDA/EDA053/predictions/eda053_aggressive_unknown_reduction_submission.zip",
+  "outputs": [
+    "EDA/EDA053/tables/eda053_candidate_pool.csv",
+    "EDA/EDA053/tables/eda053_safe_adoption_log.csv",
+    "EDA/EDA053/tables/eda053_aggressive_adoption_log.csv",
+    "EDA/EDA053/predictions/eda053_safe_unknown_reduction_predictions.csv",
+    "EDA/EDA053/predictions/eda053_safe_unknown_reduction_submission.zip",
+    "EDA/EDA053/predictions/eda053_aggressive_unknown_reduction_predictions.csv",
+    "EDA/EDA053/predictions/eda053_aggressive_unknown_reduction_submission.zip",
+    "EDA/EDA053/eda053_report.md"
+  ]
+}

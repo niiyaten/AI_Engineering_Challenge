@@ -1,0 +1,194 @@
+# test_035
+
+## Question
+京橋信用ソリューションズの京橋信用ソリューションズ株式会社_最終報告.pptxにおいて、F1スコアにてgradient_boostingに次ぐ順位のモデルの Accuracy はいくつですか。
+
+## Route
+fallback_bm25_llm
+
+## Generated Answer
+京橋信用ソリューションズ株式会社
+
+## Retrieved Records
+
+### Rank 1
+- score: 239.038135
+- record_id: `metadata_1821b471f0dc23dd`
+- record_type: `metadata`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+ファイル名: 京橋信用ソリューションズ株式会社_最終報告.pptx
+元パス: share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx
+ファイル種別: pptx
+```
+
+### Rank 2
+- score: 221.246465
+- record_id: `pptx_slide_4206e9b8949560a9`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 8
+4. モデル性能比較 ─ チャート
+Chart: {"chart_type": "BAR_CLUSTERED (57)", "title": "F1 (macro) - モデル比較", "series_count": 1, "category_axis_title": "", "value_axis_title": ""}
+```
+
+### Rank 3
+- score: 216.352175
+- record_id: `pptx_slide_10ced95729ea384e`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 1
+最終分析報告書
+定期預金契約有無予測・説明可能性分析プロジェクト
+甲
+京橋信用ソリューションズ株式会社
+リスク管理部 与信モデル統括課
+乙
+株式会社データアステル
+データサイエンス部
+報告日
+2025年11月11日
+```
+
+### Rank 4
+- score: 211.339778
+- record_id: `pptx_slide_d6564141622d2e46`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 2
+ビジネス成果
+予測スコア上位10%のPrecision = 0.589
+上位層に契約が濃縮されることを確認
+営業効率化の初期導出に成功
+説明可能性情報を整備し、実運用性の議論基礎を提供
+分析成果
+AUC(ROC) = 0.925
+Accuracy = 0.900 / F1(macro) = 0.722
+Brier score = 0.066
+gradient_boosting を中心に検証
+duration含有/非含有モデルを分離評価
+運用提言（要点）
+事前判断にはduration除外モデルを使用
+上位スコア群でA/Bテストを短期実施
+業務効果を定量検証すること
+監査証跡・アクセス制御を本番化前に実装
+1. エグゼクティブサマリー
+甲：京橋信用ソリューションズ株式会社 / 乙：株式会社データアステル｜契約期間 2025-10-01 ～ 6週間｜固定価格契約
+```
+
+### Rank 5
+- score: 201.372824
+- record_id: `pptx_slide_edc6714980665a8b`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 5
+3. プロジェクト体制
+甲（発注者）
+京橋信用ソリューションズ株式会社
+リスク管理部 与信モデル統括課
+窓口: 高橋 恒一（課長）
+乙（受注者）─ 株式会社データアステル データサイエンス部
+山田 直樹 ─ エグゼクティブスポンサー
+佐藤 健一 ─ プロジェクトマネージャー
+鈴木 美咲 ─ リードデータサイエンティスト
+斎藤 悠斗 ─ データエンジニア
+井上 里奈 ─ ビジネスアナリスト
+池田 恒一 ─ QA
+主要会議タイムライン
+M01
+2025-10-01
+キックオフ
+M02
+2025-10-29
+中間報告
+M03
+2025-11-11
+最終報告・検収会
+```
+
+### Rank 6
+- score: 197.309671
+- record_id: `pptx_slide_bdf134f6ada87870`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 7
+| col_1 | col_2 | col_3 | col_4 |
+| --- | --- | --- | --- |
+| Rank | モデル種別 | F1 (macro) | Accuracy |
+| 1 | gradient_boosting | 0.72243 | 0.89993 |
+| 2 | random_forest | 0.71486 | 0.90527 |
+| 3 | random_forest | 0.70972 | 0.90269 |
+| 4 | random_forest | 0.70496 | 0.90270 |
+| 5 | random_forest | 0.70172 | 0.89956 |
+| 6 | random_forest | 0.70149 | 0.90327 |
+4. モデル比較 ─ リーダーボード
+duration変数の影響と運用留意
+durationを含むモデルは事後分析で性能が向上する傾向がある
+接触前の意思決定用には情報リークとなるため、事前用途ではduration除外モデルを採用する（方針は提案書・契約で既定）
+重要変数ランキング・方向性・個票説明は成果物にて提示済み
+```
+
+### Rank 7
+- score: 196.88881
+- record_id: `pptx_slide_b04b398906f85f8c`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 6
+4. 主要分析結果 ─ モデル性能
+データ: 27,128件 / 18カラム　｜　学習: 21,702件　｜　テスト: 5,426件　｜　モデル: gradient_boosting
+AUC (ROC)
+0.925
+識別能力
+Accuracy
+0.900
+正確度
+F1 (macro)
+0.722
+総合精度
+Brier Score
+0.066
+確率較正
+Precision@Top10%
+0.589
+上位抽出精度
+解釈
+高いAUCと上位抽出精度（Precision@Top10% ≈ 0.589）は、スコア上位の顧客群に契約が濃縮されていることを示す
+接触優先度付けの初期運用に有用である
+目的変数は不均衡（全体契約率 11.7%）であり、Accuracy単独の評価は誤解を招く
+業務評価ではAUC/上位抽出指標を重視すべきである
+Brier scoreの値は確率閾値設定時の較正参考情報として有用
+```
+
+### Rank 8
+- score: 193.320716
+- record_id: `pptx_slide_4cc28c6e1e2a8ef6`
+- record_type: `pptx_slide`
+- source_path: `share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/06.報告書/京橋信用ソリューションズ株式会社_最終報告.pptx`
+
+```text
+Slide 15
+| col_1 | col_2 | col_3 |
+| --- | --- | --- |
+| 成果物 | 状態 | 参照先 |
+| 提案書 | 提出済 | 提供資料 |
+| 契約書 | 合意済（2025-10-01） | 提供資料 |
+| スケジュール | 提出済 | artifacts/スケジュール資料 |
+| 議事録 M01/M02 | 提出済 | artifacts/meeting_minutes/ |
+| 中間報告書 | 提出済（M02） | artifacts/reports/報告資料_2025-10-29.md |
+| 最終報告書 | 提出日 2025-11-11 | 本書 |
+| 分析補足・再現性情報 | 提出済 | artifacts/analysis_outputs/ |
+9. 成果物サマリー
+```

@@ -1,0 +1,7 @@
+﻿failure_area,count
+calculation,7
+target_retrieval,6
+answer_formatting,5
+code_retrieval_or_output_extraction,4
+format_metadata_extraction,2
+diff_pipeline,1

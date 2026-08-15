@@ -1,0 +1,7 @@
+﻿diagnostic_bucket,count
+unknown_answer,14
+correct_exact,5
+partial_or_over_answer,4
+weak_overlap_wrong,3
+wrong_evidence_or_missing_process,3
+format_normalization_needed,1

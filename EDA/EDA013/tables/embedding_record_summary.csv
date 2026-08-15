@@ -1,0 +1,5 @@
+﻿record_type,record_count,empty_text_count,short_text_count_lt_20,avg_text_length
+image,55,0,0,673.2
+metadata,46,0,0,115.3
+paragraph,757,0,97,346.5
+table,78,0,1,516.4

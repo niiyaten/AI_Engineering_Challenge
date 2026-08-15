@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 恒一会 かえで総合病院の提案書において、スコープ対象外としている項目はいくつありますか。\nroute: document_whole_context\nsubtype: document_whole_context\n候補生成方法: not_implemented\n候補信頼度: none\nneeds_review: True\nEDA035回答: 7\n回答候補: 7\n参照元: \n根拠抜粋:\n"
+    }
+  ],
+  "gold_answer_not_included": true
+}

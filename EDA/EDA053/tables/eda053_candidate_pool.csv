@@ -1,0 +1,5 @@
+﻿index,candidate_answer,source,needs_review,safe_to_use,evidence
+18,2,EDA052_pdf_vision_ocr,False,True,EDA/EDA052/rendered_pages/白峰信用リスク評価株式会社_会議録_2025_07_15_pdf_page002.png
+93,index再実験の結果反映,EDA052_pdf_vision_ocr,False,True,EDA/EDA052/rendered_pages/医療法人社団_蒼樹会_みなみ野女性医療センター_会議録_2025_05_15_pdf_page002.png
+44,高橋、池田,EDA049_seat_coordinate_seed,True,False,EDA/EDA049/tables/seat_coordinate_table.csv
+58,7103,EDA049_seat_coordinate_seed,True,False,EDA/EDA049/tables/seat_coordinate_table.csv

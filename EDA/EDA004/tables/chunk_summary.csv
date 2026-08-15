@@ -1,0 +1,5 @@
+﻿extension,chunk_count,mean_chunk_length,max_chunk_length
+.docx,457,1154.5,1200
+.pdf,76,913.1,1200
+.pptx,149,1124.5,1200
+.xlsx,629,1187.7,1200

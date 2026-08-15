@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは構造化データから作られた回答候補を、提出用の短い最終回答に整えるアシスタントです。提示された候補、根拠、信頼度だけを使ってください。外部知識や推測で候補にない値を足さないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が複数項目の場合は、候補内の順序をできるだけ保ち、日本語の読点「、」で区切ってください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する最終回答だけを返してください。\n\n質問: 蒼泉会 ひがし丘総合病院案件において、中間報告資料に記載されたMacro F1スコアの詳細値と、最終分析出力metrics.jsonに記録されているMacro F1スコアの詳細値を用いて、改善幅を小数第6位まで答えてください。\nroute: document_whole_context\n候補生成方法: metrics_json_macro_f1_delta\n候補信頼度: high\n回答候補: 0.010301\n補足: nan\n根拠抜粋:\nmid_macro_f1=0.7319904178115971 source=data\\processed\\share\\share\\共有ドライブ\\プロジェクト\\医療法人社団 蒼泉会 ひがし丘総合病院\\05.会議\\報告資料\\報告資料_2025-07-22.docx.md\nfinal_f1_macro=0.7422917255604067 source=data\\raw\\share\\share\\共有ドライブ\\プロジェクト\\医療法人社団 蒼泉会 ひがし丘総合病院\\04.分析\\analysis_outputs\\metrics.json"
+    }
+  ],
+  "gold_answer_not_included": true
+}

@@ -1,0 +1,46 @@
+{
+  "eda": "EDA007",
+  "created_at": "2026-07-06T02:00:36",
+  "purpose": "Create LLM-ready Markdown contexts from EDA006/EDA005 retrieval logs.",
+  "parameters": {
+    "top_k": 5,
+    "max_chars_per_evidence": 1800,
+    "build_test_contexts": false
+  },
+  "inputs": [
+    {
+      "path": "EDA/EDA006/tables/valid_llm_readiness.csv",
+      "sha1": "4924ffe64ba060c4db8560c11c3ee0892b527da1",
+      "bytes": 52505
+    },
+    {
+      "path": "EDA/EDA006/tables/valid_top_sources.csv",
+      "sha1": "8134e6e816d8c457b607bd7c3e2dbb8814a6693c",
+      "bytes": 320120
+    },
+    {
+      "path": "EDA/EDA005/tables/test_answer_log.csv",
+      "sha1": "7d5eef6e43e10368986826ac394b1e64f1bc0d42",
+      "bytes": 95410
+    },
+    {
+      "path": "EDA/EDA005/tables/test_retrieval_log.csv",
+      "sha1": "b1fd4bec9ef24c3eeb5217c75c653e63abc88150",
+      "bytes": 961410
+    }
+  ],
+  "outputs": {
+    "report": "EDA/EDA007/eda007_report.md",
+    "manifest": "EDA/EDA007/manifest.json",
+    "context_quality": "EDA/EDA007/tables/context_quality.csv",
+    "contexts_dir": "EDA/EDA007/contexts"
+  },
+  "repro_steps": [
+    "uv run python EDA/EDA006/eda006.py",
+    "uv run python EDA/EDA007/eda007.py"
+  ],
+  "notes": [
+    "This EDA does not call an LLM API.",
+    "Validation answers are included only for context quality diagnosis, not for hard-coded test answering."
+  ]
+}

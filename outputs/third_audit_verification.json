@@ -1,0 +1,229 @@
+{
+  "tests": {
+    "project_pytest": "23/23",
+    "overlay_pytest": "5/5"
+  },
+  "coldstart_summary": {
+    "cold_start": true,
+    "question_count": 100,
+    "answered_count": 100,
+    "abstained_count": 0,
+    "evidence_answered_count": 100,
+    "remaining50_route_count": 49,
+    "audit_route_count": 19,
+    "base_route_count": 30,
+    "timeout_count": 0,
+    "exception_count": 0,
+    "prepare_seconds": 4.433,
+    "execution_wall_seconds": 652.398,
+    "total_wall_seconds": 656.831,
+    "question_elapsed_seconds": 529.573,
+    "runtime_inputs": {
+      "source_mode": "share_zip_cold_prepare",
+      "prepared_source_tree": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/work/third_audit_coldstart100_v2/office/prepared_share",
+      "share_zip": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/materials/share.zip",
+      "questions": "/mnt/data/run_third_audit_v2/rag_integrated100_second_audit_coldstart_v1/questions/integrated100_questions.csv",
+      "fact_catalog": false,
+      "prior_answers": false,
+      "expected_answers": false,
+      "external_api": false
+    },
+    "office_events": [
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/~$スケジュール.xlsx",
+        "status": "ignored_office_temp"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx",
+        "status": "decrypted",
+        "derivation": "DA******************sx"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx",
+        "status": "decrypted",
+        "derivation": "ka*********02"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/~$提案書.pptx",
+        "status": "ignored_office_temp"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/.~lock.青葉与信マネジメント株式会社_最終報告old.pptx#",
+        "status": "ignored_office_temp"
+      }
+    ]
+  },
+  "diff": {
+    "answer_diffs": [
+      {
+        "index": 6,
+        "old": "0円",
+        "new": "実績工数の最終確定値および確定した最終請求金額が資料に含まれていないため、差額は算出できません。"
+      },
+      {
+        "index": 35,
+        "old": "0.905271",
+        "new": "0.90527"
+      }
+    ],
+    "route_diffs": [
+      {
+        "index": 6,
+        "old": "remaining50_generalization",
+        "new": "tm_invoice_difference"
+      },
+      {
+        "index": 35,
+        "old": "base_recovery",
+        "new": "scoring_precision"
+      }
+    ],
+    "method_diffs": [
+      {
+        "index": 6,
+        "old": "proposal_final_tax_included_difference",
+        "new": "tm_final_invoice_not_determinable"
+      },
+      {
+        "index": 35,
+        "old": "leaderboard_relative_metric_lookup",
+        "new": "pptx_displayed_ranked_metric"
+      }
+    ],
+    "evidence_count_diffs": [
+      {
+        "index": 6,
+        "old": 2,
+        "new": 6
+      },
+      {
+        "index": 40,
+        "old": 12,
+        "new": 13
+      }
+    ],
+    "target_results": {
+      "6": {
+        "answer": "実績工数の最終確定値および確定した最終請求金額が資料に含まれていないため、差額は算出できません。",
+        "route": "tm_invoice_difference",
+        "method": "tm_final_invoice_not_determinable",
+        "confidence": 0.995,
+        "evidence_count": 6,
+        "diagnostics": {
+          "tm_or_actual_hours": true,
+          "displayed_amount_is_estimate": true,
+          "final_actual_missing": true,
+          "timesheet_is_authoritative": true,
+          "indeterminable": true
+        }
+      },
+      "35": {
+        "answer": "0.90527",
+        "route": "scoring_precision",
+        "method": "pptx_displayed_ranked_metric",
+        "confidence": 0.995,
+        "evidence_count": 1,
+        "diagnostics": {
+          "slide": 7,
+          "table": 1,
+          "reference_model": "gradient_boosting",
+          "target_model": "random_forest",
+          "rank_metric": "F1",
+          "output_metric": "Accuracy",
+          "displayed_value": "0.90527",
+          "table_rows": [
+            [
+              "Rank",
+              "モデル種別",
+              "F1 (macro)",
+              "Accuracy"
+            ],
+            [
+              "1",
+              "gradient_boosting",
+              "0.72243",
+              "0.89993"
+            ],
+            [
+              "2",
+              "random_forest",
+              "0.71486",
+              "0.90527"
+            ],
+            [
+              "3",
+              "random_forest",
+              "0.70972",
+              "0.90269"
+            ],
+            [
+              "4",
+              "random_forest",
+              "0.70496",
+              "0.90270"
+            ],
+            [
+              "5",
+              "random_forest",
+              "0.70172",
+              "0.89956"
+            ],
+            [
+              "6",
+              "random_forest",
+              "0.70149",
+              "0.90327"
+            ]
+          ]
+        }
+      },
+      "36": {
+        "answer": "0.09619113",
+        "route": "remaining50_generalization",
+        "method": "interim_report_vs_metrics_f1_difference",
+        "confidence": 0.98,
+        "evidence_count": 2,
+        "diagnostics": {
+          "raw_difference": 0.09619112771492555,
+          "rounding": "nearest_8_decimal_places",
+          "remaining50_attempts": [
+            {
+              "handler": "_f1_stage_difference",
+              "answered": true,
+              "reason": ""
+            }
+          ]
+        }
+      },
+      "40": {
+        "answer": "1位：2025年10月 11,412,500円、2位：2025年9月 9,858,750円、3位：2025年8月 8,118,000円",
+        "route": "remaining50_generalization",
+        "method": "cross_project_monthly_settlement_ranking",
+        "confidence": 0.98,
+        "evidence_count": 13,
+        "diagnostics": {
+          "monthly": {
+            "2025-10": 11412500.0,
+            "2025-11": 2887500.0,
+            "2025-05": 6952000.0,
+            "2025-08": 8118000.0,
+            "2025-09": 9858750.0,
+            "2025-07": 4488000.0,
+            "2025-04": 2310000.0,
+            "2025-06": 2310000.0
+          },
+          "remaining50_attempts": [
+            {
+              "handler": "_cross_project_operations",
+              "answered": true,
+              "reason": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  "submission_zip_members": [
+    "predictions.csv"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "eda": "EDA037",
+  "input": "EDA/EDA036/tables/test_openrouter_structured_answer_log.csv",
+  "test_count": 100,
+  "before_non_unknown_count": 33,
+  "added_non_unknown_count": 4,
+  "after_non_unknown_count": 37,
+  "outputs": [
+    "EDA/EDA037/tables/test_unhandled_route_candidates.csv",
+    "EDA/EDA037/predictions/predictions.csv",
+    "EDA/EDA037/predictions/eda037_unhandled_routes_submission.zip",
+    "EDA/EDA037/eda037_report.md"
+  ]
+}

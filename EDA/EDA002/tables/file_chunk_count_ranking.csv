@@ -1,0 +1,200 @@
+﻿document_id,extension,relative_path,chunk_count,mean_chunk_length,max_chunk_length,chunk_share
+doc_fedf164e75a35759,.ipynb,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/notebooks/01_eda.ipynb,37,1149.0,1199,0.0301
+doc_f8aa3d477d935cb8,.ipynb,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb,36,1170.1,1199,0.0293
+doc_c24302a2e2b18332,.csv,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/train.csv,36,1030.3,1200,0.0293
+doc_e2f7ed7ede4cfe4f,.csv,プロジェクト/白峰信用リスク評価株式会社/03.データ/train.csv,36,1029.7,1200,0.0293
+doc_10145cb6808672ad,.ipynb,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/notebooks/01_eda.ipynb,35,1147.5,1198,0.0285
+doc_f7bbe31b3fc35746,.ipynb,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/notebooks/01_eda.ipynb,35,1155.1,1195,0.0285
+doc_e52d8af8e3e09f73,.ipynb,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb,34,1151.9,1199,0.0276
+doc_de03c1e2611d7376,.ipynb,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/notebooks/01_eda.ipynb,34,1157.0,1199,0.0276
+doc_c76ce2191c7a7cf9,.ipynb,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda_old.ipynb,34,1152.3,1199,0.0276
+doc_281f4f8dee33851a,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/scripts/run_train.py,31,1160.4,1199,0.0252
+doc_cecf9c7ef79041bf,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/scripts/run_train.py,31,1145.3,1198,0.0252
+doc_f90e331bf1399a0f,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/scripts/run_train.py,31,1144.6,1199,0.0252
+doc_ef874fff56cacbf8,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/run_train.py,31,1145.6,1198,0.0252
+doc_fc494cad6b99891d,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/scripts/run_train.py,31,1145.3,1198,0.0252
+doc_bc9c5d0845ebe443,.ipynb,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/notebooks/01_eda.ipynb,29,1145.2,1197,0.0236
+doc_f7950acecd6c9962,.ipynb,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/notebooks/01_eda.ipynb,28,1139.6,1199,0.0228
+doc_f74251b3e48af6b1,.ipynb,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb,21,1127.8,1199,0.0171
+doc_22cccbd0e3648b72,.csv,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/train_preview.csv,19,1141.4,1173,0.0154
+doc_81b5cef8ad5b6965,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/scripts/run_train.py,16,1146.7,1192,0.013
+doc_0f57c5fbd2e6af70,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/features.py,14,1111.7,1198,0.0114
+doc_24f68be614ae06ba,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/features.py,14,1127.7,1198,0.0114
+doc_a7831b1e65e476d4,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/features.py,14,1111.6,1198,0.0114
+doc_ab1cf8f76179470e,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/features.py,14,1111.3,1198,0.0114
+doc_3f4953fa88bfe0f5,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/features.py,14,1112.3,1198,0.0114
+doc_8289b30011ebfdb4,.csv,プロジェクト/株式会社青葉バイオメディカル機器/03.データ/train.csv,12,1129.3,1196,0.0098
+doc_558f0524ad87a81b,.csv,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/train.csv,12,1131.1,1196,0.0098
+doc_5552792aa0ca3de3,.csv,プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/train.csv,9,1076.2,1187,0.0073
+doc_7902420a604106c8,.csv,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/train.csv,9,1112.7,1196,0.0073
+doc_68708c847d336a37,.csv,プロジェクト/株式会社東都人材プラットフォーム/03.データ/train.csv,9,1110.4,1191,0.0073
+doc_82125ed4d019a613,.csv,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/data/train.csv,9,1078.4,1187,0.0073
+doc_2e32d4ca43675d3d,.csv,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_outputs/experiments/leaderboard.csv,7,966.7,1137,0.0057
+doc_b967690960f21267,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/features.py,7,1092.4,1198,0.0057
+doc_f6d86c0ce916d60f,.csv,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/train.csv,7,1078.9,1197,0.0057
+doc_0e1137ba748ece0a,.csv,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_outputs/experiments/leaderboard.csv,7,966.9,1126,0.0057
+doc_24502e3ef0056698,.csv,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_outputs/experiments/leaderboard.csv,7,968.3,1132,0.0057
+doc_5361492f93699d0c,.csv,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_outputs/experiments/leaderboard.csv,7,957.7,1122,0.0057
+doc_36f301e2b52f8a47,.json,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_outputs/metrics.json,7,1178.9,1192,0.0057
+doc_f0b7ce29b366c297,.csv,プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/train.csv,7,1076.0,1197,0.0057
+doc_a02be78e1b4315df,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/scripts/run_train.py,7,1078.1,1199,0.0057
+doc_a0fd6f5f05b5dd58,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/evaluate.py,6,1044.3,1197,0.0049
+doc_c79f81515adf28ee,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/features.py,6,1082.2,1189,0.0049
+doc_88188138ccc291b4,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/evaluate.py,6,1029.0,1197,0.0049
+doc_6d0a991eb76eb5b8,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/modeling.py,6,1180.2,1196,0.0049
+doc_6a440e8b3c08cbf4,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/scripts/run_train.py,6,1038.0,1196,0.0049
+doc_aacf7f80580f34e1,.json,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_outputs/metrics.json,6,1058.5,1192,0.0049
+doc_16621eff4a643323,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/common.py,6,1025.0,1191,0.0049
+doc_1cd270041a996a35,.csv,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/train.csv,6,1067.3,1197,0.0049
+doc_3be8232a867332aa,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/evaluate.py,6,1028.0,1197,0.0049
+doc_4e1099d00a881ae1,.csv,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/train.csv,6,1132.5,1199,0.0049
+doc_3a4ec1c7b2c7c79b,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/scripts/run_train.py,6,1037.0,1196,0.0049
+doc_54f7a587902566e7,.csv,プロジェクト/青葉与信マネジメント株式会社/03.データ/train.csv,6,1064.0,1190,0.0049
+doc_1e6589b3cb58b1fe,.csv,プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv,6,1129.2,1193,0.0049
+doc_33f341fcbd1012c0,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/modeling.py,6,1014.8,1196,0.0049
+doc_1408e79e6e967a74,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/evaluate.py,6,1030.3,1197,0.0049
+doc_f72c5e1ddb7d8121,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/scripts/run_train.py,6,1037.3,1196,0.0049
+doc_dddfd875bf5ef009,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/evaluate.py,6,1028.7,1197,0.0049
+doc_3a3798293b040d44,.json,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_outputs/metrics.json,5,1069.4,1197,0.0041
+doc_2bb16ab61c92646e,.csv,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_outputs/experiments/leaderboard.csv,5,1073.2,1199,0.0041
+doc_b126b2974232ad86,.json,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_outputs/metrics.json,5,1052.8,1197,0.0041
+doc_dc5b0dfe2ee237be,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/modeling.py,5,1108.0,1191,0.0041
+doc_d767f6662cee7116,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/modeling.py,5,1178.6,1199,0.0041
+doc_1ea2a54683bef8f1,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/modeling.py,5,1177.4,1193,0.0041
+doc_067bd64bbc7e38d8,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/modeling.py,5,1178.2,1197,0.0041
+doc_6e2805f333f811a4,.csv,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_outputs/experiments/leaderboard.csv,5,1055.2,1182,0.0041
+doc_737214815983ed61,.json,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_outputs/run_summary.json,5,1152.2,1188,0.0041
+doc_fad68ef3678d5e6e,.json,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_outputs/metrics.json,5,997.6,1192,0.0041
+doc_0d60794bf3097db5,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/modeling.py,4,1000.8,1185,0.0033
+doc_029e628a13ac2b17,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/evaluate.py,4,1170.0,1193,0.0033
+doc_0ae9e1534cae15c8,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/common.py,4,1137.5,1187,0.0033
+doc_1e3b92117a4a8830,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/preprocess.py,4,1175.5,1197,0.0033
+doc_280b55944a8fdcb5,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/evaluate.py,4,984.2,1196,0.0033
+doc_f1b6bbe3127cf65b,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/common.py,4,1141.5,1187,0.0033
+doc_9d2929f817eac1f6,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/preprocess.py,4,1172.0,1197,0.0033
+doc_96cf6cbaffbfb1b2,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/preprocess.py,4,1173.0,1197,0.0033
+doc_50640f919a8a5d95,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/evaluate.py,4,1009.8,1187,0.0033
+doc_1e2db3541c1a0fc7,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/modeling.py,4,1135.2,1171,0.0033
+doc_4034b639f8483885,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/common.py,4,1139.0,1187,0.0033
+doc_5a7ff113706b34f9,.json,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_outputs/metrics.json,4,1026.0,1185,0.0033
+doc_3c93093dd88ecbe2,.json,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/configs/project_config.json,4,956.2,1199,0.0033
+doc_f062d221f6ec0542,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/preprocess.py,4,1171.5,1197,0.0033
+doc_f14b6058ffa5eba6,.json,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/configs/project_config.json,4,958.5,1186,0.0033
+doc_ce7688021d536580,.csv,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/train.csv,4,1051.5,1158,0.0033
+doc_c5a63224aed5234c,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/common.py,4,1125.0,1196,0.0033
+doc_de32b7556023807d,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/preprocess.py,4,1172.0,1197,0.0033
+doc_d1a0822d781affe3,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/common.py,4,1123.5,1196,0.0033
+doc_df42bbeed2ecd17c,.md,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/data/カラム説明.md,4,1090.8,1198,0.0033
+doc_f09e94176f326091,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/modeling.py,4,997.0,1167,0.0033
+doc_8eeb604150f5af45,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/common.py,4,1139.5,1187,0.0033
+doc_9f239bc617336451,.json,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/configs/project_config.json,4,969.8,1186,0.0033
+doc_8647781b7515011a,.csv,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/train.csv,4,1046.5,1199,0.0033
+doc_a011439c73bf89e8,.md,プロジェクト/白峰信用リスク評価株式会社/03.データ/カラム説明.md,4,1085.8,1198,0.0033
+doc_b4455d3ad41c5d1e,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/modeling.py,4,1000.2,1185,0.0033
+doc_a92b3ee09d7cacc0,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/common.py,4,1139.5,1187,0.0033
+doc_a5cf54d54f8294b6,.json,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/configs/project_config.json,4,955.0,1195,0.0033
+doc_a1d5be6d84cfc929,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/evaluate.py,4,983.2,1196,0.0033
+doc_8bb4390c93da7553,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/preprocess.py,4,1173.5,1197,0.0033
+doc_61d9a6f9c6c8645b,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/common.py,4,1138.0,1187,0.0033
+doc_bc74cf24425e8fcf,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/common.py,4,1124.0,1196,0.0033
+doc_8571f11d232641b4,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/evaluate.py,4,982.8,1196,0.0033
+doc_e0d0e60fe1ea09c9,.csv,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_outputs/experiments/leaderboard.csv,3,1087.3,1170,0.0024
+doc_def36be2f67c1601,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/scripts/bootstrap_env.py,3,853.3,1174,0.0024
+doc_f5b2b882118cf3fb,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/scripts/bootstrap_env.py,3,854.0,1174,0.0024
+doc_3b0fe3778942a535,.json,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_outputs/run_summary.json,3,946.0,1182,0.0024
+doc_2b4c1246ed78e8bb,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/scripts/bootstrap_env.py,3,854.0,1174,0.0024
+doc_51ea46fe3528a0fb,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/features.py,3,976.3,1179,0.0024
+doc_5d5dc7e793a9dd40,.csv,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/03.データ/train.csv,3,1069.7,1196,0.0024
+doc_ff4d3c2960613dea,.md,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/data/カラム説明.md,3,877.3,1200,0.0024
+doc_ec44683818771397,.json,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_outputs/run_summary.json,3,1091.7,1192,0.0024
+doc_a9891ed1fe0130f9,.json,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_outputs/run_summary.json,3,1033.3,1190,0.0024
+doc_9ed171c55586048e,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/features.py,3,975.7,1179,0.0024
+doc_714025bfcd086b23,.csv,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/data/train.csv,3,1076.3,1196,0.0024
+doc_ba7de57750f121ef,.md,プロジェクト/青葉与信マネジメント株式会社/03.データ/カラム説明.md,3,870.7,1200,0.0024
+doc_809f5e5fa5c83651,.json,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/configs/project_config.json,3,1179.0,1199,0.0024
+doc_7faf1ac5a7148aa4,.json,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_outputs/run_summary.json,3,987.0,1199,0.0024
+doc_8b481df003e4748e,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/scripts/bootstrap_env.py,3,856.7,1174,0.0024
+doc_6cd7a172d86b7d6a,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/features.py,3,977.7,1182,0.0024
+doc_f9e73324bba4c52d,.csv,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_outputs/experiments/leaderboard.csv,2,982.5,1141,0.0016
+doc_e5b03481bf52b406,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/preprocess.py,2,714.5,1179,0.0016
+doc_bc948309ee5f8e0a,.md,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/README.md,2,892.0,1191,0.0016
+doc_869528c011366966,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/scripts/bootstrap_env.py,2,1178.0,1196,0.0016
+doc_a2215bebd7ed9487,.md,プロジェクト/株式会社青葉バイオメディカル機器/03.データ/カラム説明.md,2,1114.0,1174,0.0016
+doc_4c0d5e3abbefa7f5,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/scripts/bootstrap_env.py,2,1176.0,1198,0.0016
+doc_202faff9463ee2cb,.md,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/README.md,2,885.0,1179,0.0016
+doc_526f2b9516c9e693,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/scripts/bootstrap_env.py,2,1179.0,1198,0.0016
+doc_171086411ab55f39,.json,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_outputs/run_summary.json,2,791.0,1191,0.0016
+doc_164aa9454f48f2c5,.md,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/README.md,2,990.5,1185,0.0016
+doc_4794424aba6e74d4,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/preprocess.py,2,709.5,1169,0.0016
+doc_53b96cf705e65f98,.json,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_outputs/metrics.json,2,1166.0,1190,0.0016
+doc_523e64695b396f4c,.json,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_outputs/metrics.json,2,868.5,1191,0.0016
+doc_5fc981f20ea68873,.md,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/README.md,2,889.0,1181,0.0016
+doc_18a6035a6a517fd2,.md,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/README.md,2,997.5,1199,0.0016
+doc_026ca238800053d2,.md,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/README.md,2,987.5,1183,0.0016
+doc_00ebca6dbf7291ce,.csv,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_outputs/experiments/leaderboard.csv,2,949.5,1184,0.0016
+doc_0aea83fdabd69982,.md,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/README.md,2,991.5,1189,0.0016
+doc_e08a36448d618de9,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/scripts/bootstrap_env.py,2,1179.0,1198,0.0016
+doc_d462e58e8efafb0a,.csv,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_outputs/experiments/leaderboard.csv,2,944.5,1175,0.0016
+doc_f7adbf1668cd275b,.json,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_outputs/metrics.json,2,842.5,1187,0.0016
+doc_ae7153ef71820d71,.md,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/data/カラム説明.md,2,1124.0,1194,0.0016
+doc_723496b26e60e2a4,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/scripts/bootstrap_env.py,2,1177.0,1194,0.0016
+doc_6518e7f1d4db0f14,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/preprocess.py,2,708.5,1167,0.0016
+doc_688df311bb2c5dea,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/preprocess.py,2,711.5,1173,0.0016
+doc_7197c125e4c9e62e,.json,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/configs/project_config.json,2,937.0,1191,0.0016
+doc_606b52d6141fcc8a,.md,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/README.md,2,989.0,1185,0.0016
+doc_ac36b4fecdfa95d5,.ipynb,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/notebooks/01_eda.ipynb,2,862.0,1166,0.0016
+doc_caa5129958548959,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/scripts/bootstrap_env.py,2,1179.0,1198,0.0016
+doc_d67cc7860e476a20,.json,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/configs/project_config.json,2,1091.0,1188,0.0016
+doc_c139a5630f3aae7c,.md,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/README.md,2,1004.5,1191,0.0016
+doc_cbc1794a88ca5dbb,.md,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/README.md,2,885.5,1185,0.0016
+doc_ae8d5836e4aeb61b,.json,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_outputs/metrics.json,2,784.5,1174,0.0016
+doc_9e71130d67975c4c,.json,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/metrics.json,2,861.0,1181,0.0016
+doc_5d50d9983f8117a3,.md,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/03.データ/カラム説明.md,1,546.0,546,0.0008
+doc_1e1dd7f63af89dc1,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/infer.py,1,372.0,372,0.0008
+doc_091105365dbaaa0a,.json,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/artifacts/analysis_outputs/run_summary.json,1,716.0,716,0.0008
+doc_5d2a1ad6a955a9ad,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/__init__.py,1,203.0,203,0.0008
+doc_508aac1bd047366b,.md,プロジェクト/株式会社青潮モビリティサービス/03.データ/カラム説明.md,1,1016.0,1016,0.0008
+doc_3e72ec8642ce969e,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/infer.py,1,380.0,380,0.0008
+doc_44caa7c083f975dd,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/eda.py,1,854.0,854,0.0008
+doc_472d26a8bbfc563d,.md,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/data/カラム説明.md,1,566.0,566,0.0008
+doc_4e921fadbcbe5e30,.md,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/data/カラム説明.md,1,1036.0,1036,0.0008
+doc_3b32bd2f7b2735e9,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/__init__.py,1,187.0,187,0.0008
+doc_3c799bca4f64c9c2,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/eda.py,1,850.0,850,0.0008
+doc_14da3f947ddf1676,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/__init__.py,1,183.0,183,0.0008
+doc_16a8bad605ce0fb6,.json,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/configs/project_config.json,1,818.0,818,0.0008
+doc_20d523b128f3d966,.md,プロジェクト/京橋信用ソリューションズ株式会社/03.データ/カラム説明.md,1,1166.0,1166,0.0008
+doc_2fa294e47f0d5790,.md,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/data/カラム説明.md,1,918.0,918,0.0008
+doc_31e66b258c516f32,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/eda.py,1,852.0,852,0.0008
+doc_348302a1db1c6752,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/infer.py,1,366.0,366,0.0008
+doc_5ff338e75a702e35,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/infer.py,1,366.0,366,0.0008
+doc_b7f29b44da7b2e4a,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/infer.py,1,360.0,360,0.0008
+doc_ba6eafa6f8315fc5,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/infer.py,1,370.0,370,0.0008
+doc_af6eae0021fc3bd5,.py,プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/src/eda.py,1,848.0,848,0.0008
+doc_aceec67eb856a777,.md,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/data/カラム説明.md,1,631.0,631,0.0008
+doc_91cb626e7a49d0c4,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/__init__.py,1,185.0,185,0.0008
+doc_b17db521c40e0cb9,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/__init__.py,1,195.0,195,0.0008
+doc_88b5dfe61d8f096c,.md,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/data/カラム説明.md,1,731.0,731,0.0008
+doc_788e87f228ce56f5,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/__init__.py,1,189.0,189,0.0008
+doc_73a73b50bb51ec19,.py,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/src/__init__.py,1,189.0,189,0.0008
+doc_61f6e584f03a6df5,.py,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/src/infer.py,1,362.0,362,0.0008
+doc_61d1ffc32ebe5d8d,.md,社内管理/データアステル社内管理_決裁基準.md,1,1068.0,1068,0.0008
+doc_79879edbc5800b7a,.json,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/configs/project_config.json,1,821.0,821,0.0008
+doc_74ae470c6a26aaaf,.py,プロジェクト/株式会社青潮モビリティサービス/04.分析/analysis_project/src/infer.py,1,364.0,364,0.0008
+doc_8df11f4415f90fc0,.md,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/data/カラム説明.md,1,1186.0,1186,0.0008
+doc_bcfb1e9c46939b11,.py,プロジェクト/株式会社青葉バイオメディカル機器/04.分析/analysis_project/src/eda.py,1,854.0,854,0.0008
+doc_deb9993c32cc76bf,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/eda.py,1,858.0,858,0.0008
+doc_db086260bd79cb23,.md,プロジェクト/医療法人社団 恒一会 かえで総合病院/03.データ/カラム説明.md,1,898.0,898,0.0008
+doc_d7ed0f9605e4c4d0,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/eda.py,1,860.0,860,0.0008
+doc_d9be5c5675392551,.md,プロジェクト/株式会社東都人材プラットフォーム/03.データ/カラム説明.md,1,446.0,446,0.0008
+doc_cf14a1cb21c044ec,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/infer.py,1,366.0,366,0.0008
+doc_d7843cfda4331e6a,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/__init__.py,1,195.0,195,0.0008
+doc_c72624dc4d623045,.py,プロジェクト/医療法人社団 恒一会 かえで総合病院/04.分析/analysis_project/src/__init__.py,1,193.0,193,0.0008
+doc_cc15b493d8251ff9,.py,プロジェクト/株式会社青嶺不動産アセットマネジメント/04.分析/analysis_project/src/eda.py,1,860.0,860,0.0008
+doc_c3c078fc810a3695,.json,プロジェクト/青葉与信マネジメント株式会社/04.分析/analysis_project/configs/project_config.json,1,897.0,897,0.0008
+doc_bfc7a7659106a7c9,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/__init__.py,1,189.0,189,0.0008
+doc_e487a2e9d231ca34,.py,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/04.分析/analysis_project/src/eda.py,1,868.0,868,0.0008
+doc_e46d76b77e4fd3ca,.py,プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/04.分析/analysis_project/src/infer.py,1,372.0,372,0.0008
+doc_f26f43fb83a88ae1,.md,プロジェクト/株式会社東都人材プラットフォーム/04.分析/analysis_project/data/カラム説明.md,1,466.0,466,0.0008
+doc_dfaf5f589f641eaf,.md,プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/03.データ/カラム説明.md,1,711.0,711,0.0008
+doc_f3d7063a57533b8c,.md,プロジェクト/株式会社青嶺不動産アセットマネジメント/03.データ/カラム説明.md,1,611.0,611,0.0008
+doc_fda17b8a469179b2,.py,プロジェクト/京橋信用ソリューションズ株式会社/04.分析/analysis_project/src/eda.py,1,854.0,854,0.0008

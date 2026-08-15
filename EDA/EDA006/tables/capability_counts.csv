@@ -1,0 +1,8 @@
+﻿required_capability,question_count
+document_qa,16
+table_tool,7
+format_extraction,2
+code_reading,2
+"table_tool, image_ocr",1
+"diff_tool, document_qa",1
+"table_tool, document_qa",1

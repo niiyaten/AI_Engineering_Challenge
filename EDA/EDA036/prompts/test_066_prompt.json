@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 京橋信用ソリューションズのEDAの日付分析の可視化において、件数が最も高いのは何日ですか。\nroute: table_calculation\nsubtype: date_count_recompute\n候補生成方法: raw_csv_date_value_counts\n候補信頼度: high\nneeds_review: False\nEDA035回答: 20日\n回答候補: 20日\n参照元: data/raw/share/share/共有ドライブ/プロジェクト/京橋信用ソリューションズ株式会社/03.データ/train.csv\n根拠抜粋:\nday\n20    1612\n18    1345\n21    1233\n17    1192\n6     1145\n5     1123\n8     1099\n14    1095\n7     1091\n28    1091"
+    }
+  ],
+  "gold_answer_not_included": true
+}

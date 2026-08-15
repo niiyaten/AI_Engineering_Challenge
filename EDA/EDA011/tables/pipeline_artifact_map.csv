@@ -1,0 +1,8 @@
+﻿component,path,role
+text_chunks,EDA/EDA002/texts/text_chunks.jsonl,md/csv/json/py/ipynb BM25
+office_chunks,EDA/EDA004/texts/text_chunks.jsonl,docx/pptx/xlsx/pdf BM25
+whole_doc_contexts,EDA/EDA010/contexts,document_whole_context
+table_inventory,EDA/EDA011/tables/tabular_document_inventory.csv,table_calculation
+format_inventory,EDA/EDA011/tables/format_document_inventory.csv,format_extraction
+image_inventory,EDA/EDA011/tables/image_file_inventory.csv,image_ocr
+question_routes,EDA/EDA011/tables/question_routes.csv,router

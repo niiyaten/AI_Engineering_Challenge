@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 恒一会 かえで総合病院の契約書において、太字で記載されている箇所のうち、日付以外のものをすべて抽出してください。\nroute: format_extraction\nsubtype: docx_format_runs\n候補生成方法: docx_format_runs\n候補信頼度: high\nneeds_review: False\nEDA035回答: time_and_materials、実績工数に基づき、案件完了後に最終成果物の検収を経て一括精算する。、30、分単位、25,000、円/時間\n回答候補: time_and_materials、実績工数に基づき、案件完了後に最終成果物の検収を経て一括精算する。、30、分単位、25,000、円/時間\n参照元: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json\n根拠抜粋:\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=47: time_and_materials {'text': 'time_and_materials', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=50: 実績工数に基づき、案件完了後に最終成果物の検収を経て一括精算する。 {'text': '実績工数に基づき、案件完了後に最終成果物の検収を経て一括精算する。', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=54: 30 {'text': '30', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=54: 分単位 {'text': '分単位', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=114: 25,000 {'text': '25,000', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw解除版.docx.structure.json block=114: 円/時間 {'text': '円/時間', 'bold': True, 'italic': False, 'underline': False, 'font_color': '', 'highlight': '', 'font_name': '', 'font_size_pt': None}"
+    }
+  ],
+  "gold_answer_not_included": true
+}

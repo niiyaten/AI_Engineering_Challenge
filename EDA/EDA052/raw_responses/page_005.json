@@ -1,0 +1,11 @@
+{
+  "status": "http_200",
+  "finish_reason": "",
+  "content_length": 0,
+  "raw": {
+    "error": {
+      "message": "Upstream idle timeout exceeded",
+      "code": 504
+    }
+  }
+}

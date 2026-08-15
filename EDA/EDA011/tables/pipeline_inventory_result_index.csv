@@ -1,0 +1,10 @@
+﻿task,candidate_count,table_questions,tabular_docs,format_questions,format_docs,image_files,image_questions,diff_questions,version_docs,routed_questions,artifact_count,valid_questions
+whole_doc_llm_candidates,4.0,,,,,,,,,,,
+table_question_inventory,,24.0,,,,,,,,,,
+tabular_document_inventory,,,48.0,,,,,,,,,
+format_inventory,,,,19.0,44.0,,,,,,,
+image_inventory,,,,,,54.0,4.0,,,,,
+diff_inventory,,,,,,,,10.0,8.0,,,
+question_routes,,,,,,,,,,130.0,,
+pipeline_artifact_map,,,,,,,,,,,7.0,
+answer_policy,,,,,,,,,,,,30.0

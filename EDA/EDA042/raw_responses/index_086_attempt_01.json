@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 0,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783593174-2IyQffr25QJrO1zk1cTc",
+    "object": "chat.completion",
+    "created": 1783593174,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need answer: \"各案件のPP・契約書・PLAN・FRにおいて、DA側の実施体制として役割付きで記載されている人物は全部で何人ですか。\"\n\nWe have multiple projects: 青葉与信マネジメント株式会社, 白峰信用リスク評価株式会社, 株式会社青葉バイオメディカル機器, 京橋信用ソリューションズ株式会社. Need count of persons with role listed in DA side implementation structure in PP, contract, plan, FR. The data provided includes plan schedules with担当者 and 役割. For each project, we need unique persons across those documents? The question: \"各案件のPP・契約書・PLAN・FRにおいて、DA側の実施体制として役割付きで記載されている人物は全部で何人ですか。\" So count of distinct persons across all projects in those documents. We have plan schedules for each project. For 青葉与信マネジメント: sheet1.csv includes tasks with 担当者. Let's list unique names: from rows 2-11: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 佐藤 健一? Wait 佐藤 appears in other project. For 青葉与信: tasks list includes: row2: 伊藤 翔太; row3: 中村 浩一 / 山本 彩乃; row4: 中村 浩一 / 藤田 彩; row5: 伊藤 翔太; row6: 斎藤 悠斗; row7: 斎藤 悠斗; row8: 山本 彩乃 / 斎藤 悠斗; row9: 山本 彩乃; row10: 山本 彩乃 / 松本 真央; row11: 山本 彩乃 / 藤田 彩. So unique names: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 松本 真央. That's 6.\n\nWhite Peak: WBS.csv rows list: row0: 担当者=伊藤 翔太 / 松本 真央; row1: 伊藤 翔太 / 松原 陽介; row2: 伊藤 翔太; row3: 斎藤 悠斗; row4: 伊藤 翔太; row5: 伊藤 翔太; row6: 斎藤 悠斗; row7: 山本 彩乃 / 斎藤 悠斗; row8: 山本 彩乃; row9: 山本 彩乃 / 松本 真央. Unique names: 伊藤 翔太, 松本 真央, 松原 陽介, 斎藤 悠斗, 山本 彩乃. That's 5. Note overlap with previous: 伊藤 翔太, 斎藤 悠斗, 山本 彩乃, 松本 真央. So combined unique across both projects: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 松本 真央, 松原 陽介. That's 7.\n\nNext: 株式会社青葉バイオメディカル機器: WBS.csv tasks list includes 担当者: row1: 加藤 大輔; row2: 斉藤 悠斗; row3: 渡辺 遥; row4: 井上 里奈; row5: 清水 麻衣; row6: 渡辺 遥. Unique: 加藤 大輔, 斉藤 悠斗, 渡辺 遥, 井上 里奈, 清水 麻衣. That's 5. Overlap with previous: 斉藤 悠斗 appears. So add new: 加藤 大輔, 渡辺 遥, 井上 里奈, 清水 麻衣. So total unique now: 7 + 4 = 11.\n\nNext: 京橋信用ソリューションズ: WBSタスク一覧.csv tasks list includes 担当者",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer: \"各案件のPP・契約書・PLAN・FRにおいて、DA側の実施体制として役割付きで記載されている人物は全部で何人ですか。\"\n\nWe have multiple projects: 青葉与信マネジメント株式会社, 白峰信用リスク評価株式会社, 株式会社青葉バイオメディカル機器, 京橋信用ソリューションズ株式会社. Need count of persons with role listed in DA side implementation structure in PP, contract, plan, FR. The data provided includes plan schedules with担当者 and 役割. For each project, we need unique persons across those documents? The question: \"各案件のPP・契約書・PLAN・FRにおいて、DA側の実施体制として役割付きで記載されている人物は全部で何人ですか。\" So count of distinct persons across all projects in those documents. We have plan schedules for each project. For 青葉与信マネジメント: sheet1.csv includes tasks with 担当者. Let's list unique names: from rows 2-11: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 佐藤 健一? Wait 佐藤 appears in other project. For 青葉与信: tasks list includes: row2: 伊藤 翔太; row3: 中村 浩一 / 山本 彩乃; row4: 中村 浩一 / 藤田 彩; row5: 伊藤 翔太; row6: 斎藤 悠斗; row7: 斎藤 悠斗; row8: 山本 彩乃 / 斎藤 悠斗; row9: 山本 彩乃; row10: 山本 彩乃 / 松本 真央; row11: 山本 彩乃 / 藤田 彩. So unique names: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 松本 真央. That's 6.\n\nWhite Peak: WBS.csv rows list: row0: 担当者=伊藤 翔太 / 松本 真央; row1: 伊藤 翔太 / 松原 陽介; row2: 伊藤 翔太; row3: 斎藤 悠斗; row4: 伊藤 翔太; row5: 伊藤 翔太; row6: 斎藤 悠斗; row7: 山本 彩乃 / 斎藤 悠斗; row8: 山本 彩乃; row9: 山本 彩乃 / 松本 真央. Unique names: 伊藤 翔太, 松本 真央, 松原 陽介, 斎藤 悠斗, 山本 彩乃. That's 5. Note overlap with previous: 伊藤 翔太, 斎藤 悠斗, 山本 彩乃, 松本 真央. So combined unique across both projects: 伊藤 翔太, 中村 浩一, 山本 彩乃, 藤田 彩, 斎藤 悠斗, 松本 真央, 松原 陽介. That's 7.\n\nNext: 株式会社青葉バイオメディカル機器: WBS.csv tasks list includes 担当者: row1: 加藤 大輔; row2: 斉藤 悠斗; row3: 渡辺 遥; row4: 井上 里奈; row5: 清水 麻衣; row6: 渡辺 遥. Unique: 加藤 大輔, 斉藤 悠斗, 渡辺 遥, 井上 里奈, 清水 麻衣. That's 5. Overlap with previous: 斉藤 悠斗 appears. So add new: 加藤 大輔, 渡辺 遥, 井上 里奈, 清水 麻衣. So total unique now: 7 + 4 = 11.\n\nNext: 京橋信用ソリューションズ: WBSタスク一覧.csv tasks list includes 担当者",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 8191,
+      "completion_tokens": 900,
+      "total_tokens": 9091,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001817695,
+        "upstream_inference_prompt_cost": 0.0001187695,
+        "upstream_inference_completions_cost": 6.3e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 897,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Chunk store comparison
+
+{"avg_chunks_per_document": 4.18, "candidate_mode_used": true, "chunk_count": 1614, "embedding_model": "none", "file_count": 384, "granularity": "format-specific search record", "path": "E:\\PC\\デスクトップ\\SIGNATE\\SIGNATE_Agentic_RAG_test49_openrouter_poc\\data\\work\\gate19_test100_final_candidate\\extracted\\search_records.jsonl", "schema": "SearchRecord", "stale_status": "current", "store": "current_strict_search_records"}
+{"avg_chunks_per_document": "unknown", "candidate_mode_used": false, "chunk_count": 1230, "embedding_model": "unknown", "file_count": "unknown", "granularity": "historical text chunk", "path": "E:\\PC\\デスクトップ\\SIGNATE\\SIGNATE_Agentic_RAG\\EDA\\EDA002\\texts\\text_chunks.jsonl", "schema": "historical jsonl", "stale_status": "historical", "store": "EDA002"}
+{"avg_chunks_per_document": "unknown", "candidate_mode_used": false, "chunk_count": 1311, "embedding_model": "unknown", "file_count": "unknown", "granularity": "historical text chunk", "path": "E:\\PC\\デスクトップ\\SIGNATE\\SIGNATE_Agentic_RAG\\EDA\\EDA004\\texts\\text_chunks.jsonl", "schema": "historical jsonl", "stale_status": "historical", "store": "EDA004"}
+{"avg_chunks_per_document": "unknown", "candidate_mode_used": "unknown", "chunk_count": 12139, "embedding_model": "unknown", "file_count": "unknown", "granularity": "unverified", "path": "provenance_not_found_in_current_EDA_tree", "schema": "unverified", "stale_status": "reported_reference_requires_provenance", "store": "historical_referenced_12139"}
+
+The stores serve different stages: current records are stable strict-run search units; historical chunks are finer extraction artifacts. Reuse must be audited by schema and freshness, not count alone.

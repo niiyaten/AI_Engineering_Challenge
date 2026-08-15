@@ -1,0 +1,16 @@
+{
+  "eda": "EDA044",
+  "input": "EDA/EDA043/tables/test_compressed_context_retry_result.csv",
+  "target_count": 16,
+  "before_non_unknown_count": 71,
+  "added_non_unknown_count": 9,
+  "after_non_unknown_count": 80,
+  "outputs": [
+    "EDA/EDA044/tables/test_format_table_image_result.csv",
+    "EDA/EDA044/tables/test_format_table_image_attempt_log.csv",
+    "EDA/EDA044/predictions/predictions.csv",
+    "EDA/EDA044/predictions/eda044_format_table_image_submission.zip",
+    "EDA/EDA044/eda044_report.md",
+    "EDA/EDA044/raw_responses"
+  ]
+}

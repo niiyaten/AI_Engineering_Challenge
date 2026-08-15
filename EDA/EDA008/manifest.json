@@ -1,0 +1,36 @@
+{
+  "eda": "EDA008",
+  "created_at": "2026-07-06T02:41:00",
+  "purpose": "Generate answers for ready_for_llm validation contexts through OpenRouter.",
+  "parameters": {
+    "model": "openai/gpt-oss-20b:free",
+    "free_model_fallback": false,
+    "model_candidates": [
+      "openai/gpt-oss-20b:free"
+    ],
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "reasoning_enabled": true,
+    "dry_run": false,
+    "limit": 1
+  },
+  "inputs": [
+    {
+      "path": "EDA/EDA007/tables/context_quality.csv",
+      "sha1": "f21d165e0d6a7e16173223347ba9c71577fc68d4",
+      "bytes": 20311
+    }
+  ],
+  "outputs": {
+    "answer_log": "EDA/EDA008/tables/llm_valid_answers.csv",
+    "call_log": "EDA/EDA008/tables/llm_call_log.csv",
+    "prompt_dir": "EDA/EDA008/prompts",
+    "report": "EDA/EDA008/eda008_report.md"
+  },
+  "secret_handling": "API key is read from OPENROUTER_API_KEY or project-local .apikey and is not written to logs.",
+  "repro_steps": [
+    "uv run python EDA/EDA007/eda007.py",
+    "set OPENROUTER_API_KEY in environment or put the key in project-local .apikey",
+    "uv run python EDA/EDA008/eda008.py --model <model>"
+  ]
+}

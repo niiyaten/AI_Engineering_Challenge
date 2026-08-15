@@ -1,0 +1,9 @@
+{
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "status": "http_400",
+  "finish_reason": "",
+  "content_length": 0,
+  "raw": {
+    "error_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":400,\"metadata\":{\"raw\":\"{\\\"status\\\":400,\\\"title\\\":\\\"Bad Request\\\",\\\"detail\\\":\\\"Function id 'c4ed50ff-b5c3-409d-ab57-b79c33f5bb39': DEGRADED function cannot be invoked\\\"}\",\"provider_name\":\"Nvidia\",\"is_byok\":false}},\"user_id\":\"user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K\"}"
+  }
+}

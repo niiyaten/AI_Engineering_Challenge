@@ -1,0 +1,360 @@
+﻿index,route,subtype_before,subtype_after_eda038,question,answer_before_eda038,local_answer,llm_answer,answer_after_eda038,adopted_by_eda038,model_used,status,confidence,old_path,new_path,evidence
+0,diff_check,diff_check,pptx_proposal_old_latest,白峰信用リスク評価の提案書old.pptxから提案書.pptxへの更新内容のうち、案件遂行に関連する実質的な変更を挙げてください。,変更なし,リスクセグメン、高欠損列の採否評価、複数モデル比較、しきい値別評価、高リスク抽出,,変更なし,False,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書old.pptx.md,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書.pptx.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書old.pptx.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書.pptx.md
+@@ -1,8 +1,8 @@
+-PowerPoint Markdown: 提案書old.pptx
++PowerPoint Markdown: 提案書.pptx
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書old.pptx
+-- source_sha1: 96da53d7c0f61eaac6d061df7228d59859ed708d
++- raw_path: share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書.pptx
++- source_sha1: 0d2fce6f40a8bbc7996666187b37b000b8ca5784
+ - slide_count: 19
+ - table_count: 0
+-- image_count: 1
++- image_count: 0
+ - chart_count: 0
+@@ -88,5 +88,26 @@
+ 4. 分析アプローチ 全体像
+-Image
+-- image_path: data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/00.提案/提案書old.pptx.assets/slide006_shape003.png
+-- content_type: image/png
++データ理解
++リスクセグメン
++テーション
++ガバナンス
++型・件数・欠損確認
++分布・極端値把握
++相関構造分析
++高欠損列の採否評価
++欠損補完ルール策定
++外れ値処理比較
++線形/木系で方針分離
++再現性条件固定化
++ベースライン構築
++複数モデル比較
++不均衡対応手法比較
++しきい値別評価
++高リスク抽出
++重要変数の把握
++財務悪化パターン整理
++スコア出力方針
++監査証跡の確保
++アクセス制御文書化
++採否・閾値根拠記録
++前提・制約の明示
+ Slide 7
+@@ -151,3 +172,2 @@
+ 企業群を特定する
+-重要変数の把握
+ 倒産予測に寄与する
+@@ -155,3 +175,2 @@
+ 明確化する
+-財務悪化パターン整理
+ 倒産兆候となる
+@@ -163,3 +182,2 @@
+ 明文化する
+-スコア出力方針
+ 将来のExpected Loss
+@@ -170,3 +188,2 @@
+ 金融ドメイン要件に対応するため、以下を成果物設計に反映する
+-監査証跡の確保
+ すべての分析判断の"
+1,diff_check,version_diff,pptx_final_old_latest,恒一会 かえで総合病院の最終報告書old版と最新版を比較したとき、案件遂行に関連する実質的な変更を挙げてください。,わかりません,AUC-ROC = 0.905 / Accuracy = 0.833、AUC-ROC、Accuracy、F1-macro、線形系と非線形モデルを比較,,AUC-ROC = 0.905 / Accuracy = 0.833、AUC-ROC、Accuracy、F1-macro、線形系と非線形モデルを比較,True,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx.md,data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx.md
+@@ -1,9 +1,9 @@
+-PowerPoint Markdown: 医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx
++PowerPoint Markdown: 医療法人社団 恒一会 かえで総合病院_最終報告.pptx
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告_old.pptx
+-- source_sha1: 9d27238b92f1a462a1bf8d8764a9099941609bfa
++- raw_path: share/共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/06.報告書/医療法人社団 恒一会 かえで総合病院_最終報告.pptx
++- source_sha1: 606ffcc988ab082f93ac5fcf2ecabe5964e9a5be
+ - slide_count: 18
+-- table_count: 6
++- table_count: 5
+ - image_count: 0
+-- chart_count: 0
++- chart_count: 1
+ Slides
+@@ -18,2 +18,3 @@
+ Slide 2
++1. エグゼクティブサマリ
+ ビジネス成果
+@@ -21,3 +22,4 @@
+ 最終モデル:hist_gradient_boosting(特徴量10)
+-AUC-ROC = 0.905 / Accuracy = 0.833 / F1-macro = 0.829
++AUC-ROC = 0.905 / Accuracy = 0.833
++F1-macro = 0.829
+ 中間段階の線形系試行(T04等)から性能改善を確認。
+@@ -28,4 +30,10 @@
+ 主要指標(内部検証値)
+-AUC-ROC: 0.905 | Accuracy: 0.833 | F1-macro: 0.829 | Precision@10%: 0.971
+-1. エグゼクティブサマリ
++0.905
++AUC-ROC
++0.833
++Accuracy
++0.829
++F1-macro
++0.971
++Precision@10%
+ Slide 3
+@@ -48,13 +56,21 @@
+ 3. 実施方法
+-単一データソース前提で再現可能な手順を採用
+-説明可能性を重視し線形系と非線形モデルを比較
+-医療文脈での慎重な解釈を徹底
++単一データソース前提で
++再現可能な手順を採用
++説明可能性を重視し
++線形系と非線形モデルを比較
++医療文脈での
++慎重な解釈を徹底
+ 主な作業フロー
+-1. キックオフ (M01) — スコープ・前提確定
+-2. データ受領 読込検証 — train.csv
+-3. EDA — 分布・外れ値確認
+-4. 前処理設計 — id除外 Gender処理
+-5. モデル試作 — 線形系比較試行
+-6. 改善・最終確定 — hist_gradient_boosting
+-7. 最終報告書作成 — 検収対応
++キックオフ
++(M01)
++スコープ・
++データ受領
++train.csv
++分布・外れ値
++前処理設計
++Gender処理
++モデル試作
++hist_gradient
++_boosting
++最終報告書
+ 再現性トレース
+@@ -99,8 +115,7 @@
+ 6. 最終モデル性能指標と中間段階との比較
+-非線形モデル採用により全指標で大幅向上
+-中間段階 vs 最終モデル性能比較
+-指標 | 中間 (T04 linear) | 最終 (hist_gradient_boosting) | 改善幅
+-AUC-ROC | 0.825 | 0.905 | +0.080
+-F1-macro | 0.733 | 0.829 | +0.096
+-Accuracy | 0.736 | 0.833 | +0.097
++AUC-ROC: +0.080ポイント改善 / F1-macro: +0.096ポイント改善 / Accuracy: +0.097ポイント改善 — 非線形モデル採用により全指標で大幅向上
++Chart
++- chart_type: COLUMN_CLUSTERED (51)
++- title: 中間段階 vs 最終モデル性能比較
++- series_count: 2
+ Slide 8"
+9,diff_check,version_diff,pptx_final_old_latest,青葉与信マネジメントの最終報告資料の最新版になる際に修正されたもののうち、案件遂行に関連する変更を挙げてください。,わかりません,5. 業務提言 ― モデル運用・ガバナンス(中期),,5. 業務提言 ― モデル運用・ガバナンス(中期),True,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/青葉与信マネジメント株式会社_最終報告.pptx.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/青葉与信マネジメント株式会社_最終報告.pptx.md
+@@ -2,5 +2,5 @@
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/青葉与信マネジメント株式会社_最終報告.pptx
+-- source_sha1: eb4b0cabb4eab8d90ad5e897f3142264766d96bc
+-- slide_count: 14
++- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/青葉与信マネジメント株式会社_最終報告.pptx
++- source_sha1: 7ce1f5cec2c5c4ac9adfa8867c499d8fca869582
++- slide_count: 15
+ - table_count: 8
+@@ -94,2 +94,3 @@
+ セグメント
++Step 4
+ モデリング
+@@ -106,3 +107,2 @@
+ 再現性・監査証跡: 実行設定(run_summary.json)と出力(metrics.json)を保存。前処理・モデルパラメータ・評価条件を文書化。版管理・議事録で意思決定をトレース。
+-Step 4
+ Slide 5
+@@ -149,3 +149,3 @@
+ Slide 7
+-5. 業務提言
++5. 業務提言 ― クイックウィン(短期:直ちに実施推奨)
+ 目的変数の公式文書化と配布
+@@ -163,2 +163,4 @@
+ 理由: 審査プロセスでのヒューマンレビュー追加等により、実務上のコスト/利益を評価する。
++Slide 8
++5. 業務提言 ― モデル運用・ガバナンス(中期)
+ モデルカード・版管理
+@@ -180,5 +182,3 @@
+ • データ品質指標の自動化
+-クイックウィン(短期:直ちに実施推奨)
+-モデル運用・ガバナンス(中期)
+-Slide 8
++Slide 9
+ 5. 業務提言 ― データ改善・組織体制(中〜長期)
+@@ -196,3 +196,3 @@
+ 重要: 上記はすべて本契約の対象外または別途検討事項であり、次フェーズとしての要件定義と見積りを推奨する
+-Slide 9
++Slide 10
+ 6. 実装・運用計画 ― 納品・検収フロー
+@@ -209,3 +209,3 @@
+ ✓ | 権限/アクセス制御、データ保持ポリシー、監査証跡
+-Slide 10
++Slide 11
+ 6. 実装・運用計画 ― 本番化ロードマップ
+@@ -237,3 +237,3 @@
+ Phase 3(本番統合)は本契約対象外のため、別途要件定義・見積りが必要(契約書 特約事項参照)
+-Slide 11
++Slide 12
+ 7. 制約事項と残余リスク
+@@ -247,3 +247,3 @@
+ 5 | スコープクリープ | 中 | 契約書に基づく変更管理(MS4チェックポイント)
+-Slide 12
++Slide 13
+ 8. 今後の拡張ロードマップ
+@@ -265,3 +265,3 @@
+ 0ヶ月 3ヶ月 6ヶ月 12ヶ月
+-Slide 13
++Slide 14
+ 9. 成果物サマリ・提案との差分管理
+@@ -287,3 +287,3 @@
+ 変更管理 | 正式なCR発生なし
+-Slide 14
++Slide 15
+ 10. 総括と次アクション"
+14,diff_check,version_diff,pptx_proposal_v1_v3,青葉与信マネジメントの提案書_v1.pptxから提案書_v3.pptxに修正されたもののうち、案件遂行に関連する変更を挙げてください。,わかりません,"• ベースラインモデルを構築し基準性能を把握、• ROC-AUC, PR-AUC, 混同行列, リフト等を算出、• データ定義・前処理・評価条件・判断根拠を文書化",,"• ベースラインモデルを構築し基準性能を把握、• ROC-AUC, PR-AUC, 混同行列, リフト等を算出、• データ定義・前処理・評価条件・判断根拠を文書化",True,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v3.pptx.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v3.pptx.md
+@@ -1,7 +1,7 @@
+-PowerPoint Markdown: 提案書_v1.pptx
++PowerPoint Markdown: 提案書_v3.pptx
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx
+-- source_sha1: f6cf1e5b95e4b14169fba1ab979ed9144b69fbb4
++- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v3.pptx
++- source_sha1: 7d08eda350ebc8104bee92b33d33a8e49cb9c403
+ - slide_count: 15
+-- table_count: 6
++- table_count: 5
+ - image_count: 0
+@@ -59,2 +59,3 @@
+ 監査可能な文書体系
++主要データ項目
+ loan_amnt
+@@ -70,3 +71,2 @@
+ 7週間での短納期対応
+-主要データ項目
+ Slide 4
+@@ -119,10 +119,10 @@
+ 3. スコープ ― 対象外事項
++本番システム実装、API化、審査システム連携
+ データ基盤新規構築、DWH設計、ETL常設化
+ 追加データ取得、外部信用情報連携
++時系列予測、ビンテージ分析、月次運用設計
++法務判断、規制当局対応の代行
+ 本番運用時のモデル監視仕組み構築
+-時系列予測、ビンテージ分析、月次運用設計
+ 本件データに含まれない項目を前提とした詳細損失率推計
+ 本契約範囲外の追加要件に対する無償対応
+-法務判断、規制当局対応の代行
+-本番システム実装、API化、審査システム連携
+ 変更管理方針
+@@ -150,25 +150,30 @@
+ 4. 分析アプローチ ― 実施手順
++STEP 1
++データ理解・前処理
++• train.csv を正本データとして読込
++• カラム説明.md を基準に定義確認
++• 数値・カテゴリ・順序カテゴリ項目を整理
++• 欠損値・分布・外れ値の確認
++• grade, employment_length, term の順序性整形
++STEP 2
++• loan_status=1 比率を基準不良率として確認
++• 単変量分析で主要変数ごとの傾向把握
++• 多変量観点からセグメント別不良率差を可視化
++• purpose, application_type, grade, term 等によるポートフォリオ比較
++STEP 3
++• ベースラインモデルを構築し基準性能を把握
++• ロジスティック回帰等の説明性重視モデルを中心に評価
++• 必要に応じて決定木系モデルの重要度も比較利用
++• 学習・検証を分離し汎化性能を確認
++STEP 4
++• ROC-AUC, PR-AUC, 混同行列, リフト等を算出
++• 上位/下位リスク群の不良率差を可視化
++• 主要特徴量の重要度・方向性・業務上の意味を整理
++• interest_rate, grade のリーケージ懸念を明示
++STEP 5
++ガバナンス・報告
++• データ定義・前処理・評価条件・判断根拠を文書化
++• 中間レビュー・最終レビューを通じて合意形成
++• 将来のモデル化・モニタリングに接続可能な論点整理
+ 全工程を通じて: 説明可能性の確保 | 監査証跡の記録 | 再現性の担保 | 週次レビューによる合意形成
+-Table
+-ステップ | フェーズ | 主な作業内容
+-STEP 1 | データ理解・前処理 | ・train.csv を正本データとして読込
+-・カラム説明.md を基準に定義確認
+-・数値・カテゴリ・順序カテゴリ項目を整理
+-・欠損値・分布・外れ値の確認
+-・grade, employment length, term の順序性整形
+-STEP 2 | 探索的分析 | ・loan status=1 比率を基準不良率として確認
+-・単変量分析で主要変数ごとの傾向把握
+-・多変量観点からセグメント別不良率差を可視化
+-・purpose, application type, grade, term 等によるポートフォリオ比較
+-STEP 3 | モデリング | ・ベースラインモデルを構築し基準性能を把握
+-・ロジスティック回帰等の説明性重視モデルを中心に評価
+-・必要に応じて決定木系モデルの重要度も比較利用
+-・学習・検証を分離し汎化性能を確認
+-STEP 4 | 評価・解釈 | ・ROC-AUC, PR-AUC, 混同行列, リフト等を算出
+-・上位/下位リスク群の不良率差を可視化
+-・主要特徴量の重要度・方向性・業務上の意味を整理
+-・interest rate, grade のリーケージ懸念を明示
+-STEP 5 | ガバナンス・報告 | ・データ定義・前処理・評価条件・判断根拠を文書化
+-・中間レビュー・最終レビューを通じて合意形成
+-・将来のモデル化・モニタリングに接続可能な論点整理
+ Slide 9
+@@ -209,2 +214,3 @@
+ レビューは週次会議に加え、中間レビューおよび最終報告会を設定し、意思決定の停滞を防止する。
++Table
+ 週 | 期間 | 実施内容 | マイルストン"
+22,diff_check,version_diff,notebook_old_latest,白峰信用リスク評価の01_eda_old.ipynbから01_eda.ipynbへの変更内容のうち、内容として変わっている点は何ですか。,わかりません,変更なし,変更なし。,変更なし。,True,openai/gpt-oss-20b:free,http_200,medium,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda_old.ipynb.md,data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda_old.ipynb.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb.md
+@@ -1,5 +1,5 @@
+-Notebook Markdown: 01_eda_old.ipynb
++Notebook Markdown: 01_eda.ipynb
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda_old.ipynb
+-- source_sha1: e2e895e6efedc42bc692b91d933509b128047a9c
++- raw_path: share/共有ドライブ/プロジェクト/白峰信用リスク評価株式会社/04.分析/analysis_project/notebooks/01_eda.ipynb
++- source_sha1: 12e4b0e143e51f9c8f915d4e1b8d427fe7951cd5
+ - nbformat: 4.5"
+62,diff_check,version_diff,version_diff,青葉与信マネジメントの最終報告資料における、モデル比較で上位2件のスコア差を生んでいる設定差分は何ですか。,わかりません,,,わかりません,False,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",none,,,comparison files were not found
+74,diff_check,version_diff,pptx_proposal_v1_v2,青葉与信マネジメントの提案書_v1.pptxから提案書_v2.pptxに修正されたもののうち、案件遂行に関連する変更を挙げてください。,わかりません,変更なし,,変更なし,True,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md,data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v2.pptx.md,"--- data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx.md
++++ data/processed/share/share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v2.pptx.md
+@@ -1,5 +1,5 @@
+-PowerPoint Markdown: 提案書_v1.pptx
++PowerPoint Markdown: 提案書_v2.pptx
+ Source
+-- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v1.pptx
+-- source_sha1: f6cf1e5b95e4b14169fba1ab979ed9144b69fbb4
++- raw_path: share/共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/00.提案/提案書_v2.pptx
++- source_sha1: 9c28d5cdf3aff01e5fc460c526da3fe669302f3d
+ - slide_count: 15
+@@ -59,2 +59,3 @@
+ 監査可能な文書体系
++主要データ項目
+ loan_amnt
+@@ -70,3 +71,2 @@
+ 7週間での短納期対応
+-主要データ項目
+ Slide 4
+@@ -192,2 +192,3 @@
+ ビジネスアナリスト
++井上 里奈
+ 業務要件整理、報告資料作成"
+95,diff_check,version_diff,xlsx_schedule_r1_r2,青嶺不動産アセットマネジメントのスケジュール_r1.xlsxとスケジュール_r2.xlsxを比較したとき、未着手から完了への変更を除いて、案件遂行に関連する変更点を挙げてください。,わかりません,Excel Workbook: スケジュール_r2.xlsx、- raw_path: share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx、- source_sha1: a21f0d9eddac0778568eca834134a6c80d2c41f2、スケジュール | 25 | 15 | A1:O26 | 0 | 229 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.sheets/スケジュール.csv,,わかりません,False,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r1.xlsx.md,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.md,"Excel Workbook: スケジュール_r2.xlsx
+- raw_path: share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx
+- source_sha1: a21f0d9eddac0778568eca834134a6c80d2c41f2
+スケジュール | 25 | 15 | A1:O26 | 0 | 229 | 0 | data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/02.計画/スケジュール_r2.xlsx.sheets/スケジュール.csv
+No. | フェーズ | タスクID | タスク名 | 詳細・内容 | 担当者 | 開始日 | 終了日 | 依存タスク | 成果物 | ステータス | クリティカルパス | マイルストーン | チェックポイント | 備考
+2.0 | P1 立上げ・前提固定 | T02 | 正本前提・スコープ・役割分担確定 | 正本前提整理、スコープ確定、役割分担の文書化 | 佐藤 健一 / 藤田 彩 | 2025-08-06 00:00:00 | 2025-08-07 00:00:00 | T01 | 前提確定メモ | 完了 | nan | nan | nan | nan
+3.0 | P1 立上げ・前提固定 | T03 | データ受領確認・読込検証 | data\\train.csv の受領確認および読込検証 | 岡田 佑樹 | 2025-08-06 00:00:00 | 2025-08-08 00:00:00 | T01 | 読込確認結果 | 完了 | ○ | nan | nan | nan
+4.0 | P1 立上げ・前提固定 | T04 | カラム定義・型・利用方針整理 | カラム定義、データ型、利用方針の整理。利用不可候補項目の整理を含む | 渡辺 遥 / 岡田 佑樹 | 2025-08-07 00:00:00 | 2025-08-11 00:00:00 | T03 | 分析計画メモ下書き | 完了 | ○ | nan | nan | nan
+6.0 | P2 データ理解・品質評価 | T06 | 欠損・ゼロ値・異常値の初期点検 | 欠損値、ゼロ値、異常値の網羅的な初期点検 | 岡田 佑樹 | 2025-08-11 00:00:00 | 2025-08-15 00:00:00 | T04 | 品質点検結果一覧 | 完了 | ○ | nan | nan | nan
+7.0 | P2 データ理解・品質評価 | T07 | BBL観点の重複・粒度確認 | BBL(Borough-Block-Lot)観点での重複確認および粒度の検証 | 岡田 佑樹 / 渡辺 遥 | 2025-08-13 00:00:00 | 2025-08-18 00:00:00 | T04 | 重複確認メモ | 完了 | nan | nan | nan | nan"
+98,diff_check,version_diff,rate_change_search,TM案件において、RATEが変更されたのは何年何月1日からと想定されますか。,わかりません,o 契約開始日: 2025-08-06(適用開始),,o 契約開始日: 2025-08-06(適用開始),True,deepseek/deepseek-r1-0528:free,"http_404:{""error"":{""message"":""This model is unavailable for free. The paid version is available now - use this slug instead: deepseek/deepseek-r1-0528"",""code"":404},""user_id"":""user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K""}",medium,data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/報告資料/報告資料_2025-08-06.pdf.md,,"data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/報告資料/報告資料_2025-08-06.pdf.md: o 契約開始日: 2025-08-06(適用開始)
+data/processed/share/share/共有ドライブ/社内管理/社内用語集.docx.md: 単価据置 | RATE-HOLD | 単価変更なし
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/05.会議/報告資料/報告資料_2025-07-11.docx.md: 2025-07-14の変更管理チェックポイントで確定
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青嶺不動産アセットマネジメント/05.会議/報告資料/報告資料_2025-08-06.pdf.md: 2025-08-27 の変更管理 CP で調整を推奨。
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/05.会議/会議録/会議録_2025-07-11.docx.md: 追加分析要求の有無は2025-07-14の変更管理判定待ち
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/05.会議/会議録/会議録_2025-07-11.docx.md: 2025-07-14に変更管理チェックポイントを完了すること
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/05.会議/報告資料/報告資料_2025-07-11.docx.md: T13 | 変更要求整理・影響評価 | 2025-07-14
+data/processed/share/share/共有ドライブ/プロジェクト/株式会社青葉バイオメディカル機器/05.会議/報告資料/報告資料_2025-07-11.docx.md: T14 | 変更管理チェックポイント | 2025-07-14"

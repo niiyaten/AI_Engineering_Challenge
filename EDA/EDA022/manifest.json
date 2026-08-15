@@ -1,0 +1,29 @@
+{
+  "eda": "EDA022",
+  "created_at": "2026-07-08T00:49:47",
+  "purpose": "Generate LLM answers from EDA021 RAG contexts via OpenRouter.",
+  "parameters": {
+    "models": "openai/gpt-oss-120b:free,openai/gpt-oss-20b:free,qwen/qwen3-next-80b-a3b-instruct:free",
+    "top_k": 6,
+    "limit": 5,
+    "all": false,
+    "indices": "",
+    "max_context_chars": 12000,
+    "max_tokens": 700,
+    "temperature": 0.0
+  },
+  "inputs": {
+    "questions_test": "data/raw/share/share/質問回答/questions_test.csv",
+    "eda021_retrieval": "EDA/EDA021/tables/test_rag_retrieval.csv",
+    "eda021_predictions": "EDA/EDA021/predictions/predictions.csv",
+    "api_key": ".apikey (not stored)"
+  },
+  "outputs": {
+    "llm_answer_log": "EDA/EDA022/tables/llm_answer_log.csv",
+    "hybrid_predictions": "EDA/EDA022/predictions/predictions_hybrid.csv",
+    "hybrid_submission_zip": "EDA/EDA022/predictions/eda022_llm_hybrid_submission.zip",
+    "report": "EDA/EDA022/eda022_report.md"
+  },
+  "llm_log_count": 5,
+  "prediction_count": 100
+}

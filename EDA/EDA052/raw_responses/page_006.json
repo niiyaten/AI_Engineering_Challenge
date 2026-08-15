@@ -1,0 +1,51 @@
+{
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 1640,
+  "raw": {
+    "id": "gen-1783643340-URIEWv9NI2TDPhVRTJTw",
+    "object": "chat.completion",
+    "created": 1783643340,
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"meeting_id\": \"\",\n  \"date\": \"\",\n  \"page_title\": \"進捗サマリ\",\n  \"progress_summary\": \"本日対応済：最終報告書提出・説明（本会）および成果物配布（artifacts/analysis_outputs等）を実施。QAレビュー（池田）による主要数値整合の最終確認を実施（主要指標は成果物と一致）。進捗ステータス：最終成果物提出済（検収待ち）。主要開発タスクは完了。残件はクライアント側の意思決定（0値扱い）とindex再実験の結果反映。主要完了済アクション：A01/A02/A03（中間段階で完了）およびA10/A11/A12（前処理実装・モデル再実行・業務論点ドラフト）を完了報告。\",\n  \"action_items\": [\n    {\n      \"action_id\": \"A01\",\n      \"content\": \"最終報告書提出・説明（本会）\",\n      \"owner\": \"本会\",\n      \"due\": \"\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A02\",\n      \"content\": \"成果物配布（artifacts/analysis_outputs等）\",\n      \"owner\": \"関係者\",\n      \"due\": \"\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A03\",\n      \"content\": \"QAレビューによる主要数値整合の最終確認\",\n      \"owner\": \"池田\",\n      \"due\": \"\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A10\",\n      \"content\": \"index再実験の結果反映\",\n      \"owner\": \"クライアント側\",\n      \"due\": \"\",\n      \"status\": \"待ち\"\n    },\n    {\n      \"action_id\": \"A11\",\n      \"content\": \"主要開発タスクの完了\",\n      \"owner\": \"開発チーム\",\n      \"due\": \"\",\n      \"status\": \"完了\"\n    },\n    {\n      \"action_id\": \"A12\",\n      \"content\": \"A01/A02/A03（中間段階で完了）およびA10/A11/A12（前処理実装・モデル再実行・業務論点ドラフト）の完了報告\",\n      \"owner\": \"関係者\",\n      \"due\": \"\",\n      \"status\": \"完了\"\n    }\n  ],\n  \"comments\": [\n    \"残件はクライアント側の意思決定（0値扱い）とindex再実験の結果反映。\"\n  ],\n  \"checkpoints\": [\n    \"index再実験の結果反映\",\n    \"主要開発タスクの完了\"\n  ],\n  \"visible_text\": \"本日対応済：最終報告書提出・説明（本会）および成果物配布（artifacts/analysis_outputs等）を実施。QAレビュー（池田）による主要数値整合の最終確認を実施（主要指標は成果物と一致）。進捗ステータス：最終成果物提出済（検収待ち）。主要開発タスクは完了。残件はクライアント側の意思決定（0値扱い）とindex再実験の結果反映。主要完了済アクション：A01/A02/A03（中間段階で完了）およびA10/A11/A12（前処理実装・モデル再実行・業務論点ドラフト）を完了報告。\"\n}\n```\n",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3627,
+      "completion_tokens": 884,
+      "total_tokens": 4511,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

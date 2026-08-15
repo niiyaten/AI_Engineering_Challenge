@@ -1,0 +1,220 @@
+2026-07-08 00:16:19,096 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\京橋信用ソリューションズ株式会社\06.報告書\京橋信用ソリューションズ株式会社_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:19,620 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 恒一会 かえで総合病院\06.報告書\医療法人社団 恒一会 かえで総合病院_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:19,833 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\00.提案\~$提案書.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 285, in process_pptx
+    raise RuntimeError("temporary_office_file")
+RuntimeError: temporary_office_file
+2026-07-08 00:16:20,757 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\株式会社東都人材プラットフォーム\06.報告書\株式会社東都人材プラットフォーム_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:22,850 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\白峰信用リスク評価株式会社\06.報告書\白峰信用リスク評価株式会社_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:23,745 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\06.報告書\old\青葉与信マネジメント株式会社_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:23,928 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\青葉与信マネジメント株式会社\06.報告書\青葉与信マネジメント株式会社_最終報告.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 406, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 335, in process_pptx
+    json_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\中村\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AxisTitle is not JSON serializable
+2026-07-08 00:16:53,332 [ERROR] failed: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ\プロジェクト\医療法人社団 蒼樹会 みなみ野女性医療センター\00.提案\~$提案書.pptx
+Traceback (most recent call last):
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 415, in process_file
+    record, status = process_pptx(path)
+                     ^^^^^^^^^^^^^^^^^^
+  File "E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA015\eda015.py", line 294, in process_pptx
+    raise RuntimeError("temporary_office_file")
+RuntimeError: temporary_office_file

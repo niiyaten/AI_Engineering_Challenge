@@ -1,0 +1,18 @@
+{
+  "eda": "EDA046",
+  "input_result": "EDA/EDA044/tables/test_format_table_image_result.csv",
+  "input_gap": "EDA/EDA045/tables/remaining_route_gap_inventory.csv",
+  "target_count": 20,
+  "before_non_unknown_count": 80,
+  "added_non_unknown_count": 4,
+  "after_non_unknown_count": 84,
+  "reuse_attempt_log": true,
+  "outputs": [
+    "EDA/EDA046/tables/test_all_remaining_routes_result.csv",
+    "EDA/EDA046/tables/test_all_remaining_routes_attempt_log.csv",
+    "EDA/EDA046/predictions/predictions.csv",
+    "EDA/EDA046/predictions/eda046_all_remaining_routes_submission.zip",
+    "EDA/EDA046/eda046_report.md",
+    "EDA/EDA046/raw_responses"
+  ]
+}

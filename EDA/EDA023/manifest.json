@@ -1,0 +1,20 @@
+{
+  "eda": "EDA023",
+  "created_at": "2026-07-08T01:01:35",
+  "purpose": "Diagnose local RAG on valid questions before further test submissions.",
+  "parameters": {
+    "top_k": 8,
+    "max_answer_chars": 900
+  },
+  "inputs": {
+    "embedding_records": "data/processed/embedding/embedding_records.jsonl",
+    "questions_valid": "data/raw/share/share/質問回答/questions_valid.csv",
+    "question_routes": "EDA/EDA011/tables/question_routes.csv"
+  },
+  "outputs": {
+    "diagnosis": "EDA/EDA023/tables/valid_local_rag_diagnosis.csv",
+    "route_summary": "EDA/EDA023/tables/valid_route_summary.csv",
+    "report": "EDA/EDA023/eda023_report.md"
+  },
+  "valid_question_count": 30
+}

@@ -1,0 +1,31 @@
+﻿index,route,question,gold_answer,pipeline_answer,answer_match,source_stage,method
+0,format_extraction,青潮モビリティサービスの最終報告における、モビリティ需要の要因分析のページで、マーカーされている単語をすべて抜き出してください。,hr、weekday、weathersit、temp,hr、weekday、weathersit、temp,True,eda033_structured_candidate,structured_text_factor_candidate_without_marker_metadata
+1,image_ocr,KSSのfigure_06.pngにおいて、dayによる件数推移とあわせて表示されているTG平均が最も低い日は何日ですか。,20日,20日,True,eda033_structured_candidate,previous_answer_normalization
+2,document_whole_context,恒一会 かえで総合病院の提案書内で、重視するとされている評価指標を答えてください。,Recall,Recall,True,eda033_structured_candidate,processed_text_regex
+3,table_calculation,全案件で支払った税込金額をもとに、消費税額の総額を計算してください。,"4,394,250円","4,384,250円",False,eda033_structured_candidate,table_calculation_reuse
+4,code_reading,青嶺不動産アセットマネジメントの modeling.py において、前処理器の sparse_output が False になる model_type は何ですか。,hist_gradient_boosting,hist_gradient_boosting,True,eda033_structured_candidate,code_regex_sparse_output
+5,document_whole_context,白峰信用リスク評価の最終報告書において、「プロジェクト目的とスコープ」内でAPI化はどの分類に記載されていますか。,対象外（契約明記）,対象外(契約明記),True,eda024_llm_rag,previous_llm_rag
+6,table_calculation,恒一会 かえで総合病院のtrain.xlsx内の PivotTable で集計されている表から、ALPの平均が最も高いものの抽出条件を教えてください。,Gender=Male、disease=1、Age=68で抽出されたデータに対する平均 / ALP,Gender=Male、disease=1、Age=68で抽出されたデータに対する平均 / ALP,True,eda033_structured_candidate,table_calculation_reuse
+7,table_calculation,恒一会 かえで総合病院のプロジェクトデータ（train.csv）において、disease=1の女性の中で、ALT_GPTの平均値が最も高い年齢は何歳ですか。,32歳,32歳,True,eda033_structured_candidate,table_calculation_reuse
+8,fallback_bm25_llm,蒼泉会 ひがし丘総合病院の契約条件において、仮に実績工数が見込工数の4分の3だった場合、最終請求金額（税込）は見込金額（税込）よりいくら少なくなりますか。,"1,168,750円","1,168,750円",True,eda024_llm_rag,previous_llm_rag
+9,diff_check,青嶺不動産アセットマネジメントの提案書について、oldフォルダ内の旧版と提案フォルダ直下の最新版を比較し、変更された箇所を変更前と変更後で答えてください。,QAレビューア：池田 直哉 → 小林 直樹,QAレビューア:池田 直哉 → 小林 直樹,True,eda033_structured_candidate,pptx_old_new_structure_diff
+10,document_whole_context,蒼樹会 みなみ野女性医療センターの最終報告書にて、影響度が最も高いとされている残余リスクを抜き出してください。,0値の疑似欠損,0値の疑似欠損,True,eda033_structured_candidate,processed_text_regex
+11,table_calculation,東都人材プラットフォームのtrain.xlsxにおいて、trainシートでフィルターで抽出されている条件を教えてください。,Gender=Male、Country=India、target=2,Gender=Male、Country=India、target=2,True,eda033_structured_candidate,table_calculation_reuse
+12,fallback_bm25_llm,京橋信用ソリューションズの契約金額（税込）はいくらですか。,"5,775,000円","5,775,000円",True,eda033_structured_candidate,processed_text_regex
+13,table_calculation,青葉与信マネジメントの分析対象データにおいて、term=3 years、grade=B1、purpose=credit_cardに該当するloan_amntの平均を算出してください。四捨五入して整数値で出してください。,1526,1526,True,eda033_structured_candidate,table_calculation_reuse
+14,fallback_bm25_llm,青葉バイオメディカル機器案件において、鈴木 美咲さんはどの役割としてアサインされていますか。,アサインされていない,アサインされていない,True,eda033_structured_candidate,processed_text_regex
+15,fallback_bm25_llm,中間報告会または中間レビューが2025年7月1日以前に実施された案件を、主略称ですべて挙げてください。,MINAMINO、SHR、AYM,MINAMINO、SHR、AYM,True,eda033_structured_candidate,schedule_csv_middle_review_filter
+16,fallback_bm25_llm,MINAMINOのPLにおいて、M01当日を1日目として数えた場合、M01の日からFR実施までの日数は何日ですか。,43日,43日,True,eda033_structured_candidate,schedule_csv_inclusive_day_count
+17,document_whole_context,京橋信用ソリューションズのカラム説明において、カラム名pdaysの値-1は何を表していますか。,未連絡,未連絡,True,eda033_structured_candidate,processed_text_regex
+18,fallback_bm25_llm,東都のCTにおいて、全14章のうち「本業務の対象データ、前提および制約」が記載されている章番号を数字で答えてください。,3,3,True,eda024_llm_rag,previous_llm_rag
+19,fallback_bm25_llm,青嶺不動産アセットマネジメント案件で分析設計を担当する人の名前をフルネームで抽出してください。,渡辺 遥,渡辺 遥,True,eda024_llm_rag,previous_llm_rag
+20,fallback_bm25_llm,AYMのPLにおいて、探索的分析・仮説整理フェーズに一致するタスクIDをすべて挙げてください。,T09、T10、T11、T12,T09、T08、T10、T11、T12,True,eda033_structured_candidate,schedule_csv_phase_task_ids
+21,table_calculation,青葉バイオメディカル機器のtrain.xlsxのPivotシートにおいて、平均月収が最も高い層の抽出条件を答えてください。,Attrition = No、Gender = Female、MaritalStatus = Single、EducationField = Human Resources,Attrition = No、Gender = Female、MaritalStatus = Single、EducationField = Human Resources,True,eda033_structured_candidate,table_calculation_reuse
+22,code_reading,AOSHIOの NB01_eda.ipynbにおいて、観察結果サマリで出力されている「TGとの相関 上位5」の中で、相関係数が最も小さいカラム名を答えてください。,season,season,True,eda033_structured_candidate,notebook_output_parse
+23,format_extraction,AOSHIOのM02資料（docx）において、黄色でハイライトされている部分をすべて抜き出してください。,"見込金額（税込）: 4,675,000 JPY","見込金額(税込): 4,675,000 JPY",True,eda033_structured_candidate,format_metadata_docx_highlight
+24,code_reading,白峰信用リスク評価の 01_eda.ipynb にある特徴量相関ヒートマップの図で可視化されている特徴量のうち、classとの相関係数の絶対値が最も小さい特徴量名を答えてください。,Attr7,Attr7,True,eda033_structured_candidate,raw_csv_corr_heatmap_recompute
+25,document_whole_context,東都人材プラットフォームの提案書P7において、赤で強調されている箇所の文字列を抜き出してください。,1. データ理解・EDA,1. データ理解・EDA,True,eda033_structured_candidate,format_metadata_pptx_slide_runs
+26,table_calculation,青葉バイオメディカル機器のtrain.csvにおいて、EducationFieldがMarketingかつMonthlyIncomeが10000より大きいデータを抽出し、Ageの平均値を計算してください。その平均値に最も近い年齢のidをすべて答えてください。,train_0077、train_0216、train_0242、train_0722,train_0077、train_0216、train_0242、train_0722,True,eda033_structured_candidate,table_calculation_reuse
+27,document_whole_context,蒼泉会 ひがし丘総合病院案件において、中間報告資料に記載されたMacro F1スコアの詳細値と、最終分析出力metrics.jsonに記録されているMacro F1スコアの詳細値を用いて、改善幅を小数第6位まで答えてください。,0.010301,0.010301,True,eda033_structured_candidate,metrics_json_macro_f1_delta
+28,code_reading,蒼泉会の分析コードにおいて、CATは dtype とユニーク数の条件でどのように判定していますか。,object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。,object、string、categoricaldtype の列を候補とし、欠損を除いたユニーク数が50未満ならカテゴリ特徴量として採用している。,True,eda033_structured_candidate,code_structure_cat_condition
+29,document_whole_context,蒼樹会 みなみ野女性医療センターの契約書第8条において、本契約終了後に秘密保持義務が存続する期間は何年間ですか。,3年間,3年間,True,eda024_llm_rag,previous_llm_rag

@@ -1,0 +1,10 @@
+{
+  "eda": "EDA060",
+  "source_csv": "EDA\\EDA059\\tables\\question_answer_source_confidence.csv",
+  "output_csv": "EDA\\human_review.csv",
+  "report": "EDA\\EDA060\\eda060_report.md",
+  "row_count": 100,
+  "company_group_count": 11,
+  "human_answer_empty_count": 100,
+  "human_review_empty_count": 100
+}

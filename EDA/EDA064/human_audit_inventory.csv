@@ -1,0 +1,4 @@
+﻿path,purpose,question_coverage,selected_source_information,answer_information,timestamp,availability,reliability_note
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\human_review.csv,offline human review sheet,100,True,True,unknown,readable,source_files is historical audit context; human_sorce_files is only a human-confirmed label when populated
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA058\tables\answer_source_audit.csv,historical source audit,100,True,True,unknown,readable,"historical route evidence, not necessarily human-confirmed"
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG_test49_openrouter_poc\data\output\gate19_test100_final_candidate\answer_results.jsonl,Gate 19 strict-run answer evidence,100,True,True,latest worktree,readable,formal Gate results are usable only as offline evaluation labels

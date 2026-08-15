@@ -1,0 +1,15 @@
+{
+  "eda": "EDA034",
+  "purpose": "Merge valid structured improvements and create a safe test submission candidate.",
+  "valid_count": 30,
+  "valid_match_count": 29,
+  "test_count": 100,
+  "test_non_unknown_count": 17,
+  "outputs": [
+    "EDA/EDA034/tables/valid_pipeline_answer_log.csv",
+    "EDA/EDA034/tables/test_pipeline_answer_log.csv",
+    "EDA/EDA034/predictions/predictions.csv",
+    "EDA/EDA034/predictions/eda034_structured_safe_submission.zip",
+    "EDA/EDA034/eda034_report.md"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "gen-1783651010-9bjro2LChg7i29dQ2ifi",
+  "object": "chat.completion",
+  "created": 1783651010,
+  "model": "openai/gpt-oss-20b:free",
+  "provider": "Darkbloom",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "わかりません",
+        "refusal": null,
+        "reasoning": "We need to answer: \"東都人材プラットフォームのtrain.xlsxにおいて、Sheet2の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。\"\n\nWe have a candidate answer: \"coordinate\": \"E1409\", \"bold\": false, \"italic\": false, \"underline\": false, \"font_color\": \"\", \"fill_color\": \"FFFFFF00\", \"number_format\": \"General\"\n\nBut the question asks for \"抽出条件と集計内容\" (extraction condition and aggregation content). The candidate answer only gives cell formatting details. That doesn't answer the question. We need to see if we have enough evidence. The root cause: The provided answer candidate is not relevant. There's no evidence that the extraction condition and aggregation content are given. The only evidence is the cell formatting. So we cannot answer. According to instruction: If insufficient evidence, respond \"わかりません\". So final answer: \"わかりません\".",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "We need to answer: \"東都人材プラットフォームのtrain.xlsxにおいて、Sheet2の黄色にハイライトされたセルの抽出条件と集計内容を答えてください。\"\n\nWe have a candidate answer: \"coordinate\": \"E1409\", \"bold\": false, \"italic\": false, \"underline\": false, \"font_color\": \"\", \"fill_color\": \"FFFFFF00\", \"number_format\": \"General\"\n\nBut the question asks for \"抽出条件と集計内容\" (extraction condition and aggregation content). The candidate answer only gives cell formatting details. That doesn't answer the question. We need to see if we have enough evidence. The root cause: The provided answer candidate is not relevant. There's no evidence that the extraction condition and aggregation content are given. The only evidence is the cell formatting. So we cannot answer. According to instruction: If insufficient evidence, respond \"わかりません\". So final answer: \"わかりません\".",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 296,
+    "completion_tokens": 218,
+    "total_tokens": 514,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 1.9552e-05,
+      "upstream_inference_prompt_cost": 4.292e-06,
+      "upstream_inference_completions_cost": 1.526e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 204,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "_http_status": 200
+}

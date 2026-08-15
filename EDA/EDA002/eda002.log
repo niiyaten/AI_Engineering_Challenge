@@ -1,0 +1,331 @@
+2026-07-03 16:30:09,660 [INFO] Use drive_root: /mnt/data/SIGNATE_Agentic_RAG/data/interim/share/share/共有ドライブ
+2026-07-03 16:30:21,113 [INFO] Use drive_root: /mnt/data/SIGNATE_Agentic_RAG/data/interim/share/share/共有ドライブ
+2026-07-03 16:30:33,264 [INFO] Use drive_root: /mnt/data/SIGNATE_Agentic_RAG/data/interim/share/share/共有ドライブ
+2026-07-03 16:30:35,678 [WARNING] /mnt/data/SIGNATE_Agentic_RAG/EDA/EDA002/eda002.py:859: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  extraction_status[["success_count", "error_count"]] = extraction_status[["success_count", "error_count"]].fillna(0).astype(int)
+
+2026-07-04 01:32:14,688 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-04 01:32:15,217 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,385 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,455 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,540 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,674 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,730 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,818 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:15,930 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,123 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,340 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,449 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,508 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,715 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,913 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:16,980 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:32:17,132 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,187 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-04 01:43:40,335 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,425 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,458 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,486 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,538 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,556 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,600 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,655 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,796 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:40,952 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,004 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,046 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,197 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,377 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,423 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 01:43:41,478 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,005 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-04 11:16:04,156 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,245 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,278 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,307 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,359 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,376 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,421 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,480 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,628 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,785 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,836 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:04,878 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:05,032 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:05,186 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:05,232 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:16:05,288 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,331 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-04 11:17:20,477 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,562 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,595 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,623 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,674 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,692 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,736 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,792 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:20,933 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,087 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,140 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,182 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,329 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,479 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,523 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:17:21,578 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:392: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,526 [INFO] Use drive_root: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\共有ドライブ
+2026-07-04 11:18:18,673 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,760 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,793 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,823 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,875 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,892 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,939 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:18,997 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,142 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,306 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,358 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,400 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,553 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,706 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,754 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+
+2026-07-04 11:18:19,810 [WARNING] E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\eda002.py:397: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  object_cols = df.select_dtypes(include="object").columns.tolist()
+

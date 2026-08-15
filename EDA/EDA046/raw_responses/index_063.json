@@ -1,0 +1,63 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "stop",
+  "content_length": 20,
+  "prompt_tokens": 5185,
+  "completion_tokens": 327,
+  "reasoning_tokens": 309,
+  "raw": {
+    "id": "gen-1783602573-A9nAwpzHTzPbhc98J3K6",
+    "object": "chat.completion",
+    "created": 1783602573,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\":\"0.21480\"}",
+          "refusal": null,
+          "reasoning": "We need to compute predicted value using regression coefficients. The regression analysis sheet shows only intercept coefficient. It seems only intercept? The regression analysis csv shows only intercept row. No other coefficients. So model is just intercept? The question: \"青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。\"\n\nWe need to use regression coefficients to predict for id=0. But we only have intercept coefficient 0.21480000000000193. No other coefficients. So predicted value = intercept? But maybe other coefficients exist but not shown due to truncated? The csv shows only intercept row. So likely model is intercept only. So predicted value = 0.21480? But need 5 decimal places: 0.21480? Actually 0.21480000000000193 rounds to 0.21480. So answer: 0.21480.\n\nWe must output JSON: {\"answer\":\"0.21480\"}.\n\nCheck rule: must include file names, etc? The rule says: \"ファイル名、ページ番号、セル、ID、金額、単位は省略しない。\" But we are not referencing any file names? We are referencing regression analysis csv. But answer is numeric. The rule about file names etc maybe for referencing. But we can just give answer. It's fine.\n\nReturn JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to compute predicted value using regression coefficients. The regression analysis sheet shows only intercept coefficient. It seems only intercept? The regression analysis csv shows only intercept row. No other coefficients. So model is just intercept? The question: \"青葉与信マネジメントのtrain.xlsxにて算出された回帰係数を使ってid=0を予測した場合の予測値はいくらになりますか。小数第5位まで求めてください。\"\n\nWe need to use regression coefficients to predict for id=0. But we only have intercept coefficient 0.21480000000000193. No other coefficients. So predicted value = intercept? But maybe other coefficients exist but not shown due to truncated? The csv shows only intercept row. So likely model is intercept only. So predicted value = 0.21480? But need 5 decimal places: 0.21480? Actually 0.21480000000000193 rounds to 0.21480. So answer: 0.21480.\n\nWe must output JSON: {\"answer\":\"0.21480\"}.\n\nCheck rule: must include file names, etc? The rule says: \"ファイル名、ページ番号、セル、ID、金額、単位は省略しない。\" But we are not referencing any file names? We are referencing regression analysis csv. But answer is numeric. The rule about file names etc maybe for referencing. But we can just give answer. It's fine.\n\nReturn JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5185,
+      "completion_tokens": 327,
+      "total_tokens": 5512,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.80725e-05,
+        "upstream_inference_prompt_cost": 7.51825e-05,
+        "upstream_inference_completions_cost": 2.289e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 309,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

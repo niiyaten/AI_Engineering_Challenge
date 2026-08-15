@@ -1,0 +1,16 @@
+{
+  "eda": "EDA032",
+  "inputs": [
+    "EDA\\EDA029\\tables\\eda024_failure_source_diagnosis.csv",
+    "EDA\\EDA030\\tables\\table_valid_calculation_results.csv",
+    "data/processed/share"
+  ],
+  "outputs": [
+    "EDA/EDA032/tables/structured_candidate_answers.csv",
+    "EDA/EDA032/tables/structured_candidate_route_summary.csv",
+    "EDA/EDA032/eda032_report.md"
+  ],
+  "target_count": 25,
+  "candidate_count": 25,
+  "candidate_match_count": 24
+}

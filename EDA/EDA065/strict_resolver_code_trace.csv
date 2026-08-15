@@ -1,0 +1,6 @@
+﻿stage,module,function,input,output,selection_unit,ranking,multiple_documents,explicit_filename,project_name,document_role,human_check_dependency
+question/source requirement,source_selection.py,build_heuristic_source_plan / call_source_planner,QuestionAnalysis + FileRecord,source_requirements,requirement,deterministic candidates,True,True,True,True,False
+candidate construction,source_selection.py,deterministic_candidates_for_requirement,source requirement + file profiles,candidate rows,file,True,True,True,True,True,False
+final source plan,source_selection.py,run_source_selection_planning,candidate selections + content verification,final_selected_file_ids,file set,selection plus verification,True,True,True,True,False
+source contract,source_selection_resolution.py,resolve_source_selection,final_file_ids + source requirements,resolved source set,source set,False,True,inherited,True,True,False
+route and execution,tool_registry.py / route_registry.py,run_answer_pipeline / choose_route,final_selected_file_ids,executor inputs and selected_files evidence,selected file set,False,True,not re-ranked,already constrained,route dependent,False

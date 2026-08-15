@@ -1,0 +1,12 @@
+{
+  "eda": "EDA057",
+  "purpose": "全案件横断の契約・担当者・社内管理情報を用いて残未回答を削減",
+  "base_predictions": "EDA\\EDA056\\predictions\\eda056_meeting_operation_schedule_predictions.csv",
+  "output_csv": "EDA\\EDA057\\predictions\\eda057_cross_project_predictions.csv",
+  "output_zip": "EDA\\EDA057\\predictions\\eda057_cross_project_submission.zip",
+  "updated_indices": [
+    38,
+    46,
+    79
+  ]
+}

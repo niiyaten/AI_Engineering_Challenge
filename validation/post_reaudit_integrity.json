@@ -1,0 +1,78 @@
+{
+  "question_count": 100,
+  "answered_count": 100,
+  "empty_answer_count": 0,
+  "evidence_row_count": 292,
+  "evidence_answered_count": 100,
+  "missing_evidence_source_count": 0,
+  "duplicate_question_index_count": 0,
+  "prediction_row_count": 100,
+  "prediction_column_count_set": [
+    2
+  ],
+  "answer_diffs_from_third_audit": [
+    {
+      "index": 24,
+      "old": "AOMINE、13,556行",
+      "new": "AOMINE"
+    },
+    {
+      "index": 55,
+      "old": "AOMINE、14.5時間",
+      "new": "AOMINE"
+    }
+  ],
+  "route_diffs_from_third_audit": [],
+  "method_diffs_from_third_audit": [],
+  "evidence_count_diffs_from_third_audit": [],
+  "run_summary": {
+    "cold_start": true,
+    "question_count": 100,
+    "answered_count": 100,
+    "abstained_count": 0,
+    "evidence_answered_count": 100,
+    "remaining50_route_count": 49,
+    "audit_route_count": 19,
+    "base_route_count": 30,
+    "timeout_count": 0,
+    "exception_count": 0,
+    "prepare_seconds": 12.217,
+    "execution_wall_seconds": 642.71,
+    "total_wall_seconds": 654.927,
+    "question_elapsed_seconds": 498.991,
+    "runtime_inputs": {
+      "source_mode": "share_zip_cold_prepare",
+      "prepared_source_tree": "/mnt/data/run_post_reaudit_v1/workspace/office/prepared_share",
+      "share_zip": "/mnt/data/rag_integrated100_post_reaudit_coldstart_v1/materials/share.zip",
+      "questions": "/mnt/data/rag_integrated100_post_reaudit_coldstart_v1/questions/integrated100_questions.csv",
+      "fact_catalog": false,
+      "prior_answers": false,
+      "expected_answers": false,
+      "external_api": false
+    },
+    "office_events": [
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/~$スケジュール.xlsx",
+        "status": "ignored_office_temp"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/02.計画/スケジュール.xlsx",
+        "status": "decrypted",
+        "derivation": "DA******************sx"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 恒一会 かえで総合病院/01.契約/契約書_pw-kaede20250902.docx",
+        "status": "decrypted",
+        "derivation": "ka*********02"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/医療法人社団 蒼樹会 みなみ野女性医療センター/00.提案/~$提案書.pptx",
+        "status": "ignored_office_temp"
+      },
+      {
+        "source": "共有ドライブ/プロジェクト/青葉与信マネジメント株式会社/06.報告書/old/.~lock.青葉与信マネジメント株式会社_最終報告old.pptx#",
+        "status": "ignored_office_temp"
+      }
+    ]
+  }
+}

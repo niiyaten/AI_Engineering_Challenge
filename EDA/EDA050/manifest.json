@@ -1,0 +1,16 @@
+{
+  "eda": "EDA050",
+  "page_record_count": 166,
+  "action_record_count": 213,
+  "checkpoint_task_record_count": 95,
+  "no_text_pdf_count": 14,
+  "probe_count": 4,
+  "outputs": [
+    "EDA/EDA050/tables/meeting_page_inventory.csv",
+    "EDA/EDA050/tables/meeting_action_inventory.csv",
+    "EDA/EDA050/tables/checkpoint_task_inventory.csv",
+    "EDA/EDA050/tables/no_text_pdf_inventory.csv",
+    "EDA/EDA050/tables/meeting_action_question_probe.csv",
+    "EDA/EDA050/eda050_report.md"
+  ]
+}

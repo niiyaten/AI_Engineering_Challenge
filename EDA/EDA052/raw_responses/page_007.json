@@ -1,0 +1,8 @@
+{
+  "status": "http_502",
+  "finish_reason": "",
+  "content_length": 0,
+  "raw": {
+    "error_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":502,\"metadata\":{\"raw\":\"{\\\"error\\\":{\\\"message\\\":\\\"EngineCore encountered an issue. See stack trace (above) for the root cause.\\\",\\\"type\\\":\\\"Internal Server Error\\\",\\\"param\\\":null,\\\"code\\\":500}}\",\"provider_name\":\"Nvidia\",\"is_byok\":false}},\"user_id\":\"user_3Cwz2q01SwMzw9U9wXh0Y6CNy5K\"}"
+  }
+}

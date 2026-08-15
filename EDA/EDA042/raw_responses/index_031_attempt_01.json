@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-oss-20b:free",
+  "status": "http_200",
+  "finish_reason": "length",
+  "message_keys": [
+    "content",
+    "reasoning",
+    "reasoning_details",
+    "refusal",
+    "role"
+  ],
+  "content_length": 0,
+  "reasoning_present": true,
+  "raw": {
+    "id": "gen-1783592713-ia83k1Kms2DsbJpPiAbw",
+    "object": "chat.completion",
+    "created": 1783592713,
+    "model": "openai/gpt-oss-20b:free",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "We need to answer: \"固定金額契約の中で、分析データ1行あたりの契約金額(税込)が最も高い案件を、主略称と1行あたりの金額で答えてください。1行あたりの金額は円単位で切り上げてください。\"\n\nWe need to find among the contracts listed, which are fixed-price contracts (固定金額契約). Then compute per line (analysis data 1行?) Actually \"分析データ1行あたりの契約金額\" maybe refers to \"analysis data\" but likely means \"1行あたり\" meaning per line of data? Might be per line of contract? But we need to compute contract amount per line? The question: \"固定金額契約の中で、分析データ1行あたりの契約金額(税込)が最も高い案件を、主略称と1行あたりの金額で答えてください。1行あたりの金額は円単位で切り上げてください。\"\n\nWe need to identify the contract with the highest per line amount. But what is \"分析データ1行\"? Possibly refers to \"analysis data\" meaning each line of the contract table? But maybe they mean \"1行あたり\" meaning per line of the contract table? But we need to compute per line amount: contract total amount divided by number of lines? Or maybe \"分析データ\" refers to \"analysis data\" which is the contract? Hard.\n\nLet's interpret: For each contract, we have a table of payment installments. Each row is a payment. The contract is fixed-price. We need to compute the contract total amount (税込) divided by number of rows? That would give average per line. Then find the highest.\n\nAlternatively, maybe \"分析データ1行あたり\" refers to \"analysis data\" meaning each line of the contract table? But we need to compute per line amount: contract total / number of rows.\n\nLet's compute for each fixed-price contract.\n\nWhich contracts are fixed-price? The ones that say \"固定価格契約\" or \"固定金額契約\" or \"報酬総額\" etc. Many are fixed.\n\nList:\n\n1. 京橋信用ソリューションズ株式会社: fixed price, total 5,775,000. Table has 1 row (着手金). So per line = 5,775,000 / 1 = 5,775,000.\n\n2. 医療法人社団 蒼樹会 みなみ野女性医療センター: fixed price, total 3,960,000. Table has 1 row. Per line = 3,960,000.\n\n3. 株式会社青葉バイオメディカル機器: contract is not fixed; it's based on actual hours. So not fixed.\n\n4. 白峰信用リスク評価株式会社: fixed price, total 7,480,000. Table has 1 row. Per line = 7,480,000.\n\n5. 青葉与信マネジメント株式会社: fixed price, total 4,620,000. Table has 1 row. Per line = 4,620,000.\n\n6. 医療法人社団<|channel|>... かえで総合病院: time_and_materials, not fixed.\n\n7. 医療法人社団 蒼泉会 ひがし丘総合病院: fixed? It says 見込金額, but not fixed? It says 見込金額, but contract is not fixed? It says \"見込金額は、税抜4,250,000円、消費税425,000円、税込4,675,000円\". It might be fixed? But it's a \"見込金額\" but not sure. But likely not fixed.\n\n8. 株式会社東都人材プラットフォーム: not fixed.\n\n9. 株式会社青嶺不動産アセットマネジメント: fixed? It says 想定金額(税込) 4,675,000. Might be fixed.\n\nBut the question: \"固定金額契約の中で\" means among fixed-price contracts. So we include those that are",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to answer: \"固定金額契約の中で、分析データ1行あたりの契約金額(税込)が最も高い案件を、主略称と1行あたりの金額で答えてください。1行あたりの金額は円単位で切り上げてください。\"\n\nWe need to find among the contracts listed, which are fixed-price contracts (固定金額契約). Then compute per line (analysis data 1行?) Actually \"分析データ1行あたりの契約金額\" maybe refers to \"analysis data\" but likely means \"1行あたり\" meaning per line of data? Might be per line of contract? But we need to compute contract amount per line? The question: \"固定金額契約の中で、分析データ1行あたりの契約金額(税込)が最も高い案件を、主略称と1行あたりの金額で答えてください。1行あたりの金額は円単位で切り上げてください。\"\n\nWe need to identify the contract with the highest per line amount. But what is \"分析データ1行\"? Possibly refers to \"analysis data\" meaning each line of the contract table? But maybe they mean \"1行あたり\" meaning per line of the contract table? But we need to compute per line amount: contract total amount divided by number of lines? Or maybe \"分析データ\" refers to \"analysis data\" which is the contract? Hard.\n\nLet's interpret: For each contract, we have a table of payment installments. Each row is a payment. The contract is fixed-price. We need to compute the contract total amount (税込) divided by number of rows? That would give average per line. Then find the highest.\n\nAlternatively, maybe \"分析データ1行あたり\" refers to \"analysis data\" meaning each line of the contract table? But we need to compute per line amount: contract total / number of rows.\n\nLet's compute for each fixed-price contract.\n\nWhich contracts are fixed-price? The ones that say \"固定価格契約\" or \"固定金額契約\" or \"報酬総額\" etc. Many are fixed.\n\nList:\n\n1. 京橋信用ソリューションズ株式会社: fixed price, total 5,775,000. Table has 1 row (着手金). So per line = 5,775,000 / 1 = 5,775,000.\n\n2. 医療法人社団 蒼樹会 みなみ野女性医療センター: fixed price, total 3,960,000. Table has 1 row. Per line = 3,960,000.\n\n3. 株式会社青葉バイオメディカル機器: contract is not fixed; it's based on actual hours. So not fixed.\n\n4. 白峰信用リスク評価株式会社: fixed price, total 7,480,000. Table has 1 row. Per line = 7,480,000.\n\n5. 青葉与信マネジメント株式会社: fixed price, total 4,620,000. Table has 1 row. Per line = 4,620,000.\n\n6. 医療法人社団<|channel|>... かえで総合病院: time_and_materials, not fixed.\n\n7. 医療法人社団 蒼泉会 ひがし丘総合病院: fixed? It says 見込金額, but not fixed? It says 見込金額, but contract is not fixed? It says \"見込金額は、税抜4,250,000円、消費税425,000円、税込4,675,000円\". It might be fixed? But it's a \"見込金額\" but not sure. But likely not fixed.\n\n8. 株式会社東都人材プラットフォーム: not fixed.\n\n9. 株式会社青嶺不動産アセットマネジメント: fixed? It says 想定金額(税込) 4,675,000. Might be fixed.\n\nBut the question: \"固定金額契約の中で\" means among fixed-price contracts. So we include those that are",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2768,
+      "completion_tokens": 900,
+      "total_tokens": 3668,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000103136,
+        "upstream_inference_prompt_cost": 4.0136e-05,
+        "upstream_inference_completions_cost": 6.3e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 897,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

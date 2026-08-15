@@ -1,0 +1,2 @@
+﻿chunks_path,question_source,chunk_count,valid_question_count,test_question_count,top_k,target_extensions
+E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\EDA\EDA002\texts\text_chunks.jsonl,directory: E:\PC\デスクトップ\SIGNATE\SIGNATE_Agentic_RAG\data\raw\share\share\質問回答,1230,30,100,10,".csv, .ipynb, .json, .md, .py"

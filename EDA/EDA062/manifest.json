@@ -1,0 +1,15 @@
+{
+  "eda": "EDA062",
+  "period_csv": "data\\processed\\share\\share\\契約管理\\project_contract_periods.csv",
+  "payment_csv": "data\\processed\\share\\share\\契約管理\\project_payment_schedule.csv",
+  "monthly_totals_csv": "data\\processed\\share\\share\\契約管理\\payment_monthly_totals.csv",
+  "amount_comparison_csv": "data\\processed\\share\\share\\契約管理\\project_amount_comparison.csv",
+  "decision_policy": "data\\raw\\share\\share\\共有ドライブ\\社内管理\\データアステル社内管理_決裁基準.md",
+  "report": "EDA\\EDA062\\eda062_report.md",
+  "project_count": 10,
+  "payment_row_count": 13,
+  "amount_comparison_complete_count": 6,
+  "amount_differs_count": 1,
+  "amount_comparison_unavailable_count": 4,
+  "diagnostic_count": 0
+}

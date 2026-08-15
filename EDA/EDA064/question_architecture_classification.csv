@@ -1,0 +1,131 @@
+﻿dataset,question_id,primary_class,secondary_classes,reasoning_summary,expected_retrieval_stage,likely_executor,missing_executor,requires_llm_planner,requires_vision,human_label_available,generated_by,source,confidence,requires_manual_review
+valid,0,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,1,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,2,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,3,D,,multi_document_required | content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,4,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,5,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,6,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,7,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,8,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,9,D,,multi_document_required,initial_candidate,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,10,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,11,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,12,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,13,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,14,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,15,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,16,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,17,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,18,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,19,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,20,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,21,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,22,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,23,E,F,structure_or_style_required | vision_required | content_probe_required | insufficient_question_signal,document_probe,structure_or_style,unknown,True,True,False,offline_architecture_rules,question signals,medium,True
+valid,24,A,F,explicit_document | vision_required,initial_candidate,document_lookup,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+valid,25,G,G,semantic_document_guess,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,26,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+valid,27,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,28,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+valid,29,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,0,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,1,D,G,multi_document_required,initial_candidate,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,2,A,,explicit_document | structure_or_style_required,initial_candidate,structure_or_style,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,3,E,,structure_or_style_required,document_probe,structure_or_style,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,4,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,5,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,6,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,7,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,8,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,9,G,G,semantic_document_guess,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,10,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,11,E,,structure_or_style_required | content_probe_required | insufficient_question_signal,document_probe,structure_or_style,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,12,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,13,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,14,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,15,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,16,E,F,structure_or_style_required | vision_required | content_probe_required | insufficient_question_signal,document_probe,structure_or_style,unknown,True,True,True,offline_architecture_rules,question signals,medium,True
+test,17,E,F,structure_or_style_required | vision_required | content_probe_required | insufficient_question_signal,document_probe,calculation,unknown,True,True,False,offline_architecture_rules,question signals,medium,True
+test,18,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,19,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,20,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,21,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,22,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,23,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,24,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,25,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,calculation,unknown,False,True,True,offline_architecture_rules,question signals,medium,True
+test,26,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,27,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,28,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,29,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,30,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,31,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,32,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,33,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,34,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,35,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,36,H,,semantic_document_guess,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,37,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,38,H,,internal_scope_candidate,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,39,A,F,explicit_document | vision_required,initial_candidate,document_lookup,unknown,False,True,True,offline_architecture_rules,question signals,medium,True
+test,40,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,41,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,42,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,43,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,44,E,,content_probe_required | insufficient_question_signal | structure_or_style_required | vision_required,document_probe,document_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,45,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,46,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,47,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,calculation,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,48,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,49,E,,structure_or_style_required,document_probe,structure_or_style,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,50,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,51,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,52,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,53,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,54,A,F,explicit_document | vision_required,initial_candidate,document_lookup,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,55,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,56,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,57,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,58,E,,internal_scope_candidate | structure_or_style_required | vision_required,document_probe,document_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,59,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,60,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,61,D,G,multi_document_required | content_probe_required | insufficient_question_signal,initial_candidate,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,62,D,,multi_document_required,initial_candidate,calculation,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,63,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,64,H,,semantic_document_guess,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,65,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,66,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,67,G,,internal_scope_candidate,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,68,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,69,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,70,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,71,E,,structure_or_style_required,document_probe,structure_or_style,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,72,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,73,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,74,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,75,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,76,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,77,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,78,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,79,G,,internal_scope_candidate,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,80,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,81,E,,structure_or_style_required,document_probe,structure_or_style,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,82,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,structure_or_style,unknown,False,True,True,offline_architecture_rules,question signals,medium,True
+test,83,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,84,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,85,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,86,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,87,G,G,internal_scope_candidate,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,88,G,,semantic_document_guess,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,89,A,,explicit_document,initial_candidate,document_lookup,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,90,A,,explicit_document,initial_candidate,calculation,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,91,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,92,H,,content_probe_required | insufficient_question_signal,initial_candidate,calculation,unknown,False,False,True,offline_architecture_rules,question signals,medium,True
+test,93,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,94,A,G,explicit_document,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,95,A,G,explicit_document | multi_document_required,initial_candidate,table_lookup,unknown,False,False,False,offline_architecture_rules,question signals,medium,True
+test,96,B,G,content_probe_required | insufficient_question_signal,document_probe,table_lookup,unknown,True,False,True,offline_architecture_rules,question signals,medium,True
+test,97,A,F,explicit_document | structure_or_style_required | vision_required,initial_candidate,calculation,unknown,False,True,False,offline_architecture_rules,question signals,medium,True
+test,98,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True
+test,99,B,,content_probe_required | insufficient_question_signal,document_probe,document_lookup,unknown,True,False,False,offline_architecture_rules,question signals,medium,True

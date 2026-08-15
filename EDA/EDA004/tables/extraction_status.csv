@@ -1,0 +1,5 @@
+﻿extension,file_count,total_size_kb,success_count,error_count,success_rate
+.docx,46,2517.22,45,1,0.9783
+.pdf,28,151431.91,28,0,1.0
+.pptx,25,3657.9,25,0,1.0
+.xlsx,20,22345.18,19,1,0.95

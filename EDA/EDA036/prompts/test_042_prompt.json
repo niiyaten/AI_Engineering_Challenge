@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "あなたは社内資料RAGの最終回答を作るアシスタントです。提示された質問、回答候補、根拠抜粋だけを使ってください。候補や根拠にない値を外部知識で補わないでください。回答は最終回答だけにし、説明、根拠番号、ファイルパス、HTMLタグ、Markdown装飾は含めないでください。候補が十分でない場合だけ「わかりません」と返してください。"
+    },
+    {
+      "role": "user",
+      "content": "以下の質問に対する提出用の短い最終回答だけを返してください。\n\n質問: 蒼泉会 ひがし丘総合病院のtrain.xlsxのSheet1において、黄色ハイライトされている数値に対応するデータの抽出条件と集計内容を答えてください。\nroute: format_extraction\nsubtype: xlsx_yellow_cell_context\n候補生成方法: xlsx_yellow_cell_context\n候補信頼度: medium\nneeds_review: True\nEDA035回答: わかりません\n回答候補: Sheet1!F22=33.022105717\n参照元: data/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/03.データ/train.xlsx.structure.json\n根拠抜粋:\ndata/processed/share/share/共有ドライブ/プロジェクト/医療法人社団 蒼泉会 ひがし丘総合病院/03.データ/train.xlsx.structure.json Sheet1!F22: {'col_4': '1', 'col_5': '35.9', 'col_6': '33.022105717'}"
+    }
+  ],
+  "gold_answer_not_included": true
+}
