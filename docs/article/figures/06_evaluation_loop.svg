@@ -1,3 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6FED"/></marker></defs>
-<rect width="100%" height="100%" fill="#FAFBFC"/><text x="800" y="70" font-family="Noto Sans CJK JP" font-size="46" font-weight="700" text-anchor="middle" fill="#173B68">RAG評価の改善ループ</text><rect x="90" y="300" width="200" height="120" rx="18" fill="#E8F0FE" stroke="#AAB4C3" stroke-width="2"/><text x="190" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">評価質問</text><rect x="350" y="300" width="200" height="120" rx="18" fill="#E8F5EE" stroke="#AAB4C3" stroke-width="2"/><text x="450" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Retrieval評価</text><rect x="610" y="300" width="200" height="120" rx="18" fill="#F0EAFE" stroke="#AAB4C3" stroke-width="2"/><text x="710" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Answer評価</text><rect x="870" y="300" width="200" height="120" rx="18" fill="#FFF1DD" stroke="#AAB4C3" stroke-width="2"/><text x="970" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">Failure分類</text><rect x="1130" y="300" width="200" height="120" rx="18" fill="#DDE9FF" stroke="#AAB4C3" stroke-width="2"/><text x="1230" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">改善</text><rect x="1390" y="300" width="200" height="120" rx="18" fill="#E8F5EE" stroke="#AAB4C3" stroke-width="2"/><text x="1490" y="370" font-family="Noto Sans CJK JP" font-size="26" font-weight="700" text-anchor="middle" fill="#1F2937">再評価</text><line x1="290" y1="360" x2="340" y2="360" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="550" y1="360" x2="600" y2="360" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="810" y1="360" x2="860" y2="360" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="1070" y1="360" x2="1120" y2="360" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="1330" y1="360" x2="1380" y2="360" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><path d="M1490 430 C1490 650 190 650 190 430" fill="none" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><rect x="270" y="720" width="1060" height="100" rx="18" fill="white" stroke="#D7DDE6" stroke-width="2"/><text x="800" y="765" font-family="Noto Sans CJK JP" font-size="28" font-weight="600" text-anchor="middle" fill="#1F2937">「見つけられない」と「見つけたが答えを間違える」を分けて改善する</text></svg>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6FED"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FAFBFC"/>
+<text x="800" y="78" font-family="Noto Sans CJK JP" font-size="46" font-weight="700" text-anchor="middle" fill="#173B68">RAG評価の改善ループ</text>
+<rect x="55" y="270" width="200" height="155" rx="18" fill="#E8F0FE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="155" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="155" dy="0">評価質問</tspan></text>
+<text x="155" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="155" dy="0">固定セット</tspan></text>
+<line x1="255" y1="347" x2="305" y2="347" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="315" y="270" width="200" height="155" rx="18" fill="#E8F5EE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="415" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="415" dy="0">Retrieval評価</tspan></text>
+<text x="415" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="415" dy="0">必要根拠を取得?</tspan></text>
+<line x1="515" y1="347" x2="565" y2="347" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="575" y="270" width="200" height="155" rx="18" fill="#F0EAFE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="675" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="675" dy="0">Answer評価</tspan></text>
+<text x="675" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="675" dy="0">回答は正しい?</tspan></text>
+<line x1="775" y1="347" x2="825" y2="347" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="835" y="270" width="200" height="155" rx="18" fill="#FFF1DD" stroke="#AAB4C3" stroke-width="2"/>
+<text x="935" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="935" dy="0">Failure分類</tspan></text>
+<text x="935" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="935" dy="0">原因を分離</tspan></text>
+<line x1="1035" y1="347" x2="1085" y2="347" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="1095" y="270" width="200" height="155" rx="18" fill="#DDE9FF" stroke="#AAB4C3" stroke-width="2"/>
+<text x="1195" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="1195" dy="0">改善</tspan></text>
+<text x="1195" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="1195" dy="0">検索 / Parser / Tool</tspan></text>
+<line x1="1295" y1="347" x2="1345" y2="347" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="1355" y="270" width="200" height="155" rx="18" fill="#FDECEF" stroke="#AAB4C3" stroke-width="2"/>
+<text x="1455" y="325.0" font-family="Noto Sans CJK JP" font-size="24" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="1455" dy="0">再評価</tspan></text>
+<text x="1455" y="378.0" font-family="Noto Sans CJK JP" font-size="19" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="1455" dy="0">回帰確認</tspan></text>
+<path d="M1455 430 C1455 625 155 625 155 430" fill="none" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="245" y="700" width="1110" height="110" rx="18" fill="white" stroke="#D7DDE6" stroke-width="2"/>
+<text x="800" y="755.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="650" text-anchor="middle" fill="#1F2937"><tspan x="800" dy="0">「見つけられない」と「見つけたが答えを間違える」を分けて改善する</tspan></text>
+</svg>

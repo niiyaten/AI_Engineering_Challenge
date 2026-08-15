@@ -1,7 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6FED"/></marker></defs>
-<rect width="100%" height="100%" fill="#FAFBFC"/><text x="800" y="70" font-family="Noto Sans CJK JP" font-size="46" font-weight="700" text-anchor="middle" fill="#173B68">業務RAGの全体アーキテクチャ</text><rect x="60" y="250" width="240" height="250" rx="18" fill="#E8F0FE" stroke="#AAB4C3" stroke-width="2"/><text x="180" y="345" font-family="Noto Sans CJK JP" font-size="29" font-weight="700" text-anchor="middle" fill="#1F2937">Document
-Management</text><rect x="360" y="250" width="240" height="250" rx="18" fill="#E8F5EE" stroke="#AAB4C3" stroke-width="2"/><text x="480" y="345" font-family="Noto Sans CJK JP" font-size="29" font-weight="700" text-anchor="middle" fill="#1F2937">Parse /
-Normalize</text><rect x="660" y="250" width="240" height="250" rx="18" fill="#F0EAFE" stroke="#AAB4C3" stroke-width="2"/><text x="780" y="345" font-family="Noto Sans CJK JP" font-size="29" font-weight="700" text-anchor="middle" fill="#1F2937">Indexing</text><rect x="960" y="250" width="240" height="250" rx="18" fill="#FFF1DD" stroke="#AAB4C3" stroke-width="2"/><text x="1080" y="345" font-family="Noto Sans CJK JP" font-size="29" font-weight="700" text-anchor="middle" fill="#1F2937">Retrieval /
-Generation</text><rect x="1260" y="250" width="240" height="250" rx="18" fill="#DDE9FF" stroke="#AAB4C3" stroke-width="2"/><text x="1380" y="345" font-family="Noto Sans CJK JP" font-size="29" font-weight="700" text-anchor="middle" fill="#1F2937">Evidence /
-Evaluation</text><line x1="300" y1="375" x2="345" y2="375" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="600" y1="375" x2="645" y2="375" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="900" y1="375" x2="945" y2="375" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><line x1="1200" y1="375" x2="1245" y2="375" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/><rect x="230" y="650" width="1140" height="100" rx="18" fill="white" stroke="#D7DDE6" stroke-width="2"/><text x="800" y="695" font-family="Noto Sans CJK JP" font-size="30" font-weight="600" text-anchor="middle" fill="#1F2937">回答だけでなく、根拠・処理経路・文書版も追跡できるようにする</text></svg>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6FED"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FAFBFC"/>
+<text x="800" y="78" font-family="Noto Sans CJK JP" font-size="46" font-weight="700" text-anchor="middle" fill="#173B68">業務RAGの全体アーキテクチャ</text>
+<rect x="55" y="240" width="250" height="285" rx="18" fill="#E8F0FE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="180" y="315.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="180" dy="0">文書管理</tspan></text>
+<text x="180" y="388.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="180" dy="0">文書ID・版</tspan><tspan x="180" dy="34">状態・権限</tspan></text>
+<line x1="305" y1="382" x2="350" y2="382" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="365" y="240" width="250" height="285" rx="18" fill="#E8F5EE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="490" y="315.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="490" dy="0">解析・正規化</tspan></text>
+<text x="490" y="388.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="490" dy="0">PDF / Office</tspan><tspan x="490" dy="34">表・OCR</tspan></text>
+<line x1="615" y1="382" x2="660" y2="382" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="675" y="240" width="250" height="285" rx="18" fill="#F0EAFE" stroke="#AAB4C3" stroke-width="2"/>
+<text x="800" y="315.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="800" dy="0">索引構築</tspan></text>
+<text x="800" y="388.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="800" dy="0">Chunk</tspan><tspan x="800" dy="34">Keyword / Vector</tspan></text>
+<line x1="925" y1="382" x2="970" y2="382" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="985" y="240" width="250" height="285" rx="18" fill="#FFF1DD" stroke="#AAB4C3" stroke-width="2"/>
+<text x="1110" y="315.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="1110" dy="0">検索・回答</tspan></text>
+<text x="1110" y="388.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="1110" dy="0">Hybrid Search</tspan><tspan x="1110" dy="34">LLM / Tool</tspan></text>
+<line x1="1235" y1="382" x2="1280" y2="382" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="1295" y="240" width="250" height="285" rx="18" fill="#DDE9FF" stroke="#AAB4C3" stroke-width="2"/>
+<text x="1420" y="315.0" font-family="Noto Sans CJK JP" font-size="27" font-weight="700" text-anchor="middle" fill="#1F2937"><tspan x="1420" dy="0">根拠・評価</tspan></text>
+<text x="1420" y="388.0" font-family="Noto Sans CJK JP" font-size="21" font-weight="500" text-anchor="middle" fill="#5B6472"><tspan x="1420" dy="0">Evidence</tspan><tspan x="1420" dy="34">監査・改善</tspan></text>
+<rect x="225" y="650" width="1150" height="110" rx="18" fill="white" stroke="#D7DDE6" stroke-width="2"/>
+<text x="800" y="705.0" font-family="Noto Sans CJK JP" font-size="29" font-weight="650" text-anchor="middle" fill="#1F2937"><tspan x="800" dy="0">回答だけでなく、根拠・処理経路・参照した文書版まで追跡する</tspan></text>
+</svg>

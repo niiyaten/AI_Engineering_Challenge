@@ -1,13 +1,13 @@
-# 図版
+# Figures
 
-すべて公開用に新規作成した一般概念図です。非公開案件・実データ・非公開評価値・内部ファイル名は含みません。
+Qiita本文で使用する図版です。
 
-- `00_cover` : 記事カバー
-- `01_hybrid_search` : Keyword + Vector + Fusion
-- `02_architecture` : 業務RAG全体像
-- `03_document_management` : RAG向け資料管理
-- `04_chunk_metadata` : ChunkとMetadata
-- `05_update_flow` : 文書更新フロー
-- `06_evaluation_loop` : 評価・改善ループ
+- PNG: Qiita貼り付け用
+- SVG: 編集・再出力用
 
-PNGとSVGを同梱しています。
+## 作図方針
+
+図中の文字・ボックス・矢印は、生成AI画像ではなくSVGの座標で固定しています。
+そのため、日本語文字列の崩れ、ボックスからのはみ出し、矢印のずれが起きにくい構成です。
+
+すべて 1600 x 900 の同一キャンバスで作成しています。
