@@ -1,0 +1,15 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.3"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=11, color="#9AA7B5", fillcolor="#FAFBFC"];
+  edge [color="#6B7280", penwidth=1.3];
+  a [label="回答候補"];
+  e [label="Evidence存在?\n元ファイル存在?"];
+  f [label="質問形式と一致?\n数値なら再検算?"];
+  c [label="競合回答・曖昧性なし?"];
+  ok [label="採用", fillcolor="#F0FFF4", color="#6FAF82"];
+  ng [label="Reject / Abstain", fillcolor="#FFF5F5", color="#D99A9A"];
+  a->e->f->c->ok;
+  e->ng [label="No", fontname="Noto Sans CJK JP"];
+  f->ng [label="No", fontname="Noto Sans CJK JP"];
+  c->ng [label="No", fontname="Noto Sans CJK JP"];
+}

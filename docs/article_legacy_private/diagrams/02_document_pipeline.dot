@@ -1,0 +1,10 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.5"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=12, color="#9AA7B5", fillcolor="#FAFBFC", margin="0.16,0.10"];
+  edge [color="#6B7280", penwidth=1.4];
+  src [label="PDF / PPTX / DOCX\nXLSX / CSV / JSON\nCode / Notebook / Image"];
+  parse [label="形式別Parser\nテキスト + 構造 + 書式 + 座標"];
+  unit [label="TextUnit / Table / Image\nmetadata付き"];
+  store [label="DocumentStore\nproject / role / version"];
+  src->parse->unit->store;
+}

@@ -1,0 +1,12 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.6"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=13, color="#8AA4C8", fillcolor="#F7FAFF", margin="0.18,0.12"];
+  edge [color="#607D8B", penwidth=1.6, arrowsize=0.8];
+  q [label="質問"];
+  ds [label="DocumentStore\n構造を保持して資料読込"];
+  plan [label="Question Planner\n案件・資料・操作を推定"];
+  ex [label="Executor Router\nfilter / join / diff / OCR / 計算"];
+  gate [label="Evidence Gate\n根拠・形式・再計算を検証", fillcolor="#F4FFF7", color="#78B58B"];
+  out [label="Answer + Evidence", fillcolor="#FFF9F0", color="#D5A85A"];
+  q->plan; ds->plan; plan->ex; ex->gate; gate->out;
+}

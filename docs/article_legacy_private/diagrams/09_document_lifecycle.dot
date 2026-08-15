@@ -1,0 +1,13 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.28", nodesep="0.35"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=11, color="#9AA7B5", fillcolor="#FAFBFC"];
+  edge [color="#6B7280", penwidth=1.4];
+  draft [label="Draft"];
+  approve [label="Approved\n最新正本", fillcolor="#F4FFF7", color="#78B58B"];
+  hash [label="content_hash比較"];
+  ingest [label="変更分だけ\n再chunk / 再embedding"];
+  idx [label="Search Index\nlatest=true"];
+  obsolete [label="Obsolete\n通常検索から除外", fillcolor="#FFF5F5", color="#D99A9A"];
+  draft->approve->hash->ingest->idx;
+  approve->obsolete [label="新版承認時", fontname="Noto Sans CJK JP"];
+}
