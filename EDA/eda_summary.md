@@ -760,3 +760,9 @@ EDA063: LLMで質問ジャンルと必要処理を分類
 EDA066では、`SIGNATE`直下に分散していた7つの `SIGNATE_Agentic_RAG_*` 作業ツリーを棚卸しした。Excel行到達性監査とPowerPointタイムライン統合には未コミットの実装差分があったため、差分パッチと新規Pythonソースを `EDA066_external_rag_worktree_inventory/` に保存する。5GB級の `data/output/`、原本、仮想環境はGitへ含めず、作業ツリー名、ブランチ、基点コミット、再生成対象として台帳に記録した。
 
 この整理により、最終RAGパイプラインはルートの `src/` と `scripts/` を正とし、外部作業ツリーは将来の再評価対象としてEDAに分離する。外部API依存のOpenRouter試行は、再現性と実行コストの観点から最終コールドスタート経路には採用しない。
+
+## 追記: EDA067
+
+EDA067では、旧 `SIGNATE_Agentic_RAG` 本体のコード、設定、評価、提出候補を `EDA067_legacy_agentic_rag_snapshot/` に保存した。旧パイプラインの `data/raw`、`data/interim`、`data/processed`、`data/output`、`data/work`、仮想環境、キャッシュは大容量または再生成可能なローカル状態のため保存しない。完成版は `materials/share.zip` からコールドスタート実行できることを前提とする。
+
+これにより、完成版の実行本体と、旧Agentic RAGの探索実装を同一リポジトリ内で明確に分離した。旧Git履歴はGitHub上の `niiyaten/SIGNATE_Agentic_RAG` に残し、EDA067には移行時点のリモート、ブランチ、HEADを記録する。

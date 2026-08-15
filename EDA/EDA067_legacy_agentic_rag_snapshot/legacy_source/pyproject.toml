@@ -1,0 +1,22 @@
+[project]
+name = "signate-agentic-rag"
+version = "0.1.0"
+description = "SIGNATE Agentic RAG competition workspace"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "matplotlib>=3.8.0",
+    "numpy>=1.26.0",
+    "openpyxl>=3.1.0",
+    "pandas>=2.2.0",
+    "pillow>=10.0.0",
+    "python-docx>=1.1.0",
+    "python-pptx>=0.6.23",
+    "pypdf>=4.0.0",
+    "msoffcrypto-tool>=6.0.0",
+    "signate>=0.12.0",
+    "pymupdf>=1.28.0",
+]
+
+[tool.uv]
+package = false

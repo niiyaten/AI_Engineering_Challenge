@@ -1,0 +1,14 @@
+{
+  "data_governance": {
+    "data_classification": "synthetic_competition_data",
+    "contains_real_confidential_data": false,
+    "external_llm_transmission_allowed": true,
+    "permission_scope": "current_competition_project_only"
+  },
+  "enabled": true,
+  "free_models_only": true,
+  "allowed_models": [
+    "openai/gpt-oss-20b:free"
+  ],
+  "allow_paid_fallback": false
+}

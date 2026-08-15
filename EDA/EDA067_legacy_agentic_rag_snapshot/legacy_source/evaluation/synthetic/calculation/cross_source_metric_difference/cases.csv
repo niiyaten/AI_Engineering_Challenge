@@ -1,0 +1,18 @@
+﻿case_id,expected_allowed,question,expected_answer,note
+positive_basic,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.045000,basic two-source difference
+positive_source_order,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.040000,unrelated file and source order change
+positive_row_order,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.050000,nested field order change
+positive_multiple_conditions,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.060000,"project, phase, and metric conditions"
+positive_numeric_string,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.012346,numeric strings
+positive_missing_optional,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.035000,optional fields missing
+positive_extra_fields,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.075000,extra fields
+positive_unrelated_file,True,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,0.025000,unrelated file ignored
+negative_missing_metric,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,required metric missing
+negative_missing_source,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,required source missing
+negative_ambiguous_source,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,conflicting source values
+negative_unit_mismatch,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,unit mismatch
+negative_empty_target_value,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,condition exists but target value is empty
+negative_duplicate_join_key,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,duplicate source role key
+negative_numeric_id,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,numeric ID must not be used as metric
+negative_operation_mismatch,False,合成案件の中間値に対する最終値のMacro F1比率を小数第6位まで答えてください。,,question requests ratio instead of difference
+negative_unrelated_project,False,合成案件の中間値と最終値のMacro F1改善幅を小数第6位まで答えてください。,,source relation not verified

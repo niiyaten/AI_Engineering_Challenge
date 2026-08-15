@@ -1,0 +1,22 @@
+.venv/
+.uv-cache/
+.uv-cache-run/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.apikey
+
+# Raw competition data can be large. Keep locally, but usually do not commit.
+data/raw/*.zip
+
+# Extracted/generated data
+data/interim/
+data/processed/
+data/work/
+data/output/
+
+# EDA outputs
+EDA/**/figures/
+EDA/**/tables/
+EDA/**/*.log
